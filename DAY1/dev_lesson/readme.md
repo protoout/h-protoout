@@ -23,7 +23,6 @@ obniz等基板をPCや金属の上に乗せると、基板が壊れる可能性�
 
 ### まずはじめに
 
-<a href="https://gyazo.com/a68ee34d4f810697b82d6a130559fe34"><img src="https://i.gyazo.com/a68ee34d4f810697b82d6a130559fe34.jpg" alt="Image from Gyazo" width="1920"/></a>
 
 「**IoT**」とは・・・Internet of Things（モノのインターネット）の略。  
 今までインターネットにつながっていなかったモノをつなぐことをIoTと言います。

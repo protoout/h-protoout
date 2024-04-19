@@ -42,30 +42,102 @@ Obnizが提供するパーツライブラリを使って、簡単に動作を試
 
 **obniz IDを（手元に）メモしておきましょう！**
 
-### 1-1. CodespacesでNode.jsプロジェクト環境を作る
+### 1-1 Node-REDにobnizノードをインストール
+1. Node-REDにログインしてください。
 
-Codespacesを使って進めていきます。忘れた方は第1回目の授業を振り返りましょう。[GitHub Codespacesで開発をはじめよう](https://github.com/protoout/po/blob/main/lesson01/dev_lesson/00.md)
+2. Node-REDの右上のメニュー（三本線）からパレットの管理を選びます。
+   
+   <a href="https://gyazo.com/87c62740eab97d764bacb3d3deb08c2d"><img src="https://i.gyazo.com/87c62740eab97d764bacb3d3deb08c2d.png" alt="Image from Gyazo" width="372"/></a>
 
-1. Codespaces内でターミナルを立ち上げる
-2. `npm init -y` を実行し、フォルダーをnpm管理ができるように初期化しましょう
+3. 「ノードを追加」をクリックし「obniz」で検索してください。
+   
+   検索結果から`node-red-contrib-obniz`の「ノードを追加」を押してください。  
+   （vnがついて**いない**方です！）
+   
+   <a href="https://gyazo.com/44977736c5df5749bfeb4102fc7e1d37"><img src="https://i.gyazo.com/44977736c5df5749bfeb4102fc7e1d37.png" alt="Image from Gyazo" width="800"/></a>
 
-> Node.jsにおいて、新しくフォルダーを作成して`npm init -y`を実行することを「プロジェクトを新規作成する」（特定のアプリケーションを作るための環境を新規に整備する）のように表現することがあります。
+4. Node-REDの左側の「その他」の中に青いobnizノードが表示されていれば準備完了です。
+   
+   <a href="https://gyazo.com/1dc3e137af72509caed03e378f2861e3"><img src="https://i.gyazo.com/1dc3e137af72509caed03e378f2861e3.png" alt="Image from Gyazo" width="166"/></a>
 
-### 1-2. obnizパッケージのインストール
+obnizのノードはこんなときに使います。
+- obniz repeat・・・常にデータを取り続けたいとき  
+  例）温度センサー、距離センサー、照度センサーなどのセンサが検知したデータを一定間隔で取得し続ける、など。  
 
-```bash
-npm i obniz
+- obniz function・・・フロー上のきっかけでなにか動作させたいとき  
+  例）LINE Botが受け取ったメッセージをきっかけに温度を取得する、など。
+
+参考ページ：[Node-REDのobnizノードがバージョンアップした！](https://qiita.com/wicket/items/e150e78cd787da03493e)
+
+### 1-2 処理停止用ノードを読み込む
+
+Node-RED上で起動しているobnizのプログラムを止めるためには、obnizのcloseメソッドを明示的に実行する必要があります。  
+なので、作業に入る前に処理停止用のノードを作成しておきましょう。  
+今回は事前に作成したものをJSON形式で書き出しておきました。  
+以下の手順で自身のNode-RED上に読み込みを行ってください。  
+
+JSONコードの読み込みは第1回授業の復習です。思い出してやってみましょう。
+
+1. 下記のコードをすべてコピーしてください。
+
+```json
+[{"id":"cb1d6d3a.017e1","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":610,"y":140,"wires":[]},{"id":"11a346f0.5a4c19","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"msg.payload = \"finish\";\nawait obniz.wait(1000); \nobniz.close();\n\nreturn msg;","x":440,"y":140,"wires":[["cb1d6d3a.017e1"]]},{"id":"76e43759.3dff68","type":"inject","z":"d9dba4a1.01f228","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":260,"y":140,"wires":[["11a346f0.5a4c19"]]}]
 ```
 
-上記を実行します。  
-このパッケージ1つだけで、obnizまでの接続をすべてやってくれるオールインワンなライブラリです。
+▼読み込み結果  
+<a href="https://gyazo.com/ac38f368a5f4fefc730b30c4b6984944"><img src="https://i.gyazo.com/ac38f368a5f4fefc730b30c4b6984944.png" alt="Image from Gyazo" width="579"/></a>
+
+1. `obniz function` ノードをダブルクリックで開き、プロパティの「新規に obniz を追加…」の右に表示されている鉛筆マークを押下してください。
+   
+   <a href="https://gyazo.com/99f8fac66fc13afb07562d3fecdfcfdf"><img src="https://i.gyazo.com/99f8fac66fc13afb07562d3fecdfcfdf.png" alt="Image from Gyazo" width="627"/></a>
+
+2. 表示されたプロパティ画面で、以下のとおり設定し「追加」を押下してください。  
+   - obniz ID：自分のobniz ID  
+   - device type：obnizBoard 1Y
+   - 初期化処理：以下コード  
+   
+   ```javascript
+   obniz.display.clear(); // 画面を消去
+   ```
+   
+   <a href="https://gyazo.com/5a850defef827a60867cf1af4194029d"><img src="https://i.gyazo.com/5a850defef827a60867cf1af4194029d.png" alt="Image from Gyazo" width="634"/></a>
+
+3. obniz-functionノードを編集のプロパティ画面に戻ったら、「obniz」に前工程で設定したobniz IDが設定されていることを確認し、「完了」を押下してください。
+   
+   <a href="https://gyazo.com/593d9ee6524567b902dde5a842a46745"><img src="https://i.gyazo.com/593d9ee6524567b902dde5a842a46745.png" alt="Image from Gyazo" width="649"/></a>
+
+【見てみよう】  
+`obniz function`ノードをもう一度開き、中身を見てみましょう。  
+コードの内容は以下のとおりとなっています。  
+（実際のコードにはコメントはつけていません。）  
+
+```javascript
+msg.payload = "finish"; //msg.payloadに"finish"を格納→debugに"finish"と表示されます
+await obniz.wait(1000); //1000ミリ秒＝1秒obnizの処理を待機 
+obniz.close(); //意図的にclose()関数を呼ぶことで通信を切断
+
+return msg;
+```
+
+このように、Node-REDでobnizを使用する場合、ノードの中にコードを書く必要があります。  
+これ以降に読み込むノードにも同じようにコードが設定されていますので、  
+JSONコードを読み込んだ後にそれぞれのノードを開いてコードを確認してみてください。  
+
+
+**※注意※**  
+- 以降の作業でノードを読み込む前に、処理停止用のノード**以外は**削除するようにしてください。  
+  ノードが混在すると分かりづらくなるのと、obnizが予期せぬ動作をすることがあるためです。
+- 不要なobniz IDの設定を削除する場合、「初期化処理」の内容も削除されますので注意してください。  
+  「初期化処理」のコードを残しておきたい場合は、obniz IDの設定を削除する前にコードをコピーしメモ帳等に退避しておくようにしましょう。  
+  
+  <a href="https://gyazo.com/be2c84ffa92899c86b7e03fc2b49f8ec"><img src="https://i.gyazo.com/be2c84ffa92899c86b7e03fc2b49f8ec.png" alt="Image from Gyazo" width="742"/></a>
+  <a href="https://gyazo.com/f143836702081d6960800f4668aef7be"><img src="https://i.gyazo.com/f143836702081d6960800f4668aef7be.png" alt="Image from Gyazo" width="648"/></a>
+
 
 ## 2. Lチカしてみよう
 
 <a href="https://gyazo.com/23a5a24bdd5a812ed8baf83ced57b590"><img src="https://i.gyazo.com/23a5a24bdd5a812ed8baf83ced57b590.jpg" alt="Image from Gyazo" width="700"/></a>
 
-信号機などでおなじみのLEDです。  
-3色購入していただいたかと思いますが、好きな色のLEDを1つだけ準備してください。
 
 > ソフトウェアの世界では一番最初に書く最も簡単なコードのことを「Hello World」と言いますが、ハードウェアの世界ではLEDを点滅させる「**Lチカ**」がそれに相当します。
 
@@ -83,10 +155,12 @@ npm i obniz
 
 [![Image from Gyazo](https://i.gyazo.com/4bb4d4af379c881b0f68274869c18505.png)](https://gyazo.com/4bb4d4af379c881b0f68274869c18505)
 
+脚の長いほうがアノード、短いほうをカソードといいます。  
+
 obnizに電源が入っている状態で、写真のように  
 
-- LEDの長い脚をobnizの＋端子
-- LEDの短い脚をobnizの－端子
+- LEDの長い脚（アノード）をobnizの＋端子
+- LEDの短い脚（カソード）をobnizの－端子
 
 に接続してみてください。光りましたか？
 
@@ -139,62 +213,27 @@ obnizの公式オンラインドキュメントには「[obniz Parts Library](ht
 「**Webブラウザからもobnizが扱える**」ことをぜひ覚えておいてください。
 <!-- （のちの授業で扱っていきます！） -->
 
-### 2-4. Node.jsで実行
+### 2-4. Node-REDで実行
 
-[![Image from Gyazo](https://i.gyazo.com/9c71353cdd2b2be4219789f50041b8bf.gif)](https://gyazo.com/9c71353cdd2b2be4219789f50041b8bf)
+<a href="https://gyazo.com/17852495dc721319ae13da119fa852d7"><img src="https://i.gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="646"/></a>
 
-`01_led.js`を新規作成して以下のソースコードを貼り付け、Node.jsで動かしてみましょう。
+以下のソースコードを読み込み、Node-REDで動かしてみましょう。  
+obnizのスイッチを押すとLEDが点灯するのを確認してください。  
+ノードの中身は各自で確認してみてください。  
 
-```js:01_led.js
-const Obniz = require('obniz');
-const obniz = new Obniz('Obniz_ID'); // Obniz_IDに自分のIDを入れます
+```json
+[{"id":"5fa9057f.f2e0ac","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":330,"y":340,"wires":[["ebafa559.00b978","e8f7976.0477568"]]},{"id":"ebafa559.00b978","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"obniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n obniz.display.print('LED ON');\r\n obnizParts.led.on();\r\n} else {\r\n // スイッチが押されていない状態\r\n obniz.display.print('LED OFF');\r\n obnizParts.led.off();\r\n}\r\n","x":520,"y":340,"wires":[[]]},{"id":"e8f7976.0477568","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":510,"y":420,"wires":[]}]
+```
+▼読み込み結果  
+<a href="https://gyazo.com/cccec7050a56c2e266600819460d4694"><img src="https://i.gyazo.com/cccec7050a56c2e266600819460d4694.png" alt="Image from Gyazo" width="374"/></a>  
 
-// obnizがオンラインであることが確認されたら、以下の関数内が自動で実行されます
-obniz.onconnect = async function () {
-  // LEDの設定
-  const led = obniz.wired("LED", {anode:0, cathode:1});
-  // LEDをつける
-  led.on();
-}
+▼初期化処理コード  
+```javascript
+obniz.display.clear(); // 画面を消去
+obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
 ```
 
-保存できましたら、2行目に自分のobniz IDを入れる部分があります。  
-例として`1234-5678`であれば次のようになります。  
-ご自身のobniz IDに合わせて変更しましょう。
-
-```js
-const obniz = new Obniz('1234-5678');  // Obniz_IDに自分のIDを入れてください
-```
-
-書き換えできたら、再度保存してからNode.jsで実行してみましょう。
-
-ターミナルで以下のコマンドを実行します。
-
-```zsh
-node 01_led.js
-```
-
-LED光りましたか？  
-無事光ったらTwitterに投稿しましょう！`#protoout`も忘れずに！
-
-光らない場合は以下を確認してください
-
-- 脚が逆になっていないか
-- 指す位置を間違えていないか
-- `Obniz_ID`を間違えていないか
-  - `invalid obniz id`と表示されます
-
-### 2-5. 停止
-
-1つのソースコードが実行されているあいだは、obnizはそこへ縛りつけられたままになってしまい、他のソースコードを実行したりすることができません。
-ターミナルに `Ctrl + C` と入力してNode.jsを停止してみましょう。（復習です！）
-
-もとのQRコードとobniz IDが表示されている画面に戻ってきたらOKです。  
-今後、すべてのobnizに関するコードでは、通常のNode.jsと同じく `Ctrl + C` で最後に停止させる必要がある、と覚えておいてくださいね！
-
-## 3. obnizのディスプレイとスイッチ
-
-obnizのディスプレイとスイッチを使ってみましょう。
+2-5. やってみよう
 
 ### 3-1. 完成イメージ
 
