@@ -1,16 +1,7 @@
 # 環境の準備
 
-今回はNode-REDとObnizといったプラットフォームを使ってIoTや生成AIを体験し学んでいきます！
+今回は3日間でNode-REDとobnizといったプラットフォームを使ってIoTや生成AIを体験し、アイデアを形にするところまで行います。
 
-
-
-
-なにか画像を入れる
-testteaaaaaaaaaa
-
-おはよう
-
-Hello-----
 
 - [Node-RED](https://nodered.org/): IBMによって開発されたビジュアルプログラミングのツール。はじめての人でも簡単に、さまざまなハードウェアやAPI、サービス連携ができます。
 [![Image from Gyazo](https://i.gyazo.com/4cd0ad2c1a4ceb19e8cb929020b2d7ef.png)](https://gyazo.com/4cd0ad2c1a4ceb19e8cb929020b2d7ef)
