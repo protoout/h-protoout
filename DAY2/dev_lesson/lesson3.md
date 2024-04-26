@@ -80,6 +80,7 @@
 - simple-whisperノード
 - debugノード
 
+
 <img src="https://i.gyazo.com/6a9bdd0f3c5baed80e339774248b8899.png" width="500px">
 
 
@@ -89,11 +90,11 @@
 
 <img src="https://i.gyazo.com/83b97c4bfe81e4ee96c6112858d943d3.png" width="500px">
 
+
 3. microphoneノードの設定: microphoneノードをダブルクリックし下記の様に設定を行います。
 
 - グループ: Home Default
 - モード: オーディオ入力
-
 
 <img src="https://i.gyazo.com/67450db29e6d78119f5da3b73e1e7493.png" alt="Image from Example" width="500px">
 
@@ -102,8 +103,8 @@
 
 5. テスト: マイクから入力した音声がテキストに変換できるか試してみましょう
 
+<img src="https://i.gyazo.com/fa774125e0f067adb6c40a7adae38a11.gif" alt="Image from Example" width="500px">
 
-[![Image from Gyazo](https://i.gyazo.com/fa774125e0f067adb6c40a7adae38a11.gif)](https://gyazo.com/fa774125e0f067adb6c40a7adae38a11)
 
 
 ### 1-3 simple-chatgptノードでLEDを光らせられるようにする
@@ -116,14 +117,17 @@
 
 <img src="https://i.gyazo.com/2bb0475660f4821f9323888a0ccaa3c7.png" alt="Image from Gyazo" width="579"/>
 
+
 2. injectノードの設定を変更
 
 「タイムスタンプ」を **「文字列」** に変更してください。
+
 <img src="https://i.gyazo.com/943db55065302edcd00f4e6caef03dd8.png" alt="Image Description" width="500px">
 
 
 
 図のフォームに、プロンプトをコピーして貼り付けてください。
+
 <img src="https://i.gyazo.com/6fc3c9bbf078c0c175e352a37b5989d4.png" alt="Image from Gyazo" />
 
 
@@ -146,6 +150,7 @@
 
 
 obniz functionノードをダブルクリックし、obnizを選択してコードを入力します。
+
 <img src="https://i.gyazo.com/4ec524cf0e8e72c28ecdfd43a1fcfda0.png" alt="Image Description" />
 
 
@@ -164,6 +169,7 @@ if (msg.payload == "on") {
 
 
 鉛筆マークをクリックし
+
 <img src="https://i.gyazo.com/7c5951f1e91dc03196fc008d660746bc.png" alt="Image from Gyazo" />
 
 下記1行を追加してください。
@@ -206,6 +212,7 @@ obnizParts.led = obniz.wired("LED", {anode:0, cathode:1});
 
 
 1. templeteノードを追加し、図のように接続する
+
 <img src="https://i.gyazo.com/06898b6a85e4242a63eaa35cd72caaa5.png" alt="Image from Gyazo" />
 
 
