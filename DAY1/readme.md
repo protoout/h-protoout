@@ -6,7 +6,8 @@
 
 ### 実装授業 10:00~17:00
 
-[(私市担当)](./dev_lesson/)
+[環境の準備(私市担当)](./dev_lesson/lesson1.md)
+[Obnizを使ってセンサーやLEDを試してみよう(私市担当)](./dev_lesson/lesson2.md)
 
 - 環境確認
 - センサーさわっていく

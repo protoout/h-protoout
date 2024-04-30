@@ -1,0 +1,28 @@
+## 実装授業
+
+### ■ [授業における肖像権・著作権の取り扱いについて](https://github.com/protoout/po-common/blob/main/docs/announce/copyright.md)
+
+### ■ [X(旧Twitter）ポストウォーミングアップ](https://github.com/protoout/po-common/blob/main/docs/announce/class_tweet.md) 
+
+
+### ご注意
+本日の授業ではハードウェアを扱います。場合によってはケガをすることもありますので十分注意して授業に臨んでください。
+※別クラスで温度センサーの扱いを間違えて火傷をしたという事例があります。
+obniz等基板をPCや金属の上に乗せると、基板が壊れる可能性があります。取り扱いの際は注意してください。
+
+
+### 本日行う内容
+
+生成AIや外部サービス、オープンな情報の取得を行い、できることを広げていきます。
+
+具体的には
+- 生成AIにNode-REDのフローを作ってもらう
+- Teams
+- 音声入力でLEDを操作してみる
+
+
+[ネット上にあるリソースを活用: API連携をしてみよう (私市担当)](./lesson1.md)
+
+[もっとIoTを知る: MQTT通信をしてみよう (私市担当)](./lesson2.md)
+
+[生成AI活用](./lesson3.md)
