@@ -1,9 +1,6 @@
 ## 実装授業
 
-### ■ [授業における肖像権・著作権の取り扱いについて](https://github.com/protoout/po-common/blob/main/docs/announce/copyright.md)
-
-### ■ [X(旧Twitter）ポストウォーミングアップ](https://github.com/protoout/po-common/blob/main/docs/announce/class_tweet.md) 
-
+### ■ [授業における肖像権・著作権の取り扱いについて](https://protoout.notion.site/acde308ffe03498fad30a271b4a7b128?pvs=4)
 
 ### ご注意
 本日の授業ではハードウェアを扱います。場合によってはケガをすることもありますので十分注意して授業に臨んでください。
