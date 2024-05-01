@@ -193,7 +193,7 @@ WebScoketの場合は...
 
 単体ではUSB経由でのシリアル通信のみ、無線通信はできません。（Arduino Uno R3の場合。）
 
-※2023年にArduino Uno R4 WiFitというWi-Fi・Bluetooth対応版も発売されました。
+※つい最近（2023年）Arduino Uno R4 WiFitというWi-Fi・Bluetooth対応版商品が発売されました。
 
 
 
