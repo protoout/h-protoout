@@ -213,7 +213,7 @@ ESP32は、Wi-FiとBluetoothを内蔵する低コスト/低消費電力なSoCの
 ESP32モジュールが2016年に発売されて以降、**小さいのにたくさんの機能をもつ**ESP32系の開発ボードがたくさん誕生しました。
 
 
-いくつか、人気のボードを紹介します。
+いくつか、人気のボードおよびメーカーを紹介します。
 
 ### [M5Stack](https://shop.m5stack.com/collections/m5-controllers)
 
