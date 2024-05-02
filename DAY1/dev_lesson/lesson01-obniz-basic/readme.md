@@ -2,6 +2,14 @@
 
 今回は3日間でNode-REDとobnizといったプラットフォームを使ってIoTや生成AIを体験し、アイデアを形にするところまで行います。
 
+## 目次 👀
+0. [環境構築](./readme.md) ←このページ
+1. [obnizをはじめよう](./01_start_obniz.md)
+2. [Lチカしてみよう](./02_obniz-LED.md)
+3. [スピーカーで音を鳴らしてみよう](./03_obniz-speaker.md)
+4. [超音波測距センサーで距離を取得しよう](./04_obniz-distance.md)
+
+
 
 - [Node-RED](https://nodered.org/): IBMによって開発されたビジュアルプログラミングのツール。はじめての人でも簡単に、さまざまなハードウェアやAPI、サービス連携ができます。
 [![Image from Gyazo](https://i.gyazo.com/4cd0ad2c1a4ceb19e8cb929020b2d7ef.png)](https://gyazo.com/4cd0ad2c1a4ceb19e8cb929020b2d7ef)
