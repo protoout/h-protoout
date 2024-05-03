@@ -114,9 +114,7 @@ obniz.io2.output(false); //io2をGNDに
 [![Image from Gyazo](https://i.gyazo.com/bd601bf2e7ad760a85064af9dc6ced4f.gif)](https://gyazo.com/bd601bf2e7ad760a85064af9dc6ced4f)
 
 ここで使っている関数はCdS専用のものではなく、端子にかかっている電圧を測定して数値で表現できるような、汎用的なものとなります。  
-obnizドキュメントにおいては  
-[AD - obniz Docs](https://obniz.com/ja/doc/reference/common/ad)  
-がこの関数に対応したページとなります。
+
 
 > 参考：[obnizとNode.jsでCdSセル(照度センサ)を使ってみる](https://zenn.dev/protoout/articles/01-obniz-nodejs-cds)
 
