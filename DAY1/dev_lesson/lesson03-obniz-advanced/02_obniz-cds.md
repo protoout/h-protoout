@@ -96,26 +96,21 @@ obnizの端子の機能を以下のように設定し、このうち1番端子�
 - obniz 1 - 電圧入力（CdSと抵抗の**分圧**）
 - obniz 2 - 電圧出力（0V）
 
-### 2-3. Node.jsで動かす
+### 2-3. Node-REDで動かす
 
-`07_cds.js`というファイルを新規作成し、以下のソースコードを動かしてみましょう。
+以下のソースコードを読み込んで動かしてみましょう。
+デバッグにchanged to X.XXXX vと表示されているのを確認したら。
+照度センサーに手をかざし、値が変わるか確認してみてください。
 
-```js:07_cds.js
-const Obniz = require('obniz');
-const obniz = new Obniz('obnizのデバイスID');
-
-obniz.onconnect = async () => {
-  obniz.io0.output(true);  // io0電圧を5Vに（電源＋）
-  obniz.io2.output(false); // io2電圧を0Vに（電源−）
-
-  // io1をアナログピンに(センサーの値を取得)
-  obniz.ad1.start((voltage) => {
-    // センサーの値が変わるたびに実行される
-    console.log(`changed to ${voltage} v`);
-  });
-}
+```json
+[{"id":"c091614d.5861c","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"var voltage = await obniz.ad1.getWait();\n\nobniz.display.print(voltage)\nmsg.payload = `changed to ${voltage} v`;\n\nreturn msg;","x":230,"y":240,"wires":[["d7cb4a9f.3a6168"]]},{"id":"d7cb4a9f.3a6168","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":450,"y":240,"wires":[]}]
 ```
 
+▼初期化処理コード
+```json
+obniz.io0.output(true); //io0を5vに
+obniz.io2.output(false); //io2をGNDに
+```
 [![Image from Gyazo](https://i.gyazo.com/bd601bf2e7ad760a85064af9dc6ced4f.gif)](https://gyazo.com/bd601bf2e7ad760a85064af9dc6ced4f)
 
 ここで使っている関数はCdS専用のものではなく、端子にかかっている電圧を測定して数値で表現できるような、汎用的なものとなります。  
