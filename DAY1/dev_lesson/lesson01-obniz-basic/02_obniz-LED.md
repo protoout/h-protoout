@@ -101,9 +101,13 @@ obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
 
 2-5. やってみよう
 
+設定が完了したら右上のデプロイボタンをクリック
+
+<a href="https://gyazo.com/ef06153ec135eeb14e04ce4885e9369d"><img src="https://gyazo.com/ef06153ec135eeb14e04ce4885e9369d.png" alt="Image from Gyazo" width="374"/></a>  
+
 ### 3-1. 完成イメージ
 
-[![Image from Gyazo](https://i.gyazo.com/57d085bc072e86acc5391d4d88beeaee.gif)](https://gyazo.com/57d085bc072e86acc5391d4d88beeaee)
+[![Image from Gyazo](https://gyazo.com/17852495dc721319ae13da119fa852d7.gif)](https://gyazo.com/17852495dc721319ae13da119fa852d7)
 
 ### 3-2. 使い方ドキュメント
 
