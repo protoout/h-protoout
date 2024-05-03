@@ -84,9 +84,12 @@ obnizの公式オンラインドキュメントには「[obniz Parts Library](ht
 
 <a href="https://gyazo.com/17852495dc721319ae13da119fa852d7"><img src="https://i.gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="646"/></a>
 
-以下のソースコードを読み込み、Node-REDで動かしてみましょう。  
+以下のソースコードを読み込み、初期化ノードを設定することで、Node-REDで動かしてみましょう。  
 obnizのスイッチを押すとLEDが点灯するのを確認してください。  
 ノードの中身は各自で確認してみてください。  
+
+#### 2-4-1. ソースコードの読み取り 
+まず以下のソースコードをNode-REDで読み込みます。
 
 ```json
 [{"id":"5fa9057f.f2e0ac","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":330,"y":340,"wires":[["ebafa559.00b978","e8f7976.0477568"]]},{"id":"ebafa559.00b978","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"obniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n obniz.display.print('LED ON');\r\n obnizParts.led.on();\r\n} else {\r\n // スイッチが押されていない状態\r\n obniz.display.print('LED OFF');\r\n obnizParts.led.off();\r\n}\r\n","x":520,"y":340,"wires":[[]]},{"id":"e8f7976.0477568","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":510,"y":420,"wires":[]}]
@@ -94,7 +97,7 @@ obnizのスイッチを押すとLEDが点灯するのを確認してください
 ▼読み込み結果  
 <a href="https://gyazo.com/cccec7050a56c2e266600819460d4694"><img src="https://i.gyazo.com/cccec7050a56c2e266600819460d4694.png" alt="Image from Gyazo" width="374"/></a>  
 
-#### 2-4-1. 初期化処理コードの設定  
+#### 2-4-2. 初期化処理コードの設定  
 以下のソースコードをコピーします
 ```javascript
 obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
