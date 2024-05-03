@@ -83,56 +83,21 @@
 （上記ドキュメントページのスライダーでも、一番端へ動かした場合に発生することがあります）
 </details>
 
-### 1-3. Node.jsで実行
+### 1-3. Node-REDで実行
 
 <!-- [![Image from Gyazo](https://i.gyazo.com/b88f34195bd6883cc732431f49f13c6f.gif)](https://gyazo.com/b88f34195bd6883cc732431f49f13c6f) -->
 
-`06_servo.js`を新規作成して以下のソースコードを貼り付け、Node.jsで動かしてみましょう。
+以下のソースコードを読み込み、初期化処理コードを設定して動かしてみましょう。
+obnizスイッチを押したとき、左に倒したとき、右に倒したとき、でサーボモーターが動くことを確認してください。
+ノードの中身は各自で確認してみてください。
 
-```js:06_servo.js
-const Obniz = require('obniz');
-const obniz = new Obniz('Obniz_ID'); // Obniz_IDに自分のIDを入れます
+```json
+[{"id":"fd4d9924.ded5e8","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":350,"y":320,"wires":[["d2cf9b4d.518638","49f8bacd.ab65e4"]]},{"id":"d2cf9b4d.518638","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"let degrees = context.get('degrees')||90; // 角度を保持する変数（無ければ初期化）\r\n\r\nobniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n degrees = 45.0;\r\n} else if (msg.payload === 'right') {\r\n // 右にスイッチを倒したとき\r\n degrees = 0.0;\r\n} else if (msg.payload === 'left') {\r\n // 左にスイッチを倒したとき\r\n degrees = 180.0;\r\n} else {\r\n // スイッチが押されていない状態\r\n degrees = 90.0;\r\n}\r\ncontext.set('degrees',degrees);//現在の角度をコンテキストへ保存\r\n\r\n// ディスプレイに角度を表示\r\nobniz.display.print(`Current: ${degrees} deg`);\r\n// サーボを指定の角度まで動かす\r\nobnizParts.servo.angle(degrees);","x":560,"y":320,"wires":[[]]},{"id":"49f8bacd.ab65e4","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":550,"y":380,"wires":[]}]
+```
 
-obniz.onconnect = async function () {
-  // サーボモータを利用
-  const servo = obniz.wired('ServoMotor', { signal: 2 });
-
-  // 角度を保持する変数
-  let degrees = 90.0;
-
-  // ディスプレイ表示（初期画面）
-  obniz.display.clear();
-  obniz.display.print('Hello obniz!');
-
-  // スイッチの反応を常時監視
-  // 「スイッチ状態が変化した瞬間に1回だけ実行される」ことに注意しましょう
-  obniz.switch.onchange = function (state) {
-    // スイッチの状態で角度を決め、最後に動かします
-    if (state === 'push') {
-      // スイッチが押されている状態
-      console.log('pushed');
-      degrees = 45.0;
-    } else if (state === 'right') {
-      // 右にスイッチを倒したとき
-      console.log('right');
-      degrees = 0.0;
-    } else if (state === 'left') {
-      // 左にスイッチを倒したとき
-      console.log('left');
-      degrees = 180.0;
-    } else {
-      // スイッチが押されていない状態
-      console.log('released');
-      degrees = 90.0;
-    }
-  
-  // ディスプレイに角度を表示
-  obniz.display.clear();
-  obniz.display.print(`Current: ${degrees} deg`);
-  // サーボを指定の角度まで動かします
-  servo.angle(degrees);
-  }
-}
+▼初期化処理コード
+```json
+obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
 ```
 
 <details>
