@@ -96,7 +96,6 @@ obnizのスイッチを押すとLEDが点灯するのを確認してください
 
 ▼初期化処理コード  
 ```javascript
-obniz.display.clear(); // 画面を消去
 obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
 ```
 
