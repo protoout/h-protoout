@@ -37,12 +37,22 @@ obnizの0番と1番の端子に差し込みます。
 ### 5-3. Node-REDで実行
 
 以下のソースコードを読み込み、Node-REDで動かしてみましょう。
-自分のobniz IDを設定し、初期化処理コードを上書き更新してください。
+
 
 ```json
 [{"id":"9684e82d.a3b478","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nif (msg.payload === 'push') {\n    // 押されたとき\n    obniz.display.clear(); // 画面を消去\n    obniz.display.print('beep!');  // beep! と画面に表示\n    obnizParts.Speaker.play(1000); // 1000Hz で音を鳴らす\n} else {\n    // 何も押していない\n    obniz.display.clear(); // 画面を消去\n    obniz.display.print('silent');  // silent と画面に表示\n    obnizParts.Speaker.stop(); // 音をとめる\n}\n\nreturn msg;","x":270,"y":280,"wires":[["f8e3da0b.78b968"]]},{"id":"f8e3da0b.78b968","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":470,"y":280,"wires":[]}]
 ```
+▼読み込み結果  
+<a href="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289"><img src="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289.png" alt="Image from Gyazo" width="374"/></a>  
 
+
+Lチカ同様、読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークから、初期化処理コードを**上書き更新**してください。
+（Lチカの時に張り付けたコードは消してください）
+
+▼初期化処理コード
+```json
+obnizParts.Speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
+```
 
 スイッチを押したり離したりして、スピーカーのコントロールができます。
 
