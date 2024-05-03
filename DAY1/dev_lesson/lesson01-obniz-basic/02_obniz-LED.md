@@ -94,12 +94,21 @@ obnizのスイッチを押すとLEDが点灯するのを確認してください
 ▼読み込み結果  
 <a href="https://gyazo.com/cccec7050a56c2e266600819460d4694"><img src="https://i.gyazo.com/cccec7050a56c2e266600819460d4694.png" alt="Image from Gyazo" width="374"/></a>  
 
-▼初期化処理コード  
+#### 2-4-1. 初期化処理コードの設定  
+以下のソースコードをコピーします
 ```javascript
 obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
 ```
 
-2-5. やってみよう
+先ほど読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークを選択
+
+<a href="https://gyazo.com/70bcaceaeaba113cc79960839c18ad38"><img src="https://gyazo.com/70bcaceaeaba113cc79960839c18ad38.png" alt="Image from Gyazo" width="374"/></a> 
+
+表示された初期化処理という記入場所にコードを貼り付けし更新を押します。
+
+<a href="https://gyazo.com/ae374efbb8811de4f32e8262a6db4a43"><img src="https://gyazo.com/ae374efbb8811de4f32e8262a6db4a43.png" alt="Image from Gyazo" width="374"/></a> 
+
+### 2-5. やってみよう
 
 設定が完了したら右上のデプロイボタンをクリック
 
