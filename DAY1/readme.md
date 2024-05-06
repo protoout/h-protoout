@@ -2,7 +2,7 @@
 
 ### オープニング 8:50~9:50
 
-- [オープニング](./op.md)
+- [オープニング](https://docs.google.com/presentation/d/1bzPLWglOwr6XTZnwSMDL107jzDGkJukPtKrnuYMIm1s/edit?usp=sharing)
     - 担当: のびすけ
 
 ### 実装授業 10:00~17:00
