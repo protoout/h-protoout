@@ -84,9 +84,12 @@ obnizの公式オンラインドキュメントには「[obniz Parts Library](ht
 
 <a href="https://gyazo.com/17852495dc721319ae13da119fa852d7"><img src="https://i.gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="646"/></a>
 
-以下のソースコードを読み込み、Node-REDで動かしてみましょう。  
+以下のソースコードを読み込み、初期化ノードを設定することで、Node-REDで動かしてみましょう。  
 obnizのスイッチを押すとLEDが点灯するのを確認してください。  
 ノードの中身は各自で確認してみてください。  
+
+#### 2-4-1. ソースコードの読み取り 
+まず以下のソースコードをNode-REDで読み込みます。
 
 ```json
 [{"id":"5fa9057f.f2e0ac","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":330,"y":340,"wires":[["ebafa559.00b978","e8f7976.0477568"]]},{"id":"ebafa559.00b978","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"obniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n obniz.display.print('LED ON');\r\n obnizParts.led.on();\r\n} else {\r\n // スイッチが押されていない状態\r\n obniz.display.print('LED OFF');\r\n obnizParts.led.off();\r\n}\r\n","x":520,"y":340,"wires":[[]]},{"id":"e8f7976.0477568","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":510,"y":420,"wires":[]}]
@@ -94,70 +97,28 @@ obnizのスイッチを押すとLEDが点灯するのを確認してください
 ▼読み込み結果  
 <a href="https://gyazo.com/cccec7050a56c2e266600819460d4694"><img src="https://i.gyazo.com/cccec7050a56c2e266600819460d4694.png" alt="Image from Gyazo" width="374"/></a>  
 
-▼初期化処理コード  
+#### 2-4-2. 初期化処理コードの設定  
+以下のソースコードをコピーします
 ```javascript
-obniz.display.clear(); // 画面を消去
 obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
 ```
 
-2-5. やってみよう
+先ほど読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークを選択
 
-### 3-1. 完成イメージ
+<a href="https://gyazo.com/70bcaceaeaba113cc79960839c18ad38"><img src="https://gyazo.com/70bcaceaeaba113cc79960839c18ad38.png" alt="Image from Gyazo" width="374"/></a> 
 
-[![Image from Gyazo](https://i.gyazo.com/57d085bc072e86acc5391d4d88beeaee.gif)](https://gyazo.com/57d085bc072e86acc5391d4d88beeaee)
+表示された初期化処理という記入場所にコードを貼り付けし更新を押します。
 
-### 3-2. 使い方ドキュメント
+<a href="https://gyazo.com/ae374efbb8811de4f32e8262a6db4a43"><img src="https://gyazo.com/ae374efbb8811de4f32e8262a6db4a43.png" alt="Image from Gyazo" width="374"/></a> 
 
-詳細な使い方が載っています。後にご自身で確認しておいてください。
+### 2-5. やってみよう
 
-- [スイッチ \- obniz Docs](https://docs.docs.obniz.com/ja/guides/common/switch/)
-- [Display \- obniz Docs](https://docs.docs.obniz.com/ja/guides/common/display/)
+設定が完了したら右上のデプロイボタンをクリック
 
-### 3-3. ソースコードを実行する
+<a href="https://gyazo.com/ef06153ec135eeb14e04ce4885e9369d"><img src="https://gyazo.com/ef06153ec135eeb14e04ce4885e9369d.png" alt="Image from Gyazo" width="374"/></a>  
 
-`02_switch_display.js`というファイルを作成し、  
-次のソースコードを貼り付けていったん保存してください。
+###  完成イメージ
 
-```js:02_switch_display.js
-const Obniz = require('obniz');
-const obniz = new Obniz('Obniz_ID');  // Obniz_IDに自分のIDを入れてください
-
-// obnizがオンラインであることが確認されたら、以下の関数内が自動で実行されます
-obniz.onconnect = async function () {
-  obniz.display.clear(); // 画面を消去
-  obniz.display.print('Hello obniz!');  // Hello obniz! と画面に表示
-
-  // スイッチの反応を常時監視、変化があれば実行します
-  obniz.switch.onchange = function (state) {
-    if (state === 'push') {
-      // 押されたとき
-      console.log('pushed');
-      obniz.display.clear(); // 画面を消去
-      obniz.display.print('pushed');  // pushed と画面に表示
-    } else if (state === 'right') {
-      // 右にスイッチを倒したとき（やさしく）
-      console.log('pressed right');
-      obniz.display.clear(); // 画面を消去
-      obniz.display.print('pressed right');  // pressed right と画面に表示
-    } else if (state === 'left') {
-      // 左にスイッチを倒したとき（やさしく）
-      console.log('pressed left');
-      obniz.display.clear(); // 画面を消去
-      obniz.display.print('pressed left');  // pressed left と画面に表示
-    }
-  }
-}
-```
-
-保存できましたら、2行目に自分のobniz IDに書き換え、再度保存してからNode.jsで実行してみましょう。
-
-```bash
-node 02_switch_display.js
-```
-
-画面に`Hello obniz!`と表示されたら、スイッチをいろいろと動かしてみましょう。  
-`obniz.display ...` はobnizのディスプレイへの表示を行う関数で、  
-`console.log()` はターミナル上への表示を行う関数です。
-
+[![Image from Gyazo](https://gyazo.com/17852495dc721319ae13da119fa852d7.gif)](https://gyazo.com/17852495dc721319ae13da119fa852d7)
 
 

@@ -30,26 +30,76 @@ injectノードをとdebugノードをつなぎ、ボタンを押したら「こ
 
 ## 2. changeノードとswitchノード: 
 
-- changeノード: 
-- switchノード: 
+- changeノード: 左から来たmsgの中身を書き換えて右に渡すノード
+- switchノード: 左から来たmsgの内容によって分岐させるノード
 
 ### やってみよう
-図のようにノードをつなぎ、
 
+1. 図のようにノードをつなぐ。
+
+左から、
+- 3つのinjectノード
+- 1つのswitchノード
+- 3つのchangeノード
+- 1つのdebugノード
 <img src="https://i.gyazo.com/899837fd64bfcfb1b23cd574edbf4775.png" width="500px" alt="Image 3">
 
-1. 3つのinjectノードを配置。それぞれのノードは、payloadにりんご・みかん・バナナと入力。
+2. 3つのinjectノードそれぞれ、payloadにりんご・みかん・バナナと入力。
+
+<img src="https://i.gyazo.com/f09d0a4497cd1b51b19258e6920ffe87.png" width="500px" alt="Node-RED flow example">
 
 
-2. 3つのinjectノードからswitchノードにつなぐ。
+3. switchノードを以下のように設定
 
+<img src="https://i.gyazo.com/a29ba2158516ca45bad7012ac8da348e.png" width="500px" alt="Node-RED flow example">
+
+
+4. 3つのchangeノードをそれぞれ以下のように設定
     - りんごの場合: 赤を出力
     - みかんの場合: オレンジを出力
     - バナナの場合: 黄色を出力
 
+<img src="https://i.gyazo.com/faca776c0dd32f154c65c00b808ac22b.png" width="500px" alt="Node-RED flow example">
 
 3. debugノードにレスポンスを表示する
 
 
 ## 3. templateノード
+
+- templateノード: 左から来たmsgの中身を、任意のテンプレートにはめ込んで右に渡すノード
+
+1. injectノード、templateノード、debugノードの順で配置し図のようにつなぐ
+<img src="https://i.gyazo.com/0d12c5b28edac540a414072b315de952.png" alt="Image Description" width="500"/>
+
+
+2. injectノードを下記のように設定
+<img src="https://i.gyazo.com/d7da0207e61c3a718b3a4931b4867548.png" width="500">
+
+3. templateノードの「テンプレート」に下記をコピペ
+<img src="https://i.gyazo.com/cce969789dc087fda8d9ac8f41f46893.png" width="500" alt="Image 3">
+
+テンプレートに記入する内容
+
+```mustache
+
+こんにちは！現在は{{payload}}です。Node-REDは楽しいですね！
+
+```
+
+4. デプロイし、injectノードのボタンをクリックして下記のように出てくれば成功です！
+<img src="https://i.gyazo.com/a5b4701bb175bc2829453ccbb800f1cb.png
+" alt="Image Description" width="500"/>
+
+
+## 4. functionノード
+JavaScriptをかくことができるノードです。既存のノードでできないときにこのノードを使います。
+
+ビジュアルプログラミングツールは操作が簡単ですが、多くのそういったツールは簡単に扱える一方でできることが限られ、ある程度複雑なことをやろうとすると、「ツールの制約でできない」ということがしばしば起こります。
+
+
+しかし、Node-REDはビジュアルプログラミングをベースとしながらもコードを記述できる自由度があり、既存のノードでは実現できない複雑な処理や特定の要件に対応することが可能です。
+
+Node-REDはシンプルなタスクから複雑なプロジェクトまで幅広いニーズに対応できるプログラミングツールとなっています。
+
+
 

@@ -71,13 +71,23 @@ Node-RED上で起動しているobnizのプログラムを止めるためには�
 今回は事前に作成したものをJSON形式で書き出しておきました。  
 以下の手順で自身のNode-RED上に読み込みを行ってください。  
 
-JSONコードの読み込みは第1回授業の復習です。思い出してやってみましょう。
+
 
 1. 下記のコードをすべてコピーしてください。
 
 ```json
 [{"id":"cb1d6d3a.017e1","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":610,"y":140,"wires":[]},{"id":"11a346f0.5a4c19","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"msg.payload = \"finish\";\nawait obniz.wait(1000); \nobniz.close();\n\nreturn msg;","x":440,"y":140,"wires":[["cb1d6d3a.017e1"]]},{"id":"76e43759.3dff68","type":"inject","z":"d9dba4a1.01f228","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":260,"y":140,"wires":[["11a346f0.5a4c19"]]}]
 ```
+
+Node-REDの右上のメニュー（三本線）から読み込みを選びます。
+
+<a href="https://gyazo.com/5db5478433b4918912ee79ae9e3e515c"><img src="https://gyazo.com/5db5478433b4918912ee79ae9e3e515c.png" alt="Image from Gyazo" width="372"/></a>
+
+      
+
+コピーしたコードを貼り付けます  
+<a href="https://gyazo.com/dcf7feebd57ec66ac012304ee4838e4a"><img src="https://gyazo.com/dcf7feebd57ec66ac012304ee4838e4a.png" alt="Image from Gyazo" width="372"/></a>
+
 
 ▼読み込み結果  
 <a href="https://gyazo.com/ac38f368a5f4fefc730b30c4b6984944"><img src="https://i.gyazo.com/ac38f368a5f4fefc730b30c4b6984944.png" alt="Image from Gyazo" width="579"/></a>
@@ -89,13 +99,9 @@ JSONコードの読み込みは第1回授業の復習です。思い出してや
 2. 表示されたプロパティ画面で、以下のとおり設定し「追加」を押下してください。  
    - obniz ID：自分のobniz ID  
    - device type：obnizBoard 1Y
-   - 初期化処理：以下コード  
+
    
-   ```javascript
-   obniz.display.clear(); // 画面を消去
-   ```
-   
-   <a href="https://gyazo.com/5a850defef827a60867cf1af4194029d"><img src="https://i.gyazo.com/5a850defef827a60867cf1af4194029d.png" alt="Image from Gyazo" width="634"/></a>
+   <a href="https://gyazo.com/c9e7dd06bccd6c2ab9ea6e0d1bd16f53"><img src="https://gyazo.com/c9e7dd06bccd6c2ab9ea6e0d1bd16f53.png" alt="Image from Gyazo" width="634"/></a>
 
 3. obniz-functionノードを編集のプロパティ画面に戻ったら、「obniz」に前工程で設定したobniz IDが設定されていることを確認し、「完了」を押下してください。
    
