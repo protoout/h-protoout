@@ -3,42 +3,11 @@
 
 ### **新しいことをはじめる前に※**  
 
-1つページが終わり次のことをはじめる前に、下記3つの手順をかならず行うようにしてください
-
-**1. タブの無効化**
-
-以降の作業でノードを読み込む前に、今まで作業していたNode-REDの**タブを無効化**し、有効なタブは必ず常に1つのみにしてください。
-ノードが混在すると分かりづらくなりobnizが予期せぬ動作をすることがあります。
-
-<img src="https://i.gyazo.com/48f43c4c3ea95f30a4569f382490cc05.png" width="500">
-
-**2. タブの新規作成**
-1. 「+」をクリック
-<a href="https://gyazo.com/6a6d96fec786b923f70512e1de4b3551"><img src="https://i.gyazo.com/6a6d96fec786b923f70512e1de4b3551.png" alt="Image from Gyazo" width="500"/></a>
-
-2. 新しくできたタブをダブルクリックし、名前をわかりやすく変更する。
-<a href="https://gyazo.com/9392ad19397802dbfb49f53550cc48f5"><img src="https://i.gyazo.com/9392ad19397802dbfb49f53550cc48f5.png" alt="Image from Gyazo" width="500"/></a>
-
-**3. 停止用フローの読み込み**
-1. 下記のコードをすべてコピーしてください。
-
-```json
-[{"id":"cb1d6d3a.017e1","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":610,"y":140,"wires":[]},{"id":"11a346f0.5a4c19","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"msg.payload = \"close\";\nawait obniz.wait(1000); \nobniz.close();\n\nreturn msg;","x":440,"y":140,"wires":[["cb1d6d3a.017e1"]]},{"id":"76e43759.3dff68","type":"inject","z":"d9dba4a1.01f228","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":260,"y":140,"wires":[["11a346f0.5a4c19"]]}]
-```
-
-Node-REDの右上のメニュー（三本線）から読み込みを選びます。
-
-<a href="https://gyazo.com/5db5478433b4918912ee79ae9e3e515c"><img src="https://gyazo.com/5db5478433b4918912ee79ae9e3e515c.png" alt="Image from Gyazo" width="372"/></a>
-
-      
-
-コピーしたコードを貼り付けます  
-<a href="https://gyazo.com/dcf7feebd57ec66ac012304ee4838e4a"><img src="https://gyazo.com/dcf7feebd57ec66ac012304ee4838e4a.png" alt="Image from Gyazo" width="372"/></a>
-
+[新しいことをはじめる前に](../before-start.md)この手順を行いましょう。
 
 ---
 
-## やってみよう
+## 1.やってみよう
 
 <a href="https://gyazo.com/c39a8d243cc56f5e5e788bcc05a68d57"><img src="https://i.gyazo.com/c39a8d243cc56f5e5e788bcc05a68d57.jpg" alt="Image from Gyazo" width="700"/></a>
 
@@ -47,14 +16,14 @@ Node-REDの右上のメニュー（三本線）から読み込みを選びます
 
 保護紙をつまんでまっすぐスピーカーを引っ張ると抜き取ることができます。  
 
-### 5-1. obnizとの接続
+### 1-1. obnizとの接続
 
 <a href="https://i.gyazo.com/76644dcdab7a2bc2b5b7a0149a2667cf"><img src="https://i.gyazo.com/76644dcdab7a2bc2b5b7a0149a2667cf.jpg" alt="Image from Gyazo" width="700"/></a>
 
 obnizの0番と1番の端子に差し込みます。  
 極性（方向）はなく、どちらの向きで差し込んでも大丈夫です。
 
-### 5-2. ドキュメントページから実行
+### 1-2. obnizの公式ページから動作を確認する
 
 次は先に、obnizの公式ドキュメントからサンプルを実行してみましょう。  
 温度センサーのときを思い出しながら、以下のリンクにアクセスして音を鳴らしてみてください。  
@@ -70,7 +39,7 @@ obnizの0番と1番の端子に差し込みます。
 
 > 音楽好きであれば、これ1つで楽器を作るのも楽しいかもしれません！
 
-### 5-3. Node-REDで実行
+### 1-3. Node-REDで実行
 
 以下のフローを読み込み、Node-REDで動かしてみましょう。
 
@@ -92,27 +61,34 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
 
 スイッチを押したり離したりして、スピーカーのコントロールができます。
 
-### 5-4. おまけ
 
-#### 5-4-1. 時報
+## 2.演習
 
-タイムスタンプを押すと時報の音が流れます。
-一定間隔ではなく、何かのタイミング（今回はタイムスタンプ）でobnizを動かしたいためobniz functionノードを使用しています。
+### 2-1. 好きな音を出そう
 
-```json
-[{"id":"e4ca22ab.554c7","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"// 任意の秒数待つことができる関数\n// 参考: https://qiita.com/suin/items/99aa8641d06b5f819656\nconst sleep = (msec) => new Promise(res => setTimeout(res, msec));\n\nobniz.display.clear(); // 画面を消去\n\n// ﾎﾟｯ↓\nobnizParts.Speaker.play(500); await sleep(300); obnizParts.Speaker.stop(); await sleep(700);\n// ﾎﾟｯ↓\nobnizParts.Speaker.play(500); await sleep(300); obnizParts.Speaker.stop(); await sleep(700);\n// ﾎﾟｯ↓\nobnizParts.Speaker.play(500); await sleep(300); obnizParts.Speaker.stop(); await sleep(700);\n// ﾎﾟ~~~ﾝ↑\nobnizParts.Speaker.play(1000); await sleep(1000); obnizParts.Speaker.stop();","x":380,"y":220,"wires":[[]]},{"id":"ffbc3ba0.dbac28","type":"inject","z":"d9dba4a1.01f228","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":180,"y":220,"wires":[["e4ca22ab.554c7"]]}]
-```
-▼読み込み結果  
-<a href="https://gyazo.com/096a9674a9a18e8945951a97b34e0330"><img src="https://i.gyazo.com/096a9674a9a18e8945951a97b34e0330.png" alt="Image from Gyazo" width="374"/></a>  
-#### 5-4-2. 半音ずつ音階を指定して音を鳴らす
-obnizのスイッチを右に倒すと半音ずつ音が上がり、左に倒すと半音ずつさがります。
-音の確認はスイッチを押したときのみできます。
+ブザーから任意の音程を出してみましょう
 
+| 音階 | 周波数[Hz] |
+| ---- | ---------- |
+| ド   | 523        |
+| レ   | 587        |
+| ミ   | 659        |
+| ファ | 698        |
+| ソ   | 784        |
+| ラ   | 880        |
+| シ   | 988        |
+| ド   | 1046       |
+
+
+### 2-2.【応用】 楽器をつくってみよう
+
+ブザーから色々な音を出せる楽器を考えて作ってみましょう。
+
+
+サンプルコード: obnizのスイッチを右に倒すと半音ずつ音が上がり、左に倒すと半音ずつさがります。
 ```json
 [{"id":"d8389f17.33ec7","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nlet freq = context.get('freq')||523; // 周波数用のコンテキストを参照（無ければ初期化）\nlet note_number = context.get('note')||72; // MIDIノート番号// ノート番号用のコンテキストを参照（無ければ初期化）\n\nobniz.display.clear(); // 画面を消去\n\nif (msg.payload === 'push') {\n // スイッチが押されている状態\n obnizParts.Speaker.play(freq); // 音を鳴らす\n} else if (msg.payload === 'right') {\n // 右にスイッチを倒したとき\n if (note_number < 127) note_number++; // ノート番号+1\n freq = Math.round(440 * (2 ** ((note_number - 69) / 12))); // 周波数を再計算\n} else if (msg.payload === 'left') {\n // 左にスイッチを倒したとき\n if (note_number > 0) note_number--; // ノート番号-1\n freq = Math.round(440 * (2 ** ((note_number - 69) / 12))); // 周波数を再計算\n} else {\n // スイッチが押されていない状態\n obnizParts.Speaker.stop(); // 音を停止する\n}\ncontext.set('freq',freq);//現在の周波数をコンテキストへ保存\ncontext.set('note',note_number);//現在のノート番号をコンテキストへ保存\nobniz.display.print(freq); // 現在の周波数を表示\n\nreturn msg;","x":270,"y":280,"wires":[["4855899b.7e8ee8"]]},{"id":"4855899b.7e8ee8","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":450,"y":280,"wires":[]}]
 ```
-▼読み込み結果  
-<a href="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289"><img src="https://i.gyazo.com/c5e4d78c48e149bd3c50c56423a76289.png" alt="Image from Gyazo" width="374"/></a>  
 
 
 ---

@@ -14,7 +14,7 @@
 本来、LEDは必ず抵抗とセットで使うのが電子工作における決まりごとになっていますが、今回は抵抗が内蔵されたLEDを利用するため、これ1つを直接obnizに接続することで制御ができます。
 </details>
 
-### 2-1. まずは光らせてみよう
+### 1-1. まずは光らせてみよう
 
 [![Image from Gyazo](https://i.gyazo.com/4bb4d4af379c881b0f68274869c18505.png)](https://gyazo.com/4bb4d4af379c881b0f68274869c18505)
 
@@ -33,7 +33,7 @@ obnizに電源が入っている状態で、写真のように
 
 obnizのプラス端子とマイナス端子を繋ぐことで通電し、LEDが光るようになります。
 
-### 2-2. obnizで制御できるように接続
+### 1-2. obnizで制御できるように接続
 
 <img src="https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png" alt="Image from Gyazo" width="500"/>
 
@@ -42,7 +42,7 @@ obnizのプラス端子とマイナス端子を繋ぐことで通電し、LEDが
 
 に接続してください。
 
-### 2-3. obnizの公式ページからLEDを試してみる
+### 1-3. obnizの公式ページから動作を確認する
 
 obniz公式のドキュメントには「Parts Library」といって、ブラウザから簡単にパーツを試せるツールが用意されています。 
 まずはNode-REDではなく、obnizの「Parts Library」からLEDを試してみましょう。
@@ -61,7 +61,7 @@ Node.jsでいう`Ctrl + C`と同じです。
 `off`や`blink`なども実行してみましょう！
 
 
-#### 2-3-1. 「Parts Library」から実行できるのはLEDだけじゃないです
+#### 1-3-1. 「Parts Library」から実行できるのはLEDだけじゃないです
 
 「[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts)」に掲載されている電子部品であれば、どれでも簡単に動作確認をすることができます。
 
@@ -73,13 +73,12 @@ Node.jsでいう`Ctrl + C`と同じです。
 新しい電子部品を自分で使ってみるときは、まずこの「obniz Parts Library」に使いたい電子部品と同じか、似たようなものがないかを調べ、できるだけ対応した（掲載されている）部品を使うようにするとすぐに動作確認ができるのでオススメです。
 
 
-### 2-4. Node-REDで実行
+### 1-4. Node-REDで実行
 
 <a href="https://gyazo.com/17852495dc721319ae13da119fa852d7"><img src="https://i.gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="500"/></a>
 
 以下のフローを読み込み、初期化ノードを設定することで、Node-REDで動かしてみましょう。  
-obnizのスイッチを押すとLEDが点灯するのを確認してください。  
-ノードの中身は各自で確認してみてください。  
+  
 
 #### 2-4-1. フローの読み込み
 まず以下のフローをNode-REDで読み込みます。
@@ -90,30 +89,59 @@ obnizのスイッチを押すとLEDが点灯するのを確認してください
 ▼読み込み結果  
 <a href="https://gyazo.com/cccec7050a56c2e266600819460d4694"><img src="https://i.gyazo.com/cccec7050a56c2e266600819460d4694.png" alt="Image from Gyazo" width="374"/></a>  
 
-#### 2-4-2. 初期化処理フローの設定  
-以下のフローをコピーします
+
+
+#### 1-4-2. 初期化処理フローの設定  
+1. 以下のコードをコピーします
+
 ```javascript
 obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
 ```
 
-先ほど読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークを選択
+2. 先ほど読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークを選択
 
 <a href="https://gyazo.com/70bcaceaeaba113cc79960839c18ad38"><img src="https://gyazo.com/70bcaceaeaba113cc79960839c18ad38.png" alt="Image from Gyazo" width="374"/></a> 
 
-表示された初期化処理という記入場所にコードを貼り付けし更新を押します。
+3. 表示された初期化処理という記入場所にコードを貼り付けし更新を押します。
 
 <a href="https://gyazo.com/ae374efbb8811de4f32e8262a6db4a43"><img src="https://gyazo.com/ae374efbb8811de4f32e8262a6db4a43.png" alt="Image from Gyazo" width="374"/></a> 
 
-### 2-5. やってみよう
+### 1-5. 動作をためそう
 
-設定が完了したら右上のデプロイボタンをクリック
+設定が完了したら右上のデプロイボタンをクリック。
+
+obnizのスイッチを押すとLEDが点灯するのを確認してください。  
 
 <a href="https://gyazo.com/ef06153ec135eeb14e04ce4885e9369d"><img src="https://gyazo.com/ef06153ec135eeb14e04ce4885e9369d.png" alt="Image from Gyazo" width="374"/></a>  
+
+
+obnizの接続がうまくいくと、アイコンが緑色になります。
+
+赤の場合はなんらかの原因により接続できていません。
+
+その場合は以下を試してください
+- obniz IDが正しいかチェック
+- obnizの電源は入っているかチェック
+- Node-REDのデプロイを再度行ってみる
+- 他のフローが動いている→ 停止フローをクリックして停止してから試す
+
+<a href="https://gyazo.com/109e14de01eeb38e4bf46f7fd37337c1"><img src="https://i.gyazo.com/109e14de01eeb38e4bf46f7fd37337c1.png" alt="Image from Gyazo" width="665"/></a>
+
+
+その後、obnizのボタンを操作してLEDが点灯するか試してみてください。
+
 
 ###  完成イメージ
 
 [![Image from Gyazo](https://gyazo.com/17852495dc721319ae13da119fa852d7.gif)](https://gyazo.com/17852495dc721319ae13da119fa852d7)
+※ この画像はobniz Board（みなさんの手元にあるobniz 1Yとは異なります）
 
+## 2.演習
+
+### 2-1. obniz functionの中身を書き換えて、pushではなく`right`でLEDがつくように変えてみよう
+
+### 2-2.【応用】 obnizのParts Libraryを参考に、blink();を使って指定時間後にLEDが消えるように変えてみよう
+「[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts/LED/README.md)」
 
 
 ---

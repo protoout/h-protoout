@@ -1,44 +1,12 @@
 # 1. サーボモーター
 
-
 ### **新しいことをはじめる前に※**  
 
-1つページが終わり次のことをはじめる前に、下記3つの手順をかならず行うようにしてください
-
-**1. タブの無効化**
-
-以降の作業でノードを読み込む前に、今まで作業していたNode-REDの**タブを無効化**し、有効なタブは必ず常に1つのみにしてください。
-ノードが混在すると分かりづらくなりobnizが予期せぬ動作をすることがあります。
-
-<img src="https://i.gyazo.com/48f43c4c3ea95f30a4569f382490cc05.png" width="500">
-
-**2. タブの新規作成**
-1. 「+」をクリック
-<a href="https://gyazo.com/6a6d96fec786b923f70512e1de4b3551"><img src="https://i.gyazo.com/6a6d96fec786b923f70512e1de4b3551.png" alt="Image from Gyazo" width="500"/></a>
-
-2. 新しくできたタブをダブルクリックし、名前をわかりやすく変更する。
-<a href="https://gyazo.com/9392ad19397802dbfb49f53550cc48f5"><img src="https://i.gyazo.com/9392ad19397802dbfb49f53550cc48f5.png" alt="Image from Gyazo" width="500"/></a>
-
-**3. 停止用フローの読み込み**
-1. 下記のコードをすべてコピーしてください。
-
-```json
-[{"id":"cb1d6d3a.017e1","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":610,"y":140,"wires":[]},{"id":"11a346f0.5a4c19","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"msg.payload = \"close\";\nawait obniz.wait(1000); \nobniz.close();\n\nreturn msg;","x":440,"y":140,"wires":[["cb1d6d3a.017e1"]]},{"id":"76e43759.3dff68","type":"inject","z":"d9dba4a1.01f228","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":260,"y":140,"wires":[["11a346f0.5a4c19"]]}]
-```
-
-Node-REDの右上のメニュー（三本線）から読み込みを選びます。
-
-<a href="https://gyazo.com/5db5478433b4918912ee79ae9e3e515c"><img src="https://gyazo.com/5db5478433b4918912ee79ae9e3e515c.png" alt="Image from Gyazo" width="372"/></a>
-
-      
-
-コピーしたコードを貼り付けます  
-<a href="https://gyazo.com/dcf7feebd57ec66ac012304ee4838e4a"><img src="https://gyazo.com/dcf7feebd57ec66ac012304ee4838e4a.png" alt="Image from Gyazo" width="372"/></a>
-
+[新しいことをはじめる前に](../before-start.md)この手順を行いましょう。
 
 ---
 
-## やってみよう
+## 1.やってみよう
 
 <a href="https://gyazo.com/d0c9462e27bc17845f5a14bb81080897"><img src="https://i.gyazo.com/d0c9462e27bc17845f5a14bb81080897.jpg" alt="Image from Gyazo" width="700"/></a>
 
@@ -87,7 +55,7 @@ Node-REDの右上のメニュー（三本線）から読み込みを選びます
 
 <a href="https://gyazo.com/c6cce3627ad4d4e6687e740d2fe2c27b"><img src="https://i.gyazo.com/c6cce3627ad4d4e6687e740d2fe2c27b.jpg" alt="Image from Gyazo" width="700"/></a>
 
-### 1-2. ドキュメントページから実行
+### 1-2. obnizの公式ページから動作を確認する
 
 [![Image from Gyazo](https://i.gyazo.com/55e78fe8109fb6fc1aac86d150ed8a8e.gif)](https://gyazo.com/55e78fe8109fb6fc1aac86d150ed8a8e)
 
@@ -125,12 +93,48 @@ Node-REDの右上のメニュー（三本線）から読み込みを選びます
 
 ### 1-3. Node-REDで実行
 
-<!-- [![Image from Gyazo](https://i.gyazo.com/b88f34195bd6883cc732431f49f13c6f.gif)](https://gyazo.com/b88f34195bd6883cc732431f49f13c6f) -->
 
-以下のフローを読み込み、初期化処理フローを設定して動かしてみましょう。
-obnizスイッチを押したとき、左に倒したとき、右に倒したとき、でサーボモーターが動くことを確認してください。
-ノードの中身は各自で確認してみてください。
+下記のフローを読み込み、初期化処理フローを書き換えてください。
 
+60をクリックすると60°、45をクリックすると45°に動きます。
+```json
+[{"id":"780fbd3cec4f7386","type":"obniz-function","z":"8259f0c9196f7d1a","obniz":"","name":"","code":"obnizParts.servo.angle(msg.payload);","x":500,"y":340,"wires":[["f938fb60d2d44145"]]},{"id":"b5fc32ff43ba6939","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"45","payloadType":"num","x":270,"y":280,"wires":[["780fbd3cec4f7386"]]},{"id":"58138d611fd2a950","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"60","payloadType":"num","x":270,"y":400,"wires":[["780fbd3cec4f7386"]]},{"id":"f938fb60d2d44145","type":"debug","z":"8259f0c9196f7d1a","name":"debug 4","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":720,"y":340,"wires":[]}]
+```
+
+▼初期化処理フロー
+```json
+obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
+```
+
+
+<details>
+<summary>heavy output. output voltage is too low when driving highが発生する場合</summary>
+
+[![Image from Gyazo](https://i.gyazo.com/c0c2cc772af37003785f5eb812225a09.png)](https://gyazo.com/c0c2cc772af37003785f5eb812225a09)
+Node.jsでもこのような過電流警告が出ます。`Ctrl+C`でいったん終了させてから再度実行してみましょう。
+</details>
+
+## 2.演習
+
+### 2-1. dashboardのsliderでサーボモーターを動かしてみよう
+
+<a href="https://gyazo.com/f261b9e742a3975185c7e27228692d87"><img src="https://i.gyazo.com/f261b9e742a3975185c7e27228692d87.gif" alt="Image from Gyazo" width="332"/></a>
+
+<a href="https://gyazo.com/82139ba0a827bedfc98d72e4250b4d0e"><img src="https://i.gyazo.com/82139ba0a827bedfc98d72e4250b4d0e.png" alt="Image from Gyazo" width="678"/></a>
+
+
+ヒント：sliderノードのRangeを設定する
+
+
+
+### 2-2.【応用】 obnizのスイッチでサーボモーターを制御してみよう
+
+スイッチでサーボモーターを操作するものを作ってみましょう
+- push: 45°
+- right: 0°
+- left: 180°
+
+#### 参考
 ```json
 [{"id":"fd4d9924.ded5e8","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":350,"y":320,"wires":[["d2cf9b4d.518638","49f8bacd.ab65e4"]]},{"id":"d2cf9b4d.518638","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"let degrees = context.get('degrees')||90; // 角度を保持する変数（無ければ初期化）\r\n\r\nobniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n degrees = 45.0;\r\n} else if (msg.payload === 'right') {\r\n // 右にスイッチを倒したとき\r\n degrees = 0.0;\r\n} else if (msg.payload === 'left') {\r\n // 左にスイッチを倒したとき\r\n degrees = 180.0;\r\n} else {\r\n // スイッチが押されていない状態\r\n degrees = 90.0;\r\n}\r\ncontext.set('degrees',degrees);//現在の角度をコンテキストへ保存\r\n\r\n// ディスプレイに角度を表示\r\nobniz.display.print(`Current: ${degrees} deg`);\r\n// サーボを指定の角度まで動かす\r\nobnizParts.servo.angle(degrees);","x":560,"y":320,"wires":[[]]},{"id":"49f8bacd.ab65e4","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":550,"y":380,"wires":[]}]
 ```
@@ -140,12 +144,6 @@ obnizスイッチを押したとき、左に倒したとき、右に倒したと
 obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
 ```
 
-<details>
-<summary>heavy output. output voltage is too low when driving highが発生する場合</summary>
-
-[![Image from Gyazo](https://i.gyazo.com/c0c2cc772af37003785f5eb812225a09.png)](https://gyazo.com/c0c2cc772af37003785f5eb812225a09)
-Node.jsでもこのような過電流警告が出ます。`Ctrl+C`でいったん終了させてから再度実行してみましょう。
-</details>
 
 
 ---
