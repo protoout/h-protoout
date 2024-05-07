@@ -6,7 +6,7 @@
 
 ## やってみよう
 
-### 1. Obnizのスイッチを押して、Teamsに投稿してみよう
+### 1. obnizのスイッチを押して、Teamsに投稿してみよう
 
 1. injectノード、http requestノード、debugノードを追加し図のようにつなぐ
 <img src="https://i.gyazo.com/49636359e2e0c96b19b0ac4f3083ebdd.png" alt="Image Description" width="500"/>

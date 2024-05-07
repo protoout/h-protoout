@@ -51,9 +51,9 @@ LANケーブル、USB（Universal Serial Bus）、電話回線、HDMI（High-Def
 
 TCP/IPという共通の仕組みで世界中のネットワークを繋いでいるのがインターネットです。
 
-### 5つの階層に分かれるTCP/IPの構造 
+### 4つの階層に分かれるTCP/IPの構造 
 
-<img src= "https://i.gyazo.com/90e20bb6a7b8074cc81b34beb7a60793.png" width="500">
+<img src= "" width="500">
 
 
 アプリケーション層は、コンピューター同士のやりとりをユーザーが利用できる「通信サービス」という形にする役割です。

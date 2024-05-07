@@ -3,11 +3,11 @@
 ## 目標
 GUI（画面で操作できるユーザーインタフェース）にセンサーの値を表示したり、操作したりできるようになる。
 
-## やってみよう
-
-### 完成イメージ
+## 完成イメージ
 
 node-red-dashboardを使い、GUI（画面で操作できるユーザーインタフェース）を作ってみましょう。
+
+## やってみよう
 
 1. 外部ノードを追加。node-red-dashboardをインストール
 
@@ -104,7 +104,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04", { gnd: 0, echo: 1, trigger: 2, vcc: 3
         "z": "35131428dc29ef13",
         "obniz": "a1e02a9aa2adf951",
         "name": "",
-        "code": "msg.payload = \"finish\";\nawait obniz.wait(1000); \nobniz.close();\n\nreturn msg;",
+        "code": "msg.payload = \"close\";\nawait obniz.wait(1000); \nobniz.close();\n\nreturn msg;",
         "x": 420,
         "y": 140,
         "wires": [
@@ -234,3 +234,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04", { gnd: 0, echo: 1, trigger: 2, vcc: 3
 ```
 
 
+
+---
+
+**[◀ 目次ページに戻る](../readme.md)**

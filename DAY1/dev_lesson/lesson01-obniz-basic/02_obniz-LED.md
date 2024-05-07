@@ -1,20 +1,16 @@
 # Lチカしてみよう
 
-**※注意※**  
-- 以降の作業でノードを読み込む前に、Node-REDの**タブを無効化**し、有効なタブは常に1つのみにしてください。ノードが混在すると分かりづらくなるのと、obnizが予期せぬ動作をすることがあるためです。
 
-
-<img src="https://i.gyazo.com/23a5a24bdd5a812ed8baf83ced57b590.jpg" alt="Image from Gyazo" width="700"/>
+<img src="https://i.gyazo.com/23a5a24bdd5a812ed8baf83ced57b590.jpg" alt="Image from Gyazo" width="500"/>
 
 ソフトウェアの世界では一番最初に書く最も簡単なコードのことを「Hello World」と言いますが、ハードウェアの世界ではLEDを点滅させる「**Lチカ**」がそれに相当します。
 
 <details>
 <summary>(補足)LEDと抵抗の切っても切れない関係</summary>
 
-[![Image from Gyazo](https://i.gyazo.com/4affed7a9a893c86880d9ff974562cf4.jpg)](https://gyazo.com/4affed7a9a893c86880d9ff974562cf4)
+<img src="https://i.gyazo.com/4affed7a9a893c86880d9ff974562cf4.jpg" alt="Image from Gyazo" width="500"/>
 
-[![Image from Gyazo](https://i.gyazo.com/1e31004da05e837a9c631917b606c27e.png)](https://gyazo.com/1e31004da05e837a9c631917b606c27e)
-
+<img src="https://i.gyazo.com/1e31004da05e837a9c631917b606c27e.png" alt="Image from Gyazo" width="500"/>
 本来、LEDは必ず抵抗とセットで使うのが電子工作における決まりごとになっていますが、今回は抵抗が内蔵されたLEDを利用するため、これ1つを直接obnizに接続することで制御ができます。
 </details>
 
@@ -39,17 +35,17 @@ obnizのプラス端子とマイナス端子を繋ぐことで通電し、LEDが
 
 ### 2-2. obnizで制御できるように接続
 
-[![Image from Gyazo](https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png)](https://gyazo.com/72603bdeeae78020b1a3625f06044b6d)
+<img src="https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png" alt="Image from Gyazo" width="500"/>
 
 - LEDの長い脚をobnizの0番
 - LEDの短い脚をobnizの1番
 
 に接続してください。
 
-### 2-3. ドキュメントページから実行
+### 2-3. obnizの公式ページからLEDを試してみる
 
-obniz公式のドキュメントから実行してみましょう。  
-以下のリンクにアクセスしてください。
+obniz公式のドキュメントには「Parts Library」といって、ブラウザから簡単にパーツを試せるツールが用意されています。 
+まずはNode-REDではなく、obnizの「Parts Library」からLEDを試してみましょう。
 
 [LED | JS Parts Library | obniz](https://docs.obniz.com/ja/sdk/parts/LED/README.md)
 
@@ -60,14 +56,14 @@ obniz公式のドキュメントから実行してみましょう。
 実行後は右上の`終了`ボタンで処理を止めておきます。  
 Node.jsでいう`Ctrl + C`と同じです。
 
-<a href="https://gyazo.com/f4015ac1a321312a399818c810063ee5"><img src="https://i.gyazo.com/f4015ac1a321312a399818c810063ee5.png" alt="Image from Gyazo" width="1027"/></a>
+<a href="https://gyazo.com/f4015ac1a321312a399818c810063ee5"><img src="https://i.gyazo.com/f4015ac1a321312a399818c810063ee5.png" alt="Image from Gyazo" width="500"/></a>
 
 `off`や`blink`なども実行してみましょう！
 
-#### 2-3-1. ドキュメントから実行できるのはLEDだけじゃないです
 
-obnizの公式オンラインドキュメントには「[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts)」というものがあります。  
-ここに掲載されている電子部品であれば、
+#### 2-3-1. 「Parts Library」から実行できるのはLEDだけじゃないです
+
+「[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts)」に掲載されている電子部品であれば、どれでも簡単に動作確認をすることができます。
 
 1. ドキュメントの指示通りに接続  
 2. 自分のobniz IDを入力  
@@ -76,20 +72,17 @@ obnizの公式オンラインドキュメントには「[obniz Parts Library](ht
 
 新しい電子部品を自分で使ってみるときは、まずこの「obniz Parts Library」に使いたい電子部品と同じか、似たようなものがないかを調べ、できるだけ対応した（掲載されている）部品を使うようにするとすぐに動作確認ができるのでオススメです。
 
-また、この「obniz Parts Library」で動作しているのは**Node.jsではなく通常のブラウザ版JavaScript**です。  
-「**Webブラウザからもobnizが扱える**」ことをぜひ覚えておいてください。
-<!-- （のちの授業で扱っていきます！） -->
 
 ### 2-4. Node-REDで実行
 
-<a href="https://gyazo.com/17852495dc721319ae13da119fa852d7"><img src="https://i.gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="646"/></a>
+<a href="https://gyazo.com/17852495dc721319ae13da119fa852d7"><img src="https://i.gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="500"/></a>
 
-以下のソースコードを読み込み、初期化ノードを設定することで、Node-REDで動かしてみましょう。  
+以下のフローを読み込み、初期化ノードを設定することで、Node-REDで動かしてみましょう。  
 obnizのスイッチを押すとLEDが点灯するのを確認してください。  
 ノードの中身は各自で確認してみてください。  
 
-#### 2-4-1. ソースコードの読み取り 
-まず以下のソースコードをNode-REDで読み込みます。
+#### 2-4-1. フローの読み込み
+まず以下のフローをNode-REDで読み込みます。
 
 ```json
 [{"id":"5fa9057f.f2e0ac","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":330,"y":340,"wires":[["ebafa559.00b978","e8f7976.0477568"]]},{"id":"ebafa559.00b978","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"obniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n obniz.display.print('LED ON');\r\n obnizParts.led.on();\r\n} else {\r\n // スイッチが押されていない状態\r\n obniz.display.print('LED OFF');\r\n obnizParts.led.off();\r\n}\r\n","x":520,"y":340,"wires":[[]]},{"id":"e8f7976.0477568","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":510,"y":420,"wires":[]}]
@@ -97,8 +90,8 @@ obnizのスイッチを押すとLEDが点灯するのを確認してください
 ▼読み込み結果  
 <a href="https://gyazo.com/cccec7050a56c2e266600819460d4694"><img src="https://i.gyazo.com/cccec7050a56c2e266600819460d4694.png" alt="Image from Gyazo" width="374"/></a>  
 
-#### 2-4-2. 初期化処理コードの設定  
-以下のソースコードをコピーします
+#### 2-4-2. 初期化処理フローの設定  
+以下のフローをコピーします
 ```javascript
 obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
 ```
@@ -122,3 +115,7 @@ obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
 [![Image from Gyazo](https://gyazo.com/17852495dc721319ae13da119fa852d7.gif)](https://gyazo.com/17852495dc721319ae13da119fa852d7)
 
 
+
+---
+
+**[◀ 目次ページに戻る](../readme.md)**
