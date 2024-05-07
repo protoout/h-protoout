@@ -16,7 +16,7 @@
 
 ### 1-1. まずは光らせてみよう
 
-[![Image from Gyazo](https://i.gyazo.com/4bb4d4af379c881b0f68274869c18505.png)](https://gyazo.com/4bb4d4af379c881b0f68274869c18505)
+<img src="https://i.gyazo.com/4bb4d4af379c881b0f68274869c18505.png" alt="Image from Gyazo" width="500"/>
 
 脚の長いほうがアノード、短いほうをカソードといいます。  
 
@@ -125,7 +125,7 @@ obnizの接続がうまくいくと、アイコンが緑色になります。
 - Node-REDのデプロイを再度行ってみる
 - 他のフローが動いている→ 停止フローをクリックして停止してから試す
 
-<a href="https://gyazo.com/109e14de01eeb38e4bf46f7fd37337c1"><img src="https://i.gyazo.com/109e14de01eeb38e4bf46f7fd37337c1.png" alt="Image from Gyazo" width="665"/></a>
+<a href="https://gyazo.com/109e14de01eeb38e4bf46f7fd37337c1"><img src="https://i.gyazo.com/109e14de01eeb38e4bf46f7fd37337c1.png" alt="Image from Gyazo" width="500"/></a>
 
 
 その後、obnizのボタンを操作してLEDが点灯するか試してみてください。
@@ -133,15 +133,30 @@ obnizの接続がうまくいくと、アイコンが緑色になります。
 
 ###  完成イメージ
 
-[![Image from Gyazo](https://gyazo.com/17852495dc721319ae13da119fa852d7.gif)](https://gyazo.com/17852495dc721319ae13da119fa852d7)
-※ この画像はobniz Board（みなさんの手元にあるobniz 1Yとは異なります）
+
+<img src="ttps://gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="500"/>
+
+※ この画像はobniz Board（みなさんの手元にあるobniz 1Yとは異なるもの）です。
+
+
 
 ## 2.演習
 
 ### 2-1. obniz functionの中身を書き換えて、pushではなく`right`でLEDがつくように変えてみよう
 
+obnizのスイッチは、押し込むだけでなく左右にカチカチ押すことができ、push, right, leftの3つの状態を取得することが可能です。
+
+obniz functionの中身を書き換えて、右側に倒したときにLEDが光るように書き換えてみましょう。
+
+
+
+
 ### 2-2.【応用】 obnizのParts Libraryを参考に、blink();を使って指定時間後にLEDが消えるように変えてみよう
-「[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts/LED/README.md)」
+
+「[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts/LED/README.md)」の情報を見て、
+
+blink();を使って指定時間後にLEDが消えるように書き換えてみましょう。
+
 
 
 ---
