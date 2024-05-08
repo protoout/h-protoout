@@ -5,11 +5,11 @@ GUI（画面で操作できるユーザーインタフェース）にセンサ�
 
 ## 完成イメージ
 
-node-red-dashboardを使い、GUI（画面で操作できるユーザーインタフェース）を作ってみましょう。
+`@flowfuse/node-red-dashboard`を使い、GUI（画面で操作できるユーザーインタフェース）を作ってみましょう。
 
 ## やってみよう
 
-1. 外部ノードを追加。node-red-dashboardをインストール
+1. 外部ノードを追加。`@flowfuse/node-red-dashboard`をインストール
 
 <img src="https://i.gyazo.com/3239a2d14644f8ceabb85272b301fd0a.png" width="500">
 

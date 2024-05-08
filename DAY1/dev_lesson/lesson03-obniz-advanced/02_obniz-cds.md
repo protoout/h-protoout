@@ -1,6 +1,6 @@
 # 照度センサー（CdS）
 
-### **新しいことをはじめる前に※**  
+### **新しいことをはじめる前に**  
 
 [新しいことをはじめる前に](../before-start.md)この手順を行いましょう。
 ---
@@ -77,23 +77,26 @@ CdSといい、センサー部分にあたる光の強さによって抵抗値�
 
 電圧は高い方から低い方に流れます。
 
-図
+<a href="https://gyazo.com/9ec44fded0ed5822427b5d0c64302a38"><img src="https://i.gyazo.com/9ec44fded0ed5822427b5d0c64302a38.png" alt="Image from Gyazo" width="293"/></a>
+
 同じ抵抗値の抵抗が2つついていると、真ん中の電圧は2.5Vとなります。
 
-図
+<a href="https://gyazo.com/e9b1457f4b341e49e4306c74ce1a7e19"><img src="https://i.gyazo.com/e9b1457f4b341e49e4306c74ce1a7e19.png" alt="Image from Gyazo" width="318"/></a>
+
 抵抗値が異なる抵抗が2つあると、抵抗値の比率に応じた電圧の値となります。
 
 これを分圧といいます。
 
-図
 適切な抵抗値の抵抗器を接続することで、CdSセルから明るさに応じた値を取得することができるようになります。
 
-図
+
 抵抗器をつけずにCdSセルをつなげると、値は0Vになってしまいます。つまり、明るさの値を取ることができません。
+
+<a href="https://gyazo.com/2038b85f0a568a856cfff95634a0b710"><img src="https://i.gyazo.com/2038b85f0a568a856cfff95634a0b710.png" alt="Image from Gyazo" width="310"/></a>
 
 </details>
 
-[![Image from Gyazo](https://i.gyazo.com/d8f564c5f77f0608a31384faae4f9781.jpg)](https://gyazo.com/d8f564c5f77f0608a31384faae4f9781)
+<img src="https://i.gyazo.com/d8f564c5f77f0608a31384faae4f9781.jpg" width="500">
 
 obnizの端子の機能を以下のように設定し、このうち1番端子の「電圧」を計測します。
 
@@ -134,7 +137,7 @@ obniz.io2.output(false); //io2をGNDに
 ### 2-1. 光センサーの値をダッシュボードに表示しよう
 
 
-### 2-2.【応用】 明るくなるとLEDが暗くなり、暗くなるとLEDが明るくなるものをつくってみよう
+### 2-2.【応用】明るさに応じてスピーカーの音が変わるテルミンのような楽器を作ってみよう
 
 
 
