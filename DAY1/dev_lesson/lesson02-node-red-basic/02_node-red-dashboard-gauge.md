@@ -19,6 +19,7 @@ GUI（画面で操作できるユーザーインタフェース）にセンサ�
 - obniz repeatノード
 - gaugeノード
 - debgノード
+
 <img src="https://i.gyazo.com/fea27422b28852f9a9cc0ad484ab780a.png" alt="Image Description" width="500">
 
 3. obniz repeatノードを設定
@@ -45,6 +46,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04", { gnd: 0, echo: 1, trigger: 2, vcc: 3
 ```
 
 5. gaugeノードを編集
+
 <a href="https://gyazo.com/ac305d335cd76b0017278587d161267d"><img src="https://i.gyazo.com/ac305d335cd76b0017278587d161267d.png" alt="Image from Gyazo" width="500"/></a>
 
 

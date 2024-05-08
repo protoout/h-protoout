@@ -13,10 +13,11 @@ Node-REDは左から右にノード（機能をもったパーツのようなも
 
 <a href="https://gyazo.com/6883c8dcfb5b1953207a3dd2aeeaa1d3"><img src="https://i.gyazo.com/6883c8dcfb5b1953207a3dd2aeeaa1d3.png" alt="Image from Gyazo" width="500"/></a>
 
+
 各ノードは、次のノードに、メッセージ（msg）を渡します。
 
 
-イメージでつかもう！▼
+■ イメージでつかもう！
 
 <a href="https://gyazo.com/0375f43aa246a15c6326c709b351e057"><img src="https://i.gyazo.com/0375f43aa246a15c6326c709b351e057.png" alt="Image from Gyazo" width="406"/></a>
 

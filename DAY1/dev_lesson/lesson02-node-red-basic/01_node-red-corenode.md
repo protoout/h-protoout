@@ -32,12 +32,15 @@ Nore-REDでフローを組み立てるときによくつかう、コアノード
 injectノードをとdebugノードをつなぎ、ボタンを押したら「こんにちは」と出るフローを作ってみましょう。
 
 1. 図のようにinjectノードをとdebugノードを配置してつなぐ
+
 <img src="https://i.gyazo.com/39eddfeebf8cb98516014a8c9a6527bb.png" width="500">
 
 2. injectノードを図のように「文字列」に設定
+
 <img src="https://i.gyazo.com/55b213766fe04898d7926cc85d7738d3.png" width="500">
 
 3. 「こんにちは」と記入。
+
 <img src="https://i.gyazo.com/7c2cf66b5e9e404eefaf0bd0cd13b525.png" width="500">
 
 デプロイして挙動を確かめましょう！コンソール
@@ -84,13 +87,16 @@ injectノードをとdebugノードをつなぎ、ボタンを押したら「こ
 - templateノード: 左から来たmsgの中身を、任意のテンプレートにはめ込んで右に渡すノード
 
 1. injectノード、templateノード、debugノードの順で配置し図のようにつなぐ
+
 <img src="https://i.gyazo.com/0d12c5b28edac540a414072b315de952.png" alt="Image Description" width="500"/>
 
 
 2. injectノードを下記のように設定
+
 <img src="https://i.gyazo.com/d7da0207e61c3a718b3a4931b4867548.png" width="500">
 
 3. templateノードの「テンプレート」に下記をコピペ
+
 <img src="https://i.gyazo.com/cce969789dc087fda8d9ac8f41f46893.png" width="500" alt="Image 3">
 
 テンプレートに記入する内容
@@ -102,6 +108,7 @@ injectノードをとdebugノードをつなぎ、ボタンを押したら「こ
 ```
 
 4. デプロイし、injectノードのボタンをクリックして下記のように出てくれば成功です！
+
 <img src="https://i.gyazo.com/a5b4701bb175bc2829453ccbb800f1cb.png
 " alt="Image Description" width="500"/>
 

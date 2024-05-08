@@ -47,7 +47,7 @@ obnizの0番と1番の端子に差し込みます。
 ```json
 [{"id":"9684e82d.a3b478","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nif (msg.payload === 'push') {\n    // 押されたとき\n    obniz.display.clear(); // 画面を消去\n    obniz.display.print('beep!');  // beep! と画面に表示\n    obnizParts.Speaker.play(1000); // 1000Hz で音を鳴らす\n} else {\n    // 何も押していない\n    obniz.display.clear(); // 画面を消去\n    obniz.display.print('silent');  // silent と画面に表示\n    obnizParts.Speaker.stop(); // 音をとめる\n}\n\nreturn msg;","x":270,"y":280,"wires":[["f8e3da0b.78b968"]]},{"id":"f8e3da0b.78b968","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":470,"y":280,"wires":[]}]
 ```
-▼読み込み結果  
+■読み込み結果  
 <a href="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289"><img src="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289.png" alt="Image from Gyazo" width="374"/></a>  
 
 

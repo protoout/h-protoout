@@ -37,7 +37,7 @@
 <img src="https://i.gyazo.com/769140216591bfcf8bcea87f816e0986.gif" alt="Image from Gyazo" width="500"/>
 
 
-### 1-3. Node.jsで実行
+### 1-3. Node-REDで実行
 
 
 <a href="https://gyazo.com/9a751daa7ef2e9f48a710826476781c0"><img src="https://i.gyazo.com/9a751daa7ef2e9f48a710826476781c0.png" alt="Image from Gyazo" width="500"/></a>
