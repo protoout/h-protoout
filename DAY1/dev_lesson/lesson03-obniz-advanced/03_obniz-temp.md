@@ -33,8 +33,8 @@ return msg;
 
 4. 初期化処理コードを書き換える
 
-▼初期化処理コード
-```json
+■ 初期化処理コード
+```javascript
 obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5v"});
 
 ```

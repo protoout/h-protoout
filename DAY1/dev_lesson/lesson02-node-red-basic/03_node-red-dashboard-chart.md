@@ -15,10 +15,10 @@
 <img src="https://i.gyazo.com/1896726e47784073da72a8deeb1af180.png" width="500">
 
 2. chartノードを図のように設定
-<img src="https://i.gyazo.com/b363af667fda806d3f7f93a4934be6c1.png" width="500">
+<a href="https://gyazo.com/01a810d48602480f6db0dcddcb014fba"><img src="https://i.gyazo.com/01a810d48602480f6db0dcddcb014fba.png" alt="Image from Gyazo" width="500"/></a>
 
 3. デプロイし、ダッシュボードを見てみましょう！
-<img src="https://i.gyazo.com/0311284ff98c8065c4040d5540e28166.gif">
+<a href="https://gyazo.com/5171937873c3f1a952edacc9e92b0c2b"><img src="https://i.gyazo.com/5171937873c3f1a952edacc9e92b0c2b.gif" alt="Image from Gyazo" width="500"/></a>
 
 ---
 

@@ -103,8 +103,8 @@
 [{"id":"780fbd3cec4f7386","type":"obniz-function","z":"8259f0c9196f7d1a","obniz":"","name":"","code":"obnizParts.servo.angle(msg.payload);","x":500,"y":340,"wires":[["f938fb60d2d44145"]]},{"id":"b5fc32ff43ba6939","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"45","payloadType":"num","x":270,"y":280,"wires":[["780fbd3cec4f7386"]]},{"id":"58138d611fd2a950","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"60","payloadType":"num","x":270,"y":400,"wires":[["780fbd3cec4f7386"]]},{"id":"f938fb60d2d44145","type":"debug","z":"8259f0c9196f7d1a","name":"debug 4","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":720,"y":340,"wires":[]}]
 ```
 
-▼初期化処理コード
-```json
+■ 初期化処理コード
+```javascript
 obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
 ```
 
@@ -113,7 +113,11 @@ obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
 
 ### 2-1. dashboardのsliderでサーボモーターを動かしてみよう
 
-<a href="https://gyazo.com/f261b9e742a3975185c7e27228692d87"><img src="https://i.gyazo.com/f261b9e742a3975185c7e27228692d87.gif" alt="Image from Gyazo" width="332"/></a>
+<a href="https://gyazo.com/66653335a4b9fe27d71162d8ffb162b4"><img src="https://i.gyazo.com/66653335a4b9fe27d71162d8ffb162b4.gif" alt="Image from Gyazo" width="976"/></a>
+
+sliderの値とサーボモーターが同じ角度になる
+<a href="https://gyazo.com/72dd2c7ecd54a21e09f185ff0eca409d"><img src="https://i.gyazo.com/72dd2c7ecd54a21e09f185ff0eca409d.gif" alt="Image from Gyazo" width="744"/></a>
+
 
 <a href="https://gyazo.com/82139ba0a827bedfc98d72e4250b4d0e"><img src="https://i.gyazo.com/82139ba0a827bedfc98d72e4250b4d0e.png" alt="Image from Gyazo" width="678"/></a>
 
@@ -134,9 +138,11 @@ obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
 [{"id":"fd4d9924.ded5e8","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":350,"y":320,"wires":[["d2cf9b4d.518638","49f8bacd.ab65e4"]]},{"id":"d2cf9b4d.518638","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"let degrees = context.get('degrees')||90; // 角度を保持する変数（無ければ初期化）\r\n\r\nobniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n degrees = 45.0;\r\n} else if (msg.payload === 'right') {\r\n // 右にスイッチを倒したとき\r\n degrees = 0.0;\r\n} else if (msg.payload === 'left') {\r\n // 左にスイッチを倒したとき\r\n degrees = 180.0;\r\n} else {\r\n // スイッチが押されていない状態\r\n degrees = 90.0;\r\n}\r\ncontext.set('degrees',degrees);//現在の角度をコンテキストへ保存\r\n\r\n// ディスプレイに角度を表示\r\nobniz.display.print(`Current: ${degrees} deg`);\r\n// サーボを指定の角度まで動かす\r\nobnizParts.servo.angle(degrees);","x":560,"y":320,"wires":[[]]},{"id":"49f8bacd.ab65e4","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":550,"y":380,"wires":[]}]
 ```
 
-▼初期化処理コード
-```json
+■ 初期化処理コード
+```javascript
+
 obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
+
 ```
 
 

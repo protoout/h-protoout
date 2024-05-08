@@ -49,8 +49,8 @@
 ```
 
 
-▼初期化処理コード
-```json
+■ 初期化処理コード
+```javascript
 
 obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 

@@ -54,8 +54,8 @@ obnizの0番と1番の端子に差し込みます。
 Lチカ同様、読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークから、初期化処理コードを**上書き更新**してください。
 （Lチカの時に張り付けたコードは消してください）
 
-▼初期化処理コード
-```json
+■ 初期化処理コード
+```javascript
 obnizParts.Speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
 ```
 

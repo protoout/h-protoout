@@ -134,7 +134,7 @@ obnizの接続がうまくいくと、アイコンが緑色になります。
 ###  完成イメージ
 
 
-<img src="ttps://gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="500"/>
+<img src="https://gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="500"/>
 
 ※ この画像はobniz Board（みなさんの手元にあるobniz 1Yとは異なるもの）です。
 

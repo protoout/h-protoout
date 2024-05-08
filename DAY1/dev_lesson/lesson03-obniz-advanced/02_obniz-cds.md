@@ -117,8 +117,8 @@ obnizの端子の機能を以下のように設定し、このうち1番端子�
 [{"id":"c091614d.5861c","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"var voltage = await obniz.ad1.getWait();\n\nobniz.display.print(voltage)\nmsg.payload = `changed to ${voltage} v`;\n\nreturn msg;","x":230,"y":240,"wires":[["d7cb4a9f.3a6168"]]},{"id":"d7cb4a9f.3a6168","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":450,"y":240,"wires":[]}]
 ```
 
-▼初期化処理コード
-```json
+■ 初期化処理コード
+```javascript
 obniz.io0.output(true); //io0を5vに
 obniz.io2.output(false); //io2をGNDに
 ```
