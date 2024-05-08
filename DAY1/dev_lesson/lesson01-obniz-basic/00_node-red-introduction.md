@@ -41,6 +41,9 @@ injectノードをとdebugノードをつなぎ、ボタンを押したら「こ
 1. 左のパレットからinjectノードをとdebugノードをドラッグ＆ドロップし、ワークスペースに置く。その後injectノードの右側の点から、debugノード左側の点に線を引っ張る。
 <a href="https://gyazo.com/c67a3af6f4f2c0427547f88747f7c6fc"><img src="https://i.gyazo.com/c67a3af6f4f2c0427547f88747f7c6fc.gif" alt="Image from Gyazo" width="500"/></a>
 
+**ノードを探すときは、パレット上部の検索窓を使うと便利🔎**
+<a href="https://gyazo.com/10c998efdb3275dcab85851d343322bf"><img src="https://i.gyazo.com/10c998efdb3275dcab85851d343322bf.png" alt="Image from Gyazo" width="249"/></a>
+
 <img src="https://i.gyazo.com/39eddfeebf8cb98516014a8c9a6527bb.png" width="500">
 
 2. injectノードを図のように「文字列」に設定
