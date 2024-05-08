@@ -15,6 +15,7 @@
 ### Lesson01 obnizをはじめよう 【10:30〜12:00、13:00〜13:40】
 
 **やること:** obnizの基本的な使い方を学びいくつかの電子パーツを動かす
+
 **ゴール:** 授業のペースに乗って、手を動かして実働させる体験をする
 
 0. [Node-RED: 基本的な操作とフローのつくりかたを学ぼう](./lesson01-obniz-basic/00_node-red-introduction.md)
@@ -27,16 +28,18 @@
 ### Lesson02 Node-REDの基本的な考え方と操作を学ぼう【13:40〜14:30】
 
 **やること:** Node-REDの基礎とフローの作り方を学ぶ
+
 **ゴール:** コピペでなく意図をもってアイデアをプログラムに落とす感覚を掴む
 
-0. [Node-RED: 基本的な操作とフローのつくりかたを学ぼう](./lesson02-node-red-basic/00_node-red-introduction.md) 
 1. [よくつかわれる「コアノード」を学ぼう](./lesson02-node-red-basic/01_node-red-corenode.md)
-2. [ダッシュボードにデータの表示・操作を行おう](./lesson02-node-red-basic/02_node-red-dashboard.md)
+2. [ダッシュボードにデータの表示・操作を行おう「gauge」](./lesson02-node-red-basic/02_node-red-dashboard-gauge.md)
+2. [ダッシュボードにデータの表示・操作を行おう「chart」](./lesson02-node-red-basic/03_node-red-dashboard-chart.md)
 
 
 ### Lesson03 もっといろいろな電子部品を触ってみよう【14:45〜15:15】
 
 **やること:** さらにたくさんの電子パーツを試す
+
 **ゴール:** Lesson01、02で学んだことをつかって新しいことを学ぶ・試す感覚を掴む
 
 0. [もっといろいろな電子部品を触ってみよう](./lesson03-obniz-advanced/readme.md) 
@@ -49,6 +52,7 @@
 
 
 **やること:** 今日学んだことをフル活用して、アイデアを形にしてみましょう。
+
 **ゴール:** 企画と技術の両面を見て簡単なプロダクトに落とし込む
 
 ### Lesson05 [最終制作に向けて](./lesson05-closing.md)【16:30〜17:00】
