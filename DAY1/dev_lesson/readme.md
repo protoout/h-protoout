@@ -42,7 +42,6 @@
 
 **ゴール:** Lesson01、02で学んだことをつかって新しいことを学ぶ・試す感覚を掴む
 
-0. [もっといろいろな電子部品を触ってみよう](./lesson03-obniz-advanced/readme.md) 
 1. [サーボモーター](./lesson03-obniz-advanced/01_obniz-servo.md)
 2. [照度センサー（CdS）](./lesson03-obniz-advanced/02_obniz-cds.md)
 3. [温湿度センサー](./lesson03-obniz-advanced/03_obniz-temp.md)

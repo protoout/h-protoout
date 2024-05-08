@@ -1,4 +1,4 @@
-# 1. サーボモーター
+# サーボモーター
 
 ### **新しいことをはじめる前に**  
 
@@ -8,9 +8,9 @@
 
 ## 1.やってみよう
 
-<a href="https://gyazo.com/d0c9462e27bc17845f5a14bb81080897"><img src="https://i.gyazo.com/d0c9462e27bc17845f5a14bb81080897.jpg" alt="Image from Gyazo" width="700"/></a>
+<a href="https://gyazo.com/d0c9462e27bc17845f5a14bb81080897"><img src="https://i.gyazo.com/d0c9462e27bc17845f5a14bb81080897.jpg" alt="Image from Gyazo" width="500"/></a>
 
-<a href="https://gyazo.com/6e51a64cd7b7ddbf16a7937a8561ee3a"><img src="https://i.gyazo.com/6e51a64cd7b7ddbf16a7937a8561ee3a.jpg" alt="Image from Gyazo" width="700"/></a>
+<a href="https://gyazo.com/6e51a64cd7b7ddbf16a7937a8561ee3a"><img src="https://i.gyazo.com/6e51a64cd7b7ddbf16a7937a8561ee3a.jpg" alt="Image from Gyazo" width="500"/></a>
 
 小規模なIoTでもっともよく使われる「アクチュエーター」の1つです。  
 通常のモーターは電流を流すと回転し続けますが、サーボモーターは特殊な電流を流すことで「軸の位相を任意の角度に変化」させることができます。
@@ -20,7 +20,7 @@
 
 ### 1-1. obnizとの接続
 
-[![Image from Gyazo](https://i.gyazo.com/9e761676b8bffafd044339fdc26199dc.jpg)](https://gyazo.com/9e761676b8bffafd044339fdc26199dc)
+<img src="https://i.gyazo.com/9e761676b8bffafd044339fdc26199dc.jpg" alt="Image from Gyazo" width="500"/>
 
 以下をまず準備してください。
 
@@ -30,7 +30,7 @@
 - ジャンパワイヤ青1本
 - ブレッドボード
 
-[![Image from Gyazo](https://i.gyazo.com/7569445e6968343962bec179da49a56c.jpg)](https://gyazo.com/7569445e6968343962bec179da49a56c)
+<img src="https://i.gyazo.com/7569445e6968343962bec179da49a56c.jpg" width="500"/>
 
 最初はサーボモーターとジャンパワイヤを接続：
 
@@ -38,9 +38,11 @@
 - サーボモーター橙 - ジャンパワイヤ赤
 - サーボモーター黄 - ジャンパワイヤ青
 
-[![Image from Gyazo](https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png)](https://gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461)
 
-[![Image from Gyazo](https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png)](https://gyazo.com/78e42de894f9c2714afc006e27a0f521)
+<img src="https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png" width="500"/>
+
+<img src="https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png" width="500"/>
+
 
 次にジャンパワイヤとobnizを接続：
 
@@ -57,7 +59,7 @@
 
 ### 1-2. obnizの公式ページから動作を確認する
 
-[![Image from Gyazo](https://i.gyazo.com/55e78fe8109fb6fc1aac86d150ed8a8e.gif)](https://gyazo.com/55e78fe8109fb6fc1aac86d150ed8a8e)
+<img src="https://i.gyazo.com/55e78fe8109fb6fc1aac86d150ed8a8e.gif" width="500"/>
 
 [部品を使う：サーボモーターを回す - obniz Docs](https://obniz.com/ja/doc/guides/obniz-starter-guide/parts-library/servo-motor)
 
@@ -66,7 +68,7 @@
 <details>
 <summary>(補足)obniz Boardで過電流警告が出た場合の対策</summary>
 
-[![Image from Gyazo](https://i.gyazo.com/87b44ab127c5f03b63ccce1b9eab71b1.png)](https://gyazo.com/87b44ab127c5f03b63ccce1b9eab71b1)
+<img src="https://i.gyazo.com/87b44ab127c5f03b63ccce1b9eab71b1.png" width="500"/>
 
 > **heavy output. output voltage is too low when driving high** が連続して発生することがあります。  
 > 単純にこのスクリプトを再起動するか、ブレッドボードを経由して配線を行うかすると改善する場合があります。  
@@ -79,7 +81,7 @@
 
 を用意し、以下のように「もともと接続されていた赤いジャンパワイヤ」をobnizから取り外し、2本のジャンパワイヤを使ってブレッドボード上を経由させてobnizの1番ピンに接続してみてください。
 
-[![Image from Gyazo](https://i.gyazo.com/1da8306c935fd4183c9d331a6cad8d0f.png)](https://gyazo.com/1da8306c935fd4183c9d331a6cad8d0f)
+<img src="https://i.gyazo.com/1da8306c935fd4183c9d331a6cad8d0f.png" width="500"/>
 
 </details>
 
@@ -94,25 +96,18 @@
 ### 1-3. Node-REDで実行
 
 
-下記のフローを読み込み、初期化処理フローを書き換えてください。
+下記のフローを読み込み、初期化処理コードを書き換えてください。
 
 60をクリックすると60°、45をクリックすると45°に動きます。
 ```json
 [{"id":"780fbd3cec4f7386","type":"obniz-function","z":"8259f0c9196f7d1a","obniz":"","name":"","code":"obnizParts.servo.angle(msg.payload);","x":500,"y":340,"wires":[["f938fb60d2d44145"]]},{"id":"b5fc32ff43ba6939","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"45","payloadType":"num","x":270,"y":280,"wires":[["780fbd3cec4f7386"]]},{"id":"58138d611fd2a950","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"60","payloadType":"num","x":270,"y":400,"wires":[["780fbd3cec4f7386"]]},{"id":"f938fb60d2d44145","type":"debug","z":"8259f0c9196f7d1a","name":"debug 4","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":720,"y":340,"wires":[]}]
 ```
 
-▼初期化処理フロー
+▼初期化処理コード
 ```json
 obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
 ```
 
-
-<details>
-<summary>heavy output. output voltage is too low when driving highが発生する場合</summary>
-
-[![Image from Gyazo](https://i.gyazo.com/c0c2cc772af37003785f5eb812225a09.png)](https://gyazo.com/c0c2cc772af37003785f5eb812225a09)
-Node.jsでもこのような過電流警告が出ます。`Ctrl+C`でいったん終了させてから再度実行してみましょう。
-</details>
 
 ## 2.演習
 
@@ -139,7 +134,7 @@ Node.jsでもこのような過電流警告が出ます。`Ctrl+C`でいった�
 [{"id":"fd4d9924.ded5e8","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":350,"y":320,"wires":[["d2cf9b4d.518638","49f8bacd.ab65e4"]]},{"id":"d2cf9b4d.518638","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"let degrees = context.get('degrees')||90; // 角度を保持する変数（無ければ初期化）\r\n\r\nobniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n degrees = 45.0;\r\n} else if (msg.payload === 'right') {\r\n // 右にスイッチを倒したとき\r\n degrees = 0.0;\r\n} else if (msg.payload === 'left') {\r\n // 左にスイッチを倒したとき\r\n degrees = 180.0;\r\n} else {\r\n // スイッチが押されていない状態\r\n degrees = 90.0;\r\n}\r\ncontext.set('degrees',degrees);//現在の角度をコンテキストへ保存\r\n\r\n// ディスプレイに角度を表示\r\nobniz.display.print(`Current: ${degrees} deg`);\r\n// サーボを指定の角度まで動かす\r\nobnizParts.servo.angle(degrees);","x":560,"y":320,"wires":[[]]},{"id":"49f8bacd.ab65e4","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":550,"y":380,"wires":[]}]
 ```
 
-▼初期化処理フロー
+▼初期化処理コード
 ```json
 obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
 ```

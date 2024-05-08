@@ -43,13 +43,13 @@
 <a href="https://gyazo.com/9a751daa7ef2e9f48a710826476781c0"><img src="https://i.gyazo.com/9a751daa7ef2e9f48a710826476781c0.png" alt="Image from Gyazo" width="500"/></a>
 
 
-下記のフローを読み込み、初期化処理フローを書き換えてください。
+下記のフローを読み込み、初期化処理コードを書き換えてください。
 ```json
 [{"id":"e42d3d96.12046","type":"obniz-repeat","z":"35131428dc29ef13","obniz":"","name":"","interval":"1000","code":"msg.payload = await obnizParts.hcsr04.measureWait();\n\nreturn msg;","x":250,"y":300,"wires":[["0f3f684d5bf465a7"]]},{"id":"402408dd.31b188","type":"debug","z":"35131428dc29ef13","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":810,"y":300,"wires":[]},{"id":"0f3f684d5bf465a7","type":"template","z":"35131428dc29ef13","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"距離は: {{payload}} ","output":"str","x":540,"y":300,"wires":[["402408dd.31b188"]]}]
 ```
 
 
-▼初期化処理フロー
+▼初期化処理コード
 ```json
 
 obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });

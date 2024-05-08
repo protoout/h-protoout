@@ -1,4 +1,4 @@
-# 3. 温湿度センサー
+# 温湿度センサー
 
 ### **新しいことをはじめる前に**  
 
@@ -31,9 +31,9 @@ return msg;
 
 ```
 
-4. 初期化処理フローを書き換える
+4. 初期化処理コードを書き換える
 
-▼初期化処理フロー
+▼初期化処理コード
 ```json
 obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5v"});
 
@@ -78,14 +78,17 @@ changeノードをつかって、数字のみの値を渡すようにしまし�
 
 
 7. changeノードを配置する
+
 <a href="https://gyazo.com/cb595807ffc979383f0229e15fb991ea"><img src="https://i.gyazo.com/cb595807ffc979383f0229e15fb991ea.png" alt="Image from Gyazo" width="500"/></a>
 
 8. パスをコピーする
+
 <a href="https://gyazo.com/2a4476e189515b7858f6c0bd14e56bbe"><img src="https://i.gyazo.com/2a4476e189515b7858f6c0bd14e56bbe.png" alt="Image from Gyazo" width="312"/></a>
 
 9. changeノードの代入する値を設定する。
 
 msgに変更し、先ほどコピーしたパスを貼り付ける。
+
 <a href="https://gyazo.com/dae413fefd17d4b9911329a1b540db0e"><img src="https://i.gyazo.com/dae413fefd17d4b9911329a1b540db0e.png" alt="Image from Gyazo" width="519"/></a>
 
 

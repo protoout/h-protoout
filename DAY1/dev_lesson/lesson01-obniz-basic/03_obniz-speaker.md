@@ -51,10 +51,10 @@ obnizの0番と1番の端子に差し込みます。
 <a href="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289"><img src="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289.png" alt="Image from Gyazo" width="374"/></a>  
 
 
-Lチカ同様、読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークから、初期化処理フローを**上書き更新**してください。
+Lチカ同様、読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークから、初期化処理コードを**上書き更新**してください。
 （Lチカの時に張り付けたコードは消してください）
 
-▼初期化処理フロー
+▼初期化処理コード
 ```json
 obnizParts.Speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
 ```
