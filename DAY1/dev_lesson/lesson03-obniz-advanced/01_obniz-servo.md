@@ -61,9 +61,9 @@
 
 <img src="https://i.gyazo.com/55e78fe8109fb6fc1aac86d150ed8a8e.gif" width="500"/>
 
-[部品を使う：サーボモーターを回す - obniz Docs](https://obniz.com/ja/doc/guides/obniz-starter-guide/parts-library/servo-motor)
+[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md)
 
-上記にアクセスし、スクロールして一番下にあるサンプルでobniz IDを入力し、`実行`ボタンをクリックしてポップアップを開き、スライダーを動かすことでサーボモーターが連動して動くことを確認してください。
+上記にアクセスし、angle(degree)を試してみましょう。obniz IDを入力し、`実行`ボタンをクリックしてポップアップを開き、サーボモーターが指定した確度で動くことを確認してください。
 
 <details>
 <summary>(補足)obniz Boardで過電流警告が出た場合の対策</summary>
@@ -105,7 +105,9 @@
 
 ■ 初期化処理コード
 ```javascript
+
 obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
+
 ```
 
 
