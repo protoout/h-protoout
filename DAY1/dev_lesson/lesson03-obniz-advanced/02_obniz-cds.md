@@ -18,7 +18,7 @@
 
 
 
-![2019-06-20_19h27_25_result.jpg (441.4 kB)](https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/07ce0f24-6b93-47ed-b668-9153aae9769d.jpg)
+<img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/07ce0f24-6b93-47ed-b668-9153aae9769d.jpg" width="500">
 
 CdSといい、センサー部分にあたる光の強さによって抵抗値が変化します。  
 （**可変抵抗素子**といいます）
@@ -30,7 +30,7 @@ CdSといい、センサー部分にあたる光の強さによって抵抗値�
 
 ### 1. obnizとの接続
 
-![2019-06-20_19h27_30_result.jpg (408.9 kB)](https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/909d0f27-cd78-4386-9c6a-913114b1ae4b.jpg)
+<img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/909d0f27-cd78-4386-9c6a-913114b1ae4b.jpg" width="500">
 
 - CdS:1個
 - 抵抗330Ω:1個
@@ -41,7 +41,7 @@ CdSといい、センサー部分にあたる光の強さによって抵抗値�
 
 以上の6点の部品を準備してください。
 
-[![Image from Gyazo](https://i.gyazo.com/aea0f2684723de82e05699203291fb76.png)](https://gyazo.com/aea0f2684723de82e05699203291fb76)
+<img src="https://i.gyazo.com/aea0f2684723de82e05699203291fb76.png" width="500">
 
 > 抵抗の数値は、カラーコードという色の帯で表現されています。
 > 330Ωは `橙橙茶金` となります。  
@@ -52,9 +52,9 @@ CdSといい、センサー部分にあたる光の強さによって抵抗値�
 
 > CdSセルや抵抗が**含まれない**回路（ショート、短絡とも言います）があると、大量の電流が流れ高温になり、ブレッドボードが溶けたり、火傷の恐れがあります。
 
-![2019-06-20_19h27_51_result.jpg (183.6 kB)](https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/71cb5fbc-3f61-47e3-aaef-9da67ccc290e.jpg)
+<img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/71cb5fbc-3f61-47e3-aaef-9da67ccc290e.jpg" width="500">
 
-![2019-06-20_19h27_46_result.jpg (307.1 kB)](https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/cbd3510a-9c8f-47eb-84c8-b99edb9c8336.jpg)
+<img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/cbd3510a-9c8f-47eb-84c8-b99edb9c8336.jpg" width="500">
 
 まずブレッドボードを横向き（横長方向）にし、CdSと抵抗を配置します。  
 極性はありませんので方向は気にしなくてよいです。
@@ -71,7 +71,7 @@ CdSといい、センサー部分にあたる光の強さによって抵抗値�
 - obniz 1 - ジャンパワイヤ白
 - obniz 2 - ジャンパワイヤ黒
 
-![2019-06-20_19h27_58_result.jpg (298.9 kB)](https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/1b53f227-13cb-4f93-86bc-26d7673c834c.jpg)
+<img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/1b53f227-13cb-4f93-86bc-26d7673c834c.jpg" width="500">
 
 ### 2. 仕組み
 
@@ -122,7 +122,7 @@ obnizの端子の機能を以下のように設定し、このうち1番端子�
 obniz.io0.output(true); //io0を5vに
 obniz.io2.output(false); //io2をGNDに
 ```
-[![Image from Gyazo](https://i.gyazo.com/bd601bf2e7ad760a85064af9dc6ced4f.gif)](https://gyazo.com/bd601bf2e7ad760a85064af9dc6ced4f)
+<img src="https://i.gyazo.com/bd601bf2e7ad760a85064af9dc6ced4f.gif" width="500">
 
 ここで使っている関数はCdS専用のものではなく、端子にかかっている電圧を測定して数値で表現できるような、汎用的なものとなります。  
 
