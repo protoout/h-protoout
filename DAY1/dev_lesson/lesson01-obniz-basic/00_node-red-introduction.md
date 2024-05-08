@@ -11,6 +11,8 @@ Node-REDは基本的に **「左から右に」** がキーワードです！
 Node-REDは左から右にノード（機能をもったパーツのようなもの）を繋ぐことでプログラムを作ります。
 ノードをつないだものを、フローと呼びます。
 
+<a href="https://gyazo.com/6883c8dcfb5b1953207a3dd2aeeaa1d3"><img src="https://i.gyazo.com/6883c8dcfb5b1953207a3dd2aeeaa1d3.png" alt="Image from Gyazo" width="500"/></a>
+
 各ノードは、次のノードに、メッセージ（msg）を渡します。
 
 
