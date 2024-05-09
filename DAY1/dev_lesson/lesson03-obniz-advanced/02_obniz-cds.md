@@ -144,14 +144,8 @@ obniz.io2.output(false); //io2をGNDに
 
 ### 2-2.【応用】明るさに応じてスピーカーの音が変わるテルミンのような楽器を作ってみよう
 
-<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
- padding-bottom: 0;margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https://www.canva.com/design/DAGEsbNx3zQ/dfNIAAmCvwUlzaxZ-Ag6tA/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-  </iframe>
-</div>
-テルミンのような楽器<a href="https://www.canva.com/design/DAGEsbNx3zQ/dfNIAAmCvwUlzaxZ-Ag6tA/watch?utm_content=DAGEsbNx3zQ&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">CdSとスピーカーでテルミンのような楽器をつくる</a>
+
+<a href="https://www.canva.com/design/DAGEsbNx3zQ/cRoX0B8ZLrePf7bGKfsaJw/watch?utm_content=DAGEsbNx3zQ&utm_campaign=designshare&utm_medium=link&utm_source=editor"><img src="https://i.gyazo.com/c3e1716a364bdd83040d7c908f4e4fcd.jpg" alt="Image from Gyazo" width="802"/></a>
 
 #### ヒント: 複数のパーツを同時に使うときのTips
 
