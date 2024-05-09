@@ -9,7 +9,7 @@
 - DAY2 5/16（木）: IoTに触れる / 生成AIに触れる
 - DAY3 5/17（金）: 最終制作と発表
 
-## プロトアウトスタジオ
+## 授業運営: プロトアウトスタジオ
 
 - https://protoout.studio/
 - https://twitter.com/n0bisuke
