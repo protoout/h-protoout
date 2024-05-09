@@ -26,31 +26,8 @@ USBケーブル（標準A - タイプC）を用意して、説明書に書かれ
 
 ## 2. Node-REDの準備
 
-1. Node-REDのURLを開きます。
-
-<img src="https://i.gyazo.com/b916a7377dd7813cfc528dc48a3523b4.png" width="500"></img>
-
-
-2. お名前・メールアドレスを記入してください。
-
-<img src="https://i.gyazo.com/01f5ed6db430b89ebb93f700eb37beb7.png" width="500"></img>
-
-
-3. プロジェクト名と説明を入れてください。
-
-<img src="https://i.gyazo.com/64e93ce8c544a8a0a3a6ff88fc3ce0e9.png" width="500"></img>
-
-
-4. この画面では特に変更なく次へ進めます
-
-<img src="https://i.gyazo.com/2f0f40655ae5c273e8b011098249b4bf.png" width="500"></img>
-
-
-5. こちらも変更なく、暗号化を有効にする・既存のキーをコピーで赤いボタン「プロジェクト作成」をクリックしてください。
-
-<img src="https://i.gyazo.com/b30f036703753f918236a3bc0f9642ef.png" width="500"></img>
-
-
+Node-REDのURLを開き、ポップアップウインドウを消してください。
+<a href="https://gyazo.com/ebad815fc8e0f3179c0af4cba0707dc9"><img src="https://i.gyazo.com/ebad815fc8e0f3179c0af4cba0707dc9.gif" alt="Image from Gyazo" width="1000"/></a>
 
 
 
