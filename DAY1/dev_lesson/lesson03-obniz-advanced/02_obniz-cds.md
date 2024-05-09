@@ -32,6 +32,7 @@ CdSといい、センサー部分にあたる光の強さによって抵抗値�
 
 <img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/909d0f27-cd78-4386-9c6a-913114b1ae4b.jpg" width="500">
 
+
 - CdS:1個
 - 抵抗330Ω:1個
 - ブレッドボード:1個
@@ -46,6 +47,7 @@ CdSといい、センサー部分にあたる光の強さによって抵抗値�
 > 抵抗の数値は、カラーコードという色の帯で表現されています。
 > 330Ωは `橙橙茶金` となります。  
 > このあたりは[抵抗値早見表](http://part.freelab.jp/s_regi_list.html)などを参考にしてみてください。
+
 
 (🚨：火傷の危険があります。注意レベルを上げましょう。)  
 下記の回路をよく見て、接続を間違えないようにしましょう。
@@ -141,6 +143,39 @@ obniz.io2.output(false); //io2をGNDに
 
 
 ### 2-2.【応用】明るさに応じてスピーカーの音が変わるテルミンのような楽器を作ってみよう
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0;margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGEsbNx3zQ/dfNIAAmCvwUlzaxZ-Ag6tA/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+テルミンのような楽器<a href="https://www.canva.com/design/DAGEsbNx3zQ/dfNIAAmCvwUlzaxZ-Ag6tA/watch?utm_content=DAGEsbNx3zQ&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">CdSとスピーカーでテルミンのような楽器をつくる</a>
+
+#### ヒント: 複数のパーツを同時に使うときのTips
+
+<a href="https://gyazo.com/6403c17f9cdf46fd6fd57d09e6490eef"><img src="https://i.gyazo.com/6403c17f9cdf46fd6fd57d09e6490eef.jpg" alt="Image from Gyazo" width="300"/></a>
+
+- obniz 0 - 電圧出力（5V）
+- obniz 1 - 電圧入力（CdSと抵抗の**分圧**）
+- obniz 2 - 電圧出力（0V）
+- obniz 9 - スピーカー
+- obniz 11 - スピーカー
+
+
+
+初期化処理コードの書き方
+
+```javascript
+obniz.io0.output(true); //io0を5vに
+obniz.io2.output(false); //io2をGNDに
+obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 });//9、11番をスピーカーに
+
+```
+
+obnizでは、何番のピンに何を割り当てるかを初期化処理にかいて設定します。
+
 
 
 
