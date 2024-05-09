@@ -85,7 +85,13 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
 ブザーから色々な音を出せる楽器を考えて作ってみましょう。
 
 
-サンプルコード: obnizのスイッチを右に倒すと半音ずつ音が上がり、左に倒すと半音ずつさがります。
+サンプルコード: 
+
+スイッチをpushすると音が出ます。
+obnizのスイッチを右に倒すと半音ずつ音が上がり、左に倒すと半音ずつさがります。
+
+※音が出るのはpushしているときのみ
+
 ```json
 [{"id":"d8389f17.33ec7","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nlet freq = context.get('freq')||523; // 周波数用のコンテキストを参照（無ければ初期化）\nlet note_number = context.get('note')||72; // MIDIノート番号// ノート番号用のコンテキストを参照（無ければ初期化）\n\nobniz.display.clear(); // 画面を消去\n\nif (msg.payload === 'push') {\n // スイッチが押されている状態\n obnizParts.Speaker.play(freq); // 音を鳴らす\n} else if (msg.payload === 'right') {\n // 右にスイッチを倒したとき\n if (note_number < 127) note_number++; // ノート番号+1\n freq = Math.round(440 * (2 ** ((note_number - 69) / 12))); // 周波数を再計算\n} else if (msg.payload === 'left') {\n // 左にスイッチを倒したとき\n if (note_number > 0) note_number--; // ノート番号-1\n freq = Math.round(440 * (2 ** ((note_number - 69) / 12))); // 周波数を再計算\n} else {\n // スイッチが押されていない状態\n obnizParts.Speaker.stop(); // 音を停止する\n}\ncontext.set('freq',freq);//現在の周波数をコンテキストへ保存\ncontext.set('note',note_number);//現在のノート番号をコンテキストへ保存\nobniz.display.print(freq); // 現在の周波数を表示\n\nreturn msg;","x":270,"y":280,"wires":[["4855899b.7e8ee8"]]},{"id":"4855899b.7e8ee8","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":450,"y":280,"wires":[]}]
 ```

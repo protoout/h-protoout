@@ -3,11 +3,17 @@
 
 1つページが終わり次のことをはじめる前に、下記3つの手順をかならず行うようにしてください
 
-**0. 停止用フローで「close」にしてから配線しよう**
+**0. 処理停止用フローのボタンを押し、「close」にしてから配線しよう**
 
-<a href="https://gyazo.com/ac38f368a5f4fefc730b30c4b6984944"><img src="https://i.gyazo.com/ac38f368a5f4fefc730b30c4b6984944.png" alt="Image from Gyazo" width="300"/></a>
+<a href="https://gyazo.com/74b00a3c694301be823dfe63126a9c31"><img src="https://i.gyazo.com/74b00a3c694301be823dfe63126a9c31.png" alt="Image from Gyazo" width="500"/></a>
 
-新しいことをやる前に、処理停止用フローをクリックして前のプログラムを止めてください。
+
+図のようにアイコンが赤くなり「disconnected」と表示が変わり、obnizのディスプレイがQRコードとobniz IDに変われば処理が止まっています。
+
+<a href="https://gyazo.com/d300eaf9ab9bd422b1983b52ba329525"><img src="https://i.gyazo.com/d300eaf9ab9bd422b1983b52ba329525.png" alt="Image from Gyazo" width="500"/></a>
+
+
+新しいことをやる前に、処理停止用フローのボタンをクリックして前のプログラムを止めてください。
 
 きちんと停止しないと、予期せぬ挙動や、電子部品の破損につながります。
 
@@ -39,5 +45,10 @@ Node-REDの右上のメニュー（三本線）から読み込みを選びます
 
       
 
-コピーしたコードを貼り付けます  
+コピーしたコードを貼り付け、読み込みをクリックしてください。
+
 <a href="https://gyazo.com/dcf7feebd57ec66ac012304ee4838e4a"><img src="https://gyazo.com/dcf7feebd57ec66ac012304ee4838e4a.png" alt="Image from Gyazo" width="372"/></a>
+
+このようなポップアップが出ますが来にせず読み込んでOKです。
+
+<a href="https://gyazo.com/9147a258f0fb5ac83b6fe6652c3dd71d"><img src="https://i.gyazo.com/9147a258f0fb5ac83b6fe6652c3dd71d.png" alt="Image from Gyazo" width="451"/></a>

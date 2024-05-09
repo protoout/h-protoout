@@ -54,6 +54,12 @@ obniz公式のドキュメントには「Parts Library」といって、ブラ�
 [![Image from Gyazo](https://i.gyazo.com/eeec7fc6bb18ee0ff4767e8d6d1d2946.png)](https://gyazo.com/eeec7fc6bb18ee0ff4767e8d6d1d2946)
 
 
+確認が終わったら必ず閉じてobnizの処理を止めるようにしてください。
+
+停止しないと他のコードを実行できません。
+
+obnizのディスプレイにQRコードとobniz IDが表示されていれば、処理は停止できています。
+
 <a href="https://gyazo.com/f4015ac1a321312a399818c810063ee5"><img src="https://i.gyazo.com/f4015ac1a321312a399818c810063ee5.png" alt="Image from Gyazo" width="500"/></a>
 
 `off`や`blink`なども実行してみましょう！

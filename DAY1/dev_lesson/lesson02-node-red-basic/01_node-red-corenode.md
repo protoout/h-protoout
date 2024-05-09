@@ -109,8 +109,7 @@ injectノードをとdebugノードをつなぎ、ボタンを押したら「こ
 
 4. デプロイし、injectノードのボタンをクリックして下記のように出てくれば成功です！
 
-<img src="https://i.gyazo.com/a5b4701bb175bc2829453ccbb800f1cb.png
-" alt="Image Description" width="500"/>
+<img src="https://i.gyazo.com/a5b4701bb175bc2829453ccbb800f1cb.png" alt="Image Description" width="500"/>
 
 
 ## 4. functionノード

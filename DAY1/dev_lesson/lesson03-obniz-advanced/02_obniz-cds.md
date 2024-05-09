@@ -119,12 +119,28 @@ obnizの端子の機能を以下のように設定し、このうち1番端子�
 [{"id":"c091614d.5861c","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"var voltage = await obniz.ad1.getWait();\n\nobniz.display.print(voltage)\nmsg.payload = `changed to ${voltage} v`;\n\nreturn msg;","x":230,"y":240,"wires":[["d7cb4a9f.3a6168"]]},{"id":"d7cb4a9f.3a6168","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":450,"y":240,"wires":[]}]
 ```
 
+■ 参考: obniz repeatの中身
+
+```javascript
+
+var voltage = await obniz.ad1.getWait();
+
+obniz.display.print(voltage)
+msg.payload = voltage;
+
+return msg;
+
+```
+
 ■ 初期化処理コード
 ```javascript
 obniz.io0.output(true); //io0を5vに
 obniz.io2.output(false); //io2をGNDに
 ```
 <img src="https://i.gyazo.com/bd601bf2e7ad760a85064af9dc6ced4f.gif" width="500">
+
+※ 写真に映っているコンソールはNode-REDでないため表示が異なります
+
 
 ここで使っている関数はCdS専用のものではなく、端子にかかっている電圧を測定して数値で表現できるような、汎用的なものとなります。  
 
@@ -141,8 +157,23 @@ obniz.io2.output(false); //io2をGNDに
 
 ### 2-1. 光センサーの値をダッシュボードに表示しよう
 
+ダッシュボードを使い、光センサーの値を可視化してみよう
 
-### 2-2.【応用】明るさに応じてスピーカーの音が変わるテルミンのような楽器を作ってみよう
+
+### 2-2. obnizのディスプレイの光センサーの表示を最新の値が1つだけでるようにしてみよう
+
+サンプルコードのままだと、obnizの画面には光センサーの値がたくさん出てきて見づらいです。
+
+最新の値が1つだけでるように変更してみましょう！
+
+<a href="https://gyazo.com/f985b7e5e46ec1bcd7f26c17b022fed7"><img src="https://i.gyazo.com/f985b7e5e46ec1bcd7f26c17b022fed7.png" alt="Image from Gyazo" width="193"/></a>
+
+ヒント：画面の消去 ... `display.clear()`
+
+[ディスプレイについて公式ドキュメント](https://docs.obniz.com/ja/reference/common/display#%E6%8F%8F%E7%94%BB%E9%96%A2%E6%95%B0)
+
+
+### 2-3.【応用】明るさに応じてスピーカーの音が変わるテルミンのような楽器を作ってみよう
 
 
 <a href="https://www.canva.com/design/DAGEsbNx3zQ/cRoX0B8ZLrePf7bGKfsaJw/watch?utm_content=DAGEsbNx3zQ&utm_campaign=designshare&utm_medium=link&utm_source=editor"><img src="https://i.gyazo.com/c3e1716a364bdd83040d7c908f4e4fcd.jpg" alt="Image from Gyazo" width="802"/></a>

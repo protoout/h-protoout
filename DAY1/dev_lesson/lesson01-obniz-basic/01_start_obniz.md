@@ -92,9 +92,10 @@ Node-REDの右上のメニュー（三本線）から読み込みを選びます
 ■ 読み込み結果  
 <a href="https://gyazo.com/ac38f368a5f4fefc730b30c4b6984944"><img src="https://i.gyazo.com/ac38f368a5f4fefc730b30c4b6984944.png" alt="Image from Gyazo" width="300"/></a>
 
-1. `obniz function` ノードをダブルクリックで開き、プロパティの「新規に obniz を追加…」の右に表示されている鉛筆マークを押下してください。
+1. `obniz function` ノードをダブルクリックで開き、プロパティの「新規に obniz を追加…」の右に表示されている「+」ボタンを押下してください。
    
-   <a href="https://gyazo.com/99f8fac66fc13afb07562d3fecdfcfdf"><img src="https://i.gyazo.com/99f8fac66fc13afb07562d3fecdfcfdf.png" alt="Image from Gyazo" width="500"/></a>
+<a href="https://gyazo.com/65b431b68f96a649539a319ce6e82143"><img src="https://i.gyazo.com/65b431b68f96a649539a319ce6e82143.png" alt="Image from Gyazo" width="657"/></a>
+
 
 2. 表示されたプロパティ画面で、以下のとおり設定し「追加」を押下してください。  
    - obniz ID：自分のobniz ID  
