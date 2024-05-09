@@ -2,7 +2,7 @@
 
 ### オープニング 8:50~9:50
 
-- [オープニング](https://docs.google.com/presentation/d/1bzPLWglOwr6XTZnwSMDL107jzDGkJukPtKrnuYMIm1s/edit?usp=sharing)
+- [オープニング](https://www.canva.com/design/DAGEtkz_owM/S1HwowuuQx4AK8oVmpi0HQ/edit)
     - 担当: のびすけ
 
 ### 実装授業 10:00~17:00
@@ -14,4 +14,4 @@
 
 ## 締め 17:00~17:20
 
-(のびすけ、伴野担当)
+[クロージング](https://www.canva.com/design/DAGEwjqI__8/N9VlTDkLUwIRN05xbID3lg/edit)
