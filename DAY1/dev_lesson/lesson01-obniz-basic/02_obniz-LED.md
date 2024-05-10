@@ -42,27 +42,6 @@ obnizのプラス端子とマイナス端子を繋ぐことで通電し、LEDが
 
 に接続してください。
 
-### 1-3. obnizの公式ページから動作を確認する
-
-obniz公式のドキュメントには「Parts Library」といって、ブラウザから簡単にパーツを試せるツールが用意されています。 
-まずはNode-REDではなく、obnizの「Parts Library」からLEDを試してみましょう。
-
-[LED | JS Parts Library | obniz](https://docs.obniz.com/ja/sdk/parts/LED/README.md)
-
-このドキュメントページの中の `on` と書かれているサンプルを探し、自分のobniz IDを入力して `実行` をクリックしてみましょう。
-
-[![Image from Gyazo](https://i.gyazo.com/eeec7fc6bb18ee0ff4767e8d6d1d2946.png)](https://gyazo.com/eeec7fc6bb18ee0ff4767e8d6d1d2946)
-
-
-確認が終わったら必ず閉じてobnizの処理を止めるようにしてください。
-
-停止しないと他のコードを実行できません。
-
-obnizのディスプレイにQRコードとobniz IDが表示されていれば、処理は停止できています。
-
-<a href="https://gyazo.com/f4015ac1a321312a399818c810063ee5"><img src="https://i.gyazo.com/f4015ac1a321312a399818c810063ee5.png" alt="Image from Gyazo" width="500"/></a>
-
-`off`や`blink`なども実行してみましょう！
 
 
 #### 1-3-1. 「Parts Library」から実行できるのはLEDだけじゃないです

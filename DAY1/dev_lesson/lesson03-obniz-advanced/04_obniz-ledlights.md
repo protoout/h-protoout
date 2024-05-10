@@ -9,8 +9,6 @@
 
 ## やってみよう
 
-[Keyestudio_TrafficLightのパーツライブラリ](https://docs.obniz.com/ja/sdk/parts/Keyestudio_TrafficLight/README.md)
-
 
 1. obnizにLED信号モジュールを接続する
 <img src="https://i.gyazo.com/a761dd9b2e6b058523ca062e14adb16d.jpg" alt="img" width= "500">

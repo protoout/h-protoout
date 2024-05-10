@@ -57,13 +57,25 @@
 
 <a href="https://gyazo.com/c6cce3627ad4d4e6687e740d2fe2c27b"><img src="https://i.gyazo.com/c6cce3627ad4d4e6687e740d2fe2c27b.jpg" alt="Image from Gyazo" width="700"/></a>
 
-### 1-2. obnizの公式ページから動作を確認する
 
-<img src="https://i.gyazo.com/55e78fe8109fb6fc1aac86d150ed8a8e.gif" width="500"/>
+### 1-3. Node-REDで実行
 
-[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md)
 
-上記にアクセスし、angle(degree)を試してみましょう。obniz IDを入力し、`実行`ボタンをクリックしてポップアップを開き、サーボモーターが指定した確度で動くことを確認してください。
+下記のフローを読み込み、初期化処理コードを書き換えてください。
+
+60をクリックすると60°、45をクリックすると45°に動きます。
+```json
+[{"id":"780fbd3cec4f7386","type":"obniz-function","z":"8259f0c9196f7d1a","obniz":"","name":"","code":"obnizParts.servo.angle(msg.payload);","x":500,"y":340,"wires":[["f938fb60d2d44145"]]},{"id":"b5fc32ff43ba6939","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"45","payloadType":"num","x":270,"y":280,"wires":[["780fbd3cec4f7386"]]},{"id":"58138d611fd2a950","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"60","payloadType":"num","x":270,"y":400,"wires":[["780fbd3cec4f7386"]]},{"id":"f938fb60d2d44145","type":"debug","z":"8259f0c9196f7d1a","name":"debug 4","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":720,"y":340,"wires":[]}]
+```
+
+■ 初期化処理コード
+```javascript
+
+obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
+
+```
+
+
 
 <details>
 <summary>(補足)obniz Boardで過電流警告が出た場合の対策</summary>
@@ -92,23 +104,6 @@
 これは特定の位置で停止した場合に、細かい振動を起こして完全には停止しない現象です。とくに0度や180度といった端点で発生することが多いため、スクリプトを書くときなどは注意してください。  
 （上記ドキュメントページのスライダーでも、一番端へ動かした場合に発生することがあります）
 </details>
-
-### 1-3. Node-REDで実行
-
-
-下記のフローを読み込み、初期化処理コードを書き換えてください。
-
-60をクリックすると60°、45をクリックすると45°に動きます。
-```json
-[{"id":"780fbd3cec4f7386","type":"obniz-function","z":"8259f0c9196f7d1a","obniz":"","name":"","code":"obnizParts.servo.angle(msg.payload);","x":500,"y":340,"wires":[["f938fb60d2d44145"]]},{"id":"b5fc32ff43ba6939","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"45","payloadType":"num","x":270,"y":280,"wires":[["780fbd3cec4f7386"]]},{"id":"58138d611fd2a950","type":"inject","z":"8259f0c9196f7d1a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"60","payloadType":"num","x":270,"y":400,"wires":[["780fbd3cec4f7386"]]},{"id":"f938fb60d2d44145","type":"debug","z":"8259f0c9196f7d1a","name":"debug 4","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":720,"y":340,"wires":[]}]
-```
-
-■ 初期化処理コード
-```javascript
-
-obnizParts.servo = obniz.wired("ServoMotor",{ gnd:0, vcc:1, signal:2 });
-
-```
 
 
 ## 2.演習

@@ -26,16 +26,6 @@
 - obniz 2 - 超音波Trig
 - obniz 3 - 超音波Vcc
 
-### 1-2. obnizの公式ページから動作を確認する
-
-その他のセンサーと同様に、以下リンクよりドキュメントページにアクセスし、`[await] measureWait()` と書かれているサンプルを実行してみましょう。
-
-[HC-SR04 | JS Parts Library | obniz](https://docs.obniz.com/ja/sdk/parts/HC-SR04/README.md)
-
-<img src="https://i.gyazo.com/68b8327f55c08edd1ef968a7d4d6cf2c.png" alt="Image from Gyazo" width="500"/>
-
-<img src="https://i.gyazo.com/769140216591bfcf8bcea87f816e0986.gif" alt="Image from Gyazo" width="500"/>
-
 
 ### 1-3. Node-REDで実行
 

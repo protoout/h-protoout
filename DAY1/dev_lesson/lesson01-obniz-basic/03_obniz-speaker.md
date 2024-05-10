@@ -23,21 +23,7 @@
 obnizの0番と1番の端子に差し込みます。  
 極性（方向）はなく、どちらの向きで差し込んでも大丈夫です。
 
-### 1-2. obnizの公式ページから動作を確認する
 
-次は先に、obnizの公式ドキュメントからサンプルを実行してみましょう。  
-温度センサーのときを思い出しながら、以下のリンクにアクセスして音を鳴らしてみてください。  
-サンプルは `play(frequency)` と書かれている場所のものを使いましょう。
-
-[Speaker | JS Parts Library | obniz](https://docs.obniz.com/ja/sdk/parts/Speaker/README.md)
-
-![image.png (51.5 kB)](https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/3641c01c-67aa-4150-8074-b4c949fd16c7.png)
-
-サンプルは、ブラウザ上で直接コードを書き換えることができます。  
-1000Hzと書いてある部分を、500や1500など好きな値に変更して再実行し、音が変化していることを確認してください。  
-参考：[音階周波数](https://tomari.org/main/java/oto.html)
-
-> 音楽好きであれば、これ1つで楽器を作るのも楽しいかもしれません！
 
 ### 1-3. Node-REDで実行
 
