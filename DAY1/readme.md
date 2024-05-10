@@ -14,9 +14,11 @@
 
 [クロージング](https://www.canva.com/design/DAGEwjqI__8/N9VlTDkLUwIRN05xbID3lg/edit)
 
-## 環境
+## 環境1
 
-## 環境
+[enebularで環境構築](./dev_lesson/enebular.md)
+
+## 環境2
 
 | URL                                | table |
 |------------------------------------|--------|
@@ -73,3 +75,18 @@
 - https://h24-sub-v4-012.azurewebsites.net/
 
 45くらいまでたてていきます。
+
+## 環境3
+
+関西リージョンに立てたよ。
+
+- https://h24-sarani-sub-v4-01.azurewebsites.net
+- https://h24-sarani-sub-v4-02.azurewebsites.net
+- https://h24-sarani-sub-v4-03.azurewebsites.net
+- https://h24-sarani-sub-v4-04.azurewebsites.net
+- https://h24-sarani-sub-v4-05.azurewebsites.net
+- https://h24-sarani-sub-v4-06.azurewebsites.net
+- https://h24-sarani-sub-v4-07.azurewebsites.net
+- https://h24-sarani-sub-v4-08.azurewebsites.net
+- https://h24-sarani-sub-v4-09.azurewebsites.net
+
