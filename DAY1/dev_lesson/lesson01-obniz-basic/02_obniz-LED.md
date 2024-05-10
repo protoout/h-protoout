@@ -44,18 +44,6 @@ obnizのプラス端子とマイナス端子を繋ぐことで通電し、LEDが
 
 
 
-#### 1-3-1. 「Parts Library」から実行できるのはLEDだけじゃないです
-
-「[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts)」に掲載されている電子部品であれば、どれでも簡単に動作確認をすることができます。
-
-1. ドキュメントの指示通りに接続  
-2. 自分のobniz IDを入力  
-3. `実行`をクリック  
-のわずか3ステップで動作確認を行うことができます。便利！
-
-新しい電子部品を自分で使ってみるときは、まずこの「obniz Parts Library」に使いたい電子部品と同じか、似たようなものがないかを調べ、できるだけ対応した（掲載されている）部品を使うようにするとすぐに動作確認ができるのでオススメです。
-
-
 ### 1-4. Node-REDで実行
 
 <a href="https://gyazo.com/17852495dc721319ae13da119fa852d7"><img src="https://i.gyazo.com/17852495dc721319ae13da119fa852d7.gif" alt="Image from Gyazo" width="500"/></a>
