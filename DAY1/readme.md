@@ -75,3 +75,13 @@
 - https://h24-sub-v4-012.azurewebsites.net/
 
 45くらいまでたてていきます。
+
+## 環境3
+
+関西リージョンに立てたよ。
+
+- https://h24-sarani-sub-v4-01.azurewebsites.net
+- https://h24-sarani-sub-v4-02.azurewebsites.net
+- https://h24-sarani-sub-v4-09.azurewebsites.net
+
+
