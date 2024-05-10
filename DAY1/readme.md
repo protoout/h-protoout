@@ -21,6 +21,8 @@
 - https://h24-sub-v4-03.azurewebsites.net/
 
 ......
-
+- https://h24-sub-v4-010.azurewebsites.net/
+- https://h24-sub-v4-011.azurewebsites.net/
+- https://h24-sub-v4-012.azurewebsites.net/
 
 45くらいまでたてていきます。
