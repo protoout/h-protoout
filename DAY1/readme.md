@@ -14,12 +14,11 @@
 
 [クロージング](https://www.canva.com/design/DAGEwjqI__8/N9VlTDkLUwIRN05xbID3lg/edit)
 
-## 環境2
+## 環境1
 
 [enebularで環境構築](./dev_lesson/enebular.md)
 
-
-## 環境
+## 環境2
 
 | URL                                | table |
 |------------------------------------|--------|
