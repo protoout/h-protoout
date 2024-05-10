@@ -6,4 +6,4 @@
 
 ## トラブルシューティング
 
-- []()
+- [Node-REDで接続切ってるはずなのにプログラムが止まらない時](https://qiita.com/n0bisuke/items/ef82c303f98d62ae9cf4)
