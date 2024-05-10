@@ -13,3 +13,13 @@
 ## 締め 17:00~17:20
 
 [クロージング](https://www.canva.com/design/DAGEwjqI__8/N9VlTDkLUwIRN05xbID3lg/edit)
+
+## 環境
+
+https://h24-sub-v4-01.azurewebsites.net/
+https://h24-sub-v4-02.azurewebsites.net/
+https://h24-sub-v4-03.azurewebsites.net/
+
+...
+
+45くらいまでたてていきます。
