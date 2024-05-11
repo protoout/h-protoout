@@ -1,3 +1,8 @@
+# 電子パーツの使い方一覧
+
+今まで授業内で使った電子パーツや運営側が制作用に準備したパーツの使い方まとめ資料です。
+
+
 ### LED赤、青: 
 <img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
     <details><summary>使い方</summary>
