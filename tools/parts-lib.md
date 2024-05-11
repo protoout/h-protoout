@@ -27,17 +27,6 @@
     使い方
     </details>
 
-
----
-
-### カーボン抵抗: 
-
-<img src="https://akizukidenshi.com/img/goods/L/107812.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
-    <details><summary>使い方</summary>
-    使い方
-    </details>
-
-
 ---
 
 ### 超音波距離センサー: 

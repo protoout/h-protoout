@@ -36,30 +36,9 @@
 [いろいろなAPIを探してみよう](https://github.com/public-apis/public-apis?tab=readme-ov-file)
 
 
-## SharePointに投稿する方法
 
-1. [アイデア投稿サイト](https://protoout.sharepoint.com/sites/h24-protoout-idea-sheet)にアクセス
+## SharePoint上にあるパワーポイントにシートを追加する
 
-
-2. 投稿→記事→空白を選択
-
-<a href="https://gyazo.com/2e4f44d092b1ad44cd73b6e347191383"><img src="https://i.gyazo.com/2e4f44d092b1ad44cd73b6e347191383.gif" alt="Image from Gyazo" width="500"/></a>
-
-
-2. タイトル、テキスト、見出しを挿入する
-
-<a href="https://gyazo.com/5a104f13c865dcb7b0fd2f2264b9adfb"><img src="https://i.gyazo.com/5a104f13c865dcb7b0fd2f2264b9adfb.gif" alt="Image from Gyazo" width="500"/></a>
-
-
-
-3. 画像はドラッグ＆ドロップで挿入できます
-
-<a href="https://gyazo.com/d2028a0c048b15d8d054f1a40b0d94c4"><img src="https://i.gyazo.com/d2028a0c048b15d8d054f1a40b0d94c4.gif" alt="Image from Gyazo" width="500"/></a>
-
-
-4. 動画を挿入する
-
-<a href="https://gyazo.com/895893c3e2a95a56e6a25718577f2c79"><img src="https://i.gyazo.com/895893c3e2a95a56e6a25718577f2c79.gif" alt="Image from Gyazo" width="500"/></a>
 
 
 
