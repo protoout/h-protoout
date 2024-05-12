@@ -248,11 +248,12 @@ obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5
 <img src="https://akizukidenshi.com/img/goods/L/111009.jpg" width="50">, 出典：[秋月電子通商](http://akizukidenshi.com/catalog/g/gM-11009/)
 
 
+<details><summary>使い方をクリックで開く</summary>
+
 超音波を発生し、物体に当たってから跳ね返ってくるまでの時間を計測することで、その対象物体との距離を算出できます。
 距離を測るだけでなく、単純に目の前に人がいるかいないか、といった用途にも使えます。
 
 
-<details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
 <a href="https://gyazo.com/333e9751bf9f478ed388bc6bda7fa691"><img src="https://i.gyazo.com/333e9751bf9f478ed388bc6bda7fa691.jpg" alt="Image from Gyazo" width="500"/></a>
@@ -430,6 +431,13 @@ obniz.io7.output(false); //io7番をGNDに
 サーボモーター茶 - ジャンパワイヤ白
 サーボモーター橙 - ジャンパワイヤ赤
 サーボモーター黄 - ジャンパワイヤ青
+
+<img src="https://i.gyazo.com/7569445e6968343962bec179da49a56c.jpg" width="500"/>
+
+<img src="https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png" width="500"/>
+
+<img src="https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png" width="500"/>
+
 
 2. 使うノードとつなぎ方
 - inject 2つ
