@@ -68,4 +68,4 @@ ChatGPT、Gemini、Claudeそれぞれ、どのような出力になるか比較�
 
 ---
 
-**[◀ 目次ページに戻る](./readme.md)**
+**[◀ 目次ページに戻る](../readme.md)**
