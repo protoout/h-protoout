@@ -38,15 +38,15 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 
 [こちら](../../../tools/prompt-sample.md)のプロンプトをコピーしてChatGPTに投げてみましょう。
 
-<img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
+> <img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
 
 - 1-2. functionノードに生成されたコードを貼る
 
 生成されたコードを貼り付けましょう。
 
-<img src="https://i.gyazo.com/34db1703d27e38783e5edd9913a8d88b.gif" width="400px" />
+> <img src="https://i.gyazo.com/34db1703d27e38783e5edd9913a8d88b.gif" width="400px" />
 
-3. injetcとchangeノードでセンサーのエミュレート処理
+- 1-3. injetcとchangeノードでセンサーのエミュレート処理
 
 本当は`onbiz repeatノード`で試すのが良いですが、接続トラブルがあるとよくないので代わりに`injectノード`と`chageノード`を使ってセンサーデータが送られてきた様子をエミュレート（再現・模倣）します。
 
