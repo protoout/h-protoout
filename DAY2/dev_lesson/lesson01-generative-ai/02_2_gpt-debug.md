@@ -55,61 +55,47 @@ if (sensorValue <= 300) {
 
 > <img src="https://i.gyazo.com/d422299fd554104f0af903c69cd06f79.png" width="400px" />
 
+### 2-3. templateノードの設定
 
-### 今回はこれと同様のことをChatGPTを使って進めてみます。
+次に`templateノード`を設定します。2つの条件分岐にそれぞれ設定してください。
 
-`Function GPTノード`はAPIキーを発行して利用するのですが、授業で全員でやるとトラブルがある可能性もあるので`Function GPTノード`は使わずに、同様のことをChatGPT(GPT3.5)を使ってやってみます。
+> <img src="https://i.gyazo.com/2b59972cc69fecf876e08ae837a47d2f.png" width="400px" />
 
-■前提: ここではChatGPTを使うので、OpenAIのアカウントを作成[ChatGPT](https://chat.openai.com/)を開き、アカウントを作成してください。すでに持っている方はあるもので構いません。
+`templateノード`の上側に設置した方には`近い`などの文言を入れてみましょう。
 
-## 1. ChatGPTでコード生成
+> 例: `300以下！近い！: {{payload}} !`
+> <img src="https://i.gyazo.com/5ea08b5cf73fa128bbc620d040eee29b.gif" width="400px" />
 
-先ほど紹介したプロンプトエンジニアリングの要領で、ChatGPTに役割を与えて精度を上げることができます。
+下側のもう一つの`templateノード`は逆に`遠い`などの文言を入れてみましょう。
 
-Function GPTの内部で使われていたプロンプト（AIへの指示文章）を元にサンプルを作りました。
+> <img src="https://i.gyazo.com/62d9865932a1231c058a13de048e51b1.png" width="400px" />
 
-### 1-1. ChatGPTに聞く
+### 2-4. 試してみる
 
-[こちら](../../../tools/prompt-sample.md)のプロンプトをコピーしてChatGPTに投げてみましょう。
+`chagenノード`の値を変えて`injectノード`を発火させると条件によって違った文言が右側のデバッグコンソールに表示されます。
 
-今回は"距離センサーの値が300以下かどうかで処理を変えてみる"処理を試してみます。
+> <img src="https://i.gyazo.com/56da9a10d216f2c659c952f9489b6350.png" width="400px" />
 
-> <img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
+うまく条件分岐ができていますね。
 
-### 1-2. functionノードに生成されたコードを貼る
+### 2-5. 少しコードを見てみる
 
-生成されたコードを貼り付けましょう。
+ChatGPTに聞くことで、おそらくこんなコードが生成されていると思います。
 
-> <img src="https://i.gyazo.com/34db1703d27e38783e5edd9913a8d88b.gif" width="400px" />
+```js
+// センサーデータを受け取る
+const sensorValue = msg.payload;
 
-### 1-3. injetcとchangeノードでセンサーのエミュレート処理
-
-本当は`onbiz repeatノード`で試すのが良いですが、接続トラブルがあるとよくないので代わりに`injectノード`と`chageノード`を使ってセンサーデータが送られてきた様子をエミュレート（再現・模倣）します。
-
-> <img src="https://i.gyazo.com/08f2c93b8b66e11a0c46261de52bd8b4.png" width="400px" />
-
-`chagenノード`は仮のセンター値として200を設定してみましょう。最後にデバッグノードも接続してください。
-
-> <img src="https://i.gyazo.com/9f49b4e236e858d42b3b24dc57f47db9.gif" width="400px" />
-
-<details><summary>（本当はこんな感じで距離センサーを繋げたいです。進行が早い人はこちらをやってみてください。）クリックで開く</summary>
-
-[超音波距離センサーのマニュアル](../../../tools/parts-manual/sensor/distance.md)を見つつ、`設定ノード`と`obniz repeatノード`を設定しましょう。
-
-> obniz repeatノードの中身の例
-> <img src="https://i.gyazo.com/5c9b728c9189d1d6ef96c29edd30f6a3.png" width="400px" />
-
-> <img src="https://i.gyazo.com/a580726d604b624446a4c2eebd30d6c8.png" width="400px" />
-
-</details>
-
-### 1-4. 試してみる
-
-`injectノード`の左のボタンを押して発火してみましょう。200というセンサーデータが`functionノード`に送られ、内部では **ChatGPTが書いてくれたコードが処理をしてセンサーデータが300以下なのかどうかを判定**してくれています。
-
-<img src="https://i.gyazo.com/b319f1c135968a407ac1f1dae8238e23.png" width="400px" />
-
-画像のようにデバッグノードに200というデータが出れば成功です。
-`chagneノード`の値を400などに変更して再度試すとおそらく反応がないと思います。これは300以下のときのみ反応させたかったので正常な挙動です。
+// センサーの値が300以下かどうかをチェックする
+if (sensorValue <= 300) {
+    // センサーの値が300以下の場合の処理
+    return [msg, null];
+} else {
+    // センサーの値が300より大きい場合の処理
+    return [null, msg];
+}
+```
+`if (sensorValue <= 300)`という箇所でセンサーの値の条件を判定して、
+`return [msg, null];`や`return [null, msg];`の箇所で次の出力先に`msg`という値を送っていそうですね、
 
 **[◀ 目次ページに戻る](../readme.md)**
