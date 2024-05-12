@@ -552,6 +552,8 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:5, gnd:6 });
 [obnizの公式ドキュメント: ](https://docs.obniz.com/ja/sdk/parts/Speaker/README.md)
 
 - 音階の表
+
+
 | 音階 | 周波数[Hz] |
 | ---- | ---------- |
 | ド   | 523        |
