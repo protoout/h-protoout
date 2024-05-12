@@ -1,6 +1,5 @@
 # チュートリアル1: サーボモーターでピョコピョコ連続で動かす
 
-
 30度と90度を繰り返してぴょこぴょこうごかすものをつくります。
 
 ### 完成イメージ
@@ -10,12 +9,13 @@
 
 ### やってみよう
 
-
 #### 1. [電子パーツの使い方一覧](../parts-manual/servo.md)を参考に、injectノードのボタンをクリックするとサーボモーターが動き、コンソールに現在の角度が表示される状態まで作ってみます。
 
 マニュアルでは`chagneノード`を使っていましたが、こちらでは`ingectノード`に値を入れてみます。
 
 <a href="https://gyazo.com/386a1d891e3183372b7ee03d7ad49881"><img src="https://i.gyazo.com/386a1d891e3183372b7ee03d7ad49881.gif" alt="Image from Gyazo" width="500"/></a>
+
+msg.payloadの項目を数値にして画像のように設定してみましょう。
 
 <a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec"><img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
 
