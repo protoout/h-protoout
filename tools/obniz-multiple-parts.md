@@ -22,12 +22,13 @@ obnizでは、何番のピンに何を割り当てるかを初期化処理にか
 
 
 ```javascript
-obniz.io0.output(true); //io0を5vに
-obniz.io2.output(false); //io2をGNDに
+obniz.io0.output(true); //電圧出力（5V）用。io0を5vに
+obniz.io2.output(false); //電圧出力（0V）用。io2をGNDに
 obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 });//9、11番をスピーカーに
 
 ```
 
+
 ---
 
-**[◀ 目次ページに戻る](../readme.md)**
+**[◀ 目次ページに戻る](./readme.md)**
