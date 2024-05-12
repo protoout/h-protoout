@@ -34,15 +34,35 @@
 
 Function GPTの内部で使われていたプロンプト（AIへの指示文章）を元にサンプルを作りました。
 
-- ChatGPTに聞く
+- 1. ChatGPTに聞く
 
 [こちら](../../../tools/prompt-sample.md)のプロンプトをコピーしてChatGPTに投げてみましょう。
 
 <img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
 
-- functionノードに生成されたコードを貼る
+- 2. functionノードに生成されたコードを貼る
+
+生成されたコードを貼り付けましょう。
 
 <img src="https://i.gyazo.com/34db1703d27e38783e5edd9913a8d88b.gif" width="400px" />
+
+- 3. injetcとchangeノードでセンサーのエミュレート処理
+
+本当は`onbiz repeatノード`で試すのが良いですが、接続トラブルがあるとよくないので代わりに`injectノード`と`chageノード`を使ってセンサーデータが送られてきた様子をエミュレート（再現・模倣）します。
+
+> <img src="https://i.gyazo.com/08f2c93b8b66e11a0c46261de52bd8b4.png" width="400px" />
+
+
+<details><summary>（本当はこんな感じで距離センサーを繋げたいです。進行が早い人はこちらをやってみてください。）クリックで開く</summary>
+
+
+> <img src="https://i.gyazo.com/c0f74aadd93884c8d5e4c5d2b273cf79.png" width="400px" />
+
+> <img src="https://i.gyazo.com/c0f74aadd93884c8d5e4c5d2b273cf79.png">
+
+</details>
+
+<img src="https://i.gyazo.com/b319f1c135968a407ac1f1dae8238e23.png" width="400px" />
 
 
 **[◀ 目次ページに戻る](../readme.md)**
