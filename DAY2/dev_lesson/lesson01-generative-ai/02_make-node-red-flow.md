@@ -2,9 +2,7 @@
 
 生成AIを使ってコードを書いてみましょう。
 
-今回このクラスではNode-REDを使ったローコード開発をしています。
-
-Node-REDにインポートできる形式で、Node-REDのフローをかいてもらうという使い方ができます。
+今回このクラスではNode-REDを使ったローコード開発をしていますが、ChatGPTを活用して開発を便利にすることができます。
 
 ## 0. Function GPTノードの紹介とやること （紹介のみ）
 
@@ -38,6 +36,9 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 
 [こちら](../../../tools/prompt-sample.md)のプロンプトをコピーしてChatGPTに投げてみましょう。
 
+<img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
+
+<img src="" width="400px" />
 
 
 
