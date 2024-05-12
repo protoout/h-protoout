@@ -6,10 +6,24 @@
 
 Node-REDにインポートできる形式で、Node-REDのフローをかいてもらうという使い方ができます。
 
-## 紹介のみ. Function GPTノード
+## 紹介のみ - Function GPTノード
 
+[Function GPT](https://github.com/FlowFuse/node-red-function-gpt)というChatGPT(GPT)を組み込んだノードがあります。
+> <img src="https://i.gyazo.com/ac8b8206e2ad031d7295ead93b479228.png" width="200px">
 > <img src="https://i.gyazo.com/b5c4e6d65c879e267ed03d335a382f45.gif" width="450px" />
 
+このノードを使うと日本語で指示を出してFunctionノードで内部で使えるコード（JavaScriptというプログラミング言語）を生成してくれます。
+
+日本語で指示を出す -> プログラムが生成される -> Node-REDで実行
+（絵が欲しい）
+
+という流れで日本語で指示を出すと翻訳してくれます。
+
+生成されたコードが正しく動作するかどうかですが、小さな処理単位だとかなりよい精度で動いてくれます。
+
+### 今回はこれと同様のことをChatGPTを使って進めてみます。
+
+Function GPTノードはAPIキーを発行して利用するのですが、授業で全員でやるとトラブルがある可能性もあるので同様のことを
 
 ## 0. 前提
 
