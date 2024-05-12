@@ -15,6 +15,8 @@
 3. [ネットワーク](./dev_lesson/lesson00-iot-overview/03-network.md)
 4. [クイズ](./dev_lesson/lesson00-iot-overview/04-quiz.md)
 
+ネットワークまで読んでもらえると嬉しいですが、概要まででも大丈夫です。
+
 ## Node-REDのトラブルシューティング
 
 ## obniz Partsライブラリ
