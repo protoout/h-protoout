@@ -31,6 +31,7 @@
 1つ目: payloadの設定を「真偽」、trueにする
 2つ目: payloadの設定を「真偽」、falseにする
 
+<a href="https://gyazo.com/aed583d3a1b5403d933445538a73f7f8"><img src="https://i.gyazo.com/aed583d3a1b5403d933445538a73f7f8.gif" alt="Image from Gyazo" width="500"/></a>
 
 - obniz functionのコード
 
