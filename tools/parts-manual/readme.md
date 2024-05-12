@@ -6,7 +6,9 @@
 
 ## LED赤、青: 
 
-<img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g112519/)
+<img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">
+
+> 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g112519/)
 
 - 使い方は[こちら](./led.md)
 
@@ -15,6 +17,8 @@
 <img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g108761/)
 
 - 使い方は[こちら](./servo.md.md)
+
+(以下もページ分けと編集お願いできるとうれしいです。)
 
 ---
 
