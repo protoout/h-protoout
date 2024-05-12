@@ -96,9 +96,11 @@ if (sensorValue <= 300) {
 }
 ```
 `if (sensorValue <= 300)`という箇所でセンサーの値の条件を判定して、
-`return [msg, null];`や`return [null, msg];`の箇所で次の出力先に`msg`という値を送っていそうですね、
+`return [msg, null];`や`return [null, msg];`の箇所で次の出力先に`msg`という値を送っていそうですね。
 
 ### 2-6. (セーブポイント)
+
+ここまでの手順で詰まってしまった人はこちらのここまでの完成版フローを読み込んでみましょう。
 
 ```json
 [{"id":"949bcb5b767d631e","type":"function","z":"dcb0e5384efb4848","name":"300で条件分岐","func":"// センサーデータを受け取る\nconst sensorValue = msg.payload;\n\n// センサーの値が300以下かどうかをチェックする\nif (sensorValue <= 300) {\n    // センサーの値が300以下の場合の処理\n    return [msg, null];\n} else {\n    // センサーの値が300より大きい場合の処理\n    return [null, msg];\n}","outputs":2,"timeout":0,"noerr":0,"initialize":"","finalize":"","libs":[],"x":380,"y":140,"wires":[["6c9a26c5a057232e"],["ab70f60582030ae5"]]},{"id":"fb5e5fa71ac43ccd","type":"inject","z":"dcb0e5384efb4848","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":140,"y":60,"wires":[["f654e83f62a59fa0"]]},{"id":"f654e83f62a59fa0","type":"change","z":"dcb0e5384efb4848","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"200","tot":"num"}],"action":"","property":"","from":"","to":"","reg":false,"x":260,"y":100,"wires":[["949bcb5b767d631e"]]},{"id":"58e4d6e5a85497f0","type":"debug","z":"dcb0e5384efb4848","name":"debug 12","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":700,"y":180,"wires":[]},{"id":"6c9a26c5a057232e","type":"template","z":"dcb0e5384efb4848","name":"近い","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"300以下！近い！: {{payload}} !","output":"str","x":530,"y":140,"wires":[["58e4d6e5a85497f0"]]},{"id":"ab70f60582030ae5","type":"template","z":"dcb0e5384efb4848","name":"遠い","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"300より大きい {{payload}} 遠い!","output":"str","x":530,"y":180,"wires":[["58e4d6e5a85497f0"]]}]
