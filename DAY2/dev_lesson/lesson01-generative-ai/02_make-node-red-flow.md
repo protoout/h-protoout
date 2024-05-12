@@ -6,7 +6,7 @@
 
 Node-REDにインポートできる形式で、Node-REDのフローをかいてもらうという使い方ができます。
 
-## 紹介のみ - Function GPTノード
+## 0. Function GPTノードの紹介とやること （紹介のみ）
 
 [Function GPT](https://github.com/FlowFuse/node-red-function-gpt)というChatGPT(GPT)を組み込んだノードがあります。
 
@@ -26,11 +26,13 @@ Node-REDにインポートできる形式で、Node-REDのフローをかいて�
 
 `Function GPTノード`はAPIキーを発行して利用するのですが、授業で全員でやるとトラブルがある可能性もあるので`Function GPTノード`は使わずに、同様のことをChatGPT(GPT3.5)を使ってやってみます。
 
-## 0. 前提
+### 前提
 
 ここではChatGPTを使うので、OpenAIのアカウントを作成[ChatGPT](https://chat.openai.com/)を開き、アカウントを作成してください。すでに持っている方はあるもので構いません。
 
-## 1. 
+## 1. ChatGPTでコード生成
+
+
 
 2. プロンプトを書き、ChatGPT/Gemini/Claudeのいずれかにフローを生成してもらう
 
