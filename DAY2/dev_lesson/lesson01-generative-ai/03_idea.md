@@ -16,6 +16,8 @@ https://www.instagram.com/tv/C63m_lVSkf6/?igsh=MWxkbXY1OGg0cHVwYg==
 
 ## 3. やりたいこととの結びつけ
 
-
+- Node-RED
+- 距離センサー
+- 
 
 
