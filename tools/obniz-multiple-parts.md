@@ -7,9 +7,9 @@
 
 <a href="https://gyazo.com/6403c17f9cdf46fd6fd57d09e6490eef"><img src="https://i.gyazo.com/6403c17f9cdf46fd6fd57d09e6490eef.jpg" alt="Image from Gyazo" width="300"/></a>
 
-- obniz 0 - 電圧出力（5V）（写真 ジャンパワイヤ赤）
-- obniz 1 - 電圧入力 （写真 ジャンパワイヤ白）
-- obniz 2 - 電圧出力（0V）（写真 ジャンパワイヤ黒）
+- obniz 0 - 電圧出力（5V） 
+- obniz 1 - 電圧入力  
+- obniz 2 - 電圧出力（0V） 
 - obniz 9 - スピーカー
 - obniz 11 - スピーカー
 
@@ -28,3 +28,6 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 });//9、11番を�
 
 ```
 
+---
+
+**[◀ 目次ページに戻る](../readme.md)**

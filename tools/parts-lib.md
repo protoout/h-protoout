@@ -142,7 +142,7 @@ injectionノードでpayloadの設定を「green」「yellow」に変更する�
 
 ---
 
-### 温湿度センサ: 
+### 温湿度センサー: 
 
 <img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g116732/)
 
@@ -285,8 +285,6 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 ■ 参考資料
 [obnizの公式ドキュメント: 距離センサー](https://docs.obniz.com/ja/guides/obniz-starter-kit/use-parts/distance)
 [取得した数値データを四捨五入したい: 計算処理いろいろ](./math-data.md)
-[取得したデータをテンプレートにはめ込んで表示したい](./math-data.md)
-
 
 </details>
 
@@ -296,7 +294,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 
 ### 照度センサー(CdS): 
 
-<img src="https://akizukidenshi.com/img/goods/L/100110.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
+<img src="https://akizukidenshi.com/img/goods/L/100110.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g100110/)
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
@@ -334,7 +332,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 
 ### サーボモーター: 
 
-<img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
+<img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g108761/)
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
@@ -374,7 +372,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 
 ### スピーカー（ブザー）: 
 
-<img src="https://akizukidenshi.com/img/goods/L/104118.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
+<img src="https://akizukidenshi.com/img/goods/L/104118.jpg" width="50">, 出典：[秋月電子通商](http://akizukidenshi.com/catalog/g/gP-04118/)
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
@@ -491,3 +489,5 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 });
 
 
 ---
+
+**[◀ 目次ページに戻る](../readme.md)**
