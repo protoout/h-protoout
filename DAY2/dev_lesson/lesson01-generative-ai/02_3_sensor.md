@@ -81,6 +81,11 @@ await obniz.wait(1000); //1秒待つ
 obnizParts.Speaker.stop(); // 音を止める
 ```
 
+### 3-3. 実際に動かしてみる
+
+> [<img src="https://i.gyazo.com/b8d54909da2960018e032e9b4df4e863.png" width="400px" />](https://twitter.com/n0bisuke/status/1789748155984052702)
+
+
 ### 3-
 こんな感じでステップを踏んでフローを変えてきたイメージがなんとなく掴めていると嬉しいです。
 
