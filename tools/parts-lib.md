@@ -7,7 +7,7 @@
 
 ### LED赤、青: 
 
-<img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
+<img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g112519/)
 
 <details><summary>使い方をクリックで開く</summary>
 
@@ -144,7 +144,7 @@ injectionノードでpayloadの設定を「green」「yellow」に変更する�
 
 ### 温湿度センサ: 
 
-<img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
+<img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g116732/)
 
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
@@ -218,7 +218,7 @@ obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5
 
 ### 超音波距離センサー: 
 
-<img src="https://akizukidenshi.com/img/goods/L/111009.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
+<img src="https://akizukidenshi.com/img/goods/L/111009.jpg" width="50">, 出典：[秋月電子通商](http://akizukidenshi.com/catalog/g/gM-11009/)
 
 
 超音波を発生し、物体に当たってから跳ね返ってくるまでの時間を計測することで、その対象物体との距離を算出できます。
