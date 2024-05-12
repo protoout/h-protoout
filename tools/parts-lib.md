@@ -523,11 +523,14 @@ obnizParts.speaker.stop(); // 音を止める
 5番と6番に接続する例です。
 
 ```javascript
-obnizParts.Speaker = obniz.wired("Speaker",{ signal:5, gnd:6 });
+obnizParts.Speaker = obniz.wired("Speaker",{ signal:5, gnd:6 }); 
 ```
 
 
 5. 結果
+
+1000Hzの音が鳴り、1秒すると止まる。
+
 
 ■ 参考資料
 [obnizの公式ドキュメント: ](https://docs.obniz.com/ja/sdk/parts/Speaker/README.md)
@@ -563,15 +566,18 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 3. injectノードを以下のように設定
 
 「文字列」に設定し、
+
 <img src="https://i.gyazo.com/55b213766fe04898d7926cc85d7738d3.png" width="500">
 
 テキスト`Hello!`を入力してください。
+
 <a href="https://gyazo.com/31c4c8e6af60165ba8017d2a9ade296b"><img src="https://i.gyazo.com/31c4c8e6af60165ba8017d2a9ade296b.png" alt="Image from Gyazo" width="500"/></a>
 
 
 5. 結果
 
 injectionノードをクリックしてディスプレイにテキストが出ればOKです。
+
 <a href="https://gyazo.com/03c351fabc467739a062d523f9a2622d"><img src="https://i.gyazo.com/03c351fabc467739a062d523f9a2622d.jpg" alt="Image from Gyazo" width="500"/></a>
 
 ■ 参考資料
@@ -608,6 +614,8 @@ return msg; //msg.payloadを出力
 
 
 3. 結果
+
+コンソールにスイッチの状態が出力されるのを確認してください。
 
 - 押していないとき: none
 - 押したとき: push
