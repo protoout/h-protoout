@@ -1,4 +1,4 @@
-# L01-生成AI: 生成AIと一緒にNode-RED開発
+# L01-生成AI: ChatGPTと一緒にNode-REDでIoT開発 1/3
 
 生成AIを使ってコードを書いてみましょう。
 
