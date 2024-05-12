@@ -1,4 +1,4 @@
-# マニュアル LED赤、青: 
+# マニュアル: LED赤、青
 
 <img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g112519/)
 
