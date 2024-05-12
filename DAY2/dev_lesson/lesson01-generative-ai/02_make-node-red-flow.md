@@ -6,10 +6,11 @@
 
 Node-REDにインポートできる形式で、Node-REDのフローをかいてもらうという使い方ができます。
 
+## 0. 前提
 
+ここではChatGPTを使うので、OpenAIのアカウントを作成[ChatGPT](https://chat.openai.com/)を開き、アカウントを作成してください。すでに持っている方はあるもので構いません。
 
-1. OpenAIのアカウントを作成
-[ChatGPT](https://chat.openai.com/)を開き、アカウントを作成してください。すでに持っている方はあるもので構いません。
+## 1.
 
 2. プロンプトを書き、ChatGPT/Gemini/Claudeのいずれかにフローを生成してもらう
 
