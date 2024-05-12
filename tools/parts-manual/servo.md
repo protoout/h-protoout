@@ -27,6 +27,8 @@
 - サーボモーター橙 - ジャンパワイヤ赤
 - サーボモーター黄 - ジャンパワイヤ青
 
+真似して配線してみてください。
+
 <img src="https://i.gyazo.com/7569445e6968343962bec179da49a56c.jpg" width="500"/>
 
 <img src="https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png" width="500"/>
