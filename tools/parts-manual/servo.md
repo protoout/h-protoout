@@ -28,7 +28,7 @@
 <img src="https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png" width="500"/>
 
 
-2. 使うノードとつなぎ方
+## 2. 使うノードとつなぎ方
 - inject 2つ
 - obniz function
 - debug
