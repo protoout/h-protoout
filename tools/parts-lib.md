@@ -389,7 +389,9 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 
 
 ```javascript
-    obniz.display.print('beep!');  // beep! と画面に表示
+obnizParts.Speaker.play(1000); // 1000Hz で音を鳴らす
+await obniz.wait(1000); //1秒待つ
+speaker.stop(); // 音を止める
 ```
 
 
