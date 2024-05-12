@@ -15,8 +15,10 @@
 
 <img src="https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png" alt="Image from Gyazo" width="500"/>
 
-- LEDの長い脚をobnizの0番
-- LEDの短い脚をobnizの1番
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+| LEDの長い脚  | obnizの0番    |
+| LEDの短い脚  | obnizの1番    |
 
 2. 使うノードとつなぎ方
 - inject 2つ
@@ -70,31 +72,117 @@ injectのボタンtrueを押すと光り、falseを押すと消える。
 
 ---
 
-### トランプ: 
+### パトランプ: 
 
 <img src="https://ueeshop.ly200-cdn.com/u_file/UPAH/UPAH808/2108/products/14/69524b4790.jpg?x-oss-process=image/format,webp" width="50">, 出典：[Keyestudio](https://www.keyestudio.com/products/keyestudio-traffic-light-module-black-and-eco-friendly-for-arduino)
-    <details><summary>使い方</summary>
-    使い方
-    </details>
+
+<details><summary>使い方をクリックで開く</summary>
+1. obnizでの配線
+
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+|   |      |
+|    |      |
+
+2. 使うノードとつなぎ方
+
+3. 各ノードの設定方法
+
+
+```javascript
+
+```
+
+
+4. 初期化処理コードの編集
+
+```javascript
+
+```
+
+
+5. 結果
+
+■ 参考資料
+[obnizの公式ドキュメント: ]()
+
+</details>
 
 ---
 
 ### 温湿度センサ: 
 
 <img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
-    <details><summary>使い方</summary>
-    使い方
-    </details>
+
+<details><summary>使い方をクリックで開く</summary>
+1. obnizでの配線
+
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+|   |      |
+|    |      |
+
+2. 使うノードとつなぎ方
+
+3. 各ノードの設定方法
+
+
+```javascript
+
+```
+
+
+4. 初期化処理コードの編集
+
+```javascript
+
+```
+
+
+5. 結果
+
+■ 参考資料
+[obnizの公式ドキュメント: ]()
+
+</details>
 
 ---
 
 ### 超音波距離センサー: 
 
 <img src="https://akizukidenshi.com/img/goods/L/111009.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
-    <details><summary>使い方</summary>
-    使い方
-    </details>
 
+<details><summary>使い方をクリックで開く</summary>
+1. obnizでの配線
+
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+|   |      |
+|    |      |
+
+2. 使うノードとつなぎ方
+
+3. 各ノードの設定方法
+
+
+```javascript
+
+```
+
+
+4. 初期化処理コードの編集
+
+```javascript
+
+```
+
+
+5. 結果
+
+■ 参考資料
+[obnizの公式ドキュメント: ]()
+
+</details>
 
 
 ---
@@ -103,10 +191,37 @@ injectのボタンtrueを押すと光り、falseを押すと消える。
 ### 照度センサー(CdS): 
 
 <img src="https://akizukidenshi.com/img/goods/L/100110.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
-    <details><summary>使い方</summary>
-    使い方
-    </details>
+<details><summary>使い方をクリックで開く</summary>
+1. obnizでの配線
 
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+|   |      |
+|    |      |
+
+2. 使うノードとつなぎ方
+
+3. 各ノードの設定方法
+
+
+```javascript
+
+```
+
+
+4. 初期化処理コードの編集
+
+```javascript
+
+```
+
+
+5. 結果
+
+■ 参考資料
+[obnizの公式ドキュメント: ]()
+
+</details>
 
 ---
 
@@ -114,9 +229,37 @@ injectのボタンtrueを押すと光り、falseを押すと消える。
 ### サーボモーター: 
 
 <img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
-    <details><summary>使い方</summary>
-    使い方
-    </details>
+<details><summary>使い方をクリックで開く</summary>
+1. obnizでの配線
+
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+|   |      |
+|    |      |
+
+2. 使うノードとつなぎ方
+
+3. 各ノードの設定方法
+
+
+```javascript
+
+```
+
+
+4. 初期化処理コードの編集
+
+```javascript
+
+```
+
+
+5. 結果
+
+■ 参考資料
+[obnizの公式ドキュメント: ]()
+
+</details>
 
 
 
@@ -126,9 +269,37 @@ injectのボタンtrueを押すと光り、falseを押すと消える。
 ### ブザー: 
 
 <img src="https://akizukidenshi.com/img/goods/L/104118.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
-    <details><summary>使い方</summary>
-    使い方
-    </details>
+<details><summary>使い方をクリックで開く</summary>
+1. obnizでの配線
+
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+|   |      |
+|    |      |
+
+2. 使うノードとつなぎ方
+
+3. 各ノードの設定方法
+
+
+```javascript
+
+```
+
+
+4. 初期化処理コードの編集
+
+```javascript
+
+```
+
+
+5. 結果
+
+■ 参考資料
+[obnizの公式ドキュメント: ]()
+
+</details>
 
 
 
@@ -137,7 +308,37 @@ injectのボタンtrueを押すと光り、falseを押すと消える。
 
 ### obnizのディスプレイ: 
 
+<details><summary>使い方をクリックで開く</summary>
+1. obnizでの配線
 
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+|   |      |
+|    |      |
+
+2. 使うノードとつなぎ方
+
+3. 各ノードの設定方法
+
+
+```javascript
+
+```
+
+
+4. 初期化処理コードの編集
+
+```javascript
+
+```
+
+
+5. 結果
+
+■ 参考資料
+[obnizの公式ドキュメント: ]()
+
+</details>
 
 
 ---
@@ -145,7 +346,37 @@ injectのボタンtrueを押すと光り、falseを押すと消える。
 
 ### obnizのスイッチ: 
 
+<details><summary>使い方をクリックで開く</summary>
+1. obnizでの配線
 
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+|   |      |
+|    |      |
+
+2. 使うノードとつなぎ方
+
+3. 各ノードの設定方法
+
+
+```javascript
+
+```
+
+
+4. 初期化処理コードの編集
+
+```javascript
+
+```
+
+
+5. 結果
+
+■ 参考資料
+[obnizの公式ドキュメント: ]()
+
+</details>
 
 
 
