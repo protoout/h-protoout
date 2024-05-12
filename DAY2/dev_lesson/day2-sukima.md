@@ -11,11 +11,11 @@
 
 ## 優先度2: IoTの概要コラムを読もう
 
-[IoTの概要コラム](./dev_lesson/lesson00-iot-overview/01_overview.md)を読んでみましょう。
+[IoTの概要コラム](./dev_lesson/lesson06-iot-overview/01_overview.md)を読んでみましょう。
 
-1. [概要](./dev_lesson/lesson00-iot-overview/01_overview.md)
-2. [デバイス](./dev_lesson/lesson00-iot-overview/02-device.md)
-3. [ネットワーク](./dev_lesson/lesson00-iot-overview/03-network.md)
+1. [概要](./dev_lesson/lesson06-iot-overview/01_overview.md)
+2. [デバイス](./dev_lesson/lesson06-iot-overview/02-device.md)
+3. [ネットワーク](./dev_lesson/lesson06-iot-overview/03-network.md)
 4. [クイズ](./dev_lesson/lesson00-iot-overview/04-quiz.md)
 
 ネットワークまで読んでもらえると嬉しいですが、概要まででも大丈夫です。
