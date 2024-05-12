@@ -405,6 +405,8 @@ obniz.io7.output(false); //io7番をGNDに
 
 5. 結果
 
+明るさに応じてコンソールに表示されている数値が変動すれば成功です。
+
 ■ 参考資料
 [obnizの公式ドキュメント: obniz AD](https://docs.obniz.com/ja/reference/common/ad)
 
@@ -506,15 +508,29 @@ obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモータ�
 | スピーカーの脚 |   5   |
 | スピーカーの脚  |   6   |
 
+
 2. 使うノードとつなぎ方
+
+- inject
+- obniz function
+
+<a href="https://gyazo.com/73e158660e203bf7934600714130de7d"><img src="https://i.gyazo.com/73e158660e203bf7934600714130de7d.png" alt="Image from Gyazo" width="400"/></a>
 
 3. 各ノードの設定方法
 
+- inject
+
+msg.payloadを「数値」「1000」（数字は任意で変更してください。単位はヘルツ。）
+
+<a href="https://gyazo.com/7cbace6d7c01f7290f91907f14c2bd87"><img src="https://i.gyazo.com/7cbace6d7c01f7290f91907f14c2bd87.gif" alt="Image from Gyazo" width="500"/></a>
+
+
+- obniz function
 
 ```javascript
-obnizParts.Speaker.play(1000); // 1000Hz で音を鳴らす
+obnizParts.Speaker.play(msg.payload); // msg.payloadで受け取った値（ヘルツ）の音を鳴らす
 await obniz.wait(1000); //1秒待つ
-obnizParts.speaker.stop(); // 音を止める
+obnizParts.Speaker.stop(); //止める
 ```
 
 
@@ -534,6 +550,36 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:5, gnd:6 });
 
 ■ 参考資料
 [obnizの公式ドキュメント: ](https://docs.obniz.com/ja/sdk/parts/Speaker/README.md)
+
+- 音階の表
+
+
+| 音階 | 周波数[Hz] |
+| ---- | ---------- |
+| ド   | 523        |
+| レ   | 587        |
+| ミ   | 659        |
+| ファ | 698        |
+| ソ   | 784        |
+| ラ   | 880        |
+| シ   | 988        |
+| ド   | 1046       |
+
+
+ドレミを1秒ずつ鳴らすサンプル
+
+```javascript
+
+obnizParts.Speaker.play(523); // 1000Hz で音を鳴らす
+await obniz.wait(1000); //1秒待つ
+obnizParts.Speaker.play(587); // 1000Hz で音を鳴らす
+await obniz.wait(1000); //1秒待つ
+obnizParts.Speaker.play(659); // 1000Hz で音を鳴らす
+await obniz.wait(1000); //1秒待つ
+obnizParts.Speaker.stop(); 
+
+```
+
 
 </details>
 

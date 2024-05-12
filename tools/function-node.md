@@ -22,7 +22,7 @@ functionノードは配置しただけでコードを書かなければ、何も
 <a href="https://gyazo.com/0359c41e969e04e0ec84cd79f595eb7e"><img src="https://i.gyazo.com/0359c41e969e04e0ec84cd79f595eb7e.png" alt="Image from Gyazo" width="500"/></a>
 
 
-2. javascriptノードにコードをかく
+2. functionノードにコードをかく
 
 ```javascript
 
