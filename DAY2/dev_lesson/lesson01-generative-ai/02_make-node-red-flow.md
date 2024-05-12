@@ -40,7 +40,7 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 
 <img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
 
-2. functionノードに生成されたコードを貼る
+- 1-2. functionノードに生成されたコードを貼る
 
 生成されたコードを貼り付けましょう。
 
