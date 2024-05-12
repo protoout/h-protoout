@@ -19,9 +19,9 @@
 
 1. [生成AIを使ってみる](./lesson01-generative-ai/01_overview.md)
 2. 生成AIとNode-RED開発ハンズオン
-    - [生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
-    - [生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
-    - function gpt
+    - [2-1. 生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
+    - [2-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
+    - [2-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
 3. 生成AIを活用してDAY1の実装に挑戦してみよう
 
 ### Lesson02 API・外部サービス連携でさらに広げていこう 【10:30〜11:00】
