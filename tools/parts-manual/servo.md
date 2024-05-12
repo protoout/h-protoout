@@ -46,7 +46,12 @@
 - `obniz functionノード`
 - `debugノード`
 
-<a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec"><img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
+<<img src="https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif" width="400px" />
+
+
+<!-- <a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec">
+
+<img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
 
 3. 各ノードの設定方法
 
@@ -81,7 +86,7 @@ return msg //msgを出力
 obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモーターをどのくらい回すかの信号を2番に設定
 
 
-```
+``` -->
 
 
 5. 結果
