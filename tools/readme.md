@@ -11,7 +11,6 @@
 
 やりたいことがある...でも、どうやるの？ってときに見てください
 
-- [obnizで複数のパーツを同時に使いたい](./obniz-multiple-parts.md)
 
 ### データの取扱系
 - [データの中から特定の数値のみ取り出して使うには？ changeノードを使ってJSONデータを扱う](./json-data.md)
@@ -26,6 +25,7 @@
 ### コードの書き方系
 - [検索して出てきたJavaScriptのコードをobnizノードで使えるように書き換えるには？](https://qiita.com/n0bisuke/items/ce783af305588664a6bc)
 - [ノード内のコードを生成AIに書いてもらう方法]()
+- [obnizで複数のパーツを同時に使いたい](./obniz-multiple-parts.md)
 
 
 ## トラブルシューティング
