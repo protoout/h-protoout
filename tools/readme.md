@@ -41,8 +41,21 @@
 
 
 ## 参考記事いろいろ
-- [参考記事: Node-RED から obniz ノードをつかってクリスマスソング＆キラキラ＆顔文字ダンスさせる！](https://qiita.com/tseigo/items/56c78be82b6276825ca6)
+- [Node-RED から obniz ノードをつかってクリスマスソング＆キラキラ＆顔文字ダンスさせる！](https://qiita.com/tseigo/items/56c78be82b6276825ca6)
 
+- [冷蔵庫の開けっ放し癖をobnizを使って無理やり直した](https://qiita.com/Yuki-Tamura-85/items/b4caf99e0f356a691b58)
+
+- [もう電気を消し忘れません！](https://qiita.com/Ichiros_malt/items/bff24b1c964e854be9ec)
 
 ### 参考記事の調べ方
 
+「obniz node-red ◯◯◯（パーツの名前）」を入力すると、参考記事を探しやすいです。
+
+- [Qiita](https://qiita.com/): エンジニアに関する知識を記録・共有するためのサービスです。 プログラミングに関するTips、ノウハウ、メモを簡単に記録 & 公開することができます。
+
+- [Zenn](https://zenn.dev/): Qiitaと同じくZennはエンジニアが技術・開発についての知見をシェアする場所です。
+
+
+Node-REDでなく、JavaScriptの参考記事が出てきた場合はこの記事を参考にして書き換えてみてください。
+
+- [検索して出てきたJavaScriptのコードをobnizノードで使えるように書き換えるには？](https://qiita.com/n0bisuke/items/ce783af305588664a6bc)
