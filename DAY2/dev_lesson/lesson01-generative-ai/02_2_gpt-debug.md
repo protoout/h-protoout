@@ -44,6 +44,16 @@ if (sensorValue <= 300) {
 ```
 <details>
 
+### 2-2. Functinノードの編集
+
+生成されたコードを`Functionノード`に上書きします。
+
+> <img src="https://i.gyazo.com/dae27d7e4fd699cc4d277efac533f5ed.gif" width="400px" />
+
+次に、 **設定タブから出力数を2に変更**しましょう。これで出力先を増やすことができます。 ついでに **名前も分かりやすく変更**しておきましょう。
+
+> <img src="https://i.gyazo.com/d422299fd554104f0af903c69cd06f79.png" width="400px" />
+
 
 ### 今回はこれと同様のことをChatGPTを使って進めてみます。
 
