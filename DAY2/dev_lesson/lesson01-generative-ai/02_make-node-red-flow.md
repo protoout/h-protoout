@@ -41,5 +41,4 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 <img src="" width="400px" />
 
 
-
 **[◀ 目次ページに戻る](../readme.md)**
