@@ -18,8 +18,9 @@
 **ゴール:** 
 
 1. [生成AIを使ってみる](./lesson01-generative-ai/01_overview.md)
-2. [生成AIとNode-RED開発](./lesson01-generative-ai/02_1_make-node-red-flow.md)
-    - [生成AI使ってNode-REDデバッグ](./lesson01-generative-ai/02_2_gpt-debug.md)
+2. 生成AIとNode-RED開発ハンズオン
+    - [生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
+    - [生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
     - function gpt
 3. 生成AIを活用してDAY1の実装に挑戦してみよう
 
