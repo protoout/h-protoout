@@ -11,21 +11,25 @@
 
 <details><summary>使い方をクリックで開く</summary>
 
+
 1. obnizでの配線
+
+**★ 極性(+ -)があるため、接続に間違いがないか注意**
 
 <img src="https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png" alt="Image from Gyazo" width="500"/>
 
 | 電子パーツの脚         | obnizピン         |
 |--------------|---------------|
-| LEDの長い脚  | obnizの0番    |
-| LEDの短い脚  | obnizの1番    |
+| LEDの長い脚（アノード +）  | obnizの0番    |
+| LEDの短い脚（カソード -）  | obnizの1番    |
 
 2. 使うノードとつなぎ方
 - inject 2つ
-- obniz function
+- switch ※switchノードは設定後にノードをつなぐ
+- obniz function 2つ
 - debug
 
-<a href="https://gyazo.com/b685c59d9faa57a0a551037d0caa39e1"><img src="https://i.gyazo.com/b685c59d9faa57a0a551037d0caa39e1.png" alt="Image from Gyazo" width="500"/></a>
+<a href="https://gyazo.com/a4746c59ffd824626fe0f679c1c8e8d9"><img src="https://i.gyazo.com/a4746c59ffd824626fe0f679c1c8e8d9.png" alt="Image from Gyazo" width="774"/></a>
 
 
 3. 各ノードの設定方法
@@ -33,23 +37,35 @@
 1つ目: payloadの設定を「真偽」、trueにする
 2つ目: payloadの設定を「真偽」、falseにする
 
-<a href="https://gyazo.com/aed583d3a1b5403d933445538a73f7f8"><img src="https://i.gyazo.com/aed583d3a1b5403d933445538a73f7f8.gif" alt="Image from Gyazo" width="500"/></a>
+<a href="https://gyazo.com/4014ae3108033b8aab83e8f437aebb42"><img src="https://i.gyazo.com/4014ae3108033b8aab83e8f437aebb42.gif" alt="Image from Gyazo" width="500"/></a>
 
-- obniz functionのコード
+
+- switch
+
+分岐を追加する。
+
+<a href="https://gyazo.com/aa07ff50cc9cae349e1bbced481dfb8a"><img src="https://i.gyazo.com/aa07ff50cc9cae349e1bbced481dfb8a.gif" alt="Image from Gyazo" width="500"/></a>
+
+その後、obniz functionノードにつないでください。
+
+<a href="https://gyazo.com/d9ac82738971e5aa0c4af8ef34571749"><img src="https://i.gyazo.com/d9ac82738971e5aa0c4af8ef34571749.gif" alt="Image from Gyazo" width="500"/></a>
+
+
+- obniz functionのコード①
+
 
 ```javascript
-obniz.display.clear(); // 画面を消去
 
-if (msg.payload === true) {
- // スイッチが押されている状態
- obniz.display.print('LED ON');
- obnizParts.led.on();
-} else {
- // スイッチが押されていない状態
- obniz.display.print('LED OFF');
- obnizParts.led.off();
-}
+obnizParts.led.on(); //ledをONにする
 
+```
+
+- obniz functionのコード②
+
+
+```javascript
+
+obnizParts.led.off();//ledをOFFにする
 
 ```
 
@@ -57,7 +73,8 @@ if (msg.payload === true) {
 4. 初期化処理コードの編集
 
 ```javascript
-obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 });
+
+obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 }); //脚の長い方（アノード, +）を0, 脚の短い方（カソード,-）を1に割り当てる
 
 ```
 
@@ -75,20 +92,23 @@ injectのボタンtrueを押すと光り、falseを押すと消える。
 
 ### パトランプ: 
 
+**★ 極性(+ -)があるため、接続に間違いがないか注意**
+
+
 <img src="https://ueeshop.ly200-cdn.com/u_file/UPAH/UPAH808/2108/products/14/69524b4790.jpg?x-oss-process=image/format,webp" width="50">, 出典：[Keyestudio](https://www.keyestudio.com/products/keyestudio-traffic-light-module-black-and-eco-friendly-for-arduino)
 
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
-<img src="https://i.gyazo.com/a761dd9b2e6b058523ca062e14adb16d.jpg" alt="img" width= "500">
+<a href="https://gyazo.com/8464f2e5de5bac0515ec7b4cea9d4b96"><img src="https://i.gyazo.com/8464f2e5de5bac0515ec7b4cea9d4b96.jpg" alt="Image from Gyazo" width="500"/></a>
 
 
 | 電子パーツの脚         | obnizピン         |
 |--------------|---------------|
-| GND  |  obnizの0番    |
-|  G  |   obnizの1番   |
-|  Y  |   obnizの2番   |
-|  R  |   obnizの3番   |
+| GND  |  obnizの3番    |
+|  G  |   obnizの4番   |
+|  Y  |   obnizの5番   |
+|  R  |   obnizの6番   |
 
 
 
@@ -120,9 +140,11 @@ return msg;
 
 4. 初期化処理コードの編集
 
+3番、4番、5番、6番に接続する例です。
+
 ```javascript
 
-obnizParts.light = obniz.wired("Keyestudio_TrafficLight", {gnd:0, green:1, yellow:2, red:3});
+obnizParts.light = obniz.wired("Keyestudio_TrafficLight", {gnd:3, green:4, yellow:5, red:6});
 
 
 ```
@@ -148,6 +170,9 @@ injectionノードでpayloadの設定を「green」「yellow」に変更する�
 
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
+
+**★ 極性(+ -)があるため、接続に間違えがないか注意**
+
 
 温湿度センサーの穴が空いている面からみて、左からobnizの0,1,2,3の順で繋いでください。
 
@@ -184,18 +209,20 @@ injectionノードでpayloadの設定を「green」「yellow」に変更する�
 
 ```javascript
 
-msg.payload = await obnizParts.dht20.getAllDataWait();
+msg.payload = await obnizParts.dht20.getAllDataWait(); //温湿度センサーの値を、msg.payloadに格納する
 
-return msg;
+return msg; //msg.payloadを出力する
 
 ```
 
 
 4. 初期化処理コードの編集
 
+0番、1番、2番、3番に接続した場合の例
+
 ```javascript
 
-obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5v"});
+obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5v"}); //0,1,2,3番にピンをアサインし、電圧を5Vに設定
 
 
 ```
@@ -228,12 +255,19 @@ obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
+<a href="https://gyazo.com/333e9751bf9f478ed388bc6bda7fa691"><img src="https://i.gyazo.com/333e9751bf9f478ed388bc6bda7fa691.jpg" alt="Image from Gyazo" width="500"/></a>
+
+**★ 極性(+ -)があるため、接続に間違えがないか注意**
+
+
 | 電子パーツの脚         | obnizピン         |
 |--------------|---------------|
-|  Gnd |  obnizの0番    |
-|  Echo  |   obnizの1番   |
-|  Trig  |   obnizの2番   |
-|  Vcc  |   obnizの3番   |
+|  Gnd |  obnizの8番    |
+|  Echo  |   obnizの9番   |
+|  Trig  |   obnizの10番   |
+|  Vcc  |   obnizの11番   |
+
+
 
 2. 使うノードとつなぎ方
 
@@ -252,9 +286,9 @@ obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5
 
 ```javascript
 
-msg.payload = await obnizParts.hcsr04.measureWait();
+msg.payload = await obnizParts.hcsr04.measureWait(); // センサーから取得した値をmsg.payloadに格納
 
-return msg;
+return msg; //msg.payloadを出力
 
 ```
 
@@ -269,9 +303,11 @@ Intervalを書き換える。
 
 4. 初期化処理コードの編集
 
+8番,9番,10番,11番に接続する例です。
+
 ```javascript
 
-obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
+obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:8, echo:9, trigger:10, vcc:11 }); //8,9,10,11番にピンを割り当てる
 
 
 ```
@@ -298,32 +334,78 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
+★極性なし
+
+
+
 | 電子パーツの脚         | 接続先         |
 |--------------|---------------|
-|   |      |
-|    |      |
+|  ジャンパワイヤ赤 |   obnizの0番   |
+|   ジャンパワイヤ白 |  obnizの1番    |
+|   ジャンパワイヤ黒 |  obnizの2番    |
+
+<img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/cbd3510a-9c8f-47eb-84c8-b99edb9c8336.jpg" width="500">
+
+
+<img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/1b53f227-13cb-4f93-86bc-26d7673c834c.jpg" width="500">
+
+
 
 2. 使うノードとつなぎ方
 
 3. 各ノードの設定方法
 
 
+- obniz repeat
+
 ```javascript
 
+var voltage = await obniz.ad1.getWait(); //ピン1からアナログ（光の強さ）をデジタル信号に変換した値を取得
+
+obniz.display.print(voltage)
+msg.payload = voltage;
+
+return msg;
+
 ```
+
+ad1: Analogデータ（光の強さ）をDigital信号に変換して取得する1番、の意味
+
+6番から分圧の値を取得する場合は、ad6とします。
+
+```javascript
+var voltage = await obniz.ad6.getWait(); //ピン6からアナログ（光の強さ）をデジタル信号に変換した値を取得
+
+```
+
 
 
 4. 初期化処理コードの編集
 
 ```javascript
 
+obniz.io0.output(true); //io0番を5vに
+obniz.io2.output(false); //io2番をGNDに
+
+
 ```
+
+赤い線を5番に、白い線を7番につなぐ場合は下記のように変更してください。
+
+```javascript
+
+obniz.io5.output(true); //io5番を5vに
+obniz.io7.output(false); //io7番をGNDに
+
+
+```
+
 
 
 5. 結果
 
 ■ 参考資料
-[obnizの公式ドキュメント: ]()
+[obnizの公式ドキュメント: obniz AD](https://docs.obniz.com/ja/reference/common/ad)
 
 </details>
 
@@ -336,17 +418,44 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
-| 電子パーツの脚         | 接続先         |
-|--------------|---------------|
-|   |      |
-|    |      |
+**★ 極性(+ -)があるため、接続に間違えがないか注意**
+
+
+| サーボモーター         | ジャンパワイヤー         | obnizピン|
+|--------------|---------------|-------|
+| 茶  |   白   |  マイナス-    |
+| 橙   |  赤    |  プラス+     |
+| 黄   |  青    |  obniz2番     |
+
+サーボモーター茶 - ジャンパワイヤ白
+サーボモーター橙 - ジャンパワイヤ赤
+サーボモーター黄 - ジャンパワイヤ青
 
 2. 使うノードとつなぎ方
+- inject 2つ
+- obniz function
+- debug
+
+<a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec"><img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
 
 3. 各ノードの設定方法
 
+- - inject 2つ
+
+msg.payloadの値を、「数値」「任意の角度」にそれぞれ設定。
+
+例は、30度と90度にサーボモーターを動かす場合
+
+<a href="https://gyazo.com/386a1d891e3183372b7ee03d7ad49881"><img src="https://i.gyazo.com/386a1d891e3183372b7ee03d7ad49881.gif" alt="Image from Gyazo" width="500"/></a>
+
+- obniz function
 
 ```javascript
+
+obnizParts.servo.angle(msg.payload); //msg.payloadの角度にサーボモーターを動かす
+
+return msg //msgを出力
+
 
 ```
 
@@ -355,13 +464,16 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 
 ```javascript
 
+obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモーターをどのくらい回すかの信号を2番に設定
+
+
 ```
 
 
 5. 結果
 
 ■ 参考資料
-[obnizの公式ドキュメント: ]()
+[obnizの公式ドキュメント: ](https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md)
 
 </details>
 
@@ -376,10 +488,15 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 <details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
+<a href="https://gyazo.com/081b807593f7bf2ab4725e5d44952a99"><img src="https://i.gyazo.com/081b807593f7bf2ab4725e5d44952a99.jpg" alt="Image from Gyazo" width="500"/></a>
+
+★ 極性(+ -)なし
+
+
 | 電子パーツの脚         | 接続先         |
 |--------------|---------------|
-|   |      |
-|    |      |
+| スピーカーの脚 |   5   |
+| スピーカーの脚  |   6   |
 
 2. 使うノードとつなぎ方
 
@@ -395,17 +512,17 @@ obnizParts.speaker.stop(); // 音を止める
 
 4. 初期化処理コードの編集
 
-9番と11番に接続する例です。
+5番と6番に接続する例です。
 
 ```javascript
-obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 });
+obnizParts.Speaker = obniz.wired("Speaker",{ signal:5, gnd:6 });
 ```
 
 
 5. 結果
 
 ■ 参考資料
-[obnizの公式ドキュメント: ]()
+[obnizの公式ドキュメント: ](https://docs.obniz.com/ja/sdk/parts/Speaker/README.md)
 
 </details>
 
@@ -414,37 +531,43 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 });
 ---
 
 
-### obnizのディスプレイ: 
+### obnizのディスプレイ
 
 <details><summary>使い方をクリックで開く</summary>
-1. obnizでの配線
 
-| 電子パーツの脚         | 接続先         |
-|--------------|---------------|
-|   |      |
-|    |      |
+1. ノードを配置し以下のように接続
 
-2. 使うノードとつなぎ方
+- injectionノード
+- obniz functionノード
+- debugノード
 
-3. 各ノードの設定方法
+<a href="https://gyazo.com/7fa3c7aa64ed04f781179a09fd38c255"><img src="https://i.gyazo.com/7fa3c7aa64ed04f781179a09fd38c255.png" alt="Image from Gyazo" width="464"/></a>
 
-
-```javascript
-
-```
-
-
-4. 初期化処理コードの編集
+2. obniz functionノードのコードに以下を記載
 
 ```javascript
 
+obniz.display.clear();//画面を消去
+obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに表示
+
 ```
+
+3. injectノードを以下のように設定
+
+「文字列」に設定し、
+<img src="https://i.gyazo.com/55b213766fe04898d7926cc85d7738d3.png" width="500">
+
+テキスト`Hello!`を入力してください。
+<a href="https://gyazo.com/31c4c8e6af60165ba8017d2a9ade296b"><img src="https://i.gyazo.com/31c4c8e6af60165ba8017d2a9ade296b.png" alt="Image from Gyazo" width="500"/></a>
 
 
 5. 結果
 
+injectionノードをクリックしてディスプレイにテキストが出ればOKです。
+<a href="https://gyazo.com/03c351fabc467739a062d523f9a2622d"><img src="https://i.gyazo.com/03c351fabc467739a062d523f9a2622d.jpg" alt="Image from Gyazo" width="500"/></a>
+
 ■ 参考資料
-[obnizの公式ドキュメント: ]()
+[obnizの公式ドキュメント: ディスプレイ](https://docs.obniz.com/ja/reference/common/display#%E6%8F%8F%E7%94%BB%E9%96%A2%E6%95%B0)
 
 </details>
 
@@ -452,37 +575,39 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 });
 ---
 
 
-### obnizのスイッチ: 
+### obnizのスイッチ
 
 <details><summary>使い方をクリックで開く</summary>
-1. obnizでの配線
 
-| 電子パーツの脚         | 接続先         |
-|--------------|---------------|
-|   |      |
-|    |      |
+1. 使うノードとつなぎ方
 
-2. 使うノードとつなぎ方
+- obniz repeat
+- debug
 
-3. 各ノードの設定方法
+<a href="https://gyazo.com/487d1ea101c3f910198c6ca3a1dd431d"><img src="https://i.gyazo.com/487d1ea101c3f910198c6ca3a1dd431d.png" alt="Image from Gyazo" width="300"/></a>
 
+2. 各ノードの設定方法
+
+- obniz repeat
 
 ```javascript
+
+msg.payload = await obniz.switch.getWait(); //msg.payloadにobnizのスイッチの状態を格納
+
+return msg; //msg.payloadを出力
 
 ```
 
 
-4. 初期化処理コードの編集
+3. 結果
 
-```javascript
-
-```
-
-
-5. 結果
+- 押していないとき: none
+- 押したとき: push
+- 右に倒したとき: right
+- 左に倒したとき: left
 
 ■ 参考資料
-[obnizの公式ドキュメント: ]()
+[obnizの公式ドキュメント: スイッチ](https://docs.obniz.com/ja/reference/common/switch)
 
 </details>
 
