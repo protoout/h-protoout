@@ -5,6 +5,7 @@
 **★ 極性(+ -)があるため、ピンの接続に間違えがないか注意**してください。
 
 <img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">
+
 > 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g108761/)
 
 ## 1. obnizでの配線
@@ -26,7 +27,6 @@
 <img src="https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png" width="500"/>
 
 <img src="https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png" width="500"/>
-
 
 ## 2. 使うノードとつなぎ方
 - inject 2つ
