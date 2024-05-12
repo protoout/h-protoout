@@ -77,6 +77,10 @@ return msg //msgを出力
 obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモーターをどのくらい回すかの信号を2番に設定
 ```
 
+## 4. 結果
+
+デプロイして実行します。
+
 <!-- <a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec">
 
 <img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
