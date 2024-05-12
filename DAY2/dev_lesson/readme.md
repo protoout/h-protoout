@@ -17,7 +17,7 @@
 **やること:** 
 **ゴール:** 
 
-1. [生成AIを使ってみる]()
+1. [生成AIを使ってみる](./lesson01-generative-ai/01_overview.md)
 2. 生成AIを活用したNode-REDのデバッグ方法
     - 生成AI使ってNode-REDデバッグ
     - function gpt
