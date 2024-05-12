@@ -69,9 +69,9 @@ obnizParts.servo.angle(msg.payload); //msg.payloadの角度にサーボモータ
 return msg //msgを出力
 ```
 
-- 設定ノード
+- `設定ノード`
 
-設定ノードは他のパーツとセットで動かす時は上書きではなく追記しましょう。
+`設定ノード`の初期化処理の項目に以下を記述します。パーツ単体で動かす時は上書きし、他のパーツとセットで動かす時は上書きではなく追記しましょう。
 
 ```javascript
 obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモーターをどのくらい回すかの信号を2番に設定
