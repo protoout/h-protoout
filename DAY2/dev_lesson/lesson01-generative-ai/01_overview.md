@@ -15,7 +15,7 @@ ChatGPTのリリースを皮切りに生成AIへの熱が高まり、後続で�
 | ChatGPT    | OpenAI     | 自然な文章生成が得意       | Microsoftが多額の出資                    | https://chat.openai.com/        |
 | Gemini     | Google     | 豊富なデータを活用        | -                                        | https://gemini.google.com/      |
 | Claude     | Anthropic  | GPT-4を上回るLLM          | OpenAI元幹部らが独立し、AmazonやGoogleが出資 | https://claude.ai/chats         |
-| Grok     | x  | 現実世界の理解と数学が他のLLMより得意らしい         | イーロンマスクが突如やり始めた | https://twitter.com/i/grok         |
+| Grok（紹介のみ）  | x  | 現実世界の理解と数学が他のLLMより得意らしい         | イーロンマスクが突如やり始めた | https://twitter.com/i/grok         |
 
 
 馴染みのAIチャットツールを使いつつ、用途によりほかのツールを使い分けできるととても便利です。
