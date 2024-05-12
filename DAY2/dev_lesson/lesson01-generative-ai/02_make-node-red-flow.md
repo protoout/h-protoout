@@ -38,6 +38,8 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 
 [こちら](../../../tools/prompt-sample.md)のプロンプトをコピーしてChatGPTに投げてみましょう。
 
+今回は"距離センサーの値が300以下かどうかで処理を変えてみる"処理を試してみます。
+
 > <img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
 
 - 1-2. functionノードに生成されたコードを貼る
@@ -61,11 +63,15 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 [超音波距離センサーのマニュアル](../../../tools/parts-manual/sensor/distance.md)を見つつ、`設定ノード`と`obniz repeatノード`を設定しましょう。
 
 > obniz repeatノードの中身の例
-> <img src="https://i.gyazo.com/c0f74aadd93884c8d5e4c5d2b273cf79.png" width="400px" />
+> <img src="https://i.gyazo.com/5c9b728c9189d1d6ef96c29edd30f6a3.png" width="400px" />
 
 > <img src="https://i.gyazo.com/a580726d604b624446a4c2eebd30d6c8.png" width="400px" />
 
 </details>
+
+- 1-4. 試してみる
+
+`injectノード`の左のボタンを押して発火してみましょう。200というセンサーデータが`functionノード`に送られ、内部では
 
 <img src="https://i.gyazo.com/b319f1c135968a407ac1f1dae8238e23.png" width="400px" />
 
