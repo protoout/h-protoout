@@ -38,8 +38,9 @@
 </details>
 
 ## 2. 使うノードとつなぎ方
-
 [Node-REDのobnizノードでどちらのノードを選ぶか - 使い方概要](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を参考に使うobnizノードを決めます。今回はアクチュエーターになるので`obniz functionノード`が適しています。
+
+<details><summary>ノードの繋ぎ方をクリックで開く</summary>
 
 - `injectノード`
 - `obniz functionノード`
@@ -49,6 +50,9 @@
 
 3. 各ノードの設定方法
 
+> https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif
+
+</details>
 - - inject 2つ
 
 msg.payloadの値を、「数値」「任意の角度」にそれぞれ設定。
