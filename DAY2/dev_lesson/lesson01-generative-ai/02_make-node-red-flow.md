@@ -56,13 +56,14 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 
 > <img src="https://i.gyazo.com/9f49b4e236e858d42b3b24dc57f47db9.gif" width="400px" />
 
-
 <details><summary>（本当はこんな感じで距離センサーを繋げたいです。進行が早い人はこちらをやってみてください。）クリックで開く</summary>
 
+[超音波距離センサーのマニュアル](../../../tools/parts-manual/sensor/distance.md)を見つつ、`設定ノード`と`obniz repeatノード`を設定しましょう。
 
+> obniz repeatノードの中身の例
 > <img src="https://i.gyazo.com/c0f74aadd93884c8d5e4c5d2b273cf79.png" width="400px" />
 
-> <img src="https://i.gyazo.com/c0f74aadd93884c8d5e4c5d2b273cf79.png">
+> <img src="https://i.gyazo.com/a580726d604b624446a4c2eebd30d6c8.png" width="400px" />
 
 </details>
 
