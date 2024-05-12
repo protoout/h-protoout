@@ -6,11 +6,16 @@
 
 Node-REDにインポートできる形式で、Node-REDのフローをかいてもらうという使い方ができます。
 
+## 紹介のみ. Function GPTノード
+
+> <img src="https://i.gyazo.com/b5c4e6d65c879e267ed03d335a382f45.gif" width="450px" />
+
+
 ## 0. 前提
 
 ここではChatGPTを使うので、OpenAIのアカウントを作成[ChatGPT](https://chat.openai.com/)を開き、アカウントを作成してください。すでに持っている方はあるもので構いません。
 
-## 1.
+## 1. 
 
 2. プロンプトを書き、ChatGPT/Gemini/Claudeのいずれかにフローを生成してもらう
 
