@@ -34,11 +34,15 @@
 
 Function GPTの内部で使われていたプロンプト（AIへの指示文章）を元にサンプルを作りました。
 
+- ChatGPTに聞く
+
 [こちら](../../../tools/prompt-sample.md)のプロンプトをコピーしてChatGPTに投げてみましょう。
 
 <img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
 
-<img src="" width="400px" />
+- functionノードに生成されたコードを貼る
+
+<img src="https://i.gyazo.com/34db1703d27e38783e5edd9913a8d88b.gif" width="400px" />
 
 
 **[◀ 目次ページに戻る](../readme.md)**
