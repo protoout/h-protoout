@@ -34,7 +34,7 @@
 
 Function GPTの内部で使われていたプロンプト（AIへの指示文章）を元にサンプルを作りました。
 
-1. ChatGPTに聞く
+- 1-1. ChatGPTに聞く
 
 [こちら](../../../tools/prompt-sample.md)のプロンプトをコピーしてChatGPTに投げてみましょう。
 
