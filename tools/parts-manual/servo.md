@@ -38,17 +38,44 @@
 </details>
 
 ## 2. 使うノードとつなぎ方
-[Node-REDのobnizノードでどちらのノードを選ぶか - 使い方概要](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を参考に使うobnizノードを決めます。今回はアクチュエーターになるので`obniz functionノード`が適しています。
+[Node-REDのobnizノードでどちらのノードを選ぶか - 使い方概要](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を参考に、使うobnizノードを決めます。今回はアクチュエーターになるので`obniz functionノード`が適しています。
 
 <details><summary>ノードの繋ぎ方をクリックで開く</summary>
+
+以下の3つのノードを使います。
 
 - `injectノード`
 - `obniz functionノード`
 - `debugノード`
 
-<<img src="https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif" width="400px" />
+以下のように設置して線で繋ぎましょう。
+
+<img src="https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif" width="400px" />
+
+`obniz functionノード`を追加したら**obniz IDの設定**を忘れずに行って下さい。この設定も[参考記事](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を読んでおきましょう。
 
 </details>
+
+## 3. 設定ノードとobniz functionノードに処理を記述
+
+それぞれ以下のコードを記述して下さい。
+
+- `obniz functionノード`
+
+```javascript
+
+obnizParts.servo.angle(msg.payload); //msg.payloadの角度にサーボモーターを動かす
+
+return msg //msgを出力
+```
+
+- 設定ノード
+
+設定ノードは他のパーツとセットで動かす時は上書きではなく追記しましょう。
+
+```javascript
+obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモーターをどのくらい回すかの信号を2番に設定
+```
 
 <!-- <a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec">
 
