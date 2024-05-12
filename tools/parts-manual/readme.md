@@ -15,6 +15,7 @@
 使い方は[こちら](./actuator/servo.md)です。
 
 > <img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">
+
 > 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g108761/)
 
 ## パトランプ: 
@@ -30,6 +31,7 @@
 使い方は[こちら](./sensor/temp-hum.md)です。
 
 > <img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="50">
+
 > 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g116732/)
 
 ## 超音波距離センサー: 
