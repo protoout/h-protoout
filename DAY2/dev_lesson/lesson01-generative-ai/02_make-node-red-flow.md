@@ -9,7 +9,7 @@
 [Function GPT](https://github.com/FlowFuse/node-red-function-gpt)というChatGPT(GPT)を組み込んだノードがあります。
 
 > <img src="https://i.gyazo.com/ac8b8206e2ad031d7295ead93b479228.png" width="200px">
-> <img src="https://i.gyazo.com/b5c4e6d65c879e267ed03d335a382f45.gif" width="450px" />
+> <img src="https://i.gyazo.com/b5c4e6d65c879e267ed03d335a382f45.gif" width="400px" />
 
 このノードを使うと日本語で指示を出してFunctionノードで内部で使えるコード（JavaScriptというプログラミング言語）を生成してくれます。
 
