@@ -52,7 +52,7 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 
 > <img src="https://i.gyazo.com/08f2c93b8b66e11a0c46261de52bd8b4.png" width="400px" />
 
-`chagenノード`は
+`chagenノード`は仮のセンター値として200を設定してみましょう。最後にデバッグノードも接続してください。
 
 > <img src="https://i.gyazo.com/9f49b4e236e858d42b3b24dc57f47db9.gif" width="400px" />
 
