@@ -38,9 +38,12 @@
 </details>
 
 ## 2. 使うノードとつなぎ方
-- inject 2つ
-- obniz function
-- debug
+
+[Node-REDのobnizノードでどちらのノードを選ぶか - 使い方概要](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を参考に使うobnizノードを決めます。今回はアクチュエーターになるので`obniz functionノード`が適しています。
+
+- `injectノード`
+- `obniz functionノード`
+- `debugノード`
 
 <a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec"><img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
 
