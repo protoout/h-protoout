@@ -3,28 +3,6 @@
 
 30度と90度を繰り返してぴょこぴょこうごかすものをつくります。
 
-<!-- 
-
-
-<img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
-
-3. 各ノードの設定方法
-
-
-> https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif
-
-</details>
-- - inject 2つ
-
-msg.payloadの値を、「数値」「任意の角度」にそれぞれ設定。
-
-例は、30度と90度にサーボモーターを動かす場合
-
-<a href="https://gyazo.com/386a1d891e3183372b7ee03d7ad49881"><img src="https://i.gyazo.com/386a1d891e3183372b7ee03d7ad49881.gif" alt="Image from Gyazo" width="500"/></a>
-
--->
-
-
 ### 完成イメージ
 
 <a href="https://gyazo.com/394dc1a4ae1acda14235efdf4a06014d"><img src="https://i.gyazo.com/394dc1a4ae1acda14235efdf4a06014d.gif" alt="Image from Gyazo" width="376"/></a>
