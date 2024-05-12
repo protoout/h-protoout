@@ -6,17 +6,20 @@
 
 ### 3-1. 距離センサーとスピーカーの配線
 
-写真のように配線してみましょう。
-
 **ここからはセンサーは貸し合って試してみてください。**
+
+写真のように配線してみましょう。
 
 <img src="https://i.gyazo.com/53bb7be7ba1d99ed2934715654e4b1f3.png" width="400px" />
 
+- 0,1,2,3ピンに超音波距離センサー
+- 9,11ピンにスピーカー
 
+を繋げてみます。
 
 ### 3-1. 距離センサーに差し替え
 
-`injectノード`と`changeノード`をobniz function
+エミュレートで使っていた`injectノード`,`changeノード`を`obniz repeatノード`に差し替えましょう。
 
 <img src="https://i.gyazo.com/d4fb9397dff4fbfcf93c7f26d5da1117.png" width="400px" />
 
