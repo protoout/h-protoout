@@ -42,7 +42,9 @@
 
 <details><summary>ノードの繋ぎ方をクリックで開く</summary>
 
-以下の3つのノードを使います。
+### 2-1. obniz functionノードの基本
+
+まずは、以下の3つのノードを使います。
 
 - `injectノード`
 - `obniz functionノード`
@@ -53,6 +55,14 @@
 <img src="https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif" width="400px" />
 
 `obniz functionノード`を追加したら**obniz IDの設定**を忘れずに行って下さい。この設定も[参考記事](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を読んでおきましょう。
+
+### 2-2. chageノードを追加
+
+次に`chageノード`を追加して`20`などの数字を代入します。
+代入する値の項目を`数値`に変更しましょう。
+
+<img src="https://i.gyazo.com/27f6c8330de4b466778b7ee5d6b3d800.gif" width="400px" />
+
 
 </details>
 
