@@ -23,6 +23,7 @@
     - [2-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
     - [2-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
 3. 生成AIを活用してDAY1の実装に挑戦してみよう
+    - [エラーが出た時にChatGPTに]()
 
 ### Lesson02 API・外部サービス連携でさらに広げていこう 【10:30〜11:00】
 
@@ -31,7 +32,7 @@
 
 1. [Teams API連携](./lesson02-api/01_teams.md)
 2. [その他のAPI](./lesson02-api/02_nasa.md)
-3. 事例紹介
+3. API活用事例紹介
 
 ### Lesson03 選択してAI利用のハンズオンをやってみよう 【11:00〜12:00 / 13:00~14:00】
 
@@ -42,16 +43,17 @@
 
 A. [OpenAIノードを組み込んでつくってみよう](./lesson03-handson/a_openai-node.md)
 B. [Whisperの例など]()
+C. [Teachable Machineの利用]()
 
-### Lesson04 開発Tips 【11:00〜12:00 / 13:00~14:00】
+### Lesson04 開発Tips紹介 【14:00~14:10】
 
 **やること:** 
 **ゴール:** 
 
-- 複数人での開発
-- ノードレッドのTipsなにか
+1. [複数人での開発]()
+2. [ノードレッドのTips]()
 
-### Lesson05 プロトタイピングとふりかえり 14:20~14:30
+### Lesson05 プロトタイピングとふりかえり 14:10~14:30
 
 まとめ
 
