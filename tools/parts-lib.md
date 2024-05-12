@@ -354,6 +354,11 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:8, echo:9, trigger:10, vcc:11 })
 
 2. 使うノードとつなぎ方
 
+- obniz repeat
+- debug
+
+<a href="https://gyazo.com/d324617577c3c0af6a86362a49f3509b"><img src="https://i.gyazo.com/d324617577c3c0af6a86362a49f3509b.png" alt="Image from Gyazo" width="500"/></a>
+
 3. 各ノードの設定方法
 
 
