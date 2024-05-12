@@ -405,6 +405,8 @@ obniz.io7.output(false); //io7番をGNDに
 
 5. 結果
 
+明るさに応じてコンソールに表示されている数値が変動すれば成功です。
+
 ■ 参考資料
 [obnizの公式ドキュメント: obniz AD](https://docs.obniz.com/ja/reference/common/ad)
 
