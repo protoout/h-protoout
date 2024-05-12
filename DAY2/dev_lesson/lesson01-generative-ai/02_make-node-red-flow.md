@@ -9,6 +9,7 @@ Node-REDにインポートできる形式で、Node-REDのフローをかいて�
 ## 紹介のみ - Function GPTノード
 
 [Function GPT](https://github.com/FlowFuse/node-red-function-gpt)というChatGPT(GPT)を組み込んだノードがあります。
+
 > <img src="https://i.gyazo.com/ac8b8206e2ad031d7295ead93b479228.png" width="200px">
 > <img src="https://i.gyazo.com/b5c4e6d65c879e267ed03d335a382f45.gif" width="450px" />
 
@@ -23,7 +24,7 @@ Node-REDにインポートできる形式で、Node-REDのフローをかいて�
 
 ### 今回はこれと同様のことをChatGPTを使って進めてみます。
 
-Function GPTノードはAPIキーを発行して利用するのですが、授業で全員でやるとトラブルがある可能性もあるので同様のことを
+`Function GPTノード`はAPIキーを発行して利用するのですが、授業で全員でやるとトラブルがある可能性もあるので`Function GPTノード`は使わずに、同様のことをChatGPT(GPT3.5)を使ってやってみます。
 
 ## 0. 前提
 
