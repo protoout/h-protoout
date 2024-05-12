@@ -4,7 +4,7 @@
 
 **★ 極性(+ -)があるため、ピンの接続に間違えがないか注意**してください。
 
-<img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">
+> <img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">
 
 > 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g108761/)
 
@@ -29,11 +29,11 @@
 
 真似して配線してみてください。
 
-<img src="https://i.gyazo.com/7569445e6968343962bec179da49a56c.jpg" width="300px"/>
+> <img src="https://i.gyazo.com/7569445e6968343962bec179da49a56c.jpg" width="300px"/>
 
-<img src="https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png" width="500"/>
+> <img src="https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png" width="500"/>
 
-<img src="https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png" width="500"/>
+> <img src="https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png" width="500"/>
 
 </details>
 
@@ -52,7 +52,7 @@
 
 以下のように設置して線で繋ぎましょう。
 
-<img src="https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif" width="400px" />
+> <img src="https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif" width="400px" />
 
 `obniz functionノード`を追加したら**obniz IDの設定**を忘れずに行って下さい。この設定も[参考記事](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を読んでおきましょう。
 
@@ -61,8 +61,7 @@
 次に`chageノード`を追加して`20`などの数字を代入します。
 代入する値の項目を`数値`に変更しましょう。
 
-<img src="https://i.gyazo.com/27f6c8330de4b466778b7ee5d6b3d800.gif" width="400px" />
-
+> <img src="https://i.gyazo.com/27f6c8330de4b466778b7ee5d6b3d800.gif" width="400px" />
 
 </details>
 
