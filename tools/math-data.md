@@ -32,6 +32,9 @@ return msg; //msg.payloadを出力
 
 四捨五入は、Math.round(X)で計算できます。
 
+- 切り捨て: `Math.floor(x)`
+- 切り上げ: `Math.ceil`
+
 ```javascript
 
 let distance; //distanceという変数をつかいますよという宣言
