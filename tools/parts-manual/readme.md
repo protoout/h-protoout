@@ -6,11 +6,11 @@
 
 ## LED赤、青: 
 
+使い方は[こちら](./led.md)です。
+
 <img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">
 
 > 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g112519/)
-
-- 使い方は[こちら](./led.md)
 
 ## サーボモーター: 
 
