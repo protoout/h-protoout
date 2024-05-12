@@ -6,10 +6,13 @@
 
 
 ### LED赤、青: 
+
 <img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
 
-<details><summary>使い方</summary>
+<details><summary>使い方をクリックで開く</summary>
+
 1. obnizでの配線
+
 <img src="https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png" alt="Image from Gyazo" width="500"/>
 
 - LEDの長い脚をobnizの0番
@@ -19,6 +22,7 @@
 - inject 2つ
 - obniz function
 - debug
+
 <a href="https://gyazo.com/b685c59d9faa57a0a551037d0caa39e1"><img src="https://i.gyazo.com/b685c59d9faa57a0a551037d0caa39e1.png" alt="Image from Gyazo" width="500"/></a>
 
 
