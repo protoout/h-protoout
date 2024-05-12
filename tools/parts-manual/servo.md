@@ -12,6 +12,8 @@
 
 ピンのアサインと実際の配線は、みなさんがやりたいことに合わせて適宜変更をしてください。
 
+<details><summary>配線の仕方をクリックで開く</summary>
+
 | サーボモーター         | ジャンパワイヤー         | obnizピン|
 |--------------|---------------|-------|
 | 茶  |   白   |  マイナス-    |
@@ -27,6 +29,8 @@
 <img src="https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png" width="500"/>
 
 <img src="https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png" width="500"/>
+
+</details>
 
 ## 2. 使うノードとつなぎ方
 - inject 2つ
