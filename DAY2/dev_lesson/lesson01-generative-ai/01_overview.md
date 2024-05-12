@@ -10,12 +10,12 @@ ChatGPTのリリースを皮切りに生成AIへの熱が高まり、後続で�
 
 話題の生成AIチャットツール
 
-| サービス名 | 説明 | 特徴 | 備考 | URL |
-| ------------ | ---- | ---- | ---- | ---- |
-| ChatGPT      | OpenAI | 自然な文章生成が得意 | Microsoftが多額の出資 | https://chat.openai.com/ |
-| Gemini       | Google | 豊富なデータを活用 | - | https://gemini.google.com/ |
-| Claude       | Anthropic |  | OpenAI元幹部らが独立した会社。Amazon
-やGoogleが出資。GPT-4上回るLLM（Large Language Model）と話題に | https://claude.ai/chats |
+| サービス名 | 説明       | 特徴                      | 備考                                     | URL                             |
+|------------|------------|---------------------------|------------------------------------------|---------------------------------|
+| ChatGPT    | OpenAI     | 自然な文章生成が得意       | Microsoftが多額の出資                    | https://chat.openai.com/        |
+| Gemini     | Google     | 豊富なデータを活用        | -                                        | https://gemini.google.com/      |
+| Claude     | Anthropic  | GPT-4を上回るLLM          | OpenAI元幹部らが独立し、AmazonやGoogleが出資 | https://claude.ai/chats         |
+
 
 
 馴染みのAIチャットツールを使いつつ、用途によりほかのツールを使い分けできるととても便利です。
@@ -23,11 +23,7 @@ ChatGPTのリリースを皮切りに生成AIへの熱が高まり、後続で�
 
 それぞれの出力の違いやUIの違いを体験してみてください。
 
-
-
-今回は、3つの生成AIチャットボットツールを使い簡単に作文してみましょう！
-
-
+今回は、3つの生成AIチャットツールを使い簡単に作文してみましょう！
 
 #### やってみよう
 
