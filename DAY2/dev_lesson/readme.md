@@ -18,7 +18,7 @@
 **ゴール:** 
 
 1. [生成AIを使ってみる](./lesson01-generative-ai/01_overview.md)
-2. 生成AIを活用したNode-REDのデバッグ方法
+2. [生成AIとNode-RED開発](./lesson01-generative-ai/02_make-node-red-flow.md)
     - 生成AI使ってNode-REDデバッグ
     - function gpt
 3. 生成AIを活用してDAY1の実装に挑戦してみよう
@@ -28,8 +28,9 @@
 **やること:** 
 **ゴール:** 
 
-- Teams API連携は全員さわりはやっておきたい
-- 事例紹介
+1. [Teams API連携](./lesson02-api/01_teams.md)
+2. [その他のAPI](./lesson02-api/02_nasa.md)
+3. 事例紹介
 
 ### Lesson03 選択してAI利用のハンズオンをやってみよう 【11:00〜12:00 / 13:00~14:00】
 
