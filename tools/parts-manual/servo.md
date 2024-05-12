@@ -48,6 +48,7 @@
 
 <<img src="https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif" width="400px" />
 
+</details>
 
 <!-- <a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec">
 
