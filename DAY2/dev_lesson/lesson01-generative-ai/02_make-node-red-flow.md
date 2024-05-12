@@ -75,5 +75,7 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 
 <img src="https://i.gyazo.com/b319f1c135968a407ac1f1dae8238e23.png" width="400px" />
 
+画像のようにデバッグノードに200というデータが出れば成功です。
+`chagneノード`の値を400などに変更すると
 
 **[◀ 目次ページに戻る](../readme.md)**
