@@ -1,11 +1,12 @@
 # マニュアル: LED赤、青
 
-<img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g112519/)
+<img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">
 
-<details><summary>使い方をクリックで開く</summary>
+> 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g112519/)
 
+ピンのアサインと実際の配線は、みなさんがやりたいことに合わせて適宜変更をしてください。
 
-1. obnizでの配線
+## 1. obnizでの配線
 
 **★ 極性(+ -)があるため、接続に間違いがないか注意**
 
