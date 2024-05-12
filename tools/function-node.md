@@ -105,7 +105,7 @@ return [msg1, msg2]
 <a href="https://gyazo.com/aa9531d4e56f006e461b3ae06f2b2d7f"><img src="https://i.gyazo.com/aa9531d4e56f006e461b3ae06f2b2d7f.png" alt="Image from Gyazo" width="323"/></a>
 
 
-## 4. javascriptをどうやって書いたらいいか？function gtpノードを使ってコードを生成してもらおう
+## 4. javascriptをどうやって書いたらいいか？生成AIに書いてもらおう！
 
 functionノードの使い方を簡単に説明しました。
 
