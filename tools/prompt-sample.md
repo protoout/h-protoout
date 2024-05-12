@@ -1,6 +1,8 @@
 # プロンプトサンプル
 
-## Node-REDのFunctionノードを生成
+## １. Node-REDのFunctionノードで使えるコードを生成
+
+こちらのサンプルを変更しながら進めてみましょう。
 
 ```
 ## system
@@ -16,3 +18,8 @@
 ```
 
 >例: [ChatGPTの元画面](https://chat.openai.com/share/e/fc8b0125-7589-47a0-b9b8-45e1b9390186)
+
+## 2. Node-REDのSwitchノードを生成
+
+
+
