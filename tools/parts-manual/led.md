@@ -10,7 +10,7 @@
 
 **★ 極性(+ -)があるため、接続に間違いがないか注意**
 
-<img src="https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png" alt="Image from Gyazo" width="500px" />
+<img src="https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png" alt="Image from Gyazo" width="500"/>
 
 | 電子パーツの脚         | obnizピン         |
 |--------------|---------------|

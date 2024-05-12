@@ -1,11 +1,17 @@
 # マニュアル: サーボモーター
-## サーボモーター: 
 
-<img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g108761/)
-<details><summary>使い方をクリックで開く</summary>
-1. obnizでの配線
+サーボモーターは角度を指定して回転させるモーターです。
 
-**★ 極性(+ -)があるため、接続に間違えがないか注意**
+**★ 極性(+ -)があるため、ピンの接続に間違えがないか注意**してください。
+
+<img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="50">
+
+> 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g108761/)
+
+
+
+## 1. obnizでの配線
+
 
 
 | サーボモーター         | ジャンパワイヤー         | obnizピン|
