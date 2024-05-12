@@ -3,6 +3,26 @@
 
 30度と90度を繰り返してぴょこぴょこうごかすものをつくります。
 
+<!-- 
+
+
+<img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
+
+3. 各ノードの設定方法
+
+
+> https://i.gyazo.com/2eb9c633060a8af0e92642a3e30d0be3.gif
+
+</details>
+- - inject 2つ
+
+msg.payloadの値を、「数値」「任意の角度」にそれぞれ設定。
+
+例は、30度と90度にサーボモーターを動かす場合
+
+<a href="https://gyazo.com/386a1d891e3183372b7ee03d7ad49881"><img src="https://i.gyazo.com/386a1d891e3183372b7ee03d7ad49881.gif" alt="Image from Gyazo" width="500"/></a>
+
+-->
 
 
 ### 完成イメージ
@@ -13,7 +33,9 @@
 ### やってみよう
 
 
-#### 1. [電子パーツの使い方一覧](./parts-lib.md)を参考に、injectノードのボタンをクリックするとサーボモーターが動き、コンソールに現在の角度が表示される状態まで作る。
+#### 1. [電子パーツの使い方一覧](./parts-lib.md)を参考に、injectノードのボタンをクリックするとサーボモーターが動き、コンソールに現在の角度が表示される状態まで作ってみます。
+
+<a href="https://gyazo.com/386a1d891e3183372b7ee03d7ad49881"><img src="https://i.gyazo.com/386a1d891e3183372b7ee03d7ad49881.gif" alt="Image from Gyazo" width="500"/></a>
 
 <a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec"><img src="https://i.gyazo.com/07730ffe37a53eb5df08aeb35f617eec.png" alt="Image from Gyazo" width="500"/></a>
 
