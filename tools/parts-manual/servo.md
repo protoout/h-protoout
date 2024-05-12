@@ -88,7 +88,15 @@ obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモータ�
 
 ## 4. 結果
 
-デプロイして実行します。
+デプロイして実行し、`injectノード`のボタンを押すとサーボが1回だけ動きます。
+
+## 5. 補足
+
+サーボモータは角度を指定して動くので、次に動かす時は`changeノード`の数値を変えて実行してみましょう。
+今回利用しているSG90というサーボモータは0~180度を指定してください。
+
+■ 参考資料
+[obnizの公式ドキュメント: ](https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md)
 
 <!-- <a href="https://gyazo.com/07730ffe37a53eb5df08aeb35f617eec">
 
@@ -128,12 +136,3 @@ obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモータ�
 
 
 ``` -->
-
-
-5. 結果
-
-■ 参考資料
-[obnizの公式ドキュメント: ](https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md)
-
-</details>
-
