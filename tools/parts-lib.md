@@ -372,7 +372,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 ---
 
 
-### ブザー: 
+### スピーカー（ブザー）: 
 
 <img src="https://akizukidenshi.com/img/goods/L/104118.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/)
 <details><summary>使い方をクリックで開く</summary>
@@ -389,14 +389,18 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 });
 
 
 ```javascript
-
+obnizParts.Speaker.play(1000); // 1000Hz で音を鳴らす
+await obniz.wait(1000); //1秒待つ
+obnizParts.speaker.stop(); // 音を止める
 ```
 
 
 4. 初期化処理コードの編集
 
-```javascript
+9番と11番に接続する例です。
 
+```javascript
+obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 });
 ```
 
 
