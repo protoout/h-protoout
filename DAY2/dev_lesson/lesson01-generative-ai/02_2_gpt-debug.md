@@ -42,7 +42,8 @@ if (sensorValue <= 300) {
     return [null, msg]; // 一つ目の出力先はnull、二つ目の出力先にメッセージを渡す
 }
 ```
-<details>
+
+</details>
 
 ### 2-2. Functinノードの編集
 
