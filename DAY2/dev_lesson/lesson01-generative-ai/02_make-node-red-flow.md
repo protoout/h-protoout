@@ -52,6 +52,10 @@ Function GPTの内部で使われていたプロンプト（AIへの指示文章
 
 > <img src="https://i.gyazo.com/08f2c93b8b66e11a0c46261de52bd8b4.png" width="400px" />
 
+`chagenノード`は
+
+> <img src="https://i.gyazo.com/9f49b4e236e858d42b3b24dc57f47db9.gif" width="400px" />
+
 
 <details><summary>（本当はこんな感じで距離センサーを繋げたいです。進行が早い人はこちらをやってみてください。）クリックで開く</summary>
 
