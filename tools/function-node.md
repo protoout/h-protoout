@@ -105,7 +105,7 @@ return [msg1, msg2]
 <a href="https://gyazo.com/aa9531d4e56f006e461b3ae06f2b2d7f"><img src="https://i.gyazo.com/aa9531d4e56f006e461b3ae06f2b2d7f.png" alt="Image from Gyazo" width="323"/></a>
 
 
-## 4. javascriptをどうやって書いたらいいか？function gtpノードを使ってコードを生成してもらおう
+## 4. javascriptをどうやって書いたらいいか？生成AIに書いてもらおう！
 
 functionノードの使い方を簡単に説明しました。
 
@@ -114,40 +114,7 @@ functionノードの使い方を簡単に説明しました。
 
 生成AIにコーディングをお任せしちゃいましょう！
 
-
-プロンプト例
-
-```
-
-## system
-Always respond with content for a Node-RED function node, always use const or let instead of var, always return msg unless told otherwise, don't use require() unless asked to use an external node module, only respond with the code and inline code comments where necessary
-
-## instructions
-
-センサーの値が送られてきたら、30より大きい場合はtrue、30以下の場合false出して
-
-
-```
-
-instructions内に、作って欲しい内容を書いて生成AIにコードを作ってもらいましょう。
-
-
-
-上記の結果
-
-```javascript
-
-// Check if the sensor value is greater than 30
-if (msg.payload > 30) {
-    msg.payload = true;
-} else {
-    msg.payload = false;
-}
-
-return msg;
-
-
-```
+やり方は、[Node-REDのFunctionノードで使えるコードを生成](./prompt-sample.md)を参考にしてください。
 
 
 ---
