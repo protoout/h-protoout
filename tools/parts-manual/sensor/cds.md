@@ -37,7 +37,6 @@
 
 var voltage = await obniz.ad1.getWait(); //ピン1からアナログ（光の強さ）をデジタル信号に変換した値を取得
 
-obniz.display.print(voltage)
 msg.payload = voltage;
 
 return msg;

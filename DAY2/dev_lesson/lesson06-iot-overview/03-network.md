@@ -1,6 +1,6 @@
 # ネットワークについて
 
-図
+<a href="https://gyazo.com/afefd53123d3d02fa4fc0b147ee8bce2"><img src="https://i.gyazo.com/afefd53123d3d02fa4fc0b147ee8bce2.png" alt="Image from Gyazo" width="322"/></a>
 
 1. LAN: 限られた地理的範囲内でコンピューターやネットワーク機器が接続されているネットワークです。一般的には、オフィス、学校、家庭などの建物内で使用されます。
 
@@ -53,7 +53,7 @@ TCP/IPという共通の仕組みで世界中のネットワークを繋いで�
 
 ### 4つの階層に分かれるTCP/IPの構造 
 
-<img src= "" width="500">
+<a href="https://gyazo.com/e910cb10d784313ce0fa8b984823c838"><img src="https://i.gyazo.com/e910cb10d784313ce0fa8b984823c838.png" alt="Image from Gyazo" width="500"/></a>
 
 
 アプリケーション層は、コンピューター同士のやりとりをユーザーが利用できる「通信サービス」という形にする役割です。
@@ -71,7 +71,7 @@ TCP/IPという共通の仕組みで世界中のネットワークを繋いで�
 
 SNSを閲覧するときや投稿する時、そのたびにHTTP通信が行われています。
 
-図を入れる
+<a href="https://gyazo.com/13741cabc5e7657ed0f360e14f81c3a4"><img src="https://i.gyazo.com/13741cabc5e7657ed0f360e14f81c3a4.png" alt="Image from Gyazo" width="312"/></a>
 
 「データちょうだいよ」、っていうと、サーバーが情報を返してくれます。
 
@@ -87,7 +87,7 @@ HTTPとは異なり、1台のサーバと複数台のクライアントによる
 最初に一度接続を確立すると、切断するまでずっと情報のやりとりを行います。
 チャットやオンラインゲームで利用されることが多いです。
 
-図を入れる
+<a href="https://gyazo.com/e59febc97c85c7a4f9319de24fb90e34"><img src="https://i.gyazo.com/e59febc97c85c7a4f9319de24fb90e34.png" alt="Image from Gyazo" width="470"/></a>
 
 obnizはWi-Fiに接続し、WebSocketによりリアルタイムなデータ送受信を可能にしています。
 
@@ -109,7 +109,7 @@ MQTTの場合は複数台のクライアントがブローカーを介して送�
 ハルキさんの棚（トピック）
 
 
-図を入れる
+<a href="https://gyazo.com/81d48ce5a70584a83e9df0dba1c0210a"><img src="https://i.gyazo.com/81d48ce5a70584a83e9df0dba1c0210a.png" alt="Image from Gyazo" width="562"/></a>
 
 
 - ハルキさんは、購読者がいようといまいと、本屋さんにある自分の棚に新作を出し続けます。
@@ -117,7 +117,6 @@ MQTTの場合は複数台のクライアントがブローカーを介して送�
 - ハルキさん以外の作家さんの棚が30個増えました。でもMQTTなら、大丈夫。ハルキさんの作品しか興味がないヨミツグさんはハルキさんの棚だけ見に行くことができます。
 - ハルキさんのファン（購読者）が10,000人に増えました。でもMQTTなら、大丈夫。
 
-WebScoketの場合は...
 
 まとめるとMQTTは
 - 送信側と受信側で接続を確立する必要がない

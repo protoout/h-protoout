@@ -7,7 +7,7 @@
 <a href="https://gyazo.com/394dc1a4ae1acda14235efdf4a06014d"><img src="https://i.gyazo.com/394dc1a4ae1acda14235efdf4a06014d.gif" alt="Image from Gyazo" width="376"/></a>
 
 
-### やってみよう
+### 1. サーボモーターをピョコピョコ連続で動かそう
 
 #### 1. [電子パーツの使い方一覧](../parts-manual/servo.md)を参考に、injectノードのボタンをクリックするとサーボモーターが動き、コンソールに現在の角度が表示される状態まで作ってみます。
 
@@ -33,8 +33,9 @@ msg.payloadの項目を数値にして画像のように設定してみましょ
 
 #### 3. 使うノードを考えてみる
 
-「もし、◯◯だったら...」　→ switchノードを使う
-「msg.payloadに△△を出力したい」→ changeノードを使う
+- 「もし、◯◯だったら...」　→ switchノードを使う
+
+- 「msg.payloadに△△を出力したい」→ changeノードを使う
 
 #### 4. 「もし、30度だったら、90を出力する」まで作ってみる
 
@@ -82,6 +83,8 @@ injectノードをクリックすると、その後は自動でサーボモー�
 
 .....？？？？
 
+<br>
+<br>
 
 でも何かがおかしいですね。
 
@@ -89,11 +92,13 @@ injectノードをクリックすると、その後は自動でサーボモー�
 角度が、30度と90度を行き来するはずが、均等でなく角度も変です。
 
 
-
+<br>
+<br>
 
 なぜでしょう？？？
 
-
+<br>
+<br>
 
 
 サーボモーターが30度または90度に動き切る前に、changeノードがサーボモーターを動かす指示を与えてしまっているせいではないでしょうか。
@@ -125,6 +130,156 @@ changeノードとobniz functionの間にdelayノードを入れます。
 今度はきちんと30度と90度を行き来しています。
 
 <a href="https://gyazo.com/394dc1a4ae1acda14235efdf4a06014d"><img src="https://i.gyazo.com/394dc1a4ae1acda14235efdf4a06014d.gif" alt="Image from Gyazo" width="376"/></a>
+
+
+### 2. 箱を開けたらピョコピョコ動かすトリガーをつくる
+
+マウスのクリックにより、サーボモーターが動き始めるようになっていますが、
+
+今度は、センサーの値をトリガーとして動き始めるように作り変えてみましょう。
+
+
+**箱を開けたらサーボモーターがぴょこぴょこうごき、閉じたら止まる**
+
+
+この状態を目指します。
+
+
+
+今回は[超音波距離センサー](../parts-manual/sensor/distance.md)を使って、箱が空いたか閉じたかを判定します。
+
+
+#### 1. obnizに超音波距離センサーを接続し、値を取得できるようにする
+
+[超音波距離センサー](../parts-manual/sensor/distance.md)を参考に、まずは接続して超音波距離センサーの値を取得できるところまで行ってください
+
+
+ピンが4つ必要です。今回はマニュアルと同じく8,9,10,11番のピンを使ってみます。
+
+複数の電子パーツを使うときのやりかたは、[obnizで複数のパーツを同時に使いたい](../obniz-multiple-parts.md)を参照してください。
+
+
+■ 初期化処理コード
+
+```javascript
+
+obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:8, echo:9, trigger:10, vcc:11 });
+obnizParts.servo = obniz.wired("ServoMotor", { signal: 2 });
+
+```
+
+フロー
+
+<a href="https://gyazo.com/1391dcbfb2da41499acae85afeebbc91"><img src="https://i.gyazo.com/1391dcbfb2da41499acae85afeebbc91.png" alt="Image from Gyazo" width="915"/></a>
+
+
+
+#### 2. 距離センサーの値による分岐処理を書く
+
+箱の開け閉めを取得し、出力が変わるようにしましょう。
+
+Switchノードをつなげ、設定してください。とりあえず50mmを境に分岐させたいと思います。
+
+分岐を2つ作り、「数値」「50」と入力してください。
+
+<a href="https://gyazo.com/bd45c2aa91bf040c3919ec7c68f497c4"><img src="https://i.gyazo.com/bd45c2aa91bf040c3919ec7c68f497c4.gif" alt="Image from Gyazo" width="600"/></a>
+
+
+#### 3. 動きを止めるにはどうすればいいか考える① うまくいかない例
+
+現在は、30または90を入力すると、その後は自動で動き続ける仕様になっています。
+
+止めるためにはどうしたらいいでしょう？
+
+<br>
+<br>
+<br>
+
+
+30・90以外の数値を入れれば、止まるはず!
+
+0を出力するinjectノードを1つ追加して、obniz functionにつなぎ実験してみましょう。
+
+<a href="https://gyazo.com/1f72638606c603b71e232bcb90e32d24"><img src="https://i.gyazo.com/1f72638606c603b71e232bcb90e32d24.png" alt="Image from Gyazo" width="612"/></a>
+
+<br>
+<br>
+
+結果: **サーボモーター、止まらない!!!**
+
+全然、止まりませんでした。なぜでしょうか。
+
+
+現在のフロー設計では、0が入力されても、すでに次の繰り返し処理（30や90）がスケジュールされてしまっているのでしょう。
+
+
+
+#### 4. 動きを止めるにはどうすればいいか考える② うまくいく例
+
+サーボモーターを交互に動かす機能と、これ自体をON/OFFする機能を分けて考えてみましょう。
+
+- ONの状態だったら、サーボモーターを繰り返し動かす
+- OFFの状態だったら、サーボモーターの動きを停止させる
+
+
+ON/OFFの状態管理を行うのに、flowオブジェクト: `flow.payload`を使用してみます。
+
+
+- msgオブジェクト: 今までみなさんが使っている `msg.payload`。つながっているノード同士で保持されるデータ。
+- flowオブジェクト: 同一のタブ（フロー、サブフロー）単位で保持、維持されるオブジェクト。`flow.payload` で値の参照や上書きができます。
+
+
+1. 下記のように組んでみましょう
+
+- flow.payloadがtrueだったら、サーボモーターを動かし続ける
+- flow.payloadがfalseだったら、サーボモーターの動きを止める
+
+
+switchノードと、changeノード2つをつなぎ、それぞれ設定してください。
+
+
+- switch
+
+<a href="https://gyazo.com/4d8fa45257300048d980482dd30eb484"><img src="https://i.gyazo.com/4d8fa45257300048d980482dd30eb484.gif" alt="Image from Gyazo" width="500"/></a>
+
+
+- change
+
+<a href="https://gyazo.com/51063285ffb82611abfd5cd27d52ba65"><img src="https://i.gyazo.com/51063285ffb82611abfd5cd27d52ba65.gif" alt="Image from Gyazo" width="500"/></a>
+
+
+<br><br><br>
+
+2. サーボモーターを動かすフローにswitchを追加し、設定する
+
+- switch
+
+<a href="https://gyazo.com/96ad9cebd0364a794d7a96eec5699fb4"><img src="https://i.gyazo.com/96ad9cebd0364a794d7a96eec5699fb4.png" alt="Image from Gyazo" width="967"/></a>
+
+
+設定は以下のように行ってください。
+
+
+
+
+現在のフロー
+<a href="https://gyazo.com/01523e79c0a8b7a6c50f7b1326d8dc16"><img src="https://i.gyazo.com/01523e79c0a8b7a6c50f7b1326d8dc16.png" alt="Image from Gyazo" width="500"/></a>
+
+
+
+injectの20をクリックするとモーターが止まり、injectの60をクリックしてから、サーボモーターのinjectノードをクリックすると動きつづけることを確認してください。
+
+
+#### 5. センサーと連動させる
+
+では距離センサーの値と連動させてみましょう！
+
+1. まずは距離センサーを取得するフローを移動してください
+
+<a href="https://gyazo.com/83319e9e89393a9b975c7a82a2ee521b"><img src="https://i.gyazo.com/83319e9e89393a9b975c7a82a2ee521b.png" alt="Image from Gyazo" width="903"/></a>
+
+2. 
+
 
 ---
 
