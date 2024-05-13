@@ -1,4 +1,4 @@
-# GPT3.5とClaude3 Opusはどっちが優秀？
+# コラム: GPT3.5とClaude3 Opusはどっちが優秀？
 
 GPT-3.5とClaude3 Opusはどちらも優れた言語モデルですが、それぞれ特徴や長所が異なります。
 
