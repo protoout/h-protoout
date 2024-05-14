@@ -23,8 +23,8 @@
     - [2-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
     - [2-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
 3. 生成AIを活用してDAY1の実装に挑戦してみよう
-    - [3-1. 0から生成してみる](./lesson01-generative-ai/03_1_zero1.md)
-    - [3-2. エラーが出た時にChatGPTに](./lesson01-generative-ai/03_2_one2.md)
+    - [3-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)
+    - [3-2. 生成AIが作ったフローを改修](./lesson01-generative-ai/03_2_one2.md)
 
 ## Lesson02 API・外部サービス連携でさらに広げていこう 【10:30〜11:00】 担当:私市
 
