@@ -6,15 +6,17 @@
 
 **超音波距離センサーで距離を測ってLEDのオンオフ制御**を作ってみます。
 
+- ChatGPTに指示を出してフローの改善をしてもらいましょう。
+
 ## 1. 演習
 
-プロンプトサンプルから[2. Node-REDでobnizノードが動くプロンプトサンプル](../../../tools/prompt-sample.md)の中身をコピペしてChatGPTのチャット画面に貼り付けて命令を出してみましょう。
+プロンプトサンプルから[Node-REDでobnizノードを動かしたいプロンプトサンプル](../../../tools/prompt-sample.md)の中身をコピペしてChatGPTのチャット画面に貼り付けて命令を出してみましょう。
 
 > [実際のイメージ](https://chat.openai.com/share/e/b521826e-d0f4-46f3-83f7-4c9fd61c83ae)
 
 JSONが出力されると思います。
 
-### 3-2. フローの読み込み
+## 2. フローの読み込み
 
 メニュー（右上のメニューか、フロー画面を右クリックして出てくるメニューの挿入項目）からフローの読み込みをします。
 
@@ -35,7 +37,79 @@ ChatGPTによって生成されたJSONを貼り付けて読み込んでみまし
 
 </details>
 
+もう使えそうな形のJSONが出力されました。
+
+## 3. 中身を確認
+
+完璧な状態だと、3つの各ノードの中に以下のコードが記述されています。
+
+- `obniz repeatノード`(左側)
+
+```js
+msg.payload = await obnizParts.hcsr04.measureWait();
+return msg;
+```
+
+- `Functionノード`(真ん中)
+
+```js
+if (msg.payload <= 200) {
+    msg.payload = true;
+} else {
+    msg.payload = false;
+}
+return msg;
+```
+
+- `obniz funcionノード`(右側)
+
+```js
+if (msg.payload === true) {
+    obnizParts.led.on();
+} else {
+    obnizParts.led.off();
+}
+```
+
+## 4. 中身の不備を指摘する
+
+ただ、出力されたフローの中にたまに、コードの記述が入ってない場合があります。（講師側のプロンプトエンジニアリング力が足りてないだけかもしれません）
+
+> 色々足りてない
+>
+> <img src="https://i.gyazo.com/3e9a49f8a2fd53f4651d37ccb85ae018.png" width="400px" />
+
+そんな場合はChatGPTに追加で要望を出しましょう。
+
+[距離センサーのマニュアルページ](../../../tools/parts-manual/sensor/distance.md)を見つつ、コードの指示などを追加依頼します。
+
+> ![](https://i.gyazo.com/8d6a4140b47dd6f94a07b5ea548769ba.png)
+
+理想的な状態になるまで、 **指示を出してJSONを出力して、読み込んで確認して......を繰り返してみましょう。**
+
+やりとりをしているとGPTも覚えてきて精度が上がります。
+
+間違っていたら間違っていると教えてあげましょう。
+
+## 5. 良い結果が出たら設定ノードを更新してデプロイ
+
+何回か試して、イメージする結果ができました。
+
+> ![](https://i.gyazo.com/8e5f186b721b2d5807c578f618099997.png)
+
+最後にobnizの`設定ノード`の初期化処理コードを設定もしくは更新をして実行してみましょう。
+
+
+
+
+> <img src="https://i.gyazo.com/c31a203fb0737f98d925d6d157b58cca.png" width="400px" />
+
+
+## 
+
 プロンプトを少し覗いてみますが、
+
+[やりとりしていたチャット](https://chat.openai.com/share/e/464b0669-58be-44c3-accd-e12d3a7ee4d7)を見てみます。
 
 > <img src="https://i.gyazo.com/1238ab9dfa8a640d9bb5c2a3196d7add.png" width="400px" />
 
