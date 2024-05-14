@@ -73,7 +73,8 @@ https://api.nasa.gov/planetary/apod?api_key=【API KEY】
 <img src="https://i.gyazo.com/17a02c204783ee4adf59112b942f4be1.png" alt="Image Description" width="500"/>
 
 
-「url」とかいてあるURLは、宇宙の画像です。URLをコピーしてブラウザからアクセスしてみましょう。
+返ってきたデータの「url」とかいてあるところにあるURLは、宇宙の画像です。URLをコピーしてブラウザからアクセスしてみましょう。
+<a href="https://gyazo.com/2fbb69ee50e6e948e7cc50c0844e5569"><img src="https://i.gyazo.com/2fbb69ee50e6e948e7cc50c0844e5569.png" alt="Image from Gyazo" width="285"/></a>
 
 <img src="https://apod.nasa.gov/apod/image/2405/NGC2169LRGBQHY183HR_c1024.jpg" width="300">
 
@@ -114,9 +115,8 @@ URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKで�
 
 - template
 
-ここではHTMLというウェブサイトのマークアップ言語を使います。
+ここではウェブサイト構築でよく使われる、HTMLというマークアップ言語を使います。
 
-自分で作るときは、生成AIに書いてもらいましょう！
 
 <a href="https://gyazo.com/ca05b240145bb462dd01eafb252935e1"><img src="https://i.gyazo.com/ca05b240145bb462dd01eafb252935e1.gif" alt="Image from Gyazo" width="600"/></a>
 
@@ -138,6 +138,46 @@ URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKで�
 </html>
 
 ```
+
+
+
+自分で作るときは、生成AIに書いてもらいましょう！
+
+プロンプトのサンプル
+
+```
+## システム
+要件に沿ってHTMLをかいてください。
+CSSはHTML内に記述し一つにおさめてください。
+
+## 出力のサンプル
+<head>
+    <title>H24 NASA APIテスト</title> <!--タイトル-->
+</head>
+<body>
+    
+<h1>NASA</h1><!--見出し1-->
+<img src="{{payload.url}}" width="500"> <!--画像として、APIから取得したURLを表示する-->
+<p>
+{{payload.explanation}}  <!--APIから取得したテキスト情報を表示する-->
+</p>
+    
+</body>
+</html>
+
+## 要件
+
+- テキストと画像を横に3つ並べる
+- テキストの内容と画像のURLは以下の通り
+1. {{payload.text1}}{{payload.img1}}
+2. {{payload.text2}}{{payload.img1}}
+3. {{payload.text3}}{{payload.img1}}
+
+```
+
+サンプルを試すと、下記のように表示できるHTMLが生成されました。
+<a href="https://gyazo.com/3484e70918b921a9041f364082a9bd16"><img src="https://i.gyazo.com/3484e70918b921a9041f364082a9bd16.jpg" alt="Image from Gyazo" width="500"/></a>
+
 
 3. アクセスしてみましょう
 
