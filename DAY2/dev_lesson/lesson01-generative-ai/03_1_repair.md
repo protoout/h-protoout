@@ -124,6 +124,8 @@ if (msg.payload === true) {
 
 [やりとりしていたチャット](https://chat.openai.com/share/e/464b0669-58be-44c3-accd-e12d3a7ee4d7)を見てみます。
 
+> 画像の200cmってミスですね......笑
+> 
 > <img src="https://i.gyazo.com/1238ab9dfa8a640d9bb5c2a3196d7add.png" width="400px" />
 
 
