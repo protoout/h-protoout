@@ -28,7 +28,9 @@ ChatGPTは2022年11月にリリースされ、画像ではなくテキストを�
 > <img src="https://i.gyazo.com/e5c7e0c02133a3b058a66a87ff9fbba3.png" width="300px" />
 > 引用元: https://www.brainpad.co.jp/doors/contents/01_about_llm/
 
-### 近代: 
+### 近代: LLM戦国時代
+
+GoogleやMicrosoft、Facebookなど
 
 ### 一昨日: GPT4o爆誕
 
@@ -38,9 +40,10 @@ ChatGPTは2022年11月にリリースされ、画像ではなくテキストを�
 
 | サービス名 | 運営元       | 特徴                      | 備考                                     | URL                             |
 |------------|------------|---------------------------|------------------------------------------|---------------------------------|
-| ChatGPT    | OpenAI     | 自然な文章生成が得意       | Microsoftが多額の出資                    | https://chat.openai.com/        |
+| ChatGPT(GPT)    | OpenAI     | 自然な文章生成が得意       | Microsoftが多額の出資                    | https://chat.openai.com/        |
 | Gemini     | Google     | 豊富なデータを活用        | ChatGPTに恐れをなしてGoogleが作ったLLM                                        | https://gemini.google.com/      |
 | Claude     | Anthropic  | GPT-4を上回るLLM          | OpenAI元幹部らが独立し、AmazonやGoogleが出資 | https://claude.ai/chats         |
+| Llama     | Facebook(Meta) | 日本であまり使えないので盛り上がりに欠けてる印象         | Meta社が他社に対抗して作った（印象） | https://llama.meta.com/        |
 | Grok（紹介のみ）  | x  | 現実世界の理解と数学が他のLLMより得意らしい         | イーロンマスクが突如やり始めた | https://twitter.com/i/grok   (X Proユーザーのみ)      |
 
 
