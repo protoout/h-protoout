@@ -73,6 +73,8 @@
 
 ## 3. Node-REDのフローを説明させる
 
+フローを説明させるプロンプト例です。
+
 ```
 以下はNode-REDのフローのJSONです。
 
@@ -83,4 +85,42 @@
 ```
 [{"id":"5fa9057f.f2e0ac","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":330,"y":340,"wires":[["ebafa559.00b978","e8f7976.0477568"]]},{"id":"ebafa559.00b978","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"obniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n obniz.display.print('LED ON');\r\n obnizParts.led.on();\r\n} else {\r\n // スイッチが押されていない状態\r\n obniz.display.print('LED OFF');\r\n obnizParts.led.off();\r\n}\r\n","x":520,"y":340,"wires":[[]]},{"id":"e8f7976.0477568","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":510,"y":420,"wires":[]}]
 ```
+```
+
+## 4. 既存フローの回収
+
+```
+## 役割
+あなたはNode-REDとobnizを使ったIoTアプリケーション開発のエキスパートです。
+
+以下の要件に基づいて、Node-REDのフローをJSONで生成してください。
+
+## 前提条件
+- 常にNode-REDで利用できるコンテンツを返してください。
+- コードを書く場合はFunctionノードで利用できるコードにしてください。常にvarの代わりにconstかletを使います。
+- 外部のノードモジュールを使用するように要求されない限り、require() を使用しないでください。
+- 指示がない限り、基本的にコードとインラインコードコメントを返します。
+- 入力にはNode-REDのフローとなるJSONと要件を渡します。
+
+## 出力
+
+- 出力スピードを上げるため、出力するフローのJSONはインデント無しでお願いします。
+
+## JSONと説明
+
+```
+[{"id":"5fa9057f.f2e0ac","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nreturn msg;","x":330,"y":340,"wires":[["ebafa559.00b978","e8f7976.0477568"]]},{"id":"ebafa559.00b978","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"obniz.display.clear(); // 画面を消去\r\n\r\nif (msg.payload === 'push') {\r\n // スイッチが押されている状態\r\n obniz.display.print('LED ON');\r\n obnizParts.led.on();\r\n} else {\r\n // スイッチが押されていない状態\r\n obniz.display.print('LED OFF');\r\n obnizParts.led.off();\r\n}\r\n","x":520,"y":340,"wires":[[]]},{"id":"e8f7976.0477568","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":510,"y":420,"wires":[]}]
+```
+
+obniz-repeat ノード: このノードは、obnizデバイスから定期的にスイッチの状態を取得します。interval パラメーターにより、取得の頻度が設定されています。
+
+obniz-function ノード: このノードは、obnizデバイスから取得したスイッチの状態に基づいて、LEDの状態を制御します。msg.payload には、スイッチの状態が含まれます。スイッチが押されている場合は、LEDを点灯させ、画面に "LED ON" と表示します。スイッチが押されていない場合は、LEDを消灯させ、画面に "LED OFF" と表示します。
+
+debug ノード: このノードは、デバッグ情報を表示します。この場合、obniz-function ノードからの出力が表示されます。
+
+## 要件
+
+- 条件分岐
+　- このフローはobniz functionノード内部に条件分岐コードが書いてあり、初学者には分かりにくいので、Switchノードを使って切り替えるようなフローに書き換えてください。
+- LEDの処理とDisplayの処理が同じobniz functionに書かれているので機能ごとに細かく分解してください。
 ```
