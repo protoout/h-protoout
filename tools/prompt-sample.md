@@ -32,36 +32,39 @@
 - 距離が200cmより大きくなったら、LEDを消灯する
 - obnizとNode-REDを使ってセンサーとLEDを制御する
 
-フローの生成には、以下の点を考慮してください。
+フローの生成には、以下の点を厳密に守ってください。
 
-1. obnizの設定ノード
-   - 型: "obniz"
+1. obnizの設定ノード (型: "obniz")
    - プロパティ "code" 内で、以下の操作を行う
      - HC-SR04とLEDのピン設定を行い、`obnizParts` のプロパティとして追加する
        - HC-SR04: `obnizParts.hcsr04 = obniz.wired("HC-SR04", {gnd:0, echo:1, trigger:2, vcc:3});`
        - LED: `obnizParts.led = obniz.wired("LED", {anode:4, cathode:5});`
      - グローバル変数 `obnizParts` の初期化は不要
 
-2. obniz repeatノード
-   - 型: "obniz-repeat"
+2. obniz repeatノード (型: "obniz-repeat")
    - プロパティ "interval" で、1秒ごとに実行するように設定する
-   - プロパティ "code" 内で、距離の測定と `msg.payload` へのセットを行う
-     - 距離の測定: `await obnizParts.hcsr04.measureWait()`
-     - 結果を `msg.payload` にセットして返す
+   - プロパティ "code" 内で、以下のコードを厳密に記述する
+     ```
+     msg.payload = await obnizParts.hcsr04.measureWait(); //距離の測定
+     return msg;
+     ```
+   - 他のノードにコードを記述しないこと
 
-3. functionノード
-   - 型: "function"
-   - プロパティ "func" 内で、`msg.payload` の距離値を受け取り、しきい値（200cm）と比較する
+3. functionノード (型: "function")
+   - プロパティ "func" 内で、以下の操作を行う
+     - `msg.payload` の距離値を受け取り、しきい値（200cm）と比較する
      - しきい値以下ならば `msg.payload` に true、そうでない場合は false をセットして返す
+   - obniz repeatノードとは別のノードとして作成すること
 
-4. obniz functionノード
-   - 型: "obniz-function"
-   - プロパティ "code" 内で、`msg.payload` の真偽値を受け取り、LED を制御する
+4. obniz functionノード (型: "obniz-function")
+   - プロパティ "code" 内で、以下の操作を行う
+     - `msg.payload` の真偽値を受け取り、LED を制御する
      - true ならば `obnizParts.led.on()`、false ならば `obnizParts.led.off()` を実行する
 
-5. ノード間の接続
+5. ノード間の接続と配置
    - obniz repeatノードの出力をfunctionノードに接続
    - functionノードの出力をobniz functionノードに接続
+   - ノードは3つとし、横に並べて配置
 
 6. 分かりやすい名前とコメントを各ノードに付ける
 
