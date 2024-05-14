@@ -22,6 +22,11 @@ ChatGPTによって生成されたJSONを貼り付けて読み込んでみまし
 
 > <img src="https://i.gyazo.com/8c68512ef8d66a0972ce6f3572f31d4f.png" width="400px" />
 
+おそらく読み込まれると以下のようなフローが読み込まれると思います。
+
+> <img src="https://i.gyazo.com/26d8e08309cc4133cd205cbad863cd4b.png" width="400px" />
+
+
 <details><summary>おそらくこんなJSON - クリックで開く</summary>
 
 ```json
