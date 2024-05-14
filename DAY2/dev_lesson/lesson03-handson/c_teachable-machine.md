@@ -19,3 +19,5 @@ Teachable MachineはGoogleが公開している機械学習を楽しく使える
     - 読み込んだ画像をNode-RED上に表示してくれるノード
 
 > <img src="https://i.gyazo.com/f3d3f76405b85e266165ae625f4a99a4.gif" width="400px" />
+
+> <img src="https://i.gyazo.com/04000b3380bb4ee0ac59e58d3ae6a827.png" width="400px" />
