@@ -88,7 +88,13 @@ await obniz.wait(1000); //1秒待つ
 obnizParts.Speaker.stop(); // 音を止める
 ```
 
+- `4.` obniz IDのせずに
+
+Speakerの処理をしている`obniz functionノード`もobniz IDの設定を忘れずにしましょうl。
+
 ### 3-3. 実際に動かしてみる
+
+さて、デプロイしてみます。
 
 問題なくいくと以下のように距離に応じて音が鳴ったり止まったりしてくれます。
 
