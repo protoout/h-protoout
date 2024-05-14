@@ -26,7 +26,7 @@
     - [3-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)
     - [3-2. 生成AIが作ったフローを改修](./lesson01-generative-ai/03_2_one2.md)（時間があれば実施）
 4. 生成AIが作ったフローの改修やデバッグ（時間があれば実施）
-    - [4-1. 既存のJSONを読み込んでスタート](./lesson01-generative-ai/04_2_ten99.md)
+    - [4-1. 既存のJSONを読み込んでスタート](./lesson01-generative-ai/04_1_ten99.md)
 
 ## Lesson02 API・外部サービス連携でさらに広げていこう 【10:30〜11:00】 担当:私市
 
