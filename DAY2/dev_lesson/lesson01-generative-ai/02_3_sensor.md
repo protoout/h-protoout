@@ -46,9 +46,13 @@ return msg; //msg.payloadを出力
 
 > <img src="https://i.gyazo.com/56b3c520396c384bbc241c2e9d05d9d4.gif" width="400px" />
 
+これで距離センサーから値を取れました。
+
 ### 3-2. スピーカーから音を鳴らす
 
-エミュレートで使っていた`Templateノード`を`obniz functionノード`に入れ替えましょう。音を鳴らしてみます。
+音を鳴らしてみます。
+
+エミュレートで使っていた`Templateノード`を`obniz functionノード`に入れ替えましょう。
 
 次に、[スピーカーのマニュアルページ](../../../tools/parts-manual/actuator/speaker.md)を参考に`設定ノード`と`obniz functionノード`を更新します。
 
@@ -57,7 +61,7 @@ return msg; //msg.payloadを出力
 > <img src="https://i.gyazo.com/98af8e97befeb2e693aecf6ddc398ef7.png" width="400px" />
 
 
-- 1. `設定ノード`の初期化処理を**更新**
+- `1.`: `設定ノード`の初期化処理を**更新**
 
 今回は超音波センサーとスピーカーを両方使うので、初期化処理は以下のようになります。
 ピンアサインも気をつけましょう。
@@ -67,7 +71,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 }); 
 obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 }); //←追加
 ```
 
-- 2. `obniz functionノード`1つ目
+- `2.`: `obniz functionノード`1つ目
 
 音を鳴らす処理です。
 
@@ -76,7 +80,7 @@ obnizParts.Speaker.play(1000); // 1000Hz で音を鳴らす
 await obniz.wait(1000); //1秒待つ
 ```
 
-- `obniz functionノード`1つ目
+- `3.`: `obniz functionノード`1つ目
 
 音を止める処理です。
 
