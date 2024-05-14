@@ -96,7 +96,7 @@ if (msg.payload === true) {
 
 [距離センサーのマニュアルページ](../../../tools/parts-manual/sensor/distance.md)を見つつ、コードの指示などを追加依頼します。
 
-> ![](https://i.gyazo.com/8d6a4140b47dd6f94a07b5ea548769ba.png)
+> <img src="https://i.gyazo.com/8d6a4140b47dd6f94a07b5ea548769ba.png" width="400px" />
 
 理想的な状態になるまで、 **指示を出してJSONを出力して、読み込んで確認して......を繰り返してみましょう。**
 
@@ -108,7 +108,7 @@ if (msg.payload === true) {
 
 何回か試して、イメージする結果ができました。
 
-> ![](https://i.gyazo.com/8e5f186b721b2d5807c578f618099997.png)
+> <img src="https://i.gyazo.com/8e5f186b721b2d5807c578f618099997.png" width="400px" />
 
 最後にobnizの`設定ノード`の初期化処理コードを設定もしくは更新をして実行してみましょう。
 
