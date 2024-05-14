@@ -16,19 +16,19 @@
 
 ### 3-1. 距離センサーに差し替え
 
-エミュレートで使っていた`injectノード`,`changeノード`を`obniz repeatノード`に入れ替えましょう。
+エミュレートで使っていた`Injectノード`,`Changeノード`を`obniz repeatノード`に入れ替えましょう。
 
-<img src="https://i.gyazo.com/d4fb9397dff4fbfcf93c7f26d5da1117.png" width="400px" />
+> <img src="https://i.gyazo.com/d4fb9397dff4fbfcf93c7f26d5da1117.png" width="400px" />
 
-[超音波距離センサーのマニュアルページ](../../../tools/parts-manual/sensor/distance.md)を参考に`設定ノード`と`obniz repeatノード`に中身をコピペします。
+次に、[超音波距離センサーのマニュアルページ](../../../tools/parts-manual/sensor/distance.md)を参考に`設定ノード`の初期化処理の箇所と`obniz repeatノード`に中に以下の内容をコピペします。
 
-- `設定ノード`の初期化処理
+- 1. `設定ノード`の初期化処理
 
 ```js
 obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 }); //0,1,2,3番にピンを割り当てる
 ```
 
-- `obniz repeatノード`
+- 2. `obniz repeatノード`
 
 ```js
 msg.payload = await obnizParts.hcsr04.measureWait(); // センサーから取得した値をmsg.payloadに格納
@@ -36,22 +36,28 @@ msg.payload = await obnizParts.hcsr04.measureWait(); // センサーから取得
 return msg; //msg.payloadを出力
 ```
 
-この時点でデプロイして試して距離センサーに手を近づけたりするとデバッグノードで変化がわかります。
+- 3. 設定を忘れずに
+
+また、デプロイする前に`obniz ID`が自身のobnizのものにセットされているかも確認しましょう。セットされていなければセットしてください。
+
+> <img src="https://i.gyazo.com/fac1a5126566311c0e9788b33a0816f8.png" width="400px" />
+
+デプロイして試してみます。距離センサーに手を近づけたりすると、デバッグノードで変化がわかります。
 
 > <img src="https://i.gyazo.com/56b3c520396c384bbc241c2e9d05d9d4.gif" width="400px" />
 
 ### 3-2. スピーカーから音を鳴らす
 
-エミュレートで使っていた`templateノード`を`obniz functionノード`に入れ替えましょう。音を鳴らしてみます。
+エミュレートで使っていた`Templateノード`を`obniz functionノード`に入れ替えましょう。音を鳴らしてみます。
 
-[スピーカーのマニュアルページ](../../../tools/parts-manual/actuator/speaker.md)を参考に`設定ノード`と`obniz functionノード`を更新します。
+次に、[スピーカーのマニュアルページ](../../../tools/parts-manual/actuator/speaker.md)を参考に`設定ノード`と`obniz functionノード`を更新します。
 
 `obniz functionノード`はtemplateノード同様に二つ用意して線で繋ぎます。
 
 > <img src="https://i.gyazo.com/98af8e97befeb2e693aecf6ddc398ef7.png" width="400px" />
 
 
-- `設定ノード`の初期化処理を**更新**
+- 1. `設定ノード`の初期化処理を**更新**
 
 今回は超音波センサーとスピーカーを両方使うので、初期化処理は以下のようになります。
 ピンアサインも気をつけましょう。
@@ -61,7 +67,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 }); 
 obnizParts.Speaker = obniz.wired("Speaker",{ signal:9, gnd:11 }); //←追加
 ```
 
-- `obniz functionノード`1つ目
+- 2. `obniz functionノード`1つ目
 
 音を鳴らす処理です。
 
