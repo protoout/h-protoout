@@ -22,13 +22,13 @@
 
 次に、[超音波距離センサーのマニュアルページ](../../../tools/parts-manual/sensor/distance.md)を参考に`設定ノード`の初期化処理の箇所と`obniz repeatノード`に中に以下の内容をコピペします。
 
-- 1. `設定ノード`の初期化処理
+- `1.`: `設定ノード`の初期化処理
 
 ```js
 obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:0, echo:1, trigger:2, vcc:3 }); //0,1,2,3番にピンを割り当てる
 ```
 
-- 2. `obniz repeatノード`
+- `2.`: `obniz repeatノード`にコードを記載
 
 ```js
 msg.payload = await obnizParts.hcsr04.measureWait(); // センサーから取得した値をmsg.payloadに格納
@@ -36,7 +36,7 @@ msg.payload = await obnizParts.hcsr04.measureWait(); // センサーから取得
 return msg; //msg.payloadを出力
 ```
 
-- 3. 設定を忘れずに
+- `3.`: 設定を忘れずに
 
 また、デプロイする前に`obniz ID`が自身のobnizのものにセットされているかも確認しましょう。セットされていなければセットしてください。
 
