@@ -36,7 +36,7 @@ msg.payload = await obnizParts.hcsr04.measureWait(); // センサーから取得
 return msg; //msg.payloadを出力
 ```
 
-- `3.`: 設定を忘れずに
+- `3.`: obniz IDの設定を忘れずに
 
 また、デプロイする前に`obniz ID`が自身のobnizのものにセットされているかも確認しましょう。セットされていなければセットしてください。
 
