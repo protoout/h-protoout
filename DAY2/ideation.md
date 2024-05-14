@@ -19,7 +19,7 @@
 
 # アイデアワーク
 ## 0.このパートの進め方
-<img src="https://i.gyazo.com/3d46edc1aac42a8025d303f031f03d0b.png" width="30%">
+<img src="https://i.gyazo.com/3d46edc1aac42a8025d303f031f03d0b.png" width="10%">
 
 ジェームス・W・ヤング（1988） 
 「アイデアは既存の要素と要素の組み合わせでしかない」
