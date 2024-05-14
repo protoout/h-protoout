@@ -8,10 +8,21 @@
 
 - ChatGPTに指示を出してフローの改善をしてもらいましょう。
 
-## 1. 演習
+### 配線準備
+
+超音波距離センサーとLEDを配線しましょう
+
+> 例えば超音波距離センサーを`0,1,2,3ピン`に,LEDの+(足が長い方)を`4ピン`に、-(足が短い方)を`5`ピンになど接続してください。
+> 
+> <img src="https://i.gyazo.com/91fb4bbfc54848ecf60f22344cae6905.jpg" width="400px" />
+
+
+## 1. GPT
 
 プロンプトサンプルから[Node-REDでobnizノードを動かしたいプロンプトサンプル](../../../tools/prompt-sample.md)の中身をコピペしてChatGPTのチャット画面に貼り付けて命令を出してみましょう。
 
+> <img src="https://i.gyazo.com/d5cf7e2da38f926a05f0ac3ae5c26177.png" width="400px" />
+> 
 > [実際のイメージ](https://chat.openai.com/share/e/b521826e-d0f4-46f3-83f7-4c9fd61c83ae)
 
 JSONが出力されると思います。
