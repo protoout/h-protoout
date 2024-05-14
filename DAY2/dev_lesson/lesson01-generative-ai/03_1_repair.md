@@ -42,6 +42,8 @@ ChatGPTによって生成されたJSONを貼り付けて読み込んでみまし
 
 <details><summary>おそらくこんなJSON - クリックで開く</summary>
 
+参考程度です。ここからコピペしないでください。ChatGPTに命令を出して出てきたJSONを各自使ってみましょう。
+
 ```json
 [ { "id": "obniz-setup", "type": "obniz", "z": "flow-id", "name": "obniz Setup", "code": "obnizParts.hcsr04 = obniz.wired(\"HC-SR04\", {gnd:0, echo:1, trigger:2, vcc:3});\nobnizParts.led = obniz.wired(\"LED\", {anode:4, cathode:5});", "config": "", "x": 220, "y": 140, "wires": [] }, { "id": "obniz-repeat", "type": "obniz-repeat", "z": "flow-id", "name": "obniz Repeat", "interval": "1000", "x": 240, "y": 240, "wires": [ [ "distance-compare" ] ] }, { "id": "distance-compare", "type": "function", "z": "flow-id", "name": "Distance Comparison", "func": "msg.payload = msg.payload < 200; // Check if distance is less than 200cm\nreturn msg;", "outputs": 1, "noerr": 0, "x": 460, "y": 240, "wires": [ [ "led-control" ] ] }, { "id": "led-control", "type": "obniz-function", "z": "flow-id", "name": "LED Control", "code": "if (msg.payload) {\n    obnizParts.led.on();\n} else {\n    obnizParts.led.off();\n}", "config": "", "x": 680, "y": 240, "wires": [] } ]
 ```
