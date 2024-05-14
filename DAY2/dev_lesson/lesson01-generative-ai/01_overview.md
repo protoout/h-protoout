@@ -13,7 +13,7 @@ ChatGPTのリリースを皮切りに生成AIへの熱が高まり、後続で�
 | サービス名 | 運営元       | 特徴                      | 備考                                     | URL                             |
 |------------|------------|---------------------------|------------------------------------------|---------------------------------|
 | ChatGPT    | OpenAI     | 自然な文章生成が得意       | Microsoftが多額の出資                    | https://chat.openai.com/        |
-| Gemini     | Google     | 豊富なデータを活用        | -                                        | https://gemini.google.com/      |
+| Gemini     | Google     | 豊富なデータを活用        | ChatGPTに恐れをなしてGoogleが作ったLLM                                        | https://gemini.google.com/      |
 | Claude     | Anthropic  | GPT-4を上回るLLM          | OpenAI元幹部らが独立し、AmazonやGoogleが出資 | https://claude.ai/chats         |
 | Grok（紹介のみ）  | x  | 現実世界の理解と数学が他のLLMより得意らしい         | イーロンマスクが突如やり始めた | https://twitter.com/i/grok   (X Proユーザーのみ)      |
 
@@ -23,8 +23,6 @@ ChatGPTのリリースを皮切りに生成AIへの熱が高まり、後続で�
 それぞれの出力の違いやUIの違いを体験してみてください。
 
 今回は、3つの生成AIチャットツールを使い簡単に作文してみましょう！
-
-----(WIP)
 
 ## 2. 活用事例の紹介
 
