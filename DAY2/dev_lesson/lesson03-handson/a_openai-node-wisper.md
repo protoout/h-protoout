@@ -1,6 +1,4 @@
-### OpenAIのノードをつかってみよう simple gtp
-
-今度は、OopenAIのノードをを使い、Node-REDのフローに生成AIを組み込んでみましょう！
+### 2. OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する
 
 
 ## 音声でLEDを操作するものを作ります！
@@ -11,10 +9,21 @@
 「光らせて」「ただいま」「もう出かける」など、曖昧な表現でもLEDを光らせたり消したりしてくれます。
 
 
-
-
 [![完成イメージ](https://i.gyazo.com/36c027b8c9afe9318cfb8cb0ec064941.jpg)](https://www.canva.com/design/DAGDMT1WZ7Y/XYLYKHGyz5rJhG01yP1LEQ/watch?utm_content=DAGDMT1WZ7Y&utm_campaign=designshare&utm_medium=embeds&utm_source=link)
 
+## はじめる前に
+
+<span style="color:red;">※ このハンズオンではPCのマイクを使用します。Node-REDの環境によりできないことがありますので最初にマイクが使えるか確かめてください。<span>
+
+1. ノードをインストール
+- node-red-node-ui-microphone
+- @flowfuse/node-red-dashboard
+
+1. 外部ノードを追加。`@flowfuse/node-red-dashboard`をインストール
+
+<img src="https://i.gyazo.com/3239a2d14644f8ceabb85272b301fd0a.png" width="500">
+
+<a href="https://gyazo.com/31991f40b40e79c2c4b26317b9544867"><img src="https://i.gyazo.com/31991f40b40e79c2c4b26317b9544867.png" alt="Image from Gyazo" width="500"/></a>
 
 
 ## やってみよう
@@ -32,13 +41,8 @@
 
 3. 停止用ノードを読み込む
 
-停止用ノードは下記。
-```json
-[{"id":"cb1d6d3a.017e1","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":610,"y":140,"wires":[]},{"id":"11a346f0.5a4c19","type":"obniz-function","z":"d9dba4a1.01f228","obniz":"","name":"","code":"msg.payload = \"close\";\nawait obniz.wait(1000); \nobniz.close();\n\nreturn msg;","x":440,"y":140,"wires":[["cb1d6d3a.017e1"]]},{"id":"76e43759.3dff68","type":"inject","z":"d9dba4a1.01f228","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":260,"y":140,"wires":[["11a346f0.5a4c19"]]}]
-```
+[停止用ノードはこちら](https://qiita.com/n0bisuke/items/28d44edc290a0dddc8b0)
 
-▼読み込み結果  
-<a href="https://gyazo.com/ac38f368a5f4fefc730b30c4b6984944"><img src="https://i.gyazo.com/ac38f368a5f4fefc730b30c4b6984944.png" alt="Image from Gyazo" width="579"/></a>
 
 
 準備ができたら早速始めていきます！

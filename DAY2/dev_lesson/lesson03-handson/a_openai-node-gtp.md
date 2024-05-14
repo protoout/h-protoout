@@ -1,5 +1,26 @@
-### OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを加工してみよう
+### 1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳。加工してみよう
 
+今度は、OopenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-REDで簡単に扱えるノード）をを使い、Node-REDのフローに生成AIを組み込んでみましょう！
+
+
+### 1-0 タブを追加し、停止用ノードを読み込む
+前回のおさらいとなります。
+
+
+1. +ボタンを押し、新しくできたタブをダブルクリック
+<img src="https://i.gyazo.com/bfad18055e1a4119eed4b11e5d1dfad9.png" alt="Image from Gyazo" width="500"/>
+
+
+2. タブの名前を「obniz-LED」など、わかりやすく編集してください。
+<img src="https://i.gyazo.com/19ccf6eaf3e5083bd0c978bf419c61a0.png" alt="Image from Gyazo" width="500"/>
+
+3. 停止用ノードを読み込む
+
+[停止用ノードはこちら](https://qiita.com/n0bisuke/items/28d44edc290a0dddc8b0)
+
+
+
+準備ができたら早速始めていきます！
 
 
 
