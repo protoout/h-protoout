@@ -1,99 +1,237 @@
-# いろいろなAPIを使って外部サービス連携や情報取得をしてみよう
-
-## 目標
+# 2. 外部サービス連携や情報取得をしてみよう② APIを使って情報取得
 
 
-
-## やってみよう
-
-### 1. obnizのスイッチを押して、Teamsに投稿してみよう
-
-1. injectノード、http requestノード、debugノードを追加し図のようにつなぐ
-<img src="https://i.gyazo.com/49636359e2e0c96b19b0ac4f3083ebdd.png" alt="Image Description" width="500"/>
-
-2. http requestノードを図のように設定する。Webhook URLは[こちらの資料](1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs)のteams webhookのURLを入力してください。
-<img src="https://i.gyazo.com/6e48aee0cabc082df0fe1242df9e878f.png" alt="Image from Gyazo" width="500"/>
-
-3. obniz repeatノードとtemplateノードを追加し図のようにつなぎます
-<img src="https://i.gyazo.com/b4790241510f96649992006763a18e6d.png" alt="Image Description" width="500"/>
-
-4. obniz repeatノードのコードに、下記のコードを貼り付けてください
-<img src="https://i.gyazo.com/aa2e7d157119c664f7b2ffb7cb4a8770.png" alt="Image Description" width="500"/>
-
-```javascript
-
-if(obnizParts.isFirstRepat !== true){
-    return
-}
-
-obniz.switch.onchange = (pressed)=>{
-    node.send({payload: pressed})
-}
-
-obnizParts.isFirstRepat = false;
-
-```
-
-また、obnizの初期化ノードに下記1行を追加してください。
-
-```javascript
-
-obnizParts.isFirstRepat = true;
-
-```
-
-5. 最後にtemplateノードを図のように設定し、テンプレートを貼り付けてください。
-<img src="https://i.gyazo.com/f2b879e09dab01144ded904a0e1d3337.png" alt="Image Description" width="500"/>
-
-テンプレート
-```json
-{ "text" : "{{payload}}"}
-```
-
-6. デプロイし、obnizのスイッチを右・左・真ん中に押し込み、Teamsに投稿されれば成功です！
-<img src="https://i.gyazo.com/9c6ea27b073a3acdbf325a8a35c09dad.png" alt="Image Description" width="500"/>
-
-
-#### 完成したフロー
-
-※APIキー等は自分で入れてください
-
-```JSON
-[{"id":"12694ec6ee7fc64b","type":"inject","z":"cc81042a39216a8c","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"{\"text\": \"Node-REDから送信 \"}","payloadType":"json","x":330,"y":260,"wires":[["e3bab0936e7d3c87"]]},{"id":"e393ec67c7cbf180","type":"debug","z":"cc81042a39216a8c","name":"debug 14","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":760,"y":300,"wires":[]},{"id":"e3bab0936e7d3c87","type":"http request","z":"cc81042a39216a8c","name":"","method":"POST","ret":"obj","paytoqs":"ignore","url":"【Teams Webhook】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":570,"y":300,"wires":[["e393ec67c7cbf180"]]},{"id":"b9344fcaf32933ae","type":"template","z":"cc81042a39216a8c","name":"","field":"payload","fieldType":"msg","format":"json","syntax":"mustache","template":"{ \"text\" : \"{{payload}}\"}","output":"json","x":380,"y":360,"wires":[["e3bab0936e7d3c87","1678f485ee289c50"]]},{"id":"1678f485ee289c50","type":"debug","z":"cc81042a39216a8c","name":"debug 15","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":460,"y":480,"wires":[]},{"id":"f77c3a8f5ef3d55f","type":"obniz-repeat","z":"cc81042a39216a8c","obniz":"a5fae3ca0b96e551","name":"","interval":"3000","code":"if(obnizParts.isFirstRepat !== true){\n    return\n}\n\nobniz.switch.onchange = (pressed)=>{\n    node.send({payload: pressed})\n}\n\nobnizParts.isFirstRepat = false;\n","x":190,"y":360,"wires":[["b9344fcaf32933ae"]]},{"id":"a5fae3ca0b96e551","type":"obniz","obnizId":"obnizID","deviceType":"obnizboard1y","name":"","accessToken":"","code":"obniz.display.clear(); \nobniz.display.print('azure'); \nobnizParts.isFirstRepat = true;\nobnizParts.led = obniz.wired(\"LED\", {anode:0, cathode:1});\nobnizParts.hcsr04 = obniz.wired(\"HC-SR04\", { gnd: 8, echo: 9, trigger: 10, vcc: 11 });"}]
-
-```
+API（アプリケーション・プログラミング・インターフェース）は色々な外部サービスを連携してデータの取得や連携などを行う仕組みのことです。通常HTTPプロトコルを用いて、データの送受信が行われます。
 
 
 
-### 2. NASAのAPIを使って宇宙飛行士の日誌を見てみよう
+具体的には、
+
+- 天気情報
+- 株価の変動
+- 商品名や詳細情報
+
+こういった情報を取得することや、
+
+- LINEで生成AIを使ったBotを自作する
+- Stripe決済を使って自分のアプリに決済機能を組み込む
+
+
+外部サービスの一部の機能を使うことで独自のサービスを作ることもできます。
+
+
+
+APIを活用すれば、まったくのゼロからすべての機能を構築必要はありません。
+
+
+
+ここでは、簡単に公開されているAPIを使う体験をしてみましょう。
+
+
+## NASAのAPIを使って、宇宙飛行士のジャーナルを取得してみる
+
+[NASA APIs](https://api.nasa.gov/): NASAが公開しているAPIです。宇宙飛行士の
+
+毎日異なる画像や写真、専門の天文学者によって書かれた文章で、宇宙の魅力を発信するAPIから、画像と文章を取得してみます。
+
+
+### 1. 使うノード
+
+- injectノード
+- http requestノード: APIにこのデータください、とお願いするために使います。
+- debug
+
+
+[HTTPってなに？という方はこちらの記事を参照してください](../lesson06-iot-overview/03-network.md)
+
+
+### 2. 手順
 
 1. injectノード、http requestノード、debugノードを追加し図のようにつなぐ
 <img src="https://i.gyazo.com/4cc9b58750f7f4864ab02a7faa1cb21f.png" alt="Image Description" width="500"/>
 
 
-2. http requestノードを図のように設定する。APIキーは[こちらの資料](1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs)の「NASA API」のキーを入力する。
-<img src="https://i.gyazo.com/31f7db211f6a0b606c68772c4531ec75.png" alt="Image Description" width="500"/>
+2. http requestノードを図のように設定する。APIキーは[こちらの資料]()の「NASA API」のキーを入力する。
+
+<a href="https://gyazo.com/1f90fcbed097ca05cc868615b9b363ff"><img src="https://i.gyazo.com/1f90fcbed097ca05cc868615b9b363ff.png" alt="Image from Gyazo" width="524"/></a>
+
+- メソッド: GET
+- 出力方式: JSONオブジェクト
+
+URLには下記の【API KEY】を書き換えて入力してください。※「【】」は不要です。
+
+また、スペースなど余計な文字は入れないでください。
+
+```
+https://api.nasa.gov/planetary/apod?api_key=【API KEY】
+
+```
+
 
 
 3. デプロイ後、injectノードのスイッチを押して、コンソールに結果が返ってくれば成功です。
 <img src="https://i.gyazo.com/17a02c204783ee4adf59112b942f4be1.png" alt="Image Description" width="500"/>
 
 
-<details><summary>🌟 時間に余裕がある人向け：NASA APIの情報をsimple-chatgptノードで日本語にしてTeamsに投稿してみよう</summary>
+返ってきたデータの「url」とかいてあるところにあるURLは、宇宙の画像です。URLをコピーしてブラウザからアクセスしてみましょう。
+<a href="https://gyazo.com/2fbb69ee50e6e948e7cc50c0844e5569"><img src="https://i.gyazo.com/2fbb69ee50e6e948e7cc50c0844e5569.png" alt="Image from Gyazo" width="285"/></a>
 
-時間が余った人は、これまで習ったことを使ってNASA APIの情報を日本語に翻訳しTeamsに投稿するものを作ってみましょう。
+<img src="https://apod.nasa.gov/apod/image/2405/NGC2169LRGBQHY183HR_c1024.jpg" width="300">
 
 
-完成したフローは以下。
+### 3. 時間がある人向け: 取得したデータをWebページに表示したい！
 
-※APIキー等は自分で入れてください
+せっかく取得したデータ、ブラウザでWebページとして表示してみたいですよね。
 
-```JSON
+先ほど取得したデータを、ウェブページとして表示する方法を説明します。
 
-[{"id":"0535e820b3f7b918","type":"inject","z":"cc81042a39216a8c","name":"","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":240,"y":720,"wires":[["aef776d15d70c86a"]]},{"id":"aef776d15d70c86a","type":"http request","z":"cc81042a39216a8c","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"【NASA API KEY】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":430,"y":720,"wires":[["9cfcad10c9627b23","ec0d7d5880d713b2"]]},{"id":"9cfcad10c9627b23","type":"debug","z":"cc81042a39216a8c","name":"debug 16","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":640,"y":720,"wires":[]},{"id":"828e643c81435daf","type":"http request","z":"cc81042a39216a8c","name":"","method":"POST","ret":"obj","paytoqs":"ignore","url":"【Teams Webhook】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":990,"y":940,"wires":[[]]},{"id":"17037d2a0fff058f","type":"template","z":"cc81042a39216a8c","name":"","field":"payload","fieldType":"msg","format":"json","syntax":"mustache","template":"{\n    \"text\": \"{{payload}}\"\n}","output":"json","x":840,"y":940,"wires":[["828e643c81435daf"]]},{"id":"6f5f56b058a3fbd4","type":"simple-chatgpt","z":"cc81042a39216a8c","name":"","Token":"【OpenAI KEY】","Model":"","SystemSetting":"","functions":"","functionsType":"str","function_call":"auto","function_callType":"str","x":700,"y":840,"wires":[["17037d2a0fff058f","686c73f44aec306e"]]},{"id":"ec0d7d5880d713b2","type":"template","z":"cc81042a39216a8c","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"次の文章を日本語に翻訳して: {{payload.explanation}}","output":"str","x":520,"y":840,"wires":[["6f5f56b058a3fbd4"]]},{"id":"686c73f44aec306e","type":"debug","z":"cc81042a39216a8c","name":"debug 17","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":880,"y":840,"wires":[]}]
+
+
+1. ノードの配置と接続
+
+さきほど作ったものに3つのノードを追加します。
+
+- http in: 外部からアクセスできる場所をつくる。このノードを置くと、ウェブページのURLができあがるようなイメージ。
+- template: ウェブサイトに表示する内容をここに書く
+- http responce: ブラウザにWebページの情報を返す。これにより、ブラウザから表示できるようになる
+
+<a href="https://gyazo.com/ab234703ff567b71815d32360fac84e0"><img src="https://i.gyazo.com/ab234703ff567b71815d32360fac84e0.gif" alt="Image from Gyazo" width="600"/></a>
+
+
+2. ノードの設定
+
+- http in
+
+アクセスするURLをhttp inで設定します。
+
+URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKです。）
+
+この設定により、ウェブページのURLは下記のようになります。
+
+`http://【みなさんのNode-RED URL】:1880/nasa`
+
+
+<a href="https://gyazo.com/070c36c4dbc7777a99a9d6e5bf74566e"><img src="https://i.gyazo.com/070c36c4dbc7777a99a9d6e5bf74566e.gif" alt="Image from Gyazo" width="600"/></a>
+
+- template
+
+ここではウェブサイト構築でよく使われる、HTMLというマークアップ言語を使います。
+
+
+<a href="https://gyazo.com/ca05b240145bb462dd01eafb252935e1"><img src="https://i.gyazo.com/ca05b240145bb462dd01eafb252935e1.gif" alt="Image from Gyazo" width="600"/></a>
+
+```html
+
+<html>
+<head>
+    <title>H24 NASA APIテスト</title> <!--タイトル-->
+</head>
+<body>
+    
+<h1>NASA</h1><!--見出し1-->
+<img src="{{payload.url}}" width="500"> <!--画像として、APIから取得したURLを表示する-->
+<p>
+{{payload.explanation}}  <!--APIから取得したテキスト情報を表示する-->
+</p>
+    
+</body>
+</html>
 
 ```
-</details>
+
+
+
+自分で作るときは、生成AIに書いてもらいましょう！
+
+プロンプトのサンプル
+
+```
+## システム
+要件に沿ってHTMLをかいてください。
+CSSはHTML内に記述し一つにおさめてください。
+
+## 出力のサンプル
+<head>
+    <title>H24 NASA APIテスト</title> <!--タイトル-->
+</head>
+<body>
+    
+<h1>NASA</h1><!--見出し1-->
+<img src="{{payload.url}}" width="500"> <!--画像として、APIから取得したURLを表示する-->
+<p>
+{{payload.explanation}}  <!--APIから取得したテキスト情報を表示する-->
+</p>
+    
+</body>
+</html>
+
+## 要件
+
+- テキストと画像を横に3つ並べる
+- テキストの内容と画像のURLは以下の通り
+1. {{payload.text1}}{{payload.img1}}
+2. {{payload.text2}}{{payload.img1}}
+3. {{payload.text3}}{{payload.img1}}
+
+```
+
+サンプルを試すと、下記のように表示できるHTMLが生成されました。
+<a href="https://gyazo.com/3484e70918b921a9041f364082a9bd16"><img src="https://i.gyazo.com/3484e70918b921a9041f364082a9bd16.jpg" alt="Image from Gyazo" width="500"/></a>
+
+
+3. アクセスしてみましょう
+
+URLにアクセスして、ウェブページが表示されれば成功です！
+
+`http://【みなさんのNode-RED URL】:1880/nasa`
+
+<a href="https://gyazo.com/379c58837293cbca3538ff38810653ce"><img src="https://i.gyazo.com/379c58837293cbca3538ff38810653ce.jpg" alt="Image from Gyazo" width="500"/></a>
+
+
+
+### 完成したフロー
+
+```json
+[{"id":"45edf3530a1ccca6","type":"inject","z":"71b6251b827a5d40","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":240,"y":200,"wires":[["c7fc2eaae4424f10"]]},{"id":"c7fc2eaae4424f10","type":"http request","z":"71b6251b827a5d40","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://api.nasa.gov/planetary/apod?api_key=【APIキー】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":430,"y":260,"wires":[["9d1ecf939443eef7","488a55c54d99765c"]]},{"id":"9d1ecf939443eef7","type":"debug","z":"71b6251b827a5d40","name":"debug 19","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":620,"y":200,"wires":[]},{"id":"e312dcbee02b1a8f","type":"http in","z":"71b6251b827a5d40","name":"","url":"/nasa","method":"get","upload":false,"swaggerDoc":"","x":240,"y":320,"wires":[["c7fc2eaae4424f10"]]},{"id":"6e9bb0226855ebab","type":"http response","z":"71b6251b827a5d40","name":"","statusCode":"","headers":{},"x":790,"y":320,"wires":[]},{"id":"488a55c54d99765c","type":"template","z":"71b6251b827a5d40","name":"","field":"payload","fieldType":"msg","format":"html","syntax":"mustache","template":"<html>\n\n<head>\n    <title>H24 NASA APIテスト</title>\n</head>\n\n<body>\n\n    <h1>NASA</h1>\n    <img src=\"{{payload.url}}\" width=\"500\">\n    <p>\n        {{payload.explanation}}\n    </p>\n\n</body>\n\n</html>","output":"str","x":620,"y":320,"wires":[["6e9bb0226855ebab"]]}]
+
+```
+
+
+
+## 2. どんなAPIがあるか見て、どの様に使えそうか考えてみよう
+
+今回は簡単にすぐ使えるNASAのAPIを選んで情報を取得しました。
+
+
+LINE、Google系サービス、Amazon、楽天...
+
+
+普段、仕事やプライベートで使っている有名なサービスの多くは、APIを提供しています。
+
+
+
+外部サービスを連携していくことで、業務効率化にも役立てることができます。
+
+- お問い合わせメールが来たらその内容をTeamsに通知する
+- オフィスのトイレの空き状況をTeamsに通知する
+
+
+などなど、会社のレギュレーションも確認しながら、チャレンジしてみてくださいね。
+
+
+どのようなAPIがあるのか、眺めてみましょう！
+
+
+- [今すぐ使える無料WebAPIまとめ](https://qiita.com/kazuki_tachikawa/items/7b2fead2a9698d1c15e8)
+
+- [【随時更新】一風変わったWeb APIをまとめてみた](https://qiita.com/danishi/items/42d8adf6291515e62284)
+
+- [API Hub](https://apidog.com/apihub/): いろいろなサードパーティのAPIがまとまっている
+
+<a href="https://gyazo.com/4e9f8111e7da3ee740030da9a383774a"><img src="https://i.gyazo.com/4e9f8111e7da3ee740030da9a383774a.png" alt="Image from Gyazo" width="1372"/></a>
+
+
+
 
 
 ---

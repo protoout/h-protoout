@@ -1,4 +1,4 @@
-### OpenAIのノードをつかってみよう
+### OpenAIのノードをつかってみよう simple gtp
 
 今度は、OopenAIのノードをを使い、Node-REDのフローに生成AIを組み込んでみましょう！
 
