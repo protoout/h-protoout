@@ -12,9 +12,23 @@
 
 > [実際のイメージ](https://chat.openai.com/share/e/b521826e-d0f4-46f3-83f7-4c9fd61c83ae)
 
+JSONが出力されると思います。
+
+### 3-2. フローの読み込み
+
+メニュー（右上のメニューか、フロー画面を右クリックして出てくるメニューの挿入項目）からフローの読み込みをします。
+
+ChatGPTによって生成されたJSONを貼り付けて読み込んでみましょう。
+
+> <img src="https://i.gyazo.com/8c68512ef8d66a0972ce6f3572f31d4f.png" width="400px" />
+
+<details><summary>おそらくこんなJSON - クリックで開く</summary>
+
 ```json
 [ { "id": "obniz-setup", "type": "obniz", "z": "flow-id", "name": "obniz Setup", "code": "obnizParts.hcsr04 = obniz.wired(\"HC-SR04\", {gnd:0, echo:1, trigger:2, vcc:3});\nobnizParts.led = obniz.wired(\"LED\", {anode:4, cathode:5});", "config": "", "x": 220, "y": 140, "wires": [] }, { "id": "obniz-repeat", "type": "obniz-repeat", "z": "flow-id", "name": "obniz Repeat", "interval": "1000", "x": 240, "y": 240, "wires": [ [ "distance-compare" ] ] }, { "id": "distance-compare", "type": "function", "z": "flow-id", "name": "Distance Comparison", "func": "msg.payload = msg.payload < 200; // Check if distance is less than 200cm\nreturn msg;", "outputs": 1, "noerr": 0, "x": 460, "y": 240, "wires": [ [ "led-control" ] ] }, { "id": "led-control", "type": "obniz-function", "z": "flow-id", "name": "LED Control", "code": "if (msg.payload) {\n    obnizParts.led.on();\n} else {\n    obnizParts.led.off();\n}", "config": "", "x": 680, "y": 240, "wires": [] } ]
 ```
+
+</details>
 
 プロンプトを少し覗いてみますが、
 
