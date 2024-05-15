@@ -36,8 +36,8 @@
 
 ## Lesson02 API・外部サービス連携でさらに広げていこう 【10:30〜11:00】 担当:私市
 
-- **やること:** 
-- **ゴール:** 
+- **やること:外部のサービスやAPIを連携する** 
+- **ゴール:既存のサービスやAPIを利用して自分のやりたいことを達成する感覚を掴む** 
 
 1. [Teams API連携](./lesson02-api/01_teams.md)
 2. [その他のAPI](./lesson02-api/02_nasa.md)
@@ -52,9 +52,9 @@
 
 ### 3-1. まずはAIハンズオンのどれかをやってみましょう
 
-- A. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/a_openai-node-gtp.md)
-- B. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/a_openai-node-wisper.md)
-- C. [Teachable Machineの利用](./lesson03-handson/c_teachable-machine.md)
+- A. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
+- B. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
+- C. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
 
 ### 3-2. 時間がある人はAIハンズオンのどれかをやってみましょう
 
