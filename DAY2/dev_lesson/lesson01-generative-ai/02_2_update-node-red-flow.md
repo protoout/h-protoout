@@ -150,6 +150,19 @@ if (sensorValue <= 300) {
 
 > <img src="https://i.gyazo.com/7933770fd8c184c73077a8ed7cc5d10a.png" width="400px" />
 
+エラーが出ても落ち着いてChatGPTに聞いてましょう。
+
+> [チャットした例がこちら](https://chat.openai.com/share/e/a8f38730-4b46-4430-b9a7-6491563e266c)
+
+> <img src="https://i.gyazo.com/0832662eafa3388a3b1699b251f1da48.png" width="400px" />
+
+### 2-8. よくない例
+
+「`"ReferenceError: sensorValue is not defined (line 5, col 1)"`とエラーが出た」とだけChatGPTに送るとどうなるでしょうか。
+
+> <img src="https://i.gyazo.com/7ff4891640e7f07ec691d2a569846506.png" width="400px" />
+
+[よくない例](https://chat.openai.com/share/e/e6a01e1f-07ed-48e7-a9d1-edc240bca452)
 
 ### 2-6. (セーブポイント)
 
