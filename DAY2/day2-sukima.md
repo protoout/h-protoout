@@ -36,6 +36,9 @@ DAY1冒頭のワークの写真をアップロードしてください。
 
 - protopediaを覗く
     - [プロトぺディア](https://protopedia.net/keyword?word=obniz)
+    - プロトタイプ作品が集まるメディアです。
+    > <img src="https://i.gyazo.com/a7895b22b68fdd4c6603ab4753818249.jpg" width="400px" />
+
 
 ## 優先度4: Node-REDのトラブルシューティング
 
