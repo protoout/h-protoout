@@ -83,7 +83,7 @@ APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74
 
 changeとsimple-chatgptをこのように設定してください。
 simple-chatgptはAPIキーを入力します。
-[授業で使う情報リスト](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit#gid=0)の「OpenAI」行の「keyなど」にある`sk-`で始まる文字列をコピーして貼り付けてください。wisperに入力したものと同じ文字列です。
+[授業で使う情報リスト](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit#gid=0)の「OpenAI」行の「keyなど」にある`sk-`で始まる文字列をコピーして貼り付けてください。
 
 <a href="https://gyazo.com/2770b4714ff7000ac78114bc2d2df896"><img src="https://i.gyazo.com/2770b4714ff7000ac78114bc2d2df896.gif" alt="Image from Gyazo" width="600"/></a>
 
