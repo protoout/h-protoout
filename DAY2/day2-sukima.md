@@ -19,9 +19,9 @@ DAY1冒頭のワークの写真をアップロードしてください。
 [IoTの概要コラム](../tools/column/iot-overview/01_overview.md)を読んでみましょう。
 
 1. [概要](../tools/column/iot-overview/01_overview.md)
-2. [デバイス](../tools/column/02-device.md)
-3. [ネットワーク](../tools/column/03-network.md)
-4. [クイズ](../tools/column/04-quiz.md)
+2. [デバイス](../tools/column/iot-overview/02-device.md)
+3. [ネットワーク](../tools/column/iot-overview/03-network.md)
+4. [クイズ](../tools/column/iot-overview/04-quiz.md)
 
 ネットワークまで読んでもらえると嬉しいですが、概要まででも大丈夫です。
 
