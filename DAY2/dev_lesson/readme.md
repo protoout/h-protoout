@@ -17,7 +17,10 @@
 - **やること:** ChatGPTに触れる、Node-REDのフローを生成する
 - **ゴール:** 生成AIとやりとりをしてフローの改善ができるように
 
-1. [生成AIを使ってみる](./lesson01-generative-ai/01_overview.md)
+1. 生成AIを使ってみる
+    - [生成AIを使ってみる](./lesson01-generative-ai/01_overview.md)
+    - [世界最速! GPT-4oを体験してみよう]()
+    - [生成AIを使ってみる](./lesson01-generative-ai/01_overview.md)
 2. 生成AIとプログラムを書いてみるNode-RED開発ハンズオン
     - [2-1. 生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
     - [2-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
