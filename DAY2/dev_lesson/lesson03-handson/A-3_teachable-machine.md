@@ -80,11 +80,18 @@ Teachable MachineはGoogleが公開している機械学習を楽しく使える
 
 ## 2. 作成したモデルを使ってNode-REDに組み込む
 
+作成したモデルを使ってNode-RED連携をしてみましょう。
+
 ### 2-1. Node-REDに利用するノードのインストール
 
-- `node-red-node-base64`
-    - 画像をBase64という形式に変換してくれます。
+まずは必要な素材をインストールしてください。
+
+- `node-red-contrib-teachable-machine`
+    - teachable-machineで作成したモデルを使用するためのノード このノードは「image Project」のみに対応しているようです。
     - https://flows.nodered.org/node/node-red-contrib-teachable-machine
+
+↓以下の2つは既にインストールされていると思われますが、もしまだでしたらインストールしてください。
+
 - `node-red-contrib-browser-utils`
     - カメラを使えるようになります。
     - https://flows.nodered.org/node/node-red-contrib-browser-utils
@@ -92,14 +99,6 @@ Teachable MachineはGoogleが公開している機械学習を楽しく使える
     - 撮影した画像のプレビューができるようになります。
     - https://flows.nodered.org/node/node-red-contrib-image-output
 
-- `node-red-contrib-teachable-machine`
-    - teachable-machineで作成したモデルを使用するためのノード このノードは「image Project」のみに対応しているようです。
-
-- `node-red-contrib-browser-utils`
-    - 自分のPCのカメラの写真データを読み込んでくれるノード
-
-- `node-red-contrib-image-output`
-    - 読み込んだ画像をNode-RED上に表示してくれるノード
 
 > <img src="https://i.gyazo.com/f3d3f76405b85e266165ae625f4a99a4.gif" width="400px" />
 
