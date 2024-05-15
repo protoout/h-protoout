@@ -31,7 +31,7 @@
     - [2-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
 
 3. 生成AIでフローを0から作って改善してみるハンズオン
-    - [3-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)
+    - [3-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)（時間があれば実施）
     - [3-2. 生成AIが作ったフローを改修](./lesson01-generative-ai/03_2_one2.md)（時間があれば実施）
 
 4. 生成AIが作ったフローの改修やデバッグ
