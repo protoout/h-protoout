@@ -156,6 +156,8 @@ if (sensorValue <= 300) {
 
 > <img src="https://i.gyazo.com/0832662eafa3388a3b1699b251f1da48.png" width="400px" />
 
+ChatGPTの指示のもと、コードを直して（コピペして）、上手く修正することができたでしょうか？
+
 ### 2-8. よくない例
 
 「`"ReferenceError: sensorValue is not defined (line 5, col 1)"`とエラーが出た」とだけChatGPTに送るとどうなるでしょうか。
