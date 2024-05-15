@@ -48,12 +48,15 @@ GPT-4oは文章生成、画像認識、音声認識、など色々な機能が�
 
 > <img src="https://i.gyazo.com/dd6bb199d30f2f9d3d5fc8848e6ad512.png" width="400px" />
 
+ボタンを押すと写真が撮影されます。
 
 ### 2-3. 上手くいくと
 
 こんな感じで試せます。
 
 > [<img src="https://i.gyazo.com/d32fba58cd0521aecf3fd65a0ef174dd.jpg" width="400px" />](https://twitter.com/n0bisuke/status/1790387951739756841)
+
+
 
 > [<img src="https://i.gyazo.com/a2782376a5cf2140f89108fa7be4da53.png" width="400px" />
 ](https://twitter.com/n0bisuke/status/1790391750596436454)
