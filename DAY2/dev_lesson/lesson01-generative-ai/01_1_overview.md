@@ -62,6 +62,9 @@ GoogleやMicrosoft、Facebookなど各社が生成AIサービスをリリース�
 
 これからこれを使いこなせるかどうか、考え方をアップデート出来るかでまた差が生まれていきそうですね。
 
+- 参考
+    - [紙とペンで書いたWebサイト](https://codepen.io/n0bisuke/pen/qBGdeRz)
+
 ---
 
 **[◀ 目次ページに戻る](../readme.md)**
