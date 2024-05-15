@@ -30,6 +30,10 @@
 
 ### 2-1. ノードのインストール
 
+※ここではカメラを使うのでSSL対応のNode-REDサーバーを利用してください。
+
+まずはノードをインストールしましょう。
+
 - `node-red-node-base64`
     - 画像をBase64という形式に変換してくれます。
     - https://flows.nodered.org/node/node-red-node-base64
