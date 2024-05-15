@@ -63,8 +63,14 @@ AIの授業を受けていますが、LLMとモデルという言葉について
 プロトアウトスタジオの受講生の活用事例を何点か紹介します。
 
 - 事務仕事の自動化の例
-- プログラミング未経験者がプログラムを書く事例
+    - [500%効率化！アパレルの手動発注を劇的に変えたプロトタイピング](https://protoout.studio/3fcb0920e06a498799810bd8b2937ce3)
+    - [色々一覧](https://protoout.studio/gallery)
+- プログラミング未経験者がChatGPTにプログラムを書かせて制作している事例
+    - [「いま、どれくらい？」アンケートのリプライ状況をタイムリーに知る方法を#ChatGTPに聞いてみた](https://qiita.com/gonchichi21/items/571fd1a44f2a5fb906b8)
+    - [Chat GPTで勤務シフトは作成できるのか？できないのか？](https://qiita.com/shuji001/items/5f8e58a712a3c0abbe33)
 - プログラムの中にGPTを組み込んでLINE Botなどを作る例
+    - [GPTが人知れず既存の名刺管理アプリを抹殺していた話](https://qiita.com/watanabe-tsubasa/items/12dc7ba9a6de55e8afd9)
+    - []()
 
 ---
 
