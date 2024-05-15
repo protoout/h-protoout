@@ -69,7 +69,6 @@ A-1~4のどれかのハンズオンを優先的に実施してください。
 ### 3-3. おまけ。さらに時間がある人でAIをさらに使ってみたい人
 
 ただしC群のハンズオンは環境的にやれない人がいるかもしれないのであくまでもおまけコンテンツです。
-
 - C-1. [SunoAIを使って初めての作詞作曲](https://note.com/n0bisuke/n/n0f1d5a2a6c8f)
     - ChatGPTとSunoAIで作詞作曲をしてみましょう。
 - C-2. [GPTsでオリジナルChatGPTを作成](https://zenn.dev/n0bisuke/books/gpts-handson-book/viewer/1-2_what-is-gpt)
