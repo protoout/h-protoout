@@ -118,7 +118,7 @@ if (sensorValue <= 300) {
 
 生成されたコードがとはいえ分からないです。という声が聞こえてきそうですね。
 
-[コードをさらにChatGPTに説明](https://chat.openai.com/share/e/7f97279c-dd35-4a83-ad9d-bc81433459b8)してもらいましょう。
+**[コードをさらにChatGPTに説明](https://chat.openai.com/share/e/7f97279c-dd35-4a83-ad9d-bc81433459b8)してもらいましょう。**
 
 > <img src="https://i.gyazo.com/5a7e8cbb88092a1396ba273b5f3d59eb.png" width="400px" />
 
