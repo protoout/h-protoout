@@ -1,11 +1,14 @@
 # チュートリアル1: 温湿度センサーを使用し、熱中症アラートを作ろう
 
+Day1の応用編の演習として出していたものをチュートリアル化しました。
 
 
 ### 完成イメージ
 
 温度と湿度から暑さ指数を計算し、警戒度をLEDで示します。
-ドライヤーを吹きかけると、警戒レベルがぐっと上がります。
+
+動画では温度を上げるためにドライヤーを吹きかけています。警戒レベルが一気に上がり、LEDが黄色、赤へと変化することがわかります。
+
 <a href="https://gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc"><img src="https://i.gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc.gif" alt="Image from Gyazo" width="600"/></a>
 
 
@@ -14,10 +17,12 @@
 
 
 1. +ボタンを押し、新しくできたタブをダブルクリック
+
 <img src="https://i.gyazo.com/bfad18055e1a4119eed4b11e5d1dfad9.png" alt="Image from Gyazo" width="500"/>
 
 
 2. タブの名前を「obniz-LED」など、わかりやすく編集してください。
+
 <img src="https://i.gyazo.com/19ccf6eaf3e5083bd0c978bf419c61a0.png" alt="Image from Gyazo" width="500"/>
 
 3. 停止用ノードを読み込む
@@ -40,9 +45,9 @@
 ### 2. 暑さ指数WBGTの計算式
 
 
-暑さ指数（WBGT（湿球黒球温度）：Wet Bulb Globe Temperature）を温度と湿度から簡易的に計算する方法をつかいます。
+**暑さ指数（WBGT（湿球黒球温度）：Wet Bulb Globe Temperature）**を温度と湿度から簡易的に計算する方法をつかいます。
 
-- [参考:IchigoJam S+温湿度センサSi7021で暑さ指数WBGTを計算して、熱中症予防](https://bokunimo.net/blog/ichigo-jam/29/)→こちらの記事にはWBGTを簡易的に求める類似式が掲載されています。
+- [参考:IchigoJam S+温湿度センサSi7021で暑さ指数WBGTを計算して、熱中症予防](https://bokunimo.net/blog/ichigo-jam/29/)→こちらの記事には**WBGTを簡易的に求める類似式**が掲載されています。
 
 ```
 WBGT = 0.725*Ta + 0.0368*RH + 0.00364*Ta*RH – 3.246
@@ -104,7 +109,7 @@ return msg; // メッセージを返す
 
 このように、WBGTの値が表示されていればOKです。
 
-※ 生成AIの応答の違いにより、msg.payloadにWBGTのみ表示するコードが出力される場合もあります。プロンプトでより明示的に示してあげると結果が安定します。
+**※ 生成AIの応答の違いにより、msg.payloadにWBGTのみ表示するコードが出力される場合もあります。プロンプトでより明示的に示してあげると結果が安定します。**
 
 <a href="https://gyazo.com/edfcd36252a75692b525347577b7005b"><img src="https://i.gyazo.com/edfcd36252a75692b525347577b7005b.png" alt="Image from Gyazo" width="500"/></a>
 
@@ -130,9 +135,9 @@ obnizParts.light = obniz.wired("Keyestudio_TrafficLight", {gnd:8, green:9, yello
 
 ### 5. 取得したデータ判定し、下記のようにLED信号を使って表示させましょう。
 
-- 危険: 31以上 →red
-- 厳重警戒または警戒: 25以上31未満　→yellow
-- 注意: 25未満 →green
+- 危険: 31以上 **→red**
+- 厳重警戒または警戒: 25以上31未満　**→yellow**
+- 注意: 25未満 **→green**
 
 [参考: 暑さ指数(WBGT)について](https://www.wbgt.env.go.jp/wbgt.php)
 
@@ -140,10 +145,12 @@ obnizParts.light = obniz.wired("Keyestudio_TrafficLight", {gnd:8, green:9, yello
 
 <a href="https://gyazo.com/ff918a211e74cbdf947ee700d0cf14e1"><img src="https://i.gyazo.com/ff918a211e74cbdf947ee700d0cf14e1.png" alt="Image from Gyazo" width="500"/></a>
 
+
 <a href="https://gyazo.com/196f7a67c62cd3f0508ab3a0671884bd"><img src="https://i.gyazo.com/196f7a67c62cd3f0508ab3a0671884bd.png" alt="Image from Gyazo" width="500"/></a>
 
 
 - changeノードとobniz functionノードを配置し、設定する
+
 <a href="https://gyazo.com/56bad58f1106d2ecfb0c48fd66adc6bf"><img src="https://i.gyazo.com/56bad58f1106d2ecfb0c48fd66adc6bf.gif" alt="Image from Gyazo" width="500"/></a>
 
 - changeノードの設定
@@ -171,7 +178,7 @@ obniz functionノードをctr + C, ctr+Vしてコピーして使用してもOK�
 
 switchに入力されているデータが正しいか見てみましょう。
 
-WBGTの数字のみ、switchに入力しなければなりませんが、今は温度、湿度を含むJSONデータを入れてしまっています。
+WBGTの数字のみをswitchに入力しなければなりませんが、今は**温度、湿度を含むJSONデータを**入れてしまっています。
 
 これを修正します。
 
@@ -181,7 +188,7 @@ WBGTの数字のみ、switchに入力しなければなりませんが、今は�
 
 - changeノードを追加し、設定する
 
-図のようにつなぎ、msg.payloadの値をmsg.payload.WBGTに変更するよう設定してください。
+図のようにつなぎ、**msg.payload**の値を**msg.payload.WBGT**に変更するよう設定してください。
 
 <a href="https://gyazo.com/3c062387b7b8814f3686ab16a8f481f0"><img src="https://i.gyazo.com/3c062387b7b8814f3686ab16a8f481f0.gif" alt="Image from Gyazo" width="600"/></a>
 

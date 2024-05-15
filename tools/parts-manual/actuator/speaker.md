@@ -1,7 +1,7 @@
 # マニュアル: スピーカー（ブザー）
 
 <img src="https://akizukidenshi.com/img/goods/L/104118.jpg" width="50">, 出典：[秋月電子通商](http://akizukidenshi.com/catalog/g/gP-04118/)
-1. obnizでの配線
+## 1. obnizでの配線
 
 <a href="https://gyazo.com/081b807593f7bf2ab4725e5d44952a99"><img src="https://i.gyazo.com/081b807593f7bf2ab4725e5d44952a99.jpg" alt="Image from Gyazo" width="500"/></a>
 
@@ -14,7 +14,7 @@
 | スピーカーの脚  |   6   |
 
 
-2. 使うノードとつなぎ方
+## 2. 使うノードとつなぎ方
 
 - inject
 - change
@@ -24,7 +24,7 @@
 <a href="https://gyazo.com/86af5bb0ab066922e2c2ca830eb03244"><img src="https://i.gyazo.com/86af5bb0ab066922e2c2ca830eb03244.gif" alt="Image from Gyazo" width="1000"/></a>
 
 
-3. 各ノードの設定方法
+## 3. 各ノードの設定方法
 
 - change
 
