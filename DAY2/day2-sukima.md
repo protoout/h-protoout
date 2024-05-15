@@ -16,6 +16,8 @@ DAY1冒頭のワークの写真をアップロードしてください。
 
 ## 優先度2: IoTの概要コラムを読もう
 
+手を動かすではなく知識的な部分になりますが、「IoTの全体像」知っておいてください。
+
 [IoTの概要コラム](../tools/column/iot-overview/01_overview.md)を読んでみましょう。
 
 1. [概要](../tools/column/iot-overview/01_overview.md)
