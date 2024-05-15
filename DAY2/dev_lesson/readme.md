@@ -3,7 +3,7 @@
 本日の実装授業では、前回学んだことも使いながら外部サービスとの連携や生成AI活用をおこなっていきます。
 
 ## ■ [授業における肖像権・著作権の取り扱いについて](https://protoout.notion.site/acde308ffe03498fad30a271b4a7b128?pvs=4)
-## ■ [🚨怪我しないでね👀】センサーやアクチュエーターを扱う際の諸注意](https://protoout.notion.site/c7dfd3de1aa94e9c8403ee94c8bbcdf2?pvs=4)
+## ■ [【🚨怪我しないでね👀】センサーやアクチュエーターを扱う際の諸注意](https://protoout.notion.site/c7dfd3de1aa94e9c8403ee94c8bbcdf2?pvs=4)
 
 ## まずはじめに 【8:55〜9:10】
 
