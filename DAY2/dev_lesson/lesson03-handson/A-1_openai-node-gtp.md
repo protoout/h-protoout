@@ -1,4 +1,4 @@
-# 1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳
+# A-1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳
 
 
 ## 1. Node-REDの中にChatGPTを組み込もう！
