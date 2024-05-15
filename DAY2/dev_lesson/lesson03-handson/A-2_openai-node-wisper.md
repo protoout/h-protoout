@@ -226,4 +226,4 @@ simple-chatgptノードとLEDにつながっているswitchノードを図のよ
 
 ---
 
-**[◀ 目次ページに戻る](../../readme.md)**
+**[◀ 目次ページに戻る](../readme.md)**
