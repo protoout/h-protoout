@@ -10,6 +10,7 @@
 
 **★ 極性(+ -)があるため、接続に間違いがないか注意**
 
+<details><summary>配線の仕方をクリックで開く</summary>
 <img src="https://i.gyazo.com/72603bdeeae78020b1a3625f06044b6d.png" alt="Image from Gyazo" width="500"/>
 
 | 電子パーツの脚         | obnizピン         |
@@ -17,13 +18,19 @@
 | LEDの長い脚（アノード +）  | obnizの0番    |
 | LEDの短い脚（カソード -）  | obnizの1番    |
 
+</details>
+
 ## 2. 使うノードとつなぎ方
+
+<details><summary>ノードの繋ぎ方をクリックで開く</summary>
 - inject
 - change
 - switch ※switchノードは設定後にノードをつなぐ
 - obniz function 2つ
 
 <a href="https://gyazo.com/80cebbe41de81925a0908545f8f8058f"><img src="https://i.gyazo.com/80cebbe41de81925a0908545f8f8058f.gif" alt="Image from Gyazo" width="600"/></a>
+
+</details>
 
 ## 3. 各ノードの設定方法
 

@@ -2,17 +2,18 @@
 # マニュアル: obnizのディスプレイ
 
 
-1. ノードを配置し以下のように接続
+## 1. ノードを配置し以下のように接続
 
+<details><summary>ノードの繋ぎ方をクリックで開く</summary>
 - injectノード
 - changeノード
 - obniz functionノード
 - debugノード
 
 <a href="https://gyazo.com/f9aa30868da8d731b2392df69b65849a"><img src="https://i.gyazo.com/f9aa30868da8d731b2392df69b65849a.gif" alt="Image from Gyazo" width="600"/></a>
+</details>
 
-
-2. obniz functionノードのコードに以下を記載
+## 2. obniz functionノードのコードに以下を記載
 
 ```javascript
 
@@ -21,7 +22,7 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 
 ```
 
-3. changeノードを以下のように設定
+## 3. changeノードを以下のように設定
 
 「文字列」に設定し、テキスト`Hello!`を入力してください。
 
@@ -29,7 +30,7 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 
 
 
-5. 結果
+## 4. 結果
 
 injectノードをクリックしてディスプレイにテキストが出ればOKです。
 

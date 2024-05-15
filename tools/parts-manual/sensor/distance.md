@@ -8,7 +8,9 @@
 距離を測るだけでなく、単純に目の前に人がいるかいないか、といった用途にも使えます。
 
 
-1. obnizでの配線
+## 1. obnizでの配線
+
+<details><summary>配線の仕方をクリックで開く</summary>
 
 <a href="https://gyazo.com/333e9751bf9f478ed388bc6bda7fa691"><img src="https://i.gyazo.com/333e9751bf9f478ed388bc6bda7fa691.jpg" alt="Image from Gyazo" width="500"/></a>
 
@@ -22,18 +24,19 @@
 |  Trig  |   obnizの10番   |
 |  Vcc  |   obnizの11番   |
 
+</details>
 
+## 2. 使うノードとつなぎ方
 
-2. 使うノードとつなぎ方
-
+<details><summary>ノードの繋ぎ方をクリックで開く</summary>
 - obniz repeat
 - dedbug
 
 <a href="https://gyazo.com/f12a5b25d4c360c7e545ededed17019e"><img src="https://i.gyazo.com/f12a5b25d4c360c7e545ededed17019e.png" alt="Image from Gyazo" width="520"/></a>
 
+</details>
 
-
-3. 各ノードの設定方法
+## 3. 各ノードの設定方法
 
 - obniz repeat
 
@@ -56,7 +59,7 @@ Intervalを書き換える。
 <a href="https://gyazo.com/8604f33b379baf4a666be0ab85ffdb16"><img src="https://i.gyazo.com/8604f33b379baf4a666be0ab85ffdb16.png" alt="Image from Gyazo" width="648"/></a>
 
 
-4. 初期化処理コードの編集
+## 4. 初期化処理コードの編集
 
 8番,9番,10番,11番に接続する例です。
 
@@ -68,7 +71,7 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:8, echo:9, trigger:10, vcc:11 })
 ```
 
 
-5. 結果
+## 5. 結果
 
 コンソールに距離の数値がでてくれば成功です！
 

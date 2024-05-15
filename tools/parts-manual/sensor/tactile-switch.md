@@ -40,9 +40,12 @@
 </details>
 
 ## 2. 使うノードとつなぎ方
-[Node-REDのobnizノードでどちらのノードを選ぶか - 使い方概要](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を参考に、使うobnizノードを決めます。今回はアクチュエーターになるので`obniz functionノード`が適しています。
 
 <details><summary>ノードの繋ぎ方をクリックで開く</summary>
+
+[Node-REDのobnizノードでどちらのノードを選ぶか - 使い方概要](https://qiita.com/n0bisuke/items/072a8a1bf77525fef835)を参考に、使うobnizノードを決めます。今回はアクチュエーターになるので`obniz functionノード`が適しています。
+
+
 
 ### 2-1. obniz functionノードの基本
 
