@@ -41,8 +41,9 @@ DAY1冒頭のワークの写真をアップロードしてください。
 - [Node-REDで接続切ってるはずなのにプログラムが止まらない時](https://qiita.com/n0bisuke/items/ef82c303f98d62ae9cf4)
 - [複数のサーバーでobnizが動いてしまっている時](https://qiita.com/n0bisuke/items/34c8389e371bd5d2f7f5)
 
-## 優先度5: 秋葉原電気街のコラム
+## 優先度5: 
 
-- [【初心者必見】電子パーツ買うならここ！アキバ電気街徹底ガイド](https://dotstud.io/blog/akihabara-guide-for-beginners/)
+- 秋葉原電気街のコラム
+    - [【初心者必見】電子パーツ買うならここ！アキバ電気街徹底ガイド](https://dotstud.io/blog/akihabara-guide-for-beginners/)
+    > <img src="https://dotstud.io/img/blog/091/05_shop.png" width="400px" />
 
-> <img src="https://dotstud.io/img/blog/091/05_shop.png" width="400px" />
