@@ -120,7 +120,9 @@ if (sensorValue <= 300) {
 
 > <img src="https://i.gyazo.com/5a7e8cbb88092a1396ba273b5f3d59eb.png" width="400px" />
 
+分からなかったらもっと分かりやすく！！と追加注文もどんどんしましょう。
 
+ChatGPTは不満を言わずに何回でも答えてくれます。
 
 ### 2-6. (セーブポイント)
 
