@@ -1,7 +1,16 @@
-### 1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳
+# 1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳
 
-今度は、OopenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-REDで簡単に扱えるノード）をを使い、Node-REDのフローに生成AIを組み込み、生成したテキストをteamsに投稿しましょう！
 
+## 1. Node-REDの中にChatGPTを組み込もう！
+
+Node-REDの中でChatGPTを使い、サービスに簡単に生成AIを組み込むことができます。
+
+これにより、ニュースのAPIから取得した情報を要約して送信したり、人間らしい反応を返すチャットボットを作ったり、さまざまなことが可能になります。
+
+OpenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-REDで簡単に扱えるノード）を使い、Node-REDのフローに生成AIを組み込んでAPIで取得した文章を日本語に翻訳してみましょう！
+
+
+## 2.やってみよう
 
 ### 1-0 タブを追加し、停止用ノードを読み込む
 前回のおさらいとなります。
@@ -31,6 +40,20 @@
 
 <img src="https://i.gyazo.com/17a02c204783ee4adf59112b942f4be1.png" alt="Image Description" width="500"/>
 
+または、下記をNode-REDで読み込んでください。
+
+■ 読み込み用JSON
+
+※ http requestノードのURL後ろ、APIキーを書き換えるのを忘れずに！
+
+APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit#gid=0)の「NASA API」のキーを入力してください。
+
+```json
+
+[{"id":"45edf3530a1ccca6","type":"inject","z":"2e35bc2966601a96","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":120,"y":80,"wires":[["c7fc2eaae4424f10"]]},{"id":"c7fc2eaae4424f10","type":"http request","z":"2e35bc2966601a96","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://api.nasa.gov/planetary/apod?api_key=【APIキー】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":310,"y":80,"wires":[["9d1ecf939443eef7"]]},{"id":"9d1ecf939443eef7","type":"debug","z":"2e35bc2966601a96","name":"debug 19","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":500,"y":80,"wires":[]}]
+
+```
+
 
 ### 1-1 Node-REDにsimple-chatgptのノードをインストールする
 
@@ -41,7 +64,7 @@
 2. 「ノードを追加」をクリックし、ノードの名前で検索してください。
 
 **インポートするノードはこれ**
-   - node-red-contrib-simple-chatgpt
+   - [node-red-contrib-simple-chatgpt](https://flows.nodered.org/node/node-red-contrib-simple-chatgpt)
 
 
 3. 同じ名前のノードを見つけたら「ノードを追加」をクリックしてください。

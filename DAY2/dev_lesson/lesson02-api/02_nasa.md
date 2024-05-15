@@ -41,7 +41,7 @@ APIを活用すれば、まったくのゼロからすべての機能を構築�
 - debug
 
 
-[HTTPってなに？という方はこちらの記事を参照してください](../lesson06-iot-overview/03-network.md)
+[HTTPってなに？という方はこちらの記事を参照してください](/tools/column/iot-overview/03-network.md)
 
 
 ### 2. 手順
@@ -50,7 +50,7 @@ APIを活用すれば、まったくのゼロからすべての機能を構築�
 <img src="https://i.gyazo.com/4cc9b58750f7f4864ab02a7faa1cb21f.png" alt="Image Description" width="500"/>
 
 
-2. http requestノードを図のように設定する。APIキーは[こちらの資料]()の「NASA API」のキーを入力する。
+2. http requestノードを図のように設定する。APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit#gid=0)の「NASA API」のキーを入力する。
 
 <a href="https://gyazo.com/1f90fcbed097ca05cc868615b9b363ff"><img src="https://i.gyazo.com/1f90fcbed097ca05cc868615b9b363ff.png" alt="Image from Gyazo" width="524"/></a>
 
