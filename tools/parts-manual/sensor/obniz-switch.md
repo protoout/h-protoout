@@ -1,14 +1,18 @@
 # マニュアル: obnizのスイッチ
 
 
-1. 使うノードとつなぎ方
+## 1. 使うノードとつなぎ方
+
+<details><summary>ノードの繋ぎ方をクリックで開く</summary>
 
 - obniz repeat
 - debug
 
 <a href="https://gyazo.com/487d1ea101c3f910198c6ca3a1dd431d"><img src="https://i.gyazo.com/487d1ea101c3f910198c6ca3a1dd431d.png" alt="Image from Gyazo" width="300"/></a>
 
-2. 各ノードの設定方法
+</details>
+
+## 2. 各ノードの設定方法
 
 - obniz repeat
 
@@ -21,7 +25,7 @@ return msg; //msg.payloadを出力
 ```
 
 
-3. 結果
+## 3. 結果
 
 コンソールにスイッチの状態が出力されるのを確認してください。
 

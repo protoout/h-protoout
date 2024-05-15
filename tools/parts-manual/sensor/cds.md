@@ -1,11 +1,10 @@
 # マニュアル: 照度センサー(CdS): 
 
 <img src="https://akizukidenshi.com/img/goods/L/100110.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g100110/)
-1. obnizでの配線
+## 1. obnizでの配線
 
 ★極性なし
-
-
+<details><summary>配線の仕方をクリックで開く</summary>
 
 | 電子パーツの脚         | 接続先         |
 |--------------|---------------|
@@ -18,16 +17,19 @@
 
 <img src="https://img.esa.io/uploads/production/attachments/3062/2019/06/20/8131/1b53f227-13cb-4f93-86bc-26d7673c834c.jpg" width="500">
 
+</details>
 
+## 2. 使うノードとつなぎ方
 
-2. 使うノードとつなぎ方
-
+<details><summary>ノードの繋ぎ方をクリックで開く</summary>
 - obniz repeat
 - debug
 
 <a href="https://gyazo.com/d324617577c3c0af6a86362a49f3509b"><img src="https://i.gyazo.com/d324617577c3c0af6a86362a49f3509b.png" alt="Image from Gyazo" width="500"/></a>
 
-3. 各ノードの設定方法
+</details>
+
+## 3. 各ノードの設定方法
 
 
 - obniz repeat
@@ -53,7 +55,7 @@ var voltage = await obniz.ad6.getWait(); //ピン6からアナログ（光の強
 
 
 
-4. 初期化処理コードの編集
+## 4. 初期化処理コードの編集
 
 ```javascript
 
@@ -75,7 +77,7 @@ obniz.io7.output(false); //io7番をGNDに
 
 
 
-5. 結果
+## 5. 結果
 
 明るさに応じてコンソールに表示されている数値が変動すれば成功です。
 
@@ -88,8 +90,5 @@ obniz.io7.output(false); //io7番をGNDに
 ---
 
 
-
-
----
 
 

@@ -13,7 +13,9 @@
 ピンのアサインと実際の配線は、みなさんがやりたいことに合わせて適宜変更をしてください。
 ジャンパワイヤーの色は何色でも大丈夫です。
 
-<details><summary>配線の仕方をクリックで開く</summary>
+**obnizの1Yとobnizでピンの配列が異なるためご注意ください。**
+
+<details><summary>obniz 1Yの配線の仕方をクリックで開く</summary>
 
 | サーボモーター         | ジャンパワイヤー         | obnizピン|
 |--------------|---------------|-------|
@@ -34,6 +36,28 @@
 > <img src="https://i.gyazo.com/fe68ac7ea4bd5bd203b84ffd06ec8461.png" width="500"/>
 
 > <img src="https://i.gyazo.com/78e42de894f9c2714afc006e27a0f521.png" width="500"/>
+
+</details>
+
+<details><summary>obniz（+/-/3.3vのソケットがない方）配線の仕方をクリックで開く</summary>
+
+| サーボモーター         | ジャンパワイヤー         | obnizピン|
+|--------------|---------------|-------|
+| 茶  |   白   |  obniz0番   |
+| 橙   |  橙    |  obniz1番    |
+| 黄   |  緑    |  obniz2番     |
+
+写真上では以下の配線にしてあります。
+
+- サーボモーター茶 - ジャンパワイヤ白
+- サーボモーター橙 - ジャンパワイヤ橙
+- サーボモーター黄 - ジャンパワイヤ緑
+
+真似して配線してみてください。
+
+<a href="https://gyazo.com/3d8108c40d25a72f0ad229092217f4dc"><img src="https://i.gyazo.com/3d8108c40d25a72f0ad229092217f4dc.jpg" alt="Image from Gyazo" width="500"/></a>
+
+
 
 </details>
 
@@ -82,8 +106,16 @@ return msg //msgを出力
 
 `設定ノード`の初期化処理の項目に以下を記述します。パーツ単体で動かす時は上書きし、他のパーツとセットで動かす時は上書きではなく追記しましょう。
 
+
+obniz 1Yの場合:
+
 ```javascript
 obnizParts.servo = obniz.wired("ServoMotor",{ signal:2 }); //サーボモーターをどのくらい回すかの信号を2番に設定
+```
+
+obnizの場合:
+```javascript
+obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2}); //GNDに0番, 電源供給に1番,サーボモーターをどのくらい回すかの信号を2番に設定
 ```
 
 ## 4. 結果

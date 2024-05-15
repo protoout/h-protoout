@@ -2,11 +2,11 @@
 
 <img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g116732/)
 
-1. obnizでの配線
+## 1. obnizでの配線
 
 **★ 極性(+ -)があるため、接続に間違えがないか注意**
 
-
+<details><summary>ノードの繋ぎ方をクリックで開く</summary>
 温湿度センサーの穴が空いている面からみて、左からobnizの0,1,2,3の順で繋いでください。
 
 
@@ -27,7 +27,11 @@
 
 ※直接obnizにさしても動きますが、少しゆるいためブレッドボードを使います。
 
-2. 使うノードとつなぎ方
+</details>
+
+## 2. 使うノードとつなぎ方
+
+<details><summary>ノードの繋ぎ方をクリックで開く</summary>
 
 - obniz repeat
 - debug
@@ -35,8 +39,9 @@
 
 <a href="https://gyazo.com/fde72c61d77a840518cbcf1f1122efdf"><img src="https://i.gyazo.com/fde72c61d77a840518cbcf1f1122efdf.png" alt="Image from Gyazo" width="500"/></a>
 
+</details>
 
-3. 各ノードの設定方法
+## 3. 各ノードの設定方法
 
 - obniz repeat
 
@@ -51,7 +56,7 @@ return msg; //msg.payloadを出力する
 ```
 
 
-4. 初期化処理コードの編集
+## 4. 初期化処理コードの編集
 
 0番、1番、2番、3番に接続した場合の例
 
@@ -63,7 +68,7 @@ obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5
 ```
 
 
-5. 結果
+## 5. 結果
 
 湿度と温度が表示されればOK。
 
