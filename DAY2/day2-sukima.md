@@ -16,11 +16,11 @@ DAY1冒頭のワークの写真をアップロードしてください。
 
 ## 優先度2: IoTの概要コラムを読もう
 
+**IoTの概要コラム**を読んでみましょう。
 手を動かすではなく知識的な部分になりますが、「IoTの全体像」知っておいてください。
 
-[IoTの概要コラム](../tools/column/iot-overview/01_overview.md)を読んでみましょう。
-
-1. [概要](../tools/column/iot-overview/01_overview.md)
+- IoTの概要コラム
+1. [IoTの概要](../tools/column/iot-overview/01_overview.md)
 2. [デバイス](../tools/column/iot-overview/02-device.md)
 3. [ネットワーク](../tools/column/iot-overview/03-network.md)
 4. [クイズ](../tools/column/iot-overview/04-quiz.md)
