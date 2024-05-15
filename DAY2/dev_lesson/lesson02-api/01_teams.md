@@ -123,7 +123,7 @@ obnizのスイッチの状態によって、left, right, pushの3種類のメッ
 
 switchノードからtemplateノードにつないでください。
 
-<a href="https://gyazo.com/af8397913d2d0f01a8f8c6a80f518b41"><img src="https://i.gyazo.com/af8397913d2d0f01a8f8c6a80f518b41.gif" alt="Image from Gyazo" width="1000"/></a>
+<a href="https://gyazo.com/af8397913d2d0f01a8f8c6a80f518b41"><img src="https://i.gyazo.com/af8397913d2d0f01a8f8c6a80f518b41.gif" alt="Image from Gyazo" width="600"/></a>
 
 
 3. 最後にtemplateノードの中身を書き換えてください。
