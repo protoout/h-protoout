@@ -34,6 +34,20 @@ GPT-4oを組み込んだアプリを自分で作ってみましょう。
 
 ### 2-2. フローを作ってみる
 
+以下のようにフローを組んでみましょう。
+
+- `Cameraノード`
+- `Image previewノード`
+- `base64ノード`
+- `OpenAIノード`
+- `Switchノード`
+- `Debugノード`
+
+を使います。
+
+> <img src="https://i.gyazo.com/f568c4c8177a2f9404309676d2a77e54.gif" width="400px" />
+
+
 ### 2-3. Functinノードの編集
 
 Functinノードに以下のコードを上書きして貼り付けます。
@@ -68,6 +82,23 @@ return msg;
 > <img src="https://i.gyazo.com/d30ee9df94d42e17d35ecf966c2a20c4.png" width="400px" />
 
 > 参考: [OpenAIのGPT-4oを日本語OCRとして使ってみる](https://zenn.dev/tomioka/articles/74adf0c6bc8bc6)
+
+### 2-4. OpenAIノードに設定します。
+
+### 2-4. 使ってみる
+
+`カメラノード`のボタンを押すと最初は許諾を求められるので許可しましょう。
+
+> <img src="https://i.gyazo.com/dd6bb199d30f2f9d3d5fc8848e6ad512.png" width="400px" />
+
+ボタンを押すと写真が撮影されます。
+
+### 2-3. 上手くいくと
+
+こんな感じで試せます。
+
+> [<img src="https://i.gyazo.com/d32fba58cd0521aecf3fd65a0ef174dd.jpg" width="400px" />](https://twitter.com/n0bisuke/status/1790387951739756841)
+
 
 ## 3. contentの中身がプロンプト
 
