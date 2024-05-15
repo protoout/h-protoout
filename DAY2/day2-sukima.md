@@ -28,11 +28,14 @@ DAY1冒頭のワークの写真をアップロードしてください。
 
 ネットワークまで読んでもらえると嬉しいですが、概要まででも大丈夫です。
 
-## 優先度3: obniz Partsライブラリ
+## 優先度3: obnizで何ができるかを知ろう
 
-[公式パーツライブラリ](https://docs.obniz.com/ja/sdk/parts?tags=sensor_temp)を眺めてどんなパーツが使えるのかを確認してみましょう。
+- obnizパーツライブラリをみる
+    - [公式パーツライブラリ](https://docs.obniz.com/ja/sdk/parts?tags=sensor_temp)を眺めてどんなパーツが使えるのかを確認してみましょう。
+    > <img src="https://i.gyazo.com/2e3a9662b96e9e352f25a1135e6026ae.jpg" width="400px" />
 
-> <img src="https://i.gyazo.com/2e3a9662b96e9e352f25a1135e6026ae.jpg" width="400px" />
+- protopediaを覗く
+    - [プロトぺディア](https://protopedia.net/keyword?word=obniz)
 
 ## 優先度4: Node-REDのトラブルシューティング
 
@@ -41,7 +44,9 @@ DAY1冒頭のワークの写真をアップロードしてください。
 - [Node-REDで接続切ってるはずなのにプログラムが止まらない時](https://qiita.com/n0bisuke/items/ef82c303f98d62ae9cf4)
 - [複数のサーバーでobnizが動いてしまっている時](https://qiita.com/n0bisuke/items/34c8389e371bd5d2f7f5)
 
-## 優先度5: 
+## 優先度5: 関連するコラムを読んでみましょう。
+
+授業本編に関連しそうだけど知識としてあると良さそうくらいな温度感です。
 
 - 秋葉原電気街のコラム
     - [【初心者必見】電子パーツ買うならここ！アキバ電気街徹底ガイド](https://dotstud.io/blog/akihabara-guide-for-beginners/)
