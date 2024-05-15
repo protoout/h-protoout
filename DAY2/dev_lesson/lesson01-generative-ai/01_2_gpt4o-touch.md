@@ -2,7 +2,12 @@
 
 おそらく、世界最速です。
 
+最新話題のGPT-4oを把握しつつ、機能の一部を触ってみましょう。
+
 ## 1. GPT-4o 何がすごいのか
+
+> [<img src="https://i.gyazo.com/398101198548899cd44eafabbca74f14.png" width="400px" />
+](https://x.com/kmizu/status/1790227959724618123)
 
 > <img src="https://i.gyazo.com/9479970275861d7ad084dc676380e2e4.png" width="400px" />
 
@@ -65,12 +70,19 @@ GPT-4oは文章生成、画像認識、音声認識、など色々な機能が�
 > [<img src="https://i.gyazo.com/a2782376a5cf2140f89108fa7be4da53.png" width="400px" />
 ](https://twitter.com/n0bisuke/status/1790391750596436454)
 
+- [おまけ](https://twitter.com/n0bisuke/status/1790392932606046704)
 
-## 3. 
+## 2. 
 
-とはいえ今回の授業ではまずは戦国時代的に話題のLLMを中心に扱っていこうと思います。
-
-## 6. 世の中のスピードが加速する
+## 3. 世の中のスピードが加速する
 
 昨日はGoogle I/Oがあり、そこでも色々な情報が出ていました。
 
+
+## 4. 
+
+とはいえ今回の授業ではまずは戦国時代的に話題のLLMを中心に扱っていこうと思います。
+
+---
+
+**[◀ 目次ページに戻る](../readme.md)**
