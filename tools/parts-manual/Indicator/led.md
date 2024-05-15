@@ -72,8 +72,7 @@ obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 }); //脚の長い方�
 
 5. 結果
 
-injectのボタンtrueを押すと光り、falseを押すと消える。
-
+ONを押すと光り、OFFを押すと消える。
 
 ■ 参考資料
 [obnizの公式ドキュメント: LED](https://docs.obniz.com/ja/sdk/parts/LED/README.md)
