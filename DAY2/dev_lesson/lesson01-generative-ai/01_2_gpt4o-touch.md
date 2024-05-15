@@ -49,7 +49,10 @@ GPT-4oは文章生成、画像認識、音声認識、など色々な機能が�
 
 2. 次に[こちらのリスト](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit?usp=sharing)からOpenAIのAPIキーをコピーします。
 
-3. OpenAIノードに設定します。
+3. OpenAIノードにAPIキーを設定します。
+
+> <img src="https://i.gyazo.com/e9475922960843c2e95a37aaa7289cd5.png" width="400px" />
+
 
 ### 2-2. 使ってみる
 

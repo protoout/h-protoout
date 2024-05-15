@@ -85,6 +85,14 @@ return msg;
 
 ### 2-4. OpenAIノードに設定します。
 
+OpenAIノードの設定にAPIキーを追加します。
+
+[こちらのリスト](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit?usp=sharing)からOpenAIのAPIキーをコピーします。
+
+OpenAIノードにAPIキーを設定して完了してください。
+
+> <img src="https://i.gyazo.com/e9475922960843c2e95a37aaa7289cd5.png" width="400px" />
+
 ### 2-4. 使ってみる
 
 `カメラノード`のボタンを押すと最初は許諾を求められるので許可しましょう。
