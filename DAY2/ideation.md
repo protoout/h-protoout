@@ -18,6 +18,7 @@
 -->
 
 # アイデアワーク
+担当：[伴野](https://docs.google.com/presentation/d/1TcjvcJ0Zk2b1vhz6YQylsdYotKdcH_Lf83s0JEISj3A/edit?usp=sharing)
 ## 0.このパートの考え方
 <img src="https://i.gyazo.com/3d46edc1aac42a8025d303f031f03d0b.png" width="10%">
 
