@@ -1,9 +1,6 @@
-
-# ハンズオン: Teachable Machine
+# A-3. ハンズオン: Teachable Machineで
 
 Teachable MachineはGoogleが公開している機械学習を楽しく使えるノーコードツールです。
-
-
 
 ## 事例
 
