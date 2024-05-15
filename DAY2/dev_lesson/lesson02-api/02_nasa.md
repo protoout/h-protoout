@@ -107,7 +107,15 @@ URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKで�
 
 この設定により、ウェブページのURLは下記のようになります。
 
-`http://【みなさんのNode-RED URL】:1880/nasa`
+`http://【みなさんのNode-RED URL（URLバーに表示されている部分）】:1880/nasa`
+
+
+※ enebularの場合は右上「i」にカーソルをあてると出てくるのがWebページのURLです。
+<a href="https://gyazo.com/71ad81be655748046be291d43bc2d881"><img src="https://i.gyazo.com/71ad81be655748046be291d43bc2d881.png" alt="Image from Gyazo" width="352"/></a>
+
+`https://xxxxxxxxx.herokuapp.com/nasa`
+
+となります。
 
 
 <a href="https://gyazo.com/070c36c4dbc7777a99a9d6e5bf74566e"><img src="https://i.gyazo.com/070c36c4dbc7777a99a9d6e5bf74566e.gif" alt="Image from Gyazo" width="600"/></a>
