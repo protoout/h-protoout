@@ -17,7 +17,7 @@
 | LEDの長い脚（アノード +）  | obnizの0番    |
 | LEDの短い脚（カソード -）  | obnizの1番    |
 
-2. 使うノードとつなぎ方
+## 2. 使うノードとつなぎ方
 - inject
 - change
 - switch ※switchノードは設定後にノードをつなぐ
@@ -25,7 +25,7 @@
 
 <a href="https://gyazo.com/80cebbe41de81925a0908545f8f8058f"><img src="https://i.gyazo.com/80cebbe41de81925a0908545f8f8058f.gif" alt="Image from Gyazo" width="600"/></a>
 
-3. 各ノードの設定方法
+## 3. 各ノードの設定方法
 
 - switch
 
@@ -62,7 +62,7 @@ obnizParts.led.off();//ledをOFFにする
 <a href="https://gyazo.com/2a5337ef111f1a28b91a44768f44f676"><img src="https://i.gyazo.com/2a5337ef111f1a28b91a44768f44f676.gif" alt="Image from Gyazo" width="600"/></a>
 
 
-4. 初期化処理コードの編集
+## 4. 初期化処理コードの編集
 
 ```javascript
 

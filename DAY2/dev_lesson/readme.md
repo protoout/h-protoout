@@ -55,6 +55,11 @@
 - A. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
 - B. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
 - C. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
+- D. [チュートリアル1: 温湿度センサーを使用し、熱中症アラートを作ろう](/tools/tutorials/01_temp_led.md)
+
+以下はDay1のプロトタイピングのときに質問があったことをチュートリアル化してみました。
+- E. [チュートリアル2: サーボモーターとCdSで明るくなったら90度、暗くなったら0度になるものをつくろう](/tools/tutorials/02_servo_cds.md)
+- F. [チュートリアル3: サーボモーターでピョコピョコ連続で動かす](/tools/tutorials/03_servo-pyokopyoko.md)
 
 ### 3-2. 時間がある人はAIハンズオンのどれかをやってみましょう
 

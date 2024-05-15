@@ -6,6 +6,7 @@
 
 温度と湿度から暑さ指数を計算し、警戒度をLEDで示します。
 ドライヤーを吹きかけると、警戒レベルがぐっと上がります。
+
 <a href="https://gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc"><img src="https://i.gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc.gif" alt="Image from Gyazo" width="600"/></a>
 
 
@@ -14,10 +15,12 @@
 
 
 1. +ボタンを押し、新しくできたタブをダブルクリック
+
 <img src="https://i.gyazo.com/bfad18055e1a4119eed4b11e5d1dfad9.png" alt="Image from Gyazo" width="500"/>
 
 
 2. タブの名前を「obniz-LED」など、わかりやすく編集してください。
+
 <img src="https://i.gyazo.com/19ccf6eaf3e5083bd0c978bf419c61a0.png" alt="Image from Gyazo" width="500"/>
 
 3. 停止用ノードを読み込む
@@ -140,10 +143,12 @@ obnizParts.light = obniz.wired("Keyestudio_TrafficLight", {gnd:8, green:9, yello
 
 <a href="https://gyazo.com/ff918a211e74cbdf947ee700d0cf14e1"><img src="https://i.gyazo.com/ff918a211e74cbdf947ee700d0cf14e1.png" alt="Image from Gyazo" width="500"/></a>
 
+
 <a href="https://gyazo.com/196f7a67c62cd3f0508ab3a0671884bd"><img src="https://i.gyazo.com/196f7a67c62cd3f0508ab3a0671884bd.png" alt="Image from Gyazo" width="500"/></a>
 
 
 - changeノードとobniz functionノードを配置し、設定する
+
 <a href="https://gyazo.com/56bad58f1106d2ecfb0c48fd66adc6bf"><img src="https://i.gyazo.com/56bad58f1106d2ecfb0c48fd66adc6bf.gif" alt="Image from Gyazo" width="500"/></a>
 
 - changeノードの設定
