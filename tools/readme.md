@@ -35,8 +35,15 @@
 
 
 
-## チュートリアル: 参考になりそうなサンプルで解説をします。
+## チュートリアルコンテンツ: 参考になりそうなサンプルで解説をします。
+- [温湿度センサーと信号LEDを連動して熱中症アラートをつくる](./tutorials/01_temp_led.md)
+- [CdSとサーボモーターを連動して明るさによってサーボモーターの角度を変える](./tutorials/02_servo_cds.md)
+- [サーボモーターでピョコピョコ繰り返し処理](./tutorials/03_servo-pyokopyoko.md)
 
+### Day2のハンズオンコンテンツ
+- A. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](/DAY2/dev_lesson/lesson03-handson/a_openai-node-gtp.md)
+- B. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](/DAY2/dev_lesson/lesson03-handson/a_openai-node-wisper.md)
+- C. [Teachable Machineの利用](/DAY2/dev_lesson/lesson03-handson/c_teachable-machine.md)
 
 
 

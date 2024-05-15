@@ -1,7 +1,6 @@
 # マニュアル: スピーカー（ブザー）
 
 <img src="https://akizukidenshi.com/img/goods/L/104118.jpg" width="50">, 出典：[秋月電子通商](http://akizukidenshi.com/catalog/g/gP-04118/)
-<details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
 <a href="https://gyazo.com/081b807593f7bf2ab4725e5d44952a99"><img src="https://i.gyazo.com/081b807593f7bf2ab4725e5d44952a99.jpg" alt="Image from Gyazo" width="500"/></a>
@@ -18,17 +17,20 @@
 2. 使うノードとつなぎ方
 
 - inject
+- change
 - obniz function
+- debug
 
-<a href="https://gyazo.com/73e158660e203bf7934600714130de7d"><img src="https://i.gyazo.com/73e158660e203bf7934600714130de7d.png" alt="Image from Gyazo" width="400"/></a>
+<a href="https://gyazo.com/86af5bb0ab066922e2c2ca830eb03244"><img src="https://i.gyazo.com/86af5bb0ab066922e2c2ca830eb03244.gif" alt="Image from Gyazo" width="1000"/></a>
+
 
 3. 各ノードの設定方法
 
-- inject
+- change
 
-msg.payloadを「数値」「1000」（数字は任意で変更してください。単位はヘルツ。）
+msg.payloadを「数値」「500」（数字は任意で変更してください。単位はヘルツ。）
 
-<a href="https://gyazo.com/7cbace6d7c01f7290f91907f14c2bd87"><img src="https://i.gyazo.com/7cbace6d7c01f7290f91907f14c2bd87.gif" alt="Image from Gyazo" width="500"/></a>
+<a href="https://gyazo.com/cb0e5bf464ca48dd7ed5450fd7886c5e"><img src="https://i.gyazo.com/cb0e5bf464ca48dd7ed5450fd7886c5e.gif" alt="Image from Gyazo" width="500"/></a>
 
 
 - obniz function
@@ -87,4 +89,3 @@ obnizParts.Speaker.stop();
 ```
 
 
-</details>

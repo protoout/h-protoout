@@ -3,7 +3,6 @@
 <img src="https://akizukidenshi.com/img/goods/L/111009.jpg" width="50">, 出典：[秋月電子通商](http://akizukidenshi.com/catalog/g/gM-11009/)
 
 
-<details><summary>使い方をクリックで開く</summary>
 
 超音波を発生し、物体に当たってから跳ね返ってくるまでの時間を計測することで、その対象物体との距離を算出できます。
 距離を測るだけでなく、単純に目の前に人がいるかいないか、といった用途にも使えます。
@@ -78,7 +77,6 @@ obnizParts.hcsr04 = obniz.wired("HC-SR04",{ gnd:8, echo:9, trigger:10, vcc:11 })
 [obnizの公式ドキュメント: 距離センサー](https://docs.obniz.com/ja/guides/obniz-starter-kit/use-parts/distance)
 [取得した数値データを四捨五入したい: 計算処理いろいろ](./math-data.md)
 
-</details>
 
 
 ---

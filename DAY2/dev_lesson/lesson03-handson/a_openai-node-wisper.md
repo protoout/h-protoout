@@ -56,7 +56,6 @@
 - node-red-contrib-simple-whisper
 - node-red-node-ui-microphone
 
-<details><summary>【1日目のおさらい】ノードをインストールする方法</summary>
 
 1. Node-REDの右上のメニュー（三本線）からパレットの管理を選びます。
    
@@ -73,7 +72,6 @@
 
 3. 同じ名前のノードを見つけたら「ノードを追加」をクリックしてください。
 
-</details>
 
 
 ### 1-2 話した言葉を文字列に変換するパートをつくる
@@ -147,65 +145,37 @@
 ダブルクリックしてAPIキーを入力します。
 [授業で使う情報リスト](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit#gid=0)の「OpenAI」行の「keyなど」にある`sk-`で始まる文字列をコピーして貼り付けてください。wisperに入力したものと同じ文字列です。
 
-<img src="https://i.gyazo.com/21751ab4a6842fffb3bb736ea7f54a16.png" alt="Image Description" />
+
+4. 動作をテストする
+
+ここまで来たら、一度動作のテストをしましょう。
+
+デプロイしたあと、injectノードをクリックすると「on」と返ってくることを確かめてください。
+
+<a href="https://gyazo.com/f902d94a55fcebfb066f7fdf4a0bcf3d"><img src="https://i.gyazo.com/f902d94a55fcebfb066f7fdf4a0bcf3d.png" alt="Image from Gyazo" width="600"/></a>
 
 
-4. obniz functionノードの設定
+4. LEDを光らせるobnizのノードを置く
+
+パーツマニュアルより[LED](/tools/parts-manual/Indicator/led.md)を開いて、injectノードの操作によりLEDのON/OFF
+ができるところまで作成してください。
 
 
-obniz functionノードをダブルクリックし、obnizを選択してコードを入力します。
+5. 確認
 
-<img src="https://i.gyazo.com/4ec524cf0e8e72c28ecdfd43a1fcfda0.png" alt="Image Description" />
+このように、大きく3つのフローができていればOKです。
 
+<a href="https://gyazo.com/9877bdc8218af976d4b22555e32b15c2"><img src="https://i.gyazo.com/9877bdc8218af976d4b22555e32b15c2.png" alt="Image from Gyazo" width="500"/></a>
 
-```javascript
+わからなくなっちゃった人向け:
 
-if (msg.payload == "on") {
-    obnizParts.led.on();
-} else {
-    obnizParts.led.off();
-}
+#### セーブポイント
+Node-REDから読み込みをすると追いつけます
 
-```
-
-
-さらに、obnizの初期コードを追加します。
-
-
-鉛筆マークをクリックし
-
-<img src="https://i.gyazo.com/7c5951f1e91dc03196fc008d660746bc.png" alt="Image from Gyazo" />
-
-下記1行を追加してください。
-
-```js
-obnizParts.led = obniz.wired("LED", {anode:0, cathode:1});
+```json
+[{"id":"cce0567a24e44e5e","type":"debug","z":"0373d611e7a78a5d","name":"debug 14","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":700,"y":60,"wires":[]},{"id":"dd081bb6d6edf4ab","type":"microphone","z":"0373d611e7a78a5d","name":"","x":290,"y":40,"wires":[["575bb9c6b5e25e45"]]},{"id":"575bb9c6b5e25e45","type":"simple-whisper","z":"0373d611e7a78a5d","name":"","Token":"sk-proj-iQYLaB7zvt2qZMhGY0vET3BlbkFJCBMaUTnVwitXZQ88bZoc","extension":"wav","x":480,"y":60,"wires":[["cce0567a24e44e5e"]]},{"id":"67854e1564ef0eb3","type":"inject","z":"0373d611e7a78a5d","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":180,"y":180,"wires":[["35e20b4fe971279a"]]},{"id":"c5b7f5896a1eb3bf","type":"debug","z":"0373d611e7a78a5d","name":"debug 15","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":720,"y":240,"wires":[]},{"id":"35e20b4fe971279a","type":"change","z":"0373d611e7a78a5d","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"あなたは、電気を操作するbotです。電気をつけてほしそうな場合は「on」と出力し、消してほしそうなときは「off」と出力してください。on/off以外の言葉は出しないでください。 # 命令 「電気つけて欲しい」","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":340,"y":220,"wires":[["4d3bb869619b6059"]]},{"id":"4d3bb869619b6059","type":"simple-chatgpt","z":"0373d611e7a78a5d","name":"","Token":"sk-proj-iQYLaB7zvt2qZMhGY0vET3BlbkFJCBMaUTnVwitXZQ88bZoc","Model":"","SystemSetting":"","functions":"","functionsType":"str","function_call":"auto","function_callType":"str","x":540,"y":300,"wires":[["c5b7f5896a1eb3bf"]]},{"id":"85c2eaedcc9a81a2","type":"inject","z":"0373d611e7a78a5d","name":"ON","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":170,"y":480,"wires":[["0199808c713f771c"]]},{"id":"0199808c713f771c","type":"change","z":"0373d611e7a78a5d","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"on","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":380,"y":480,"wires":[["8096917daef56b97"]]},{"id":"8096917daef56b97","type":"switch","z":"0373d611e7a78a5d","name":"","property":"payload","propertyType":"msg","rules":[{"t":"eq","v":"on","vt":"str"},{"t":"eq","v":"off","vt":"str"}],"checkall":"true","repair":false,"outputs":2,"x":550,"y":480,"wires":[["ba84a3f2a6d1a59e"],["52045ee0375a49c7"]]},{"id":"ba84a3f2a6d1a59e","type":"obniz-function","z":"0373d611e7a78a5d","obniz":"a5fae3ca0b96e551","name":"","code":"obnizParts.led.on(); //ledをONにする","x":760,"y":420,"wires":[[]]},{"id":"fcf18145d9dd1b79","type":"inject","z":"0373d611e7a78a5d","name":"OFF","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":170,"y":620,"wires":[["a2047e12ffc9aee1"]]},{"id":"a2047e12ffc9aee1","type":"change","z":"0373d611e7a78a5d","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"off","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":380,"y":620,"wires":[["8096917daef56b97"]]},{"id":"52045ee0375a49c7","type":"obniz-function","z":"0373d611e7a78a5d","obniz":"a5fae3ca0b96e551","name":"","code":"obnizParts.led.off();//ledをOFFにする","x":780,"y":520,"wires":[[]]},{"id":"3472cad0127105a4","type":"comment","z":"0373d611e7a78a5d","name":"音声を文字列にする","info":"","x":90,"y":40,"wires":[]},{"id":"2ed511c7c5598ef6","type":"comment","z":"0373d611e7a78a5d","name":"LEDをつけるか消すかChatGPTに意味をくみとってもらう","info":"","x":210,"y":140,"wires":[]},{"id":"cbd9f69da08b6df6","type":"comment","z":"0373d611e7a78a5d","name":"LEDのON/OFF","info":"","x":80,"y":420,"wires":[]},{"id":"a5fae3ca0b96e551","type":"obniz","obnizId":"40725365","deviceType":"obnizboard1y","name":"","accessToken":"LU9lVJcNb47aDtOxRk5pPlPCxeiA5ServT8g20LtCOeeEtM2mmgcgqNUglK9gvvo","code":"//obniz.display.clear(); // 画面を消去\nobnizParts.led = obniz.wired(\"LED\", {anode:0, cathode:1});"}]
 
 ```
-
-<img src="https://i.gyazo.com/efcbc666883c3de9d6cfa03269686431.png" alt="Image from Gyazo" />
-
-あなたは、電気を操作するbotです。電気をつけてほしそうな場合は「on」と出力し、消してほしそうなときは「off」と出力してください。on/off以外の言葉は出しないでください。 # 命令 「電気つけて欲しい」
-
-
-5. LEDをobnizに差し込む
-
-<a href="https://gyazo.com/98db436f266ccce9fe822ccb64b63087"><img src="https://i.gyazo.com/98db436f266ccce9fe822ccb64b63087.png" alt="Image from Gyazo" width="1000"/></a>
-
-- LEDの長い脚をobnizの0番
-- LEDの短い脚をobnizの1番
-
-に接続してください。
-
-
-6. LEDがつくか、テストしましょう
-
-デプロイしてobnizの電源を入れてください。
-
-その後、injectノードのボタンをクリックしてLEDが点灯しコンソールに「on」と出力されるか確かめてください。
-
-<img src="https://i.gyazo.com/73f5121b9021d7aa5961e51af50643d2.png" alt="Image from Gyazo" />
-
 
 
 ### 1-4 音声入力でLEDを光らせるようにフローをつなげる

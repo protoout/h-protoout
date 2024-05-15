@@ -1,7 +1,6 @@
 # マニュアル: 照度センサー(CdS): 
 
 <img src="https://akizukidenshi.com/img/goods/L/100110.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g100110/)
-<details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
 ★極性なし
@@ -45,7 +44,7 @@ return msg;
 
 ad1: Analogデータ（光の強さ）をDigital信号に変換して取得する1番、の意味
 
-6番から分圧の値を取得する場合は、ad6とします。
+6番から分圧の値を取得する場合は、ad6とかきかえます。
 
 ```javascript
 var voltage = await obniz.ad6.getWait(); //ピン6からアナログ（光の強さ）をデジタル信号に変換した値を取得
@@ -64,7 +63,7 @@ obniz.io2.output(false); //io2番をGNDに
 
 ```
 
-赤い線を5番に、白い線を7番につなぐ場合は下記のように変更してください。
+※ 赤い線を5番に、白い線を7番につなぐ場合の書き方
 
 ```javascript
 
@@ -80,10 +79,11 @@ obniz.io7.output(false); //io7番をGNDに
 
 明るさに応じてコンソールに表示されている数値が変動すれば成功です。
 
+
+
 ■ 参考資料
 [obnizの公式ドキュメント: obniz AD](https://docs.obniz.com/ja/reference/common/ad)
 
-</details>
 
 ---
 

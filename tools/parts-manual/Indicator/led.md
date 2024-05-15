@@ -18,31 +18,24 @@
 | LEDの短い脚（カソード -）  | obnizの1番    |
 
 2. 使うノードとつなぎ方
-- inject 2つ
+- inject
+- change
 - switch ※switchノードは設定後にノードをつなぐ
 - obniz function 2つ
-- debug
 
-<a href="https://gyazo.com/a4746c59ffd824626fe0f679c1c8e8d9"><img src="https://i.gyazo.com/a4746c59ffd824626fe0f679c1c8e8d9.png" alt="Image from Gyazo" width="774"/></a>
-
+<a href="https://gyazo.com/80cebbe41de81925a0908545f8f8058f"><img src="https://i.gyazo.com/80cebbe41de81925a0908545f8f8058f.gif" alt="Image from Gyazo" width="600"/></a>
 
 3. 各ノードの設定方法
-- inject
-1つ目: payloadの設定を「真偽」、trueにする
-2つ目: payloadの設定を「真偽」、falseにする
-
-<a href="https://gyazo.com/4014ae3108033b8aab83e8f437aebb42"><img src="https://i.gyazo.com/4014ae3108033b8aab83e8f437aebb42.gif" alt="Image from Gyazo" width="500"/></a>
-
 
 - switch
 
-分岐を追加する。
+<a href="https://gyazo.com/db8c1564785fa06baa4ea2738b9b8d97"><img src="https://i.gyazo.com/db8c1564785fa06baa4ea2738b9b8d97.gif" alt="Image from Gyazo" width="600"/></a>
 
-<a href="https://gyazo.com/aa07ff50cc9cae349e1bbced481dfb8a"><img src="https://i.gyazo.com/aa07ff50cc9cae349e1bbced481dfb8a.gif" alt="Image from Gyazo" width="500"/></a>
 
-その後、obniz functionノードにつないでください。
+- change
 
-<a href="https://gyazo.com/d9ac82738971e5aa0c4af8ef34571749"><img src="https://i.gyazo.com/d9ac82738971e5aa0c4af8ef34571749.gif" alt="Image from Gyazo" width="500"/></a>
+<a href="https://gyazo.com/76c8b7748d4544d6fa50fb7d9767468a"><img src="https://i.gyazo.com/76c8b7748d4544d6fa50fb7d9767468a.gif" alt="Image from Gyazo" width="1000"/></a>
+
 
 
 - obniz functionのコード①
@@ -53,7 +46,6 @@
 obnizParts.led.on(); //ledをONにする
 
 ```
-
 - obniz functionのコード②
 
 
@@ -62,6 +54,12 @@ obnizParts.led.on(); //ledをONにする
 obnizParts.led.off();//ledをOFFにする
 
 ```
+
+- inject
+
+名前を変更しておきましょう
+
+<a href="https://gyazo.com/2a5337ef111f1a28b91a44768f44f676"><img src="https://i.gyazo.com/2a5337ef111f1a28b91a44768f44f676.gif" alt="Image from Gyazo" width="600"/></a>
 
 
 4. 初期化処理コードの編集

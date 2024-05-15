@@ -46,9 +46,9 @@
 
 ### 3-1. まずはAIハンズオンのどれかをやってみましょう
 
-- A. [OpenAIノードを組み込んでつくってみよう](./lesson03-handson/a_openai-node.md)
-- B. [Whisperの例など]()
-- C. [Teachable Machineの利用]()
+- A. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/a_openai-node-gtp.md)
+- B. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/a_openai-node-wisper.md)
+- C. [Teachable Machineの利用](./lesson03-handson/c_teachable-machine.md)
 
 ### 3-2. 時間がある人はAIハンズオンのどれかをやってみましょう
 
