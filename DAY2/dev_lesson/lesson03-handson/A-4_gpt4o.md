@@ -144,10 +144,11 @@ DeepLで日本語訳をすると
 > 
 > <img src="https://i.gyazo.com/38b311265ece1deb45a6e64a9c57681e.png" width="400px" />
 > 
-> 肌が乾燥してるしクマがあるしって言われてます。
-> 
 > <img src="https://i.gyazo.com/19b1fff02731437f651cd14e9f49e6ef.png" width="400px" />
 
+肌が乾燥してるしクマがあるしって言われてます。合ってます。優秀ですね。
+
+このような形で優秀なAIを使って何ができるか少し考えてみましょう。
 
 ---
 
