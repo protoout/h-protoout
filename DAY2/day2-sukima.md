@@ -43,4 +43,6 @@ DAY1冒頭のワークの写真をアップロードしてください。
 
 ## 優先度5: 秋葉原電気街のコラム
 
-のびすけコラム。
+- [【初心者必見】電子パーツ買うならここ！アキバ電気街徹底ガイド](https://dotstud.io/blog/akihabara-guide-for-beginners/)
+
+> <img src="https://dotstud.io/img/blog/091/05_shop.png" width="400px" />
