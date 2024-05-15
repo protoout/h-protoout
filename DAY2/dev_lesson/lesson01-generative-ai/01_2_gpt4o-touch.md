@@ -4,6 +4,9 @@
 
 ## 1. GPT-4o 何がすごいのか
 
+> [<img src="https://i.gyazo.com/398101198548899cd44eafabbca74f14.png" width="400px" />
+](https://x.com/kmizu/status/1790227959724618123)
+
 > <img src="https://i.gyazo.com/9479970275861d7ad084dc676380e2e4.png" width="400px" />
 
 > <img src="https://i.gyazo.com/f817c26f2a9ee46d87e949d93c7a2751.png" width="400px" />
