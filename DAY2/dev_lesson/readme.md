@@ -24,13 +24,16 @@
     - [1-1. 生成AIコラム](./lesson01-generative-ai/01_1_overview.md)
     - [1-2. 世界最速! GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)
     - [1-3. 生成AI（LLM）を使ってみる](./lesson01-generative-ai/01_3_start-llm.md)
+
 2. 生成AIとプログラムを書いてみるNode-RED開発ハンズオン
     - [2-1. 生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
     - [2-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
     - [2-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
+
 3. 生成AIでフローを0から作って改善してみるハンズオン
     - [3-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)
     - [3-2. 生成AIが作ったフローを改修](./lesson01-generative-ai/03_2_one2.md)（時間があれば実施）
+
 4. 生成AIが作ったフローの改修やデバッグ
     - [4-1. 既存のJSONを読み込んでスタート](./lesson01-generative-ai/04_1_ten99.md)（時間があれば実施）
 
