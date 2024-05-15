@@ -126,6 +126,28 @@ if (sensorValue <= 300) {
 
 ChatGPTは不満を言わずに何回でも答えてくれます。（※厳密にいうと1日あたりなどの利用限度はあります。）
 
+### 2-7. エラーをChatGPTに聞いてみる
+
+エラーが出た時もChatGPTに答えてもらうことができます。
+
+先ほどの`Functionノード`の中身をこちらに変えて、再実行してみてください。
+
+```js
+// センサーデータを受け取る
+const sensorVa = msg.payload;
+
+// センサーの値が300以下かどうかをチェックする
+if (sensorValue <= 300) {
+    // センサーの値が300以下の場合の処理
+    return [msg, null];
+} else {
+    // センサーの値が300より大きい場合の処理
+    return [null, msg];
+}
+```
+
+> 
+> <img src="https://i.gyazo.com/1fb5d62f81a33253c9c851e3ca74cd45.png" width="400px" />
 
 
 ### 2-6. (セーブポイント)
