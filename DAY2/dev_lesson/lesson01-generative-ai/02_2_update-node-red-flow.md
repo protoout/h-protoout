@@ -162,9 +162,38 @@ if (sensorValue <= 300) {
 
 > <img src="https://i.gyazo.com/7ff4891640e7f07ec691d2a569846506.png" width="400px" />
 
-[よくない例](https://chat.openai.com/share/e/e6a01e1f-07ed-48e7-a9d1-edc240bca452)
+ChatGPTは状況が分からないので、予想してArduinoと呼ばれる別のプログラミング言語（環境）のコードを生成してきました。
 
-### 2-6. (セーブポイント)
+```arduino
+int sensorPin = A0; // センサーが接続されているアナログピン
+int sensorValue;    // センサー値を格納する変数
+
+void setup() {
+  // シリアル通信を開始
+  Serial.begin(9600);
+}
+
+void loop() {
+  // センサーから値を読み取る
+  sensorValue = analogRead(sensorPin);
+
+  // シリアルモニタに値を出力
+  Serial.println(sensorValue);
+
+  // 少し待つ
+  delay(1000);
+}
+```
+
+当たってそうで当たってない回答ですね。これはNode-REDでは基本的に動作しないコードとなります。
+
+**しっかり状況説明をしたり、伝えられる情報を伝えたり、前提条件を伝えたりと人間に話すような形式を意識**して聞くことでより良い回答が得られます。
+
+ちなみに、ChatGPTはこのように当たってそうで当たってない回答をすることがあり、これをハルシネーションと呼んだりします。
+
+> [よくない例](https://chat.openai.com/share/e/e6a01e1f-07ed-48e7-a9d1-edc240bca452)
+
+### 2-9. (セーブポイント)
 
 ここまでの手順で詰まってしまった人はこちらのここまでの完成版フローを読み込んでみましょう。
 
