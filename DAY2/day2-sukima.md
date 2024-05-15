@@ -30,11 +30,16 @@ DAY1冒頭のワークの写真をアップロードしてください。
 
 ## 優先度3: obniz Partsライブラリ
 
-公式パーツライブラリを眺めてどんなパーツが使えるのかを確認してみましょう。
+[公式パーツライブラリ](https://docs.obniz.com/ja/sdk/parts?tags=sensor_temp)を眺めてどんなパーツが使えるのかを確認してみましょう。
+
+> <img src="https://i.gyazo.com/2e3a9662b96e9e352f25a1135e6026ae.jpg" width="400px" />
 
 ## 優先度4: Node-REDのトラブルシューティング
 
 トラブルシューティング記事を読んでおきましょう。
+
+- [Node-REDで接続切ってるはずなのにプログラムが止まらない時](https://qiita.com/n0bisuke/items/ef82c303f98d62ae9cf4)
+- [複数のサーバーでobnizが動いてしまっている時](https://qiita.com/n0bisuke/items/34c8389e371bd5d2f7f5)
 
 ## 優先度5: 秋葉原電気街のコラム
 
