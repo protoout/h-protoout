@@ -146,9 +146,9 @@ if (sensorValue <= 300) {
 }
 ```
 
-> "ReferenceError: sensorValue is not defined (line 5, col 1)"とエラーが出ています。
-> 
-> <img src="https://i.gyazo.com/1fb5d62f81a33253c9c851e3ca74cd45.png" width="400px" />
+`"ReferenceError: sensorValue is not defined (line 5, col 1)"`とエラーが出てしまいました。
+
+> <img src="https://i.gyazo.com/7933770fd8c184c73077a8ed7cc5d10a.png" width="400px" />
 
 
 ### 2-6. (セーブポイント)
