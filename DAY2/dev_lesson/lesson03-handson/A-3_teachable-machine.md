@@ -47,7 +47,7 @@ Teachable MachineはGoogleが公開している機械学習を楽しく使える
 
 > <img src="https://i.gyazo.com/44df8918fdc71441fea086a9fe087dd5.png" width="400px" />
 
-### 2. Teachable Machineのモデル作成
+### 1-2. Teachable Machineのモデル作成
 
 以下のGIF画像のように操作してみましょう。
 
@@ -64,7 +64,7 @@ Teachable MachineはGoogleが公開している機械学習を楽しく使える
 > 
 > <img src="https://i.gyazo.com/066211c5b882751825de81158753449b.png" width="400px" />
 
-### 3. モデルをエクスポート
+### 1-3. モデルをエクスポート
 
 モデルが出来たらモデルをエクスポートします。一時的に画像を含んだデータがアップロードされますが、プライバシーに配慮してすぐに消され、抽出したデータのみがGoogleのサーバーに保存される模様です。
 
@@ -99,10 +99,77 @@ Teachable MachineはGoogleが公開している機械学習を楽しく使える
     - 撮影した画像のプレビューができるようになります。
     - https://flows.nodered.org/node/node-red-contrib-image-output
 
+このような操作でインストールできます。
 
 > <img src="https://i.gyazo.com/f3d3f76405b85e266165ae625f4a99a4.gif" width="400px" />
 
+上手くいくと左のサイドバーにオレンジ色の`Teachable Machineノード`が追加されます。
+
 > <img src="https://i.gyazo.com/04000b3380bb4ee0ac59e58d3ae6a827.png" width="400px" />
+
+### 2-2. 設定など
+
+- 配線
+
+まずは、ノードを設置して繋げます。写真のようにノードを配置してみましょう。
+
+> `Cameraノード`, `Teachable Machineノード`, `Image Previewノード`, `Switchノード`, `Debugノード`
+>
+> <img src="https://i.gyazo.com/b9c5eb1c1a52ea2dcc65bbb63fd47b3d.png" width="400px" />
+
+- `Teachable Machineノード`の設定
+
+`Teachable Machineノード`の設定のURLに先ほど自身が学習したモデルのURLを入れて保存します。
+
+> 例: https://teachablemachine.withgoogle.com/models/YzQquwL7M/ （太陽拳と気功法の判定）
+> 
+> <img src="https://i.gyazo.com/6a407f929ea056989fa1a853d0fcc8f4.png" width="400px" />
+
+- Switchノードで条件分岐
+
+プロパティのプルダウンを`msg`にして`payload[0].class`と入れます。（ちょっと難しいかも）
+
+あとは条件式にTeachable Machineで設定していたクラス名を設定します。`Class 1`や`Class 2`という文字列のまま学習させた人は`Class 1`などのテキストを入れましょう。
+
+> <img src="https://i.gyazo.com/8f1fb0c258a9fb804c7f76c81805ac57.png" width="400px" />
+
+最後にデプロイして完成です。
+
+### 2-3. 使ってみる
+
+`Cameraノード`のボタンをクリックするとPCのカメラで撮影がされます。（最初だけ許可を求められると思うので許可しましょう。）
+
+デバッグノードに結果が表示されるはずです。
+
+> <img src="https://i.gyazo.com/b9b58efa323389388527845029b56756.png" width="400px" />
+
+お疲れ様でした。
+
+## 3. 応用を考えてみる
+
+これで条件分岐もできるので、例えば
+
+- 入館証などを学習させておいて特定の入館証だったら処理を行う
+- 魚の写真を学習させておいて鮮度が良ければ処理を行う
+
+など出来そうです。
+
+また、処理を行った先にTeamsに通知をしたり、obnizでサーボを回したりと接続することも可能なので色々な入力や判定の起点に使えそうですね。
+
+> こんな感じの接続もできます。
+> 
+> <img src="https://i.gyazo.com/cd887f784de9df5224e7ae6e84313459.png" width="400px" />
+
+Teachable Machineは音声でもモデルを作れるので、気になる人はそちらも試してみてください。
+
+PCやスマホもセンサーとして使うことが出来ますので、obnizで今回さわったセンサーに加えて
+
+- カメラ（視覚）
+- マイク（音）
+
+もこのような形で使える手札になりました。
+
+お疲れ様でした！
 
 ## 他の技術とTeachable Machineを組み合わせた例
 
@@ -113,3 +180,7 @@ Teachable MachineはGoogleが公開している機械学習を楽しく使える
   - [現役、理学療法士が姿勢の画像を送るとその姿勢について教えてくれるLINE botを作った - Qiita](https://qiita.com/yusei2629/items/da07d877a98c94abb3c9)
 - obniz
   - [画像から機械学習したモデルで、酔っ払っているかどうかを判断してアウトだったら警報色ライトをつけた - Qiita](https://qiita.com/Sugizo50073508/items/c34df866fb46276d6ade)
+
+---
+
+**[◀ 目次ページに戻る](../readme.md)**
