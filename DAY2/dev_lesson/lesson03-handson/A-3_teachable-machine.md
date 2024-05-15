@@ -1,11 +1,12 @@
 # A-3. ハンズオン: Teachable Machineで独自モデルの作成と画像判定
 
-Teachable MachineはGoogleが公開している機械学習を楽しく使えるノーコードツールです。
-
-これは初見の人はだいぶ楽しい⭐️。
-
 ※このハンズオンはSSL（HTTPS）環境じゃないと後半が進めません。
 
+Teachable MachineはGoogleが公開している機械学習を楽しく使えるノーコードツールです。
+
+> こんな判定がライトに出来てだいぶ楽しい⭐️。
+> 
+> [<img src="https://i.gyazo.com/456af186a95b5cf057f451e55f003fdf.png" width="400px" />](https://twitter.com/n0bisuke/status/1789617932407808302)
 
 ## Teachable Machine
 
