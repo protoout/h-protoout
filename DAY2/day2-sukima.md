@@ -52,3 +52,11 @@ DAY1冒頭のワークの写真をアップロードしてください。
     - [【初心者必見】電子パーツ買うならここ！アキバ電気街徹底ガイド](https://dotstud.io/blog/akihabara-guide-for-beginners/)
     > <img src="https://dotstud.io/img/blog/091/05_shop.png" width="400px" />
 
+- メイカー文化を知る
+    - [メイカー文化に触れることができるメディア](https://zenn.dev/protoout/articles/61-maker-culture-media)
+
+- Google I/Oの話題（最新、昨日）
+    - [Google I/O 2024基調講演まとめ　AI一色、GPT-4oのような機能も](https://www.itmedia.co.jp/news/articles/2405/15/news094.html)
+
+- GPT-4oの話題（最新、一昨日）
+    - [新しい「ChatGPT」はココがすごい　解説「GPT-4o」](https://ascii.jp/elem/000/004/198/4198449/)
