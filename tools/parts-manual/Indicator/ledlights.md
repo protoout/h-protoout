@@ -4,7 +4,6 @@
 
 <img src="https://ueeshop.ly200-cdn.com/u_file/UPAH/UPAH808/2108/products/14/69524b4790.jpg?x-oss-process=image/format,webp" width="50">, 出典：[Keyestudio](https://www.keyestudio.com/products/keyestudio-traffic-light-module-black-and-eco-friendly-for-arduino)
 
-<details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
 <a href="https://gyazo.com/8464f2e5de5bac0515ec7b4cea9d4b96"><img src="https://i.gyazo.com/8464f2e5de5bac0515ec7b4cea9d4b96.jpg" alt="Image from Gyazo" width="500"/></a>
@@ -18,16 +17,16 @@
 
 2. 使うノードとつなぎ方
 - injection
+- change
 - obniz function
 - debug
 
-<a href="https://gyazo.com/4f52c51092088a407d00b64e5c347a12"><img src="https://i.gyazo.com/4f52c51092088a407d00b64e5c347a12.png" alt="Image from Gyazo" width="500"/></a>
+<a href="https://gyazo.com/b234409ec7acc7448c55b56d91b21225"><img src="https://i.gyazo.com/b234409ec7acc7448c55b56d91b21225.gif" alt="Image from Gyazo" width="600"/></a>
 
 3. 各ノードの設定方法
 
-- injection
-
-<a href="https://gyazo.com/ed7b5fc7363878099a5f6cf42314aae5"><img src="https://i.gyazo.com/ed7b5fc7363878099a5f6cf42314aae5.gif" alt="Image from Gyazo" width="500"/></a>
+- change
+<a href="https://gyazo.com/e6079d428656a9f49c7dab4fa3b43343"><img src="https://i.gyazo.com/e6079d428656a9f49c7dab4fa3b43343.gif" alt="Image from Gyazo" width="600"/></a>
 
 
 - obniz function
@@ -64,4 +63,3 @@ injectionノードでpayloadの設定を「green」「yellow」に変更する�
 ■ 参考資料
 [obnizの公式ドキュメント: Keyestudio TrafficLight](https://docs.obniz.com/ja/sdk/parts/Keyestudio_TrafficLight/README.md)
 
-</details>

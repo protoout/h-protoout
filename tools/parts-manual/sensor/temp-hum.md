@@ -2,7 +2,6 @@
 
 <img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="50">, 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g116732/)
 
-<details><summary>使い方をクリックで開く</summary>
 1. obnizでの配線
 
 **★ 極性(+ -)があるため、接続に間違えがないか注意**
@@ -41,6 +40,8 @@
 
 - obniz repeat
 
+interval(ms)は500くらいに設定しておいてください。
+
 ```javascript
 
 msg.payload = await obnizParts.dht20.getAllDataWait(); //温湿度センサーの値を、msg.payloadに格納する
@@ -73,6 +74,5 @@ obnizParts.dht20 = obniz.wired("DHT20",{vcc:0, sda:1, gnd:2,  scl:3 ,voltage: "5
 ■ 参考資料
 [データの中から特定の数値のみ取り出して使う方法: JSONデータの扱いについて」](./json-data.md)
 
-</details>
 
 ---

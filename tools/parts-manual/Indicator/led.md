@@ -18,27 +18,24 @@
 | LEDの短い脚（カソード -）  | obnizの1番    |
 
 2. 使うノードとつなぎ方
-- inject 
+- inject
 - change
-- switch
-- obniz function 
+- switch ※switchノードは設定後にノードをつなぐ
+- obniz function 2つ
 
-<a href="https://gyazo.com/58990f620b24d4b55dd3043c05e96cc8"><img src="https://i.gyazo.com/58990f620b24d4b55dd3043c05e96cc8.png" alt="Image from Gyazo" width="600"/></a>
-
-<a href="https://gyazo.com/58990f620b24d4b55dd3043c05e96cc8"><img src="https://i.gyazo.com/58990f620b24d4b55dd3043c05e96cc8.png" alt="Image from Gyazo" width="600"/></a>
-
+<a href="https://gyazo.com/80cebbe41de81925a0908545f8f8058f"><img src="https://i.gyazo.com/80cebbe41de81925a0908545f8f8058f.gif" alt="Image from Gyazo" width="600"/></a>
 
 3. 各ノードの設定方法
-- change
-payloadの代入する値を、文字列の `on` とします。
-
-<a href="https://gyazo.com/dc4c766c8fdd4222bacd8355dd282abb"><img src="https://i.gyazo.com/dc4c766c8fdd4222bacd8355dd282abb.gif" alt="Image from Gyazo" width="600"/></a>
 
 - switch
 
-onとoffの分岐を追加します。
+<a href="https://gyazo.com/db8c1564785fa06baa4ea2738b9b8d97"><img src="https://i.gyazo.com/db8c1564785fa06baa4ea2738b9b8d97.gif" alt="Image from Gyazo" width="600"/></a>
 
-<a href="https://gyazo.com/e3891c25bca6fec661a1ec1ee8ee4537"><img src="https://i.gyazo.com/e3891c25bca6fec661a1ec1ee8ee4537.gif" alt="Image from Gyazo" width="600"/></a>
+
+- change
+
+<a href="https://gyazo.com/76c8b7748d4544d6fa50fb7d9767468a"><img src="https://i.gyazo.com/76c8b7748d4544d6fa50fb7d9767468a.gif" alt="Image from Gyazo" width="1000"/></a>
+
 
 
 - obniz functionのコード①
@@ -49,22 +46,6 @@ onとoffの分岐を追加します。
 obnizParts.led.on(); //ledをONにする
 
 ```
-
-4. offの分岐を追加する
-
-下記ノードを追加し図のようにつないでください
-
-- inject
-- change
-- obniz function
-
-<a href="https://gyazo.com/2895856ce7e7039dfb66fe98848aebf6"><img src="https://i.gyazo.com/2895856ce7e7039dfb66fe98848aebf6.gif" alt="Image from Gyazo" width="600"/></a>
-
-
-- change
-
-代入する値に`off` といれる
-
 - obniz functionのコード②
 
 
@@ -74,12 +55,14 @@ obnizParts.led.off();//ledをOFFにする
 
 ```
 
-わかりやすく、ノードに名前をつけておきましょう！
+- inject
 
-<a href="https://gyazo.com/0b7a879974168b7a4e6365ce3483aab5"><img src="https://i.gyazo.com/0b7a879974168b7a4e6365ce3483aab5.gif" alt="Image from Gyazo" width="600"/></a>
+名前を変更しておきましょう
+
+<a href="https://gyazo.com/2a5337ef111f1a28b91a44768f44f676"><img src="https://i.gyazo.com/2a5337ef111f1a28b91a44768f44f676.gif" alt="Image from Gyazo" width="600"/></a>
 
 
-5. 初期化処理コードの編集
+4. 初期化処理コードの編集
 
 ```javascript
 
@@ -89,11 +72,7 @@ obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 }); //脚の長い方�
 
 5. 結果
 
-injectのボタンをクリックしてLEDのON/OFFができればOKです。
-
-
-
-
+injectのボタンtrueを押すと光り、falseを押すと消える。
 
 
 ■ 参考資料

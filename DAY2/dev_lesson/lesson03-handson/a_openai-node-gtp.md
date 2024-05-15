@@ -1,4 +1,4 @@
-### 1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳してteamsに投稿しよう
+### 1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳
 
 今度は、OopenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-REDで簡単に扱えるノード）をを使い、Node-REDのフローに生成AIを組み込み、生成したテキストをteamsに投稿しましょう！
 

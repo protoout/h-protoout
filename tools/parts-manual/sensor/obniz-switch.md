@@ -1,6 +1,5 @@
 # マニュアル: obnizのスイッチ
 
-<details><summary>使い方をクリックで開く</summary>
 
 1. 使うノードとつなぎ方
 
@@ -34,4 +33,3 @@ return msg; //msg.payloadを出力
 ■ 参考資料
 [obnizの公式ドキュメント: スイッチ](https://docs.obniz.com/ja/reference/common/switch)
 
-</details>
