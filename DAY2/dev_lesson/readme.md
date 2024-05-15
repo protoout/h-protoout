@@ -20,7 +20,7 @@
 - **やること: ChatGPTに触れる、Node-RED開発にChatGPTを活用する**
 - **ゴール: 生成AIとやりとりをしてフローの改善ができるように**
 
-1. 生成AIに触れる
+1. 生成AI概論と生成AIに触れてみる
     - [1-1. 生成AIコラム](./lesson01-generative-ai/01_1_overview.md)
     - [1-2. 世界最速! GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)
     - [1-3. 生成AI（LLM）を使ってみる](./lesson01-generative-ai/01_3_start-llm.md)
