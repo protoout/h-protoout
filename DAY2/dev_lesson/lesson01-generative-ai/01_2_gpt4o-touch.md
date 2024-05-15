@@ -20,6 +20,7 @@
 > [<img src="https://i.gyazo.com/398101198548899cd44eafabbca74f14.png" width="400px" />
 ](https://x.com/kmizu/status/1790227959724618123)
 
+> <img src="https://i.gyazo.com/b0862b757fe547dd47b113db5b5e5656.gif" width="400px" />
 
 
 ## 2. GPT-4oを使ってみよう 
