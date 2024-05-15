@@ -150,13 +150,15 @@ if (sensorValue <= 300) {
 
 > <img src="https://i.gyazo.com/7933770fd8c184c73077a8ed7cc5d10a.png" width="400px" />
 
-エラーが出ても落ち着いてChatGPTに聞いてましょう。
+
 
 > [チャットした例がこちら](https://chat.openai.com/share/e/a8f38730-4b46-4430-b9a7-6491563e266c)
 
 > <img src="https://i.gyazo.com/0832662eafa3388a3b1699b251f1da48.png" width="400px" />
 
-ChatGPTの指示のもと、コードを直して（コピペして）、上手く修正することができたでしょうか？
+ChatGPTの指示のもと、コードを直して（コピペして）、上手く修正することができたと思います。
+
+エラーが出ても落ち着いて一旦人に聞く前にChatGPTに聞くという選択肢も持ってみて下さい。
 
 ### 2-8. よくない例
 
