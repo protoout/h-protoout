@@ -4,7 +4,7 @@
 
 距離センサーとスピーカーを連携させる仕組みが出来上がっていくまで少し辛抱してくださいませ。
 
-## 2. ChatGPTに聞いて条件分岐をしてみる
+## 2. ChatGPTとやりとりして機能更新してみよう
 
 先ほどのプロンプトを変更して、以下のような状態を作ってみます。
 
@@ -16,7 +16,7 @@
 
 ### 2-1. ChatGPTに再度聞いてみます。
 
-[サンプル](../../../tools/prompt-sample.md)を参考に、以下のようなプロンプトをChatGPTに聞いてみましょう。
+プロンプトサンプルの[１. Node-REDのFunctionノードで使えるコードを生成](../../../tools/prompt-sample.md)を参考に、以下のようなプロンプトをChatGPTに聞いてみましょう。
 
 `# system`の箇所は先ほど同様で`# prompt`の部分を変更しています。
 
@@ -114,9 +114,88 @@ if (sensorValue <= 300) {
 
 これくらいのイメージがあると制作をやっていくときに少し楽になります。
 
+### 2-6. ChatGPTにコードを説明してもらおう
 
+生成されたコードがとはいえ分からないです。という声が聞こえてきそうですね。
 
-### 2-6. (セーブポイント)
+**[コードをさらにChatGPTに説明](https://chat.openai.com/share/e/7f97279c-dd35-4a83-ad9d-bc81433459b8)してもらいましょう。**
+
+> <img src="https://i.gyazo.com/5a7e8cbb88092a1396ba273b5f3d59eb.png" width="400px" />
+
+分からなかったらもっと分かりやすく！！と追加注文もどんどんしましょう。
+
+ChatGPTは不満を言わずに何回でも答えてくれます。（※厳密にいうと1日あたりなどの利用限度はあります。）
+
+### 2-7. エラーをChatGPTに聞いてみる
+
+エラーが出た時もChatGPTに答えてもらうことができます。
+
+先ほどの`Functionノード`の中身をこちらに変えて、再実行してみてください。
+
+```js
+// センサーデータを受け取る
+const sensorVa = msg.payload;
+
+// センサーの値が300以下かどうかをチェックする
+if (sensorValue <= 300) {
+    // センサーの値が300以下の場合の処理
+    return [msg, null];
+} else {
+    // センサーの値が300より大きい場合の処理
+    return [null, msg];
+}
+```
+
+`"ReferenceError: sensorValue is not defined (line 5, col 1)"`とエラーが出てしまいました。
+
+> <img src="https://i.gyazo.com/7933770fd8c184c73077a8ed7cc5d10a.png" width="400px" />
+
+> [チャットした例がこちら](https://chat.openai.com/share/e/a8f38730-4b46-4430-b9a7-6491563e266c)
+
+> <img src="https://i.gyazo.com/0832662eafa3388a3b1699b251f1da48.png" width="400px" />
+
+ChatGPTの指示のもと、コードを直して（コピペして）、上手く修正することができたと思います。
+
+エラーが出ても落ち着いて一旦人に聞く前にChatGPTに聞くという選択肢も持ってみて下さい。
+
+### 2-8. よくない例
+
+「`"ReferenceError: sensorValue is not defined (line 5, col 1)"`とエラーが出た」とだけChatGPTに送るとどうなるでしょうか。
+
+> <img src="https://i.gyazo.com/7ff4891640e7f07ec691d2a569846506.png" width="400px" />
+
+ChatGPTは状況が分からないので、予想してArduinoと呼ばれる別のプログラミング言語（環境）のコードを生成してきました。
+
+```arduino
+int sensorPin = A0; // センサーが接続されているアナログピン
+int sensorValue;    // センサー値を格納する変数
+
+void setup() {
+  // シリアル通信を開始
+  Serial.begin(9600);
+}
+
+void loop() {
+  // センサーから値を読み取る
+  sensorValue = analogRead(sensorPin);
+
+  // シリアルモニタに値を出力
+  Serial.println(sensorValue);
+
+  // 少し待つ
+  delay(1000);
+}
+```
+
+当たってそうで当たってない回答ですね。これはNode-REDでは基本的に動作しないコードとなります。
+
+**しっかり状況説明をしたり、伝えられる情報を伝えたり、前提条件を伝えたりと人間に話すような形式を意識**して聞くことでより良い回答が得られます。
+
+ちなみに、ChatGPTはこのように当たってそうで当たってない回答をすることがあり、これをハルシネーションと呼んだりします。
+
+> [よくない例](https://chat.openai.com/share/e/e6a01e1f-07ed-48e7-a9d1-edc240bca452)
+
+### 2-9. (セーブポイント)
 
 ここまでの手順で詰まってしまった人はこちらのここまでの完成版フローを読み込んでみましょう。
 
