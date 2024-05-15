@@ -118,6 +118,13 @@ Teamsに送信されれば成功です！
 
 obnizのスイッチの状態によって、left, right, pushの3種類のメッセージを出し分けるようにします。
 
+<a href="https://gyazo.com/152ac92d21b3e2b7da854d2f04dadbc4"><img src="https://i.gyazo.com/152ac92d21b3e2b7da854d2f04dadbc4.gif" alt="Image from Gyazo" width="600"/></a>
+
+
+switchノードからtemplateノードにつないでください。
+
+<a href="https://gyazo.com/af8397913d2d0f01a8f8c6a80f518b41"><img src="https://i.gyazo.com/af8397913d2d0f01a8f8c6a80f518b41.gif" alt="Image from Gyazo" width="1000"/></a>
+
 
 3. 最後にtemplateノードの中身を書き換えてください。
 <img src="https://i.gyazo.com/f2b879e09dab01144ded904a0e1d3337.png" alt="Image Description" width="500"/>
