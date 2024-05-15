@@ -57,7 +57,6 @@
 
 - [Zenn](https://zenn.dev/): Qiitaと同じくZennはエンジニアが技術・開発についての知見をシェアする場所です。
 
-
 Node-REDでなく、JavaScriptの参考記事が出てきた場合はこの記事を参考にして書き換えてみてください。
 
 - [検索して出てきたJavaScriptのコードをobnizノードで使えるように書き換えるには？](https://qiita.com/n0bisuke/items/ce783af305588664a6bc)

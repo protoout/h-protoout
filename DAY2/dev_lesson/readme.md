@@ -52,27 +52,41 @@
 
 ### 3-1. まずはAIハンズオンのどれかをやってみましょう
 
-- A. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
-- B. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
-- C. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
-- D. [チュートリアル1: 温湿度センサーを使用し、熱中症アラートを作ろう](/tools/tutorials/01_temp_led.md)
+A-1~4のどれかのハンズオンを優先的に実施してください。
 
-以下はDay1のプロトタイピングのときに質問があったことをチュートリアル化してみました。
-- E. [チュートリアル2: サーボモーターとCdSで明るくなったら90度、暗くなったら0度になるものをつくろう](/tools/tutorials/02_servo_cds.md)
-- F. [チュートリアル3: サーボモーターでピョコピョコ連続で動かす](/tools/tutorials/03_servo-pyokopyoko.md)
+- A-1. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
+- A-2. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/a_openai-node-wisper.md)
+- A-3. [Teachable Machineの利用](./lesson03-handson/c_teachable-machine.md)
+- A-4. [GPT-4oを使ってアプリケーション開発](./lesson03-handson/A-4_gpt4o.md)
 
-### 3-2. 時間がある人はAIハンズオンのどれかをやってみましょう
+### 3-2. 時間がある人はNode-REDとセンサーを組み合わせたハンズオンのどれかをやってみましょう
 
-## Lesson04 開発Tips紹介 【14:00~14:10】
+- B-1. [チュートリアル1: 温湿度センサーを使用し、熱中症アラートを作ろう](/tools/tutorials/01_temp_led.md)
+- B-2. [チュートリアル2: サーボモーターとCdSで明るくなったら90度、暗くなったら0度になるものをつくろう](/tools/tutorials/02_servo_cds.md)
+- B-3. [チュートリアル3: サーボモーターでピョコピョコ連続で動かす](/tools/tutorials/03_servo-pyokopyoko.md)
+
+### 3-3. おまけ。さらに時間がある人でAIをさらに使ってみたい人
+
+ただしC群のハンズオンは環境的にやれない人がいるかもしれないのであくまでもおまけコンテンツです。
+
+- C-1. [SunoAIを使って初めての作詞作曲]()
+- C-2. [GPTsでオリジナルChatGPTを作成]()
+
+## Lesson04 プロトタイピングとふりかえり 14:00~14:30
 
 **やること:** 
 **ゴール:** 
 
-1. [複数人での開発]()
-2. [ノードレッドのTips]()
+- 1. [作ってみよう](./lesson04-prototyping/01_prototyping.md)
+- 2. 実装パートまとめと明日に向けて
 
-## Lesson05 プロトタイピングとふりかえり 14:10~14:30
+---
 
-まとめ
+実装パートは以上となります。
 
-アイデアソンへ(14:30~16:00)
+このあとは最終制作に向けたアイデアソンになります。
+
+ここまでお疲れ様でした。
+
+**[◀ 目次ページに戻る](./readme.md)**
+
