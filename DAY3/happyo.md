@@ -63,7 +63,7 @@
 
 ---
 ##  4.制作内容の記録（14:40までに完了ください）
-全チームの制作物を共有できるように、[シェアポイントに用意をしたPowerPoint](https://hitachigroup.sharepoint.com/:p:/r/sites/syagai_jyujyu/S000182/Shared%20Documents/%E6%9C%80%E7%B5%82%E5%88%B6%E4%BD%9C%E7%99%BB%E9%8C%B2%E3%82%B7%E3%83%BC%E3%83%88.pptx?d=w4681d80b3bc343588661e5b7232d97f3&csf=1&web=1&e=0Rq82A)に投稿しましょう。　
+全チームの制作物を共有できるように、[シェアポイントに用意をしたPowerPoint](https://hitachigroup.sharepoint.com/:p:/r/sites/syagai_jyujyu/S000182/Shared%20Documents/DAY3/%E3%80%90%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB11-14%E3%80%91%E6%9C%80%E7%B5%82%E5%88%B6%E4%BD%9C%E7%99%BB%E9%8C%B2%E3%82%B7%E3%83%BC%E3%83%88.pptx?d=w2499addea45d45f597518bde9ea05d3b&csf=1&web=1&e=C6gdzv)に投稿しましょう。　
 ※発表用の資料ではありません。
 
 投稿して欲しい内容
