@@ -30,7 +30,7 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 
 
 
-## 4. 結果
+## 5. 結果
 
 injectノードをクリックしてディスプレイにテキストが出ればOKです。
 
