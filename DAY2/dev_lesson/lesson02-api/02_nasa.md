@@ -47,6 +47,7 @@ APIを活用すれば、まったくのゼロからすべての機能を構築�
 ### 2. 手順
 
 1. injectノード、http requestノード、debugノードを追加し図のようにつなぐ
+
 <img src="https://i.gyazo.com/4cc9b58750f7f4864ab02a7faa1cb21f.png" alt="Image Description" width="500"/>
 
 
@@ -69,10 +70,12 @@ https://api.nasa.gov/planetary/apod?api_key=【API KEY】
 
 
 3. デプロイ後、injectノードのスイッチを押して、コンソールに結果が返ってくれば成功です。
+
 <img src="https://i.gyazo.com/17a02c204783ee4adf59112b942f4be1.png" alt="Image Description" width="500"/>
 
 
 返ってきたデータの「url」とかいてあるところにあるURLは、宇宙の画像です。URLをコピーしてブラウザからアクセスしてみましょう。
+
 <a href="https://gyazo.com/2fbb69ee50e6e948e7cc50c0844e5569"><img src="https://i.gyazo.com/2fbb69ee50e6e948e7cc50c0844e5569.png" alt="Image from Gyazo" width="285"/></a>
 
 <img src="https://apod.nasa.gov/apod/image/2405/NGC2169LRGBQHY183HR_c1024.jpg" width="300">
@@ -105,13 +108,18 @@ https://api.nasa.gov/planetary/apod?api_key=【API KEY】
 
 URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKです。）
 
+
 この設定により、ウェブページのURLは下記のようになります。
+
 
 `http://【みなさんのNode-RED URL（URLバーに表示されている部分）】:1880/nasa`
 
 
 ※ enebularの場合は右上「i」にカーソルをあてると出てくるのがWebページのURLです。
+
+
 <a href="https://gyazo.com/71ad81be655748046be291d43bc2d881"><img src="https://i.gyazo.com/71ad81be655748046be291d43bc2d881.png" alt="Image from Gyazo" width="352"/></a>
+
 
 `https://xxxxxxxxx.herokuapp.com/nasa`
 
