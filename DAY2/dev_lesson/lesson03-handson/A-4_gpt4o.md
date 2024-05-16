@@ -91,7 +91,24 @@ OpenAIノードの設定にAPIキーを追加します。
 
 OpenAIノードにAPIキーを設定して完了してください。
 
+- 鉛筆マークから設定を開き
+
+> <img src="https://i.gyazo.com/baa800b1c6e47cf83989149ac2e36444.png" width="400px" />
+
+- 設定画面にAPIキーを入れます。
+
 > <img src="https://i.gyazo.com/e9475922960843c2e95a37aaa7289cd5.png" width="400px" />
+
+### 2-5. Changeノードの設定
+
+`Changeノード`の設定をします。
+
+- 代入する値のプルダウン: `msg`に変更
+- 代入する値のフォーム: `payload.choices[0].message.content`を入れる
+
+> <img src="https://i.gyazo.com/a6febe1135a2a92db5d8c294c58c9fee.png" width="400px" />
+
+ここについての解説は後ほど追記したいですが、JSON書き出して、ChatGPTにきけたら聞いてみてね。
 
 ### 2-5. 使ってみる
 
