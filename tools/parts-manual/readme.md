@@ -4,7 +4,7 @@
 
 ## LED赤、青: 
 
-使い方は[こちら](./indicator/led.md)です。
+使い方は[こちら](./Indicator/led.md)です。
 
 > <img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="50">
 
@@ -20,7 +20,7 @@
 
 ## パトランプ: 
 
-使い方は[こちら](./indicator/ledlights.md)です。
+使い方は[こちら](./Indicator/ledlights.md)です。
 
 > <img src="https://ueeshop.ly200-cdn.com/u_file/UPAH/UPAH808/2108/products/14/69524b4790.jpg?x-oss-process=image/format,webp" width="50">
 
@@ -60,7 +60,7 @@
 
 ## obnizのディスプレイ
 
-使い方は[こちら](./indicator/obniz-display.md)です。
+使い方は[こちら](./Indicator/obniz-display.md)です。
 
 ## obnizのスイッチ
 
