@@ -21,5 +21,3 @@
 ### A-4: 世界最速！ 一昨日発表があったGPT-4oを使ってアプリケーションを作ってみよう
 
 <img src="https://i.gyazo.com/f817c26f2a9ee46d87e949d93c7a2751.png" width="400px" />
-
-## B群
