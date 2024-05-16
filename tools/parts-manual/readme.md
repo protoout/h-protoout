@@ -10,6 +10,14 @@
 
 > 出典：[秋月電子通商](https://akizukidenshi.com/catalog/g/g112519/)
 
+## マトリクスLED: 
+
+使い方は[こちら](./Indicator/matrix-led.md)です。
+
+<img src="https://docs.obniz.com/ja/sdk/parts/Keyestudio_HT16K33/image.jpg" width="50">
+
+> 出典：[obniz公式ライブラリ](https://docs.obniz.com/ja/sdk/parts/Keyestudio_HT16K33/README.md)
+
 ## サーボモーター: 
 
 使い方は[こちら](./actuator/servo.md)です。
