@@ -45,7 +45,7 @@
 
 1. [Teams API連携](./lesson02-api/01_teams.md)
 2. [その他のAPI](./lesson02-api/02_nasa.md)
-3. API活用事例紹介
+3. [API活用事例紹介](./lesson02-api/03_api-use-case.md)
 
 ## Lesson03 選択してAI利用のハンズオンをやってみよう 【11:00〜12:00 / 13:00~14:00】 担当: 私市, のびすけ 
 
