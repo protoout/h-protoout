@@ -54,6 +54,8 @@ obnizのスイッチを押して、Teamsに投稿するものを作ります。
 
 1. injectノード、http requestノード、debugノードを追加し図のようにつなぐ
 
+<a href="https://gyazo.com/7d06640b02dbe05463a58a88481a182d"><img src="https://i.gyazo.com/7d06640b02dbe05463a58a88481a182d.png" alt="Image from Gyazo" width="500"/></a>
+
 - http requestノード: サーバーに対し「これやってよ〜」（今回はメッセージの送信）と、リクエストをするために使います。
 
 [HTTPについてはこちら](/tools/column/iot-overview/03-network.md)
