@@ -51,7 +51,6 @@ Injectノードを押すとマトリクスLEDが斜めに光ります。
 
 > <img src="https://i.gyazo.com/15da82b6277ebfdf68597b229ccaeb23.jpg" width="400px" />
 
-
 ■ 参考資料
 [obnizの公式ドキュメント: マトリクスLED](https://docs.obniz.com/ja/sdk/parts/Keyestudio_HT16K33/README.md)
 
