@@ -42,7 +42,7 @@ OpenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-R
 
 または、下記をNode-REDで読み込んでください。
 
-■ 読み込み用JSON
+■ 読み込み用JSONはこちら
 
 ※ http requestノードのURL後ろ、APIキーを書き換えるのを忘れずに！
 

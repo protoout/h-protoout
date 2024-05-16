@@ -13,6 +13,7 @@
 
 - [Node-REDで接続切ってるはずなのにプログラムが止まらない時](https://qiita.com/n0bisuke/items/ef82c303f98d62ae9cf4)
 - [複数のサーバーでobnizが動いてしまっている時](https://qiita.com/n0bisuke/items/34c8389e371bd5d2f7f5)
+- [フローを読み込むとエラーになる](./trouble-node-install.md)
 
 ## 3. Node-REDの開発ナレッジ
 
