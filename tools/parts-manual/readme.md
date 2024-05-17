@@ -73,3 +73,9 @@
 ## obnizのスイッチ
 
 使い方は[こちら](./sensor/obniz-switch.md)です。
+
+## ガスセンサー MQ135
+
+使い方は[こちら](./sensor/mq-gas-sensor.md)です。
+
+> <img src="https://docs.obniz.com/ja/sdk/parts/MQ135/image.jpg" width="50">, 出典：[obniz Parts Library](https://docs.obniz.com/ja/sdk/parts/MQ135/README.md)
