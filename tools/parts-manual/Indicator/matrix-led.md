@@ -34,7 +34,8 @@
 
 ```javascript
 const dots = [1,2,4,8,16,32,64,128]
-matrix.dots(dots);
+obnizParts.matrix.dots(dots);
+
 ```
 
 ## 4. 初期化処理コードの編集
