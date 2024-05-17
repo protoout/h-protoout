@@ -13,7 +13,7 @@
 
 <details><summary>配線の仕方をクリックで開く</summary>
 
-<a href="https://gyazo.com/333e9751bf9f478ed388bc6bda7fa691"><img src="https://i.gyazo.com/333e9751bf9f478ed388bc6bda7fa691.jpg" alt="Image from Gyazo" width="500"/></a>
+<a href="https://gyazo.com/1bb0746a755d99f23d844733a95ef9ed"><img src="https://i.gyazo.com/1bb0746a755d99f23d844733a95ef9ed.jpg" alt="Image from Gyazo" width="708"/></a>
 
 **★ 極性(+ -)があるため、接続に間違えがないか注意**
 

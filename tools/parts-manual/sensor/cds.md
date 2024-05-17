@@ -49,7 +49,7 @@ ad1: Analogデータ（光の強さ）をDigital信号に変換して取得す�
 6番から分圧の値を取得する場合は、ad6とかきかえます。
 
 ```javascript
-var voltage = await obniz.ad6.getWait(); //ピン6からアナログ（光の強さ）をデジタル信号に変換した値を取得
+const voltage = await obniz.ad6.getWait(); //ピン6からアナログ（光の強さ）をデジタル信号に変換した値を取得
 
 ```
 
