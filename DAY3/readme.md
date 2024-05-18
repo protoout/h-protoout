@@ -28,6 +28,7 @@
 
 ## 締め 16:45-17:00
 
-- 担当: のびすけ
+- [クロージング](https://www.canva.com/design/DAGFd_HyXEs/ORgI3XswxXO1z7H0aOGoxQ/edit)
+    - 担当: のびすけ
 
 ## アンケートや片付け 17:00-17:20
