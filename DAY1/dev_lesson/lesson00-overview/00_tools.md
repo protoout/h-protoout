@@ -29,7 +29,7 @@
 
 
 ### 練習: Miroにチーム名を書いてみよう！
-[Miro](https://miro.com/app/board/uXjVKPW27-k=/)にアクセスし、チーム名を決めて書いてみましょう！
+[Miro](https://miro.com/app/board/uXjVKPW27-k=/){:target="_blank"}にアクセスし、チーム名を決めて書いてみましょう！
 
 
 ## 3.進め方
