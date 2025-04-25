@@ -122,6 +122,7 @@ Day1で扱った電子部品の使い方はこちらにまとまっています�
 
 > [!CAUTION]
 > GitHub Models のフロー。jsonつくって読み込ませるのが良さそう。↓
+
 - A-1. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
 - A-2. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
 - A-3. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
