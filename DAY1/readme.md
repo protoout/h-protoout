@@ -10,6 +10,6 @@
 - [IoTの世界に飛び込もう！obnizとNode-REDで手を動かして学ぶIoT](./dev_lesson)
     - 担当: 和智
 
-## 締め 17:00~17:20
-
-[クロージング](https://www.canva.com/design/DAGEwjqI__8/N9VlTDkLUwIRN05xbID3lg/edit)
+### クロージング17:00~17:20
+- [クロージング](https://www.canva.com/design/DAGEwjqI__8/N9VlTDkLUwIRN05xbID3lg/edit)\
+  - 担当: 
