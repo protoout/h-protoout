@@ -22,8 +22,9 @@
 ## 2.使用するアプリケーション
 
 1. GitHub: この授業資料。基本的にこの資料を手元で見ながら進めていただきます。
-2. [Miro](https://miro.com/app/board/uXjVKPW27-k=/): ホワイトボードツール。授業中に出てきた疑問や質問、アイデア出しで使用。
-3. [SharePoint](https://hitachigroup.sharepoint.com/sites/syagai_jyujyu/S000182/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fsyagai%5Fjyujyu%2FS000182%2FShared%20Documents%2F%E3%83%86%E3%82%B9%E3%83%88&viewid=ca370411%2D8eb9%2D45cf%2D9724%2D7bfbbed13b54): 最終アイデアを記事としてまとめ、投稿する場所。
+2. Effibot: 生成AIを使いながら実装を行います。
+3. [Miro](https://miro.com/app/board/uXjVKPW27-k=/): ホワイトボードツール。授業中に出てきた疑問や質問、アイデア出しで使用。
+4. [SharePoint](https://hitachigroup.sharepoint.com/sites/syagai_jyujyu/S000182/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fsyagai%5Fjyujyu%2FS000182%2FShared%20Documents%2F%E3%83%86%E3%82%B9%E3%83%88&viewid=ca370411%2D8eb9%2D45cf%2D9724%2D7bfbbed13b54): 最終アイデアを記事としてまとめ、投稿する場所。
 
 1日目は、1と2をつねに開いておいてください。
 
