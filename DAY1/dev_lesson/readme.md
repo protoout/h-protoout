@@ -36,8 +36,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 2. [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/02_env.md)
 
 その他、使うツールを紹介します。  
-- Effibot
-- [電子部品](./lesson00-overview/00_tools.md)
+- [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
     
 ----  
   
