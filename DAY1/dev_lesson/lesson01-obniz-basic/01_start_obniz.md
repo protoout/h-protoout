@@ -1,29 +1,20 @@
 > [!WARNING]
 > **使う場所に注意！**  
-> obniz Boardはノートパソコンの上に置かず、机の上など電気を通さない場所に置きましょう。
+> obniz Board はノートパソコンの上に置かず、机の上など電気を通さない場所に置きましょう。
   
-## obnizとは?
-
-obnizは、手軽にIoTサービスを構築するための仕組みです。  
-IoTに必要なデバイス上のファームウェア、クラウドとの通信と暗号化、クラウド上でのデバイス認証と管理機能は全て、obnizより提供されます。
-
-> [!NOTE]
-> 会社の名前でもあり、システムの名前でもあります
-
   
-### 私たちが使うobniz Board 1Y
+### 私たちが使う obniz Board / obniz Board 1Y
   
-obniz Board 1Y は obniz の公式デバイスです。いわゆる**マイコンボード**です。小型のコンピューターにハードウェアをつくるのに必要なパーツがちょこちょこ付いたものです。
+obniz Board は obniz の公式デバイスです。いわゆる**マイコンボード**です。小型のコンピューターにハードウェアをつくるのに必要なパーツがちょこちょこ付いたものです。
 
-***以降 obniz Board のことを長いので 「**obniz**」 と呼びます***  
 
-obniz は専用のクラウドを使ってインターネット経由で簡単に電子部品を操作することができます。
-具体的には Node-RED に書いたプログラムを使って obniz を制御します。
+obniz Board は専用のクラウドを使ってインターネット経由で簡単に電子部品を操作することができます。
+具体的には Node-RED に書いたプログラムを使って obniz Board を制御します。
 
 <img src="https://github.com/user-attachments/assets/80eb5ff1-ca20-4f2b-ae99-e60f9396aca0 " width="70%" />
 
 > [!TIP]
-> 実はこのインターネットにつなぐのは結構めんどくさい...！obniz は他のマイコンボードに比べクラウド連携が非常に簡単です。  
+> 実はこのインターネットにつなぐのは結構めんどくさい...！obniz Board は他のマイコンボードに比べクラウド連携が非常に簡単です。  
   
 ちなみに他の有名なマイコンボードは次の通りです。聞いたことあるものはありますか？  
 - Arduino（アルドゥイーノ）
@@ -34,7 +25,7 @@ obniz は専用のクラウドを使ってインターネット経由で簡単�
   
 ----  
   
-## Node-RED で obniz を動かしてみる
+## Node-RED で obniz Board を動かしてみる
 
 
 では早速 obniz を動かしてみましょう。まだセンサーは使いません！  
@@ -44,7 +35,7 @@ obniz は専用のクラウドを使ってインターネット経由で簡単�
 > **obniz ID はSNSなどには公開しないようにしましょう！**  
   
 
-### 1. Node-RED に obniz 用のノードを追加する  
+### 1. Node-RED に obniz Board 用のノードを追加する  
   
 メニューバーから「パレットの管理」を選択  
   
@@ -80,8 +71,8 @@ obniz-functionノードはノードの一覧の下の方の「その他」に入
 
 <img width="50%" alt="image" src="https://github.com/user-attachments/assets/db06cb0d-1813-4417-831b-46e504383547" />
 
-`obniz ID` に obniz に表示されている番号を入れます(ハイフンは有/無どちらでも大丈夫)  
-`device type` を obniz 1Y にします  
+`obniz ID` に obniz Board に表示されている番号を入れます(ハイフンは有/無どちらでも大丈夫)  
+`device type` を obniz 1Y / obniz 1Y にします  
   
 <img width="50%" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />  
   
@@ -116,7 +107,7 @@ Node-RED の場合、Node.js のプロセスは起動し続ける仕様なため
   
 <img src="https://github.com/user-attachments/assets/2bf4e492-0b16-4f9e-bb93-69c5b2995ec0" width="90%" />   
   
-上手くいくと、obnizのディスプレイが元の QR コードと ID の画面に戻ります
+上手くいくと、obniz Board　のディスプレイが元の QR コードと ID の画面に戻ります
 > [!CAUTION]
 > **以降も新しいノードを実行する場合は、毎回必ずこのプロセスを実行しましょう！**  
 > 
