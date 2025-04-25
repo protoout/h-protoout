@@ -71,19 +71,32 @@ obniz Board と Node-RED の2つを使える状態にします。
 > - a
 
 #### 実装
-1. [ブザーで好きな音を出してみよう]()
-2. [サーボモーターを回してみよう]()
+1. [ブザーで好きな音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
+2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
+
+> [!WARNING]
+> サーボモータが動かないことがあります。[^1]
+>
+<details>
+<summary>こちらの対策を試してみてください</summary>
+
+
+
+</details>
+
+
+[^1]: obniz Boardの過電流検知により電源を供給できない場合(https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md)
 
 早く終わった人はこちらに挑戦！
-- ブザーでドレミファソラシドを奏でてみよう
-- サーボモーターを時計回りに120度逆回りに60度回してみよう
+- [ブザーで曲を奏でてみよう](https://gist.github.com/ma1750/df348ecc867703467a91ac74f3b61d8e)※何かサンプル用意
+- [サーボモーターを時計回りに120度逆回りに60度回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)
   
 ----  
 ### 休憩
 
 ----  
 
-### Lesson03 実践的なセンサーをつくってみよう  
+### Lesson03 実用的なセンサーをつくってみよう  
 
 > [!NOTE]
 > **やること:**  
@@ -93,9 +106,9 @@ obniz Board と Node-RED の2つを使える状態にします。
 > - a
 
 テーマ
-1. [周りが暗くなったらLEDを点灯させてみよう]()
-2. [距離に応じてライトの色を変えてみよう]()
-3. [湿度が低くなったら警告音を出してみよう]()
+1. [距離に応じてライトの色を変えてみよう]()※これだけ、ノードを使ってセンサを組み合わせるパレットのサンプルをつくる
+2. [周りが暗くなったらLEDを点灯させてみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-cds)
+4. [湿度が低くなったら警告音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20)
 
 早く終わった人はこちらに挑戦！
 - 温度に応じてサーボーモーターの回転方向を変えてみよう：シーリングファン
