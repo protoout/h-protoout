@@ -2,7 +2,7 @@
 
 ### オープニング 8:50~9:00
 
-- OP: [昨日のおさらいと最終制作についてリマインドなど、生成AIコラム](https://www.canva.com/design/DAGFazxKWXQ/1HQiMphwi3fBYTro72xyWA/edit)
+- [昨日のおさらいと最終制作についてリマインドなど、生成AIコラム](https://www.canva.com/design/DAGFazxKWXQ/1HQiMphwi3fBYTro72xyWA/edit)
     - 担当: のびすけ
 
 ### 実装授業 9:00~16:00
