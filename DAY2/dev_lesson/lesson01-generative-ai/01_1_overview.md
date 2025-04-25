@@ -1,4 +1,4 @@
-# L01-1. 生成AI概論: 生成AIコラム 1/3
+# L01-1. 生成AI概論: 生成AIコラム
 
 世間で盛り上がりが加速している生成AIをテーマに授業をしていきます。
 
@@ -45,6 +45,12 @@ GoogleやMicrosoft、Facebookなど各社が生成AIサービスをリリース�
 > [SunoAIを使ってnote記事から初めての作詞作曲](https://note.com/n0bisuke/n/n0f1d5a2a6c8f)
 >
 > <img src="https://i.gyazo.com/d859a52cf0317a1fe20216a8270e2737.png" width="400px" />
+
+  
+  
+> [!CAUTION]
+> 以下かえる必要
+
 
 
 ### 一昨日(2024/5/13): GPT-4o 爆誕
