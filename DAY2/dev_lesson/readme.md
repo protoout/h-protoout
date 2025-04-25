@@ -49,7 +49,7 @@ Day1で扱った電子部品の使い方はこちらにまとまっています�
 > - **Node-RED 開発に生成 AI を活用する**
 >   
 > ゴール:
-> - **生成AIとやりとりをしてフローの改善ができるようになる**
+> - **生成 AI とやりとりをしてフローの改善ができるようになる**
 
 > [!CAUTION]
 > この授業では"Effibot"という謹製の生成 AI サービスを使います。  
@@ -62,10 +62,19 @@ Day1で扱った電子部品の使い方はこちらにまとまっています�
     - ~~[1-2. GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)~~
     - [1-3. 生成AI（LLM）を使ってみる](./lesson01-generative-ai/01_3_start-llm.md)
 
+> [!CAUTION]
+> ↑Effibotでやる
+
 2. 生成AIとプログラムを書いてみる Node-RED 開発ハンズオン
     - [2-1. 生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
     - [2-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
     - [2-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
+
+> [!CAUTION]
+> ↑Effibotでやる。色々かえなきゃ
+
+> [!CAUTION]
+> 中味チェックしてない↓
 
 3. 生成AIでフローを0から作って改善してみるハンズオン
     - [3-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)（時間があれば実施）
@@ -90,6 +99,9 @@ Day1で扱った電子部品の使い方はこちらにまとまっています�
 2. [その他のAPI](./lesson02-api/02_nasa.md)
 3. [API活用事例紹介](./lesson02-api/03_api-use-case.md)
 
+> [!CAUTION]
+> Webhook試す
+
 ----  
 
 ### Lesson03 AI 技術を取り入れて制作してみよう
@@ -102,10 +114,14 @@ Day1で扱った電子部品の使い方はこちらにまとまっています�
 
 #### 実装
 
+> [!CAUTION]
+> ↓リンクではなくここに展開しちゃって良さそう
 [Lesson03の進め方と各ハンズオンの紹介](./lesson03-handson/readme.md)
 
 ### 3-1. まずはAIハンズオンのどれかをやってみましょう
 
+> [!CAUTION]
+> GitHub Models のフロー。jsonつくって読み込ませるのが良さそう。↓
 - A-1. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
 - A-2. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
 - A-3. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
@@ -125,7 +141,8 @@ Day1で扱った電子部品の使い方はこちらにまとまっています�
 
 [作ってみよう](./lesson04-prototyping/01_prototyping.md)
 
-
+> [!CAUTION]
+> ↑チーム名とか細かいテキスト直す
 
 ----
 
