@@ -30,15 +30,20 @@
 
 使うものはDay1と同じです。
 
-obniz Board と Node-RED の2つを使える状態にします。  
-1. [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env.md) 
-2. [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/02_env.md)
+1． obniz Board と Node-RED の2つを使える状態にします。  
+- [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md) 
+- [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)
 
-その他、使うツールを紹介します。  
+2. その他、使うツールを紹介します。  
 - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
   
-Day1で扱った電子部品の使い方はこちらにまとまっています。
-- [電子部品を obniz Board と Node-RED で扱う](https://zenn.dev/protoout/books/07_node-red-obniz)
+3. Day1で扱った電子部品の使い方のマニュアルはこちらにまとまっています。
+- [**obniz x Node-REDマニュアル**]](https://zenn.dev/protoout/books/07_node-red-obniz)
+※この資料から実装テーマに必要なページをリンクさせています
+
+#### 4. 授業の進め方
+  
+授業の進め方を説明します。リンクは[こちら](./lesson00-overview/01_overview.md)  
 
 ----  
 
@@ -51,19 +56,17 @@ Day1で扱った電子部品の使い方はこちらにまとまっています�
 > ゴール:
 > - **生成 AI とやりとりをしてフローの改善ができるようになる**
 
-> [!CAUTION]
-> この授業では"Effibot"という謹製の生成 AI サービスを使います。  
-> ※注意点
+> [!WARNING]
+> ここからは ChatGPT の話題にも触れますが、授業中の制作に関しては Day1 同様、 Effibot 使って進めていきます。  
 
 #### 実装
 
 1. 生成AI概論と生成AIに触れてみる
     - [1-1. 生成AIコラム](./lesson01-generative-ai/01_1_overview.md)
-    - ~~[1-2. GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)~~
+    - [1-2. GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)
     - [1-3. 生成AI（LLM）を使ってみる](./lesson01-generative-ai/01_3_start-llm.md)
 
-> [!CAUTION]
-> ↑Effibotでやる
+
 
 2. 生成AIとプログラムを書いてみる Node-RED 開発ハンズオン
     - [2-1. 生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
@@ -157,6 +160,8 @@ Day1で扱った電子部品の使い方はこちらにまとまっています�
 
 ----  
 ----  
+> [!CAUTION]
+> 避難中↓
 
 1. [今日の授業の進め方](./day2-overview.md)
 2. [Node-RED環境について](./env.md)
