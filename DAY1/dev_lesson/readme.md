@@ -65,28 +65,41 @@ obniz Board と Node-RED の2つを使える状態にします。
 > - **さらにたくさんの電子パーツを試す**
 >  
 > ゴール:  
-> - **a**
-
-> [!CAUTION]
-> ↑考え中
+> - **授業資料を見ながら、様々な電子部品を動かせるようになる**
 
 #### 実装
+
+ここからは参考資料を見ながら自分で進めてみましょう！  
+  
+リンクは[こちら](https://zenn.dev/protoout/books/07_node-red-obniz)です。実装テーマごとにリンクを用意しています。  
+
+![image](https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46)
+
 1. [ブザーで好きな音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
 2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
 > [!WARNING]
-> サーボモータが動かないことがあります。[^1]
->
-<details>
-<summary>こちらの対策を試してみてください</summary>
+> 注意！サーボモータが動かないことがあります。[^1]  
+> obniz Board (1Yではなく)では電源の電流がリークし、obniz Board が過電流[^2]を検知し電源を供給できない場合があります。
+> 過電流を検知すると obniz Board に次のようなメッセージが表示されます。
+> ```
+> output voltage is too low when driving high. io state has changed output to input
+> ```
+> <details>
+> <summary>その場合は、こちらの対策を試してみてください</summary>
+>   
+>   **1. ブレッドボードにつなぐ**  
+>   繋ぎ方の画像を入れる  
+>     
+>   **2. 電圧を指定する**  
+>   初期化のコードに `voltage:"3v"` のオプションを入れます。コードにすると、次の通りです。
+> ```
+> obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"});
+> ```    
+> </details>
 
-> [!CAUTION]
-> 対策書く
-
-</details>
-
-
-[^1]: obniz Boardの過電流検知により電源を供給できない場合(https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md)
+[^1]: [obniz Boardの過電流検知により電源を供給できない場合](https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md#:~:text=%E9%9B%BB%E6%BA%90%E3%82%82obniz%20Board%E3%81%AB%E7%B9%8B%E3%81%92%E3%82%89%E3%82%8C%E3%82%8B%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
+[^2]: [過電流検知](https://docs.obniz.com/ja/reference/common/io/output#:~:text=%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,%E9%81%8E%E9%9B%BB%E6%B5%81%E6%A4%9C%E7%9F%A5,-obniz%20board%E3%81%AA%E3%81%A9)
 
 早く終わった人はこちらに挑戦！
 - [ブザーで曲を奏でてみよう](https://gist.github.com/ma1750/df348ecc867703467a91ac74f3b61d8e)
@@ -105,24 +118,27 @@ obniz Board と Node-RED の2つを使える状態にします。
 > - **電子部品を組み合わせて、世の中にあるセンサを再現する**
 > 
 > ゴール:  
-> - **a**
+> - **世の中にあるセンサーがどのような仕組みで動くのか、イメージできるようになる**
 
-> [!CAUTION]
-> ↑考え中
-
-テーマ
-1. [距離に応じてライトの色を変えてみよう]()※これだけ、ノードを使ってセンサを組み合わせるパレットのサンプルをつくる
-2. [周りが暗くなったらLEDを点灯させてみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-cds)
-3. [湿度が低くなったら警告音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20)
-
+#### 実装  
+  
+1. 距離に応じてライトの色を変えてみよう：感知式信号機  
+    - [2つのセンサを組み合わせる方法]()
 > [!CAUTION]
 > zennチュートリアル。ノードも必要なので、1番目だけ資料つくる
+    
+2. 周りが暗くなったらLEDを点灯させる仕組みをつくってみよう：スマホの明るさの自動調整    
+    - [照度センサー](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-cds)
+    - [LED](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-led-onoff)  
+  
+3. 湿度が低くなったら警告音を出してみよう：熱中症計  
+    - [温湿度センサー](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20)
+    - [ブザー](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
 
 早く終わった人はこちらに挑戦！
 - 温度に応じてサーボーモーターの回転方向を変えてみよう：シーリングファン
 
-> [!CAUTION]
-> ↑zennチュートリアルでいける？
+
 
 ----  
 ### 休憩
