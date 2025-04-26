@@ -5,11 +5,11 @@
   
 ### 私たちが使う obniz Board / obniz Board 1Y
   
-obniz Board は obniz の公式デバイスです。いわゆる**マイコンボード**です。小型のコンピューターにハードウェアをつくるのに必要なパーツがちょこちょこ付いたものです。
+obniz Board は obniz の公式デバイスで、いわゆる**マイコンボード**です。小型のコンピューターにハードウェアをつくるのに必要なパーツがちょこちょこ付いたものです。
 
 
 obniz Board は専用のクラウドを使ってインターネット経由で簡単に電子部品を操作することができます。
-具体的には Node-RED に書いたプログラムを使って obniz Board を制御します。
+この授業では Node-RED に書いたプログラムを使って obniz Board を制御します。
 
 <img src="https://github.com/user-attachments/assets/80eb5ff1-ca20-4f2b-ae99-e60f9396aca0 " width="70%" />
 
@@ -28,7 +28,7 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 ## Node-RED で obniz Board を動かしてみる
 
 
-では早速 obniz を動かしてみましょう。まだセンサーは使いません！  
+では早速 obniz Board を動かしてみましょう。まだセンサーは使いません！  
 電源をつなぎ QR コードとID(XXXX-XXXXの数字)が表示されている状態からスタートします  
   
 > [!WARNING]
@@ -56,7 +56,7 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 - `obniz-functionノード`
 - `debugノード`  
   
-obniz-functionノードはノードの一覧の下の方の「その他」に入っています。  
+`obniz-functionノード`はノードの一覧の下の方の「その他」に入っています。  
   
 <img width="300" alt="image" src="https://github.com/user-attachments/assets/fc966a02-1f8f-47ee-a3de-9817f1967c11" />  
   
@@ -101,7 +101,7 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 ## 5. ちょっと待った！接続を切りましょう✂
 
 Node-RED の場合、Node.js のプロセスは起動し続ける仕様なため、プログラムの起動ではなく接続の解除を行って停止を行います。  
-要するに、**実はまだ接続は残っているのでノードを使ってちゃんと切りましょう**、ということです！  
+要するに、**実はまだ接続は残っているので Node-RED ちゃんと切りましょう**、ということです！  
   
 `obniz-closeノード`を使います。`injectノード`と繋いで実行します。  
   
