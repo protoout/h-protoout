@@ -32,10 +32,10 @@
 
 1． obniz Board と Node-RED の2つを使える状態にします。  
 - [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md) 
-- [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)
-
+- [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
+  
 2. その他、使うツールを紹介します。  
-- [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
+- [電子部品とアプリケーション](./lesson00-overview/00_tools.md)  
   
 3. Day1で扱った電子部品の使い方のマニュアルはこちらにまとまっています。
 - [**obniz x Node-REDマニュアル**]](https://zenn.dev/protoout/books/07_node-red-obniz)
