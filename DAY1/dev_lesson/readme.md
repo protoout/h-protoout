@@ -31,14 +31,14 @@
     
 #### 3. 環境構築  
 
-obniz Board と Node-RED の2つを使える状態にします。  
+1. obniz Board と Node-RED の2つを使える状態にします。  
+    - [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
+    - [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
   
-1. [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md) 
-2. [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)
+2. その他、使うツールを紹介します。  
+    - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
 
-その他、使うツールを紹介します。  
-- [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
-
+  
 #### 4. 授業の進め方
   
 授業の進め方を説明します。リンクは[こちら](./lesson00-overview/01_overview.md)  
@@ -77,7 +77,8 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 ここからは参考資料を見ながら自分で進めてみましょう！  
   
-リンクは[こちら](https://zenn.dev/protoout/books/07_node-red-obniz)です。実装テーマごとにリンクを用意しています。  
+参考資料：[**obniz x Node-REDマニュアル**](https://zenn.dev/protoout/books/07_node-red-obniz)  
+※この資料から実装テーマに必要なページをリンクさせています  
 
 ![image](https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46)
 
