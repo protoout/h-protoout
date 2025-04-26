@@ -93,7 +93,26 @@ templateノードを追加し、以下のように設定します。
 
 テンプレート
 ```json
-{ "text" : "【好きな食べ物の名前に書き換えてください】"}
+{
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.2",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "【好きな食べ物の名前に書き換えてください】",
+            "wrap": true,
+            "markdown": true
+          }
+        ]
+      }
+    }
+  ]
+}
 ```
 
 このテンプレートの書き方は、各サービスプロバイダー（今回はMS）がWebhookの仕様をどのようにしているか？によってかわります。
@@ -133,7 +152,26 @@ switchノードからtemplateノードにつないでください。
 
 テンプレート
 ```json
-{ "text" : "{{payload}}を押したよ"}
+{
+  "attachments": [
+    {
+      "contentType": "application/vnd.microsoft.card.adaptive",
+      "content": {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.2",
+        "body": [
+          {
+            "type": "TextBlock",
+            "text": "{{payload}}を押したよ",
+            "wrap": true,
+            "markdown": true
+          }
+        ]
+      }
+    }
+  ]
+}
 
 ```
 
