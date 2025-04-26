@@ -33,7 +33,7 @@
 obniz Board と Node-RED の2つを使える状態にします。  
   
 1. [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md) 
-2. [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_norered.md)
+2. [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)
 
 その他、使うツールを紹介します。  
 - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
