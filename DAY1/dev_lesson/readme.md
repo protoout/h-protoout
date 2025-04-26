@@ -39,9 +39,9 @@ obniz Board と Node-RED の2つを使える状態にします。
 その他、使うツールを紹介します。  
 - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
 
-#### 4. 授業の進め方と練習
+#### 4. 授業の進め方
   
-こちらの[リンク](./lesson00-overview/01_overview.md)で説明するので移動してください。  
+授業の進め方を説明します。リンクは[こちら](./lesson00-overview/01_overview.md)  
   
 ----  
   
