@@ -41,6 +41,23 @@
 ### 4. 授業の進め方
   
 #### ■[授業の進め方を紹介します](./lesson00-overview/01_overview.md)  
+
+#### 練習
+  1. Miro に書いてみよう！
+    [Miro](https://miro.com/app/board/uXjVKPW27-k=/)にアクセスし、自分の名前(ニックネーム可)を書いてみましょう！
+  
+  2. 生成 AI に聞いてみよう！
+
+    [Effibot]()を立ち上げ、  
+    `obniz Board と obniz Board 1Yの違いを画像や表を使って教えてください`  
+    と聞いてみましょう。
+
+> 私はこのような回答が得られました(ChatGPT-4o)  
+> <img width="610" alt="image" src="https://github.com/user-attachments/assets/33c7f87b-49ad-479f-898b-e2300f92c25e" />  
+
+  
+これで授業の進め方と練習は終わりです！  
+
   
 ----  
   
