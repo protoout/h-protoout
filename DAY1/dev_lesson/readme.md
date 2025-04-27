@@ -43,7 +43,7 @@
 #### ■[授業の進め方を紹介します](./lesson00-overview/01_overview.md)  
 
 #### 練習
-  1. Miro に書いてみよう！
+  1. Miro に書いてみよう！  
     [Miro](https://miro.com/app/board/uXjVKPW27-k=/)にアクセスし、自分の名前(ニックネーム可)を書いてみましょう！
   
   2. 生成 AI に聞いてみよう！
