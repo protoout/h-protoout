@@ -101,7 +101,7 @@
 #### 2-1. [ブザーでドレミの音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
-> [!TIPS]
+> [!TIP]
 > 注意！サーボモータが動かないことがあります。[^1]  
 > obniz Board (1Y ではなく)ではサーボモーターの電源の電流がリークし、obniz Board が過電流[^2]を検知し電源を供給できない場合があります。
 > 過電流を検知すると obniz Board に次のようなメッセージが表示されます。
@@ -125,11 +125,12 @@
 [^1]: [obniz Boardの過電流検知により電源を供給できない場合](https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md#:~:text=%E9%9B%BB%E6%BA%90%E3%82%82obniz%20Board%E3%81%AB%E7%B9%8B%E3%81%92%E3%82%89%E3%82%8C%E3%82%8B%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
 [^2]: [過電流検知](https://docs.obniz.com/ja/reference/common/io/output#:~:text=%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,%E9%81%8E%E9%9B%BB%E6%B5%81%E6%A4%9C%E7%9F%A5,-obniz%20board%E3%81%AA%E3%81%A9)
 
-早く終わった人はこちらに挑戦！
-- [ブザーで曲を奏でてみよう](https://gist.github.com/ma1750/df348ecc867703467a91ac74f3b61d8e)
-- [サーボモーターを時計回りに120度逆回りに60度回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)
-> [!CAUTION]
-> ブザーの方、曲探す
+早く終わった人はこちらの課題にも挑戦！  
+
+- ブザーで曲を奏でてみよう
+    - [ヒント]()
+- サーボモーターを時計回りに120度逆回りに60度回してみよう
+    - [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)
   
 ----  
 ## 休憩
