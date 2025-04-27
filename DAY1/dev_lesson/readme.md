@@ -149,16 +149,13 @@
 
 
 #### 1. 感知式信号機[^3]
-    - [距離に応じてライトの色を変えてみよう]()
+    - [距離に応じてライトの色を変えてみよう](./lesson03-obniz-advanced/combine_trafficlight_ultrasound.md)
 > ![image](https://github.com/user-attachments/assets/36f6f62e-ea25-4130-98ed-38a856dce850)
 > 車があまり通らない場所では、車がいることを超音波センサで感知してから信号機のライトを制御する仕組みになっています。  
 > 停止線より手前で止まりすぎると信号が変わらないということも...
 
-
-
-    - [2つのセンサを組み合わせる方法]()
 > [!CAUTION]
-> zennチュートリアル。ノードも必要なので、1番目だけ資料つくる
+> ↑作成中
     
 2. 周りが暗くなったらLEDを点灯させる仕組みをつくってみよう：スマホの明るさの自動調整    
     - [照度センサー](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-cds)
@@ -205,7 +202,7 @@
 
 [^2]: [過電流検知](https://docs.obniz.com/ja/reference/common/io/output#:~:text=%E5%88%A9%E7%94%A8%E3%81%97%E3%81%BE%E3%81%99%E3%80%82-,%E9%81%8E%E9%9B%BB%E6%B5%81%E6%A4%9C%E7%9F%A5,-obniz%20board%E3%81%AA%E3%81%A9)
 
-[^3]: 感知式信号機の仕組み(https://www.shinshu-komagane.com/word/responsible_traffic_signal/#:~:text=%E4%BA%A4%E9%80%9A%E9%87%8F%E3%81%AE%E5%B0%91%E3%81%AA%E3%81%84%E9%81%93%E8%B7%AF,%E3%81%8C%E9%9D%92%E3%81%AB%E5%A4%89%E3%82%8F%E3%82%8B%E4%BB%95%E7%B5%84%E3%81%BF%E3%80%82%EF%BC%89&text=%E3%81%93%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8,%E6%9C%80%E5%B0%8F%E9%99%90%E3%81%AB%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
+[^3]: [感知式信号機の仕組み](https://www.shinshu-komagane.com/word/responsible_traffic_signal/#:~:text=%E4%BA%A4%E9%80%9A%E9%87%8F%E3%81%AE%E5%B0%91%E3%81%AA%E3%81%84%E9%81%93%E8%B7%AF,%E3%81%8C%E9%9D%92%E3%81%AB%E5%A4%89%E3%82%8F%E3%82%8B%E4%BB%95%E7%B5%84%E3%81%BF%E3%80%82%EF%BC%89&text=%E3%81%93%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8,%E6%9C%80%E5%B0%8F%E9%99%90%E3%81%AB%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
 
 ----  
 
