@@ -1,4 +1,4 @@
-## obniz Board の初期設定（ Wi-Fi 接続）
+# obniz Board の初期設定（ Wi-Fi 接続）
 
 obniz Board の初期設定、Wi-Fi 接続を行います。
 
@@ -10,12 +10,14 @@ USBケーブル（標準A - タイプC）を用意して、公式サイトのリ
 > 黒いダイヤルスイッチを動かしながら Wi-Fi パスワードを入れますが、強く動かすとパーツが外れてしまうことがあるので注意してください    
 > ![image](https://github.com/user-attachments/assets/4843015a-6aab-4739-bfde-3408cd4e8566)  
 
-### ■[こちらからの公式サイトのマニュアルを見てください](https://docs.obniz.com/ja/reference/board-1y/quick-start/)
+## ■[こちらからの公式サイトのマニュアルを見てください](https://docs.obniz.com/ja/reference/board-1y/quick-start/)
   
 > [!NOTE]  
 > アップデートが始まってしまった場合は、しばらく待ちましょう。  
-
-### 上手くできると...  
+  
+----  
+  
+## 上手くできると...  
 
 <img src="https://i.gyazo.com/9085965c70f8fda679c0fb20735c5560.png" width="500">  
 設定が完了し、Wi-Fiにもうまくつながれば上記のような表示になります。  
