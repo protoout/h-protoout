@@ -127,13 +127,13 @@
 
 早く終わった人はこちらの課題にも挑戦！  
 
-- ブザーで曲を奏でてみよう
-    - [ヒント]()
-- サーボモーターを時計回りに120度逆回りに60度回してみよう
+- ブザーで曲を奏でよう
+    - [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
+- サーボモーターを30度と90度を繰り返し行き来させよう  
     - [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)
   
 ----  
-## 休憩
+### 休憩
 
 ----  
 
@@ -166,7 +166,7 @@
 
 
 ----  
-## 休憩
+### 休憩
 
 ----  
 
