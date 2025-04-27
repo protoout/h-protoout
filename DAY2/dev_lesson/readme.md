@@ -75,11 +75,7 @@
     - [2-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
     - [2-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
 
-> [!CAUTION]
-> ↑Effibotでやる。色々かえなきゃ
 
-> [!CAUTION]
-> 中味チェックしてない↓
 
 3. 生成AIでフローを0から作って改善してみるハンズオン
     - [3-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)（時間があれば実施）
@@ -105,7 +101,7 @@
 3. [API活用事例紹介](./lesson02-api/03_api-use-case.md)
 
 > [!CAUTION]
-> Webhook試す
+> Webhook試した
 
 ----  
 
