@@ -72,8 +72,8 @@
 
 ### 実装  
   
-#### 1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
-#### 2. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)
+#### 1-1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
+#### 1-2. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)
   
 早く終わった人はこちらの課題にも挑戦！  
   
@@ -98,8 +98,8 @@
 > ※以降の実装テーマには、この資料の中から必要なページをリンクさせています  
 >![image](https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46)
 
-1. [ブザーでドレミの音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
+#### 2-1. [ブザーでドレミの音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
+#### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
 > [!TIPS]
 > 注意！サーボモータが動かないことがあります。[^1]  
