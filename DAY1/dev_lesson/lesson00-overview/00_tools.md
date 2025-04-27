@@ -5,7 +5,7 @@
 下記が揃っているか確認をしてください。
 | 名称 | 画像 | 説明 |
 | --- | --- | ----------- |
-|obniz Board 1Y（obniz009）| <img src="https://akizukidenshi.com/img/goods/L/114930.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) |マイコン。もしくは obniz Board(obniz001) を使います|
+|obniz Board 1Y（obniz009）| <img src="https://akizukidenshi.com/img/goods/L/114930.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) |マイコン。もしくは obniz Board (obniz001) を使います|
 |ブレッドボード（BB-601）| <img src="https://akizukidenshi.com/img/goods/L/105155.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  | 電子部品をはんだ付けせずに配線するために使います |
 |ジャンパワイヤー（BBJ-20）| <img src="https://akizukidenshi.com/img/goods/L/105371.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  | ブレッドボードとセットで配線のために使います |
 |給電用USBケーブル A->C| <img src="https://akizukidenshi.com/img/goods/L/117017.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) | obniz Board の給電をします           |
@@ -21,12 +21,12 @@
 
 ## 2.使用するアプリケーション
 
-1. GitHub: この授業資料。基本的にこの資料を手元で見ながら進めていただきます。
-2. Effibot: 生成AIを使いながら実装を行います。
+1. GitHub: この授業資料です。基本的にこの資料を手元で見ながら進めていただきます。
+2. Effibot: AIアシスタントです。生成AIを使いながら実装を行います。
 3. Miro: ホワイトボードツール。授業中に出てきた疑問や質問、アイデア出しで使用。
 4. SharePoint: 最終アイデアを記事としてまとめ、投稿する場所。
 
-1日目は、1 ~ 3 を常に開いておいてください。  
+1日目は、1 ~ 3 を使います。  
 
 
 ### 練習: Miroにチーム名を書いてみよう！
