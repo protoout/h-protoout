@@ -1,9 +1,8 @@
+# IoT の世界に飛び込もう！obniz と Node-RED で手を動かして学ぶ IoT
 
-## IoT の世界に飛び込もう！obniz と Node-RED で手を動かして学ぶ IoT
-
-### IoT の世界へようこそ
+## IoT の世界へようこそ
     
-#### 1. 本日の授業でやること・ゴール  
+### 1. 本日の授業でやること・ゴール  
 
 > やること:
 > - **IoTデバイスを簡単に開発・制御できるデバイス( obniz Board )を使って、プロトタイピングを企画・制作する**
@@ -13,7 +12,7 @@
   
 
 
-#### 2. タイムテーブル  
+### 2. タイムテーブル  
   
   1日中制作をします！はじめから実際に手を動かしていきます！
     
@@ -29,23 +28,23 @@
   | 16:30-17:00 | 最終制作に向けて | 
 
     
-#### 3. 環境構築  
+### 3. 環境構築  
 
-1. obniz Board と Node-RED の2つを使える状態にします。  
+1. この授業で使うツールを紹介します。揃っているか確認しましょう。  
+    - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
+  
+2. obniz Board と Node-RED の2つを使える状態にします。  
     - [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
     - [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
   
-2. その他、使うツールを紹介します。  
-    - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
-
   
-#### 4. 授業の進め方
+### 4. 授業の進め方
   
-授業の進め方を説明します。リンクは[こちら](./lesson00-overview/01_overview.md)  
+#### ■[授業の進め方を紹介します](./lesson00-overview/01_overview.md)  
   
 ----  
   
-### Lesson01 obniz をはじめよう
+## Lesson01 obniz をはじめよう
 
 > やること:  
 > - **ハードウェアの第一歩、「Lチカ」をやってみる**
@@ -54,18 +53,19 @@
 > - **授業のペースに乗って、手を動かして実働させる体験をする**
 >
 
-#### 実装  
+### 実装  
   
-1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
-2. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)
-
-早く終わった人はこちらに挑戦！
+#### 1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
+#### 2. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)
+  
+早く終わった人はこちらの課題にも挑戦！  
+  
 - LED を点けて5秒後に消えるようにしてみよう
 
 ----  
 
 
-### Lesson02 いろいろな電子部品を触ってみよう  
+## Lesson02 いろいろな電子部品を触ってみよう  
 
 > やること:  
 > - **さらにたくさんの電子パーツを試す**
@@ -73,32 +73,32 @@
 > ゴール:  
 > - **授業資料を見ながら、自分の力で様々な電子部品を動かす**
 
-#### 実装
+### 実装
 
-ここからは参考資料を見ながら自分で進めてみましょう！  
+**ここからは参考資料を見ながら自分で進めてみましょう！**  
   
 参考資料：[**obniz x Node-REDマニュアル**](https://zenn.dev/protoout/books/07_node-red-obniz)  
-※この資料から実装テーマに必要なページをリンクさせています  
+> ※以降の実装テーマには、この資料の中から必要なページをリンクさせています  
+>![image](https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46)
 
-![image](https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46)
-
-1. [ブザーで好きな音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
+1. [ブザーでドレミの音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
 2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
-> [!WARNING]
+> [!TIPS]
 > 注意！サーボモータが動かないことがあります。[^1]  
-> obniz Board (1Yではなく)では電源の電流がリークし、obniz Board が過電流[^2]を検知し電源を供給できない場合があります。
+> obniz Board (1Y ではなく)ではサーボモーターの電源の電流がリークし、obniz Board が過電流[^2]を検知し電源を供給できない場合があります。
 > 過電流を検知すると obniz Board に次のようなメッセージが表示されます。
 > ```
 > output voltage is too low when driving high. io state has changed output to input
 > ```
 > <details>
-> <summary>その場合は、こちらの対策を試してみてください</summary>
->   
->   **1. ブレッドボードにつなぐ**  
+> <summary>もしこのようなメッセージが表示されるときは、こちらの対策を試してみてください</summary>
+>   **1. `obniz close`で停止させる**
+>  
+>   **2. ブレッドボードにつなぐ**  
 >   繋ぎ方の画像を入れる  
 >     
->   **2. 電圧を指定する**  
+>   **3. 電圧を指定する**  
 >   初期化のコードに `voltage:"3v"` のオプションを入れます。コードにすると、次の通りです。
 > ```
 > obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"});
@@ -115,11 +115,11 @@
 > ブザーの方、曲探す
   
 ----  
-### 休憩
+## 休憩
 
 ----  
 
-### Lesson03 実用的なセンサーをつくってみよう  
+## Lesson03 実用的なセンサーをつくってみよう  
 
 > やること:  
 > - **電子部品を組み合わせて、世の中にあるセンサを再現する**
@@ -127,7 +127,7 @@
 > ゴール:  
 > - **世の中にあるセンサ技術の仕組みを知り、その一端を体験する**
 
-#### 実装  
+### 実装  
   
 1. 距離に応じてライトの色を変えてみよう：感知式信号機  
     - [2つのセンサを組み合わせる方法]()
@@ -148,11 +148,11 @@
 
 
 ----  
-### 休憩
+## 休憩
 
 ----  
 
-### Lesson04 IoT プロトタイプを作ってみよう
+## Lesson04 IoT プロトタイプを作ってみよう
 
 > やること:
 > - **今日学んだことをフル活用して、アイデアを形にする**
@@ -166,7 +166,7 @@
 
 ----  
 
-### Lesson05 最終制作に向けて
+## Lesson05 最終制作に向けて
 
 最終発表のテーマと準備についてお知らせします。  
   
