@@ -148,25 +148,30 @@
 一気に活用の幅が増え、世の中で使われているセンサーも簡易的に再現することができます！**  
 
 
-#### 1. 感知式信号機[^3]
+#### 3-1. 感知式信号機[^3]
     - [距離に応じてライトの色を変えてみよう](./lesson03-obniz-advanced/combine_trafficlight_ultrasound.md)
-> ![image](https://github.com/user-attachments/assets/36f6f62e-ea25-4130-98ed-38a856dce850)
+> ![image](https://github.com/user-attachments/assets/36f6f62e-ea25-4130-98ed-38a856dce850)  
 > 車があまり通らない場所では、車がいることを超音波センサで感知してから信号機のライトを制御する仕組みになっています。  
-> 停止線より手前で止まりすぎると信号が変わらないということも...
+> 停止線より手前で止まりすぎると信号が変わらないということも...  
 
 > [!CAUTION]
 > ↑作成中
     
-2. 周りが暗くなったらLEDを点灯させる仕組みをつくってみよう：スマホの明るさの自動調整    
-    - [照度センサー](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-cds)
-    - [LED](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-led-onoff)  
+#### 3-2. ソーラーパネルの自動追尾[^4]  
+    - [明るさによってサーボーモーターを動かそう](./lesson03-obniz-advanced/combine_cds_servo.md)  
+> ![image](https://github.com/user-attachments/assets/ac7b4f5c-0997-47ca-af70-f8e419bcc3ff)
+> ソーラーパネルは効率的に太陽光エネルギーを回収するために照度に合わせてパネルの角度を変える仕組みになっていると言われています。
+> その他にも、スマートブラインド[^5]などにも同様の仕組みが使われています。
   
-3. 湿度が低くなったら警告音を出してみよう：熱中症計  
-    - [温湿度センサー](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20)
-    - [ブザー](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
+#### 3-3. 熱中症予防[^6]  
+    - [気温が高さに応じて、警戒レベルをLEDの光で表そう](./lesson03-obniz-advanced/combine_trafficlight_temp.md)
+> ![image](https://github.com/user-attachments/assets/934a87cb-f7bb-4bbe-9ad1-f0f08536a3cc)
+> デジタル温湿度計にはこのような温湿度センサーが搭載されています。  
+> なお、本格的な熱中症計は、太陽の陽ざしや地面からの照り返しなどの輻射熱を測るために、黒球と呼ばれる黒い球で温度を測っています[^6]
 
-早く終わった人はこちらに挑戦！
-- 温度に応じてサーボーモーターの回転方向を変えてみよう：シーリングファン
+早く終わった人はこちらの課題にも挑戦！  
+  
+#### 3-4. 「3-3. 熱中症計」にインフルエンザのリスクをブザーで知らせる機能を追加しよう
 
 
 
@@ -204,6 +209,14 @@
 
 [^3]: [感知式信号機の仕組み](https://www.shinshu-komagane.com/word/responsible_traffic_signal/#:~:text=%E4%BA%A4%E9%80%9A%E9%87%8F%E3%81%AE%E5%B0%91%E3%81%AA%E3%81%84%E9%81%93%E8%B7%AF,%E3%81%8C%E9%9D%92%E3%81%AB%E5%A4%89%E3%82%8F%E3%82%8B%E4%BB%95%E7%B5%84%E3%81%BF%E3%80%82%EF%BC%89&text=%E3%81%93%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8,%E6%9C%80%E5%B0%8F%E9%99%90%E3%81%AB%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82)
 
+[^4]: [ソーラーパネルの自動追尾機能](https://www.nextracker.com/)
+  
+[^5]: [Switch BotのIoTブラインド](https://prtimes.jp/main/html/rd/p/000000036.000057002.html)
+
+[^6]: [熱中症の危険度がわかる温湿度計](https://www.plus-vision.com/jp/product/eisei/onshitsudo-ledalerm.html)
+
+[^7]: [黒球式熱中アラーム](https://www.tanita.co.jp/magazine/special-feature/5322/)
+  
 ----  
 
 > [!CAUTION]
