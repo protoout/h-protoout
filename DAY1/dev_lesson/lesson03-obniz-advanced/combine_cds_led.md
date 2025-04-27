@@ -1,5 +1,9 @@
 編集する
 
+    - [照度センサー](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-cds)
+    - [LED](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-led-onoff)  
+
+
 # チュートリアル1: 温湿度センサーを使用し、熱中症アラートを作ろう
 
 Day1の応用編の演習として出していたものをチュートリアル化しました。
