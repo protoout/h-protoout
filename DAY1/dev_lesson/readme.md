@@ -107,9 +107,9 @@
 早く終わった人はこちらの課題にも挑戦！  
 
 #### 2-3. 応用課題：ブザーで曲を奏でよう
-    - [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
+- [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)   
 #### 2-4. 応用課題：サーボモーターを30度と90度を繰り返し行き来させよう  
-    - [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)
+- [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)  
   
 ----  
 ### 休憩
