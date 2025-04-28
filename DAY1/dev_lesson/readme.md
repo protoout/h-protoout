@@ -146,7 +146,7 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
     
 #### 3-2. ソーラーパネルの自動追尾[^4]  
 
-- [明るさによってサーボーモーターを動かそう](./lesson03-obniz-advanced/combine_cds_servo.md)
+- [明るさによってサーボーモーターの動きを変えよう](./lesson03-obniz-advanced/combine_cds_servo.md)
   
 > <img width="400" alt="image" src="https://github.com/user-attachments/assets/ac7b4f5c-0997-47ca-af70-f8e419bcc3ff" />
 >    
