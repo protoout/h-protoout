@@ -26,38 +26,11 @@
   | 14:30-14:50 | 休憩 | 
   | 14:50-16:30 | Lesson04 IoT プロトタイプを作ってみよう | 
   | 16:30-17:00 | 最終制作に向けて | 
-
-    
-### 3. 環境構築  
-
-1. この授業で使うツールを紹介します。揃っているか確認しましょう。  
-    - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
-  
-2. obniz Board と Node-RED の2つを使える状態にします。  
-    - [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
-    - [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
   
   
 ### 4. 授業の進め方
   
 #### ■[授業の進め方を紹介します](./lesson00-overview/01_overview.md)  
-
-#### 練習
-  1. Miro に書いてみよう！  
-    [Miro](https://miro.com/app/board/uXjVKPW27-k=/)にアクセスし、自分の名前(ニックネーム可)を書いてみましょう！
-  
-  2. 生成 AI に聞いてみよう！
-
-    [Effibot]()を立ち上げ、  
-    `obniz Board と obniz Board 1Yの違いを画像や表を使って教えてください`  
-    と聞いてみましょう。
-
-> 私はこのような回答が得られました(ChatGPT-4o)  
-> <img width="610" alt="image" src="https://github.com/user-attachments/assets/33c7f87b-49ad-479f-898b-e2300f92c25e" />  
-
-  
-これで授業の進め方と練習は終わりです！  
-
   
 ----  
   
@@ -70,6 +43,14 @@
 > - **授業のペースに乗って、手を動かして実働させる体験をする**
 >
 
+### ハンズオンの準備
+1. 使うツールを紹介します。揃っているか確認しましょう。  
+    - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
+  
+2. obniz Board と Node-RED の2つを使える状態にします。  
+    - [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
+    - [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
+   
 ### 実装  
   
 #### 1-1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
