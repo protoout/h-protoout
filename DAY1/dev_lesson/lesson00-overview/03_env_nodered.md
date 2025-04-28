@@ -32,7 +32,7 @@ GitHub から Node-RED の環境をつくっていきます。以下の手順で
 GitHub 上に Node-Red を立ち上げるためのプログラムを事前に用意しました。
 以下のリンクからプロジェクトをフォーク (≒プロジェクトのコピー) をして、GitHub CodeSpaces を立ち上げましょう。
 
-### ■[こちらの GitHub リポジトリを開いてください](https://github.com/protoout/github-codespces-node-red)  
+### ■[こちらの別タブで開いて GitHub リポジトリをフォークしましょう](https://github.com/protoout/github-codespces-node-red)  
   
 `Fork` というボタンを押して `Create Fork` を行ってください。  
   
