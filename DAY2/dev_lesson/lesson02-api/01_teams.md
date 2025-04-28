@@ -1,9 +1,6 @@
-# 外部サービス連携や情報取得をしてみよう① Teams編
+# Teams API を連携して obniz Board を操作した結果を通知してみよう
 
-いつもみなさんが使っているTeamsをWebhookという仕組みを使ってNode-RED経由で連携し、
-
-obnizで行った動作をトリガーとしてメッセージを送ってみます。
-
+みなさんが使っている Teams を Webhook という仕組みを使って Node-RED 経由で連携し、obniz Board で行った動作をトリガーとしてメッセージを送ってみます。
 
 ## Webhookとは？
 
