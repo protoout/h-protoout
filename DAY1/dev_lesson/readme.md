@@ -58,7 +58,8 @@
   
 早く終わった人はこちらの課題にも挑戦！  
   
-- LED を点けて5秒後に消えるようにしてみよう
+#### 1-3. 応用課題：LED を点けて5秒後に消えるようにしてみよう
+    - [ヒント](https://github.com/protoout/h-protoout/blob/main/DAY1/dev_lesson/lesson01-obniz-basic/02_obniz-LED.md#:~:text=%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81-,4%2D3.%20%E5%8D%98%E7%B4%94%E3%81%AA%E7%82%B9%E6%BB%85,-obniz%2Dfunction%E3%83%8E%E3%83%BC%E3%83%89)  
 
 ----  
 
@@ -105,9 +106,9 @@
 
 早く終わった人はこちらの課題にも挑戦！  
 
-- ブザーで曲を奏でよう
+#### 2-3. 応用課題：ブザーで曲を奏でよう
     - [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
-- サーボモーターを30度と90度を繰り返し行き来させよう  
+#### 2-4. 応用課題：サーボモーターを30度と90度を繰り返し行き来させよう  
     - [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)
   
 ----  
@@ -121,7 +122,7 @@
 > - **電子部品を組み合わせて、世の中にあるセンサーを再現する**
 > 
 > ゴール:  
-> - **世の中にあるセンサ技術の仕組みを知り、その一端を体験する**
+> - **世の中にあるセンサ技術を再現し、自身の制作の幅を広げる**
 
 ### 実装  
 
@@ -129,9 +130,11 @@
 一気に活用の幅が増え、世の中で使われているセンサーも簡易的に再現することができます！**  
 
 
-#### 3-1. 感知式信号機[^3]
-    - [距離に応じてライトの色を変えてみよう](./lesson03-obniz-advanced/combine_trafficlight_ultrasound.md)
-> ![image](https://github.com/user-attachments/assets/36f6f62e-ea25-4130-98ed-38a856dce850)  
+#### 3-1. 感知式信号機[^3]  
+- [距離に応じてライトの色を変えてみよう](./lesson03-obniz-advanced/combine_trafficlight_ultrasound.md)
+  
+> <img width="400" alt="image" src="https://github.com/user-attachments/assets/36f6f62e-ea25-4130-98ed-38a856dce850" />
+>   
 > 車があまり通らない場所では、車がいることを超音波センサで感知してから信号機のライトを制御する仕組みになっています。  
 > 停止線より手前で止まりすぎると信号が変わらないということも...  
 
@@ -139,21 +142,29 @@
 > ↑作成中
     
 #### 3-2. ソーラーパネルの自動追尾[^4]  
-    - [明るさによってサーボーモーターを動かそう](./lesson03-obniz-advanced/combine_cds_servo.md)  
-> ![image](https://github.com/user-attachments/assets/ac7b4f5c-0997-47ca-af70-f8e419bcc3ff)
+
+- [明るさによってサーボーモーターを動かそう](./lesson03-obniz-advanced/combine_cds_servo.md)
+  
+> <img width="400" alt="image" src="https://github.com/user-attachments/assets/ac7b4f5c-0997-47ca-af70-f8e419bcc3ff" />
+>    
 > ソーラーパネルは効率的に太陽光エネルギーを回収するために照度に合わせてパネルの角度を変える仕組みになっていると言われています。
 > その他にも、スマートブラインド[^5]などにも同様の仕組みが使われています。
   
 #### 3-3. 熱中症予防[^6]  
-    - [気温が高さに応じて、警戒レベルをLEDの光で表そう](./lesson03-obniz-advanced/combine_trafficlight_temp.md)
-> ![image](https://github.com/user-attachments/assets/934a87cb-f7bb-4bbe-9ad1-f0f08536a3cc)
+
+- [気温が高さに応じて、警戒レベルをLEDの光で表そう](./lesson03-obniz-advanced/combine_trafficlight_temp.md)
+ 
+> <img width="400" alt="image" src="https://github.com/user-attachments/assets/934a87cb-f7bb-4bbe-9ad1-f0f08536a3cc" />
+>   
 > デジタル温湿度計にはこのような温湿度センサーが搭載されています。  
 > なお、本格的な熱中症計は、太陽の陽ざしや地面からの照り返しなどの輻射熱を測るために、黒球と呼ばれる黒い球で温度を測っています[^6]
 
 早く終わった人はこちらの課題にも挑戦！  
   
-#### 3-4. 「3-3. 熱中症計」にインフルエンザのリスクをブザーで知らせる機能を追加しよう
-
+#### 3-4. 応用課題：「3-3. 熱中症計」にインフルエンザのリスクをブザーで知らせる機能を追加しよう  
+  
+- ヒント
+    -　インフルエンザのリスクについて、生成 AI で調べてみましょう
 
 
 ----  
