@@ -152,7 +152,7 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
 　　
 早く終わった人はこちらの課題にも挑戦！ 
   
-#### 3-3. 応用課題: 熱中症予防[^6]  
+#### 3-3. 応用課題： 熱中症予防[^6]  
 
 - 気温が高さに応じて、警戒レベルをLEDの光で表そう
 > <img width="400" alt="image" src="https://github.com/user-attachments/assets/934a87cb-f7bb-4bbe-9ad1-f0f08536a3cc" />
