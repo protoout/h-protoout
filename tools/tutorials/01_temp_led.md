@@ -1,9 +1,7 @@
-# チュートリアル1: 温湿度センサーを使用し、熱中症アラートを作ろう
-
-Day1の応用編の演習として出していたものをチュートリアル化しました。
+# 温湿度センサーを使用し、熱中症アラートを作ろう
 
 
-### 完成イメージ
+## 完成イメージ
 
 温度と湿度から暑さ指数を計算し、警戒度をLEDで示します。
 
@@ -12,42 +10,19 @@ Day1の応用編の演習として出していたものをチュートリアル�
 <a href="https://gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc"><img src="https://i.gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc.gif" alt="Image from Gyazo" width="600"/></a>
 
 
-### 0. 準備：タブを追加し、停止用ノードを読み込む
-前回のおさらいとなります。
-
-
-1. +ボタンを押し、新しくできたタブをダブルクリック
-
-<img src="https://i.gyazo.com/bfad18055e1a4119eed4b11e5d1dfad9.png" alt="Image from Gyazo" width="500"/>
-
-
-2. タブの名前を「obniz-LED」など、わかりやすく編集してください。
-
-<img src="https://i.gyazo.com/19ccf6eaf3e5083bd0c978bf419c61a0.png" alt="Image from Gyazo" width="500"/>
-
-3. 停止用ノードを読み込む
-
-[停止用ノードはこちら](https://qiita.com/n0bisuke/items/28d44edc290a0dddc8b0)
-
-
-
-準備ができたら早速始めていきます！
-
-
 ### 1. 温湿度センサーの値を取得できるようにする
 
-[温湿度センサー](/tools/parts-manual/sensor/temp-hum.md)を参考に温湿度の値を取れるところまで行ってください。
+[温湿度センサーのマニュアル]([/tools/parts-manual/sensor/temp-hum.md](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20))を参考に温湿度の値を取れるところまで行ってください。
 
 <a href="https://gyazo.com/19e6853559ea5c1354c612a188e7dc18"><img src="https://i.gyazo.com/19e6853559ea5c1354c612a188e7dc18.png" alt="Image from Gyazo" width="432"/></a>
 
-
+> [！CAUTIOJN]
+> ↑zennリンク切れあり
 
 ### 2. 暑さ指数WBGTの計算式
 
-
-**暑さ指数（WBGT（湿球黒球温度）：Wet Bulb Globe Temperature）**を温度と湿度から簡易的に計算する方法をつかいます。
-
-- [参考:IchigoJam S+温湿度センサSi7021で暑さ指数WBGTを計算して、熱中症予防](https://bokunimo.net/blog/ichigo-jam/29/)→こちらの記事には**WBGTを簡易的に求める類似式**が掲載されています。
+**暑さ指数（WBGT（湿球黒球温度）：Wet Bulb Globe Temperature）**を温度と湿度から簡易的に計算する方法をつかいます。**  
+[こちら](https://bokunimo.net/blog/ichigo-jam/29/)の記事には**WBGTを簡易的に求める類似式**が掲載されています。
 
 ```
 WBGT = 0.725*Ta + 0.0368*RH + 0.00364*Ta*RH – 3.246
@@ -57,19 +32,19 @@ Ta=室温（℃）、RH=相対湿度（%）
 
 この式の[MIT LICENSE](https://bokunimo.net/bokunimowakaru/licences/mit_license_2016.txt)
 
-
-functionノードの中でこの式に温湿度センサーの値を入れて計算し、結果を出力するようにします。
+`obniz-functionノード`の中でこの式に温湿度センサーの値を入れて計算し、結果を出力するようにします。
 
 
 ### 3. 暑さ指数WBGTの計算をfunctionノードでできるようにする
 
-まずはfunctionノードを追加。
+まずは`obniz-functionノード`を追加。
 
 <a href="https://gyazo.com/bb3b144869fbfe61c17a3e611ea13c58"><img src="https://i.gyazo.com/bb3b144869fbfe61c17a3e611ea13c58.gif" alt="Image from Gyazo" width="500"/></a>
 
 次に、functionノードの中身を書いてもらいましょう。
 
-[プロンプトサンプル](/tools/prompt-sample.md)の、「１. Node-REDのFunctionノードで使えるコードを生成」のプロンプトを書き換えてみましょう。
+[プロンプトサンプル](/tools/prompt-sample.md)のサンプルを用意しました。  
+上記リンクの「１. Node-REDのFunctionノードで使えるコードを生成」のプロンプトを書き換えてみましょう。  
 
 systemはいじらず、promptのところを書き換えます。
 
@@ -109,14 +84,12 @@ return msg; // メッセージを返す
 
 このように、WBGTの値が表示されていればOKです。
 
-**※ 生成AIの応答の違いにより、msg.payloadにWBGTのみ表示するコードが出力される場合もあります。プロンプトでより明示的に示してあげると結果が安定します。**
+**※ 生成 AI の応答の違いにより、msg.payloadにWBGTのみ表示するコードが出力される場合もあります。プロンプトでより明示的に示してあげると結果が安定します。**
 
 <a href="https://gyazo.com/edfcd36252a75692b525347577b7005b"><img src="https://i.gyazo.com/edfcd36252a75692b525347577b7005b.png" alt="Image from Gyazo" width="500"/></a>
 
 
 ### 4. LED信号を光らせる
-
-
 
 [信号LED](/tools/parts-manual/Indicator/ledlights.md)の資料を参考に、injectをクリックするとLEDを赤く光るところまで行ってください。
 
