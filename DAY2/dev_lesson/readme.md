@@ -61,6 +61,9 @@ obniz Board と Node-RED の2つを使える状態にします。
 - [obniz Board を Wi-Fi 接続する](../../DAY1/dev_lesson/lesson00-overview/02_env_obniz.md)
 - [GitHub CodeSpaces から Node-RED を立ち上げる](../../DAY1/dev_lesson/lesson00-overview/03_env_nodered.md)  
 
+生成 AI が Node-RED 用のコードを上手くつくるためのプロンプト例を用意しました。(適宜使用する箇所にリンクを用意しています)
+- [プロンプトサンプル](../../tools/prompt-sample.md)
+
 ### 実装
 
 #### 1-1. 生成AIとプログラムを書いてみる Node-RED 開発ハンズオン
