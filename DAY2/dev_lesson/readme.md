@@ -45,12 +45,13 @@
 > [!WARNING]
 > ここからは ChatGPT の話題にも触れますが、授業中の制作に関しては Day1 同様、 Effibot 使って進めていきます。  
 
-### 実装
+### コラム
 
-1. 生成AI概論と生成AIに触れてみる
-    - [1-1. 生成AIコラム](./lesson01-generative-ai/01_1_overview.md)
-    - [1-2. GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)
-    - [1-3. 生成AI（LLM）を使ってみる](./lesson01-generative-ai/01_3_start-llm.md)
+#### 生成AI概論と生成AIに触れてみる
+- [1-1. 生成AIコラム](./lesson01-generative-ai/01_1_overview.md)
+- [1-2. GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)
+- [1-3. 生成AI（LLM）を使ってみる](./lesson01-generative-ai/01_3_start-llm.md)
+
 
 ### ハンズオンの準備
 
@@ -58,19 +59,21 @@ obniz Board と Node-RED の2つを使える状態にします。
 - [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
 - [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
 
-2. 生成AIとプログラムを書いてみる Node-RED 開発ハンズオン
-    - [2-1. 生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
-    - [2-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
-    - [2-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
+### 実装
+
+#### 1-1. 生成AIとプログラムを書いてみる Node-RED 開発ハンズオン
+- [1-1-1. 生成AIを使ってNode-REDの処理を書いてみる](./lesson01-generative-ai/02_1_make-node-red-flow.md)
+- [1-1-2. 生成AI使ってNode-REDの処理をさらに書いてみる](./lesson01-generative-ai/02_2_update-node-red-flow.md)
+- [1-1-3. センサーを繋いでみる](./lesson01-generative-ai/02_3_sensor.md)
 
 
 
-3. 生成AIでフローを0から作って改善してみるハンズオン
-    - [3-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)（時間があれば実施）
-    - [3-2. 生成AIが作ったフローを改修](./lesson01-generative-ai/03_2_one2.md)（時間があれば実施）
+####  1-2. 応用課題： 生成AIでフローを0から作って改善してみるハンズオン
+- [1-2-1. 0から生成AIで作ってみる](./lesson01-generative-ai/03_1_zero1.md)
+- [1-2-2. 生成AIが作ったフローを改修](./lesson01-generative-ai/03_2_one2.md)
 
-4. 生成AIが作ったフローの改修やデバッグ
-    - [4-1. 既存のJSONを読み込んでスタート](./lesson01-generative-ai/04_1_ten99.md)（時間があれば実施）
+####  1-3. 応用課題： 生成AIが作ったフローの改修やデバッグ
+- [1-3-1. 既存のJSONを読み込んでスタート](./lesson01-generative-ai/04_1_ten99.md)（時間があれば実施）
 
 ----  
 
@@ -80,16 +83,15 @@ obniz Board と Node-RED の2つを使える状態にします。
 > - **外部のサービスやAPIを連携する**
 >
 > ゴール:
-> - **既存のサービスやAPIを利用して自分のやりたいことを達成する感覚を掴む**
+> - **既存のサービスや API を利用して自分のやりたいことを達成する感覚を掴む**
 
 ### 実装
 
-1. [Teams API連携](./lesson02-api/01_teams.md)
-2. [その他のAPI](./lesson02-api/02_nasa.md)
-3. [API活用事例紹介](./lesson02-api/03_api-use-case.md)
+#### 2-1. [Teams API を連携して obniz Board の捜査結果を通知してみよう](./lesson02-api/01_teams.md)
+#### 2-2. [その他の外部 API を使ってみよう](./lesson02-api/02_nasa.md)
 
-> [!CAUTION]
-> Webhook試した
+
+参考： [様々な API 活用事例紹介](./lesson02-api/03_api-use-case.md)
 
 ----  
 
@@ -103,19 +105,14 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 ### 実装
 
+AIハンズオンのどれかをやってみましょう
+  
+#### 3-1. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
+#### 3-2. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
+#### 3-3. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
+
 > [!CAUTION]
-> ↓リンクではなくここに展開しちゃって良さそう
-[Lesson03の進め方と各ハンズオンの紹介](./lesson03-handson/readme.md)
-
-### 3-1. まずはAIハンズオンのどれかをやってみましょう
-
-> [!CAUTION]
-> GitHub Models のフロー。jsonつくって読み込ませるのが良さそう。↓
-
-- A-1. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
-- A-2. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
-- A-3. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
-
+> GitHub Models のフロー。jsonつくって読み込ませるのが良さそう。↑
 
 ----  
 
@@ -127,12 +124,8 @@ obniz Board と Node-RED の2つを使える状態にします。
 > ゴール: 
 > - **他の資料やハンズオンの内容を改造して自分のアイデア実現に使う感覚をつかむ**
 
-### 実装
+### ■[テーマと進め方について](./lesson04-prototyping/01_prototyping.md)
 
-[作ってみよう](./lesson04-prototyping/01_prototyping.md)
-
-> [!CAUTION]
-> ↑チーム名とか細かいテキスト直す
 
 ----
 
