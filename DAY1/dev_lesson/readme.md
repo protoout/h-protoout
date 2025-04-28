@@ -74,13 +74,16 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 ### 実装
 
+> [!CAUTION]
+> Zennのリンク使わない。初期化コードの書き換え方入れる
+#### 2-1. [ブザーでドレミの音を出してみよう]()
+
 **ここからは参考資料を見ながら自分で進めてみましょう！**  
   
 参考資料：[**obniz x Node-REDマニュアル**](https://zenn.dev/protoout/books/07_node-red-obniz)  
 > ※以降の実装テーマには、この資料の中から必要なページをリンクさせています  
 >![image](https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46)
 
-#### 2-1. [ブザーでドレミの音を出してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-speaker)
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
 > [!TIP]
