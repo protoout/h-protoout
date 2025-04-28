@@ -50,16 +50,22 @@ obniz本体やパーツが熱くなっている場合があります。取り外
 - `obniz-functionノード`
 
 <img src="https://i.gyazo.com/590a12c00834a74480a8e79cdf270b7e.png" width="40%" />
-  
+
+> 先ほどまでやっていた処理の下に追加していきましょう。
+> <img width="60%" alt="image" src="https://github.com/user-attachments/assets/4e3e9f5c-b66b-4d95-88e5-41461d23e2c4" />
+
 
 ### 3. 初期化処理コードの編集
-  
+> `injectノード`のペンマークのところを押すと初期化処理を書くことができます。
+> <img width="60%" alt="image" src="https://github.com/user-attachments/assets/192abc0e-41bb-44e3-9a2b-3dd1f351236c" />
+
 ```js
 obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 }); //脚の長い方（アノード, +）を0, 脚の短い方（カソード,-）を1に割り当てる
 ```
+
+書き終えたら「更新」を忘れずに！  
   
 ### 4. 各ノードの設定方法
-
 
 #### 4-1. 単純な点灯
 
@@ -105,8 +111,6 @@ return msg;
 
 > [!CAUTION]
 > **`obniz-close` で停止するのをお忘れなく！**  
-
-<img width="50%" alt="image" src="https://github.com/user-attachments/assets/e4a667dd-f30f-4f7b-8638-7e76f4d64fe5" />
 
 
 ----  
