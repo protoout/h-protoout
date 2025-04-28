@@ -78,7 +78,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 - [1-2-2. 生成AIが作ったフローを改修](./lesson01-generative-ai/03_2_one2.md)
 
 ####  1-3. 応用課題： 生成AIが作ったフローの改修やデバッグ
-- [1-3-1. 既存のJSONを読み込んでスタート](./lesson01-generative-ai/04_1_ten99.md)（時間があれば実施）
+- [1-3-1. 既存のJSONを読み込んでスタート](./lesson01-generative-ai/04_1_ten99.md)
 
 ----  
 
