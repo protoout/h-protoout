@@ -1,9 +1,9 @@
 # Node-REDの準備
-GitHub から Node-RED の環境をつくっていきます。以下の2つの手順で進めましょう。
+GitHub から Node-RED の環境をつくっていきます。以下の手順で進めましょう。
 
-1. [GitHub CodeSpaces のタイムアウトの時間設定](#github-codespaces-のタイムアウトの時間設定)  
-2. [GitHub リポジトリをフォークする](#github-リポジトリをフォークする)
-3. [GitHub CodeSpaces を起動し、Node-RED を立ち上げる](#続いて-github-codespaces-を立ち上げます)  
+1. GitHub CodeSpaces のタイムアウトの時間設定
+2. GitHub リポジトリをフォークする
+3. GitHub CodeSpaces を起動し、Node-RED を立ち上げる]
 
 > [!Note]
 > Day2は上記 3. から始めます
