@@ -1,10 +1,10 @@
 # 授業の受け方
 
 ## 1. この教材の使い方 
-- Day1は[こちら](https://github.com/protoout/h-protoout/tree/main/DAY1/dev_lesson)のページから必要なリンクを用意しています。
+- ここに移動する前のページから本日必要なリンクを用意しています。
 > <img width="400" alt="image" src="https://github.com/user-attachments/assets/c66fe18c-05e6-4e48-94b9-09740fe6c233" />
 
-- ブラウザバックやページの下部の「戻る」から↑のリンクに戻れます。
+- ブラウザバックやページの下部の「戻る」から上記のリンクに戻れます。
 > <img width="400" alt="image" src="https://github.com/user-attachments/assets/31bd17c6-bfd4-40c6-b929-d7ef22100710" />
 
 ## 2. 授業の流れ
