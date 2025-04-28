@@ -10,7 +10,7 @@ USBケーブル（標準A - タイプC）を用意して、公式サイトのリ
 > 黒いダイヤルスイッチを動かしながら Wi-Fi パスワードを入れますが、強く動かすとパーツが外れてしまうことがあるので注意してください    
 > ![image](https://github.com/user-attachments/assets/4843015a-6aab-4739-bfde-3408cd4e8566)  
 
-## ■[こちらからの公式サイトのマニュアルを見てください](https://docs.obniz.com/ja/reference/board-1y/quick-start/)
+## ■[こちらの公式サイトのマニュアルを見ながら設定してみましょう](https://docs.obniz.com/ja/reference/board-1y/quick-start/)
   
 > [!NOTE]  
 > アップデートが始まってしまった場合は、しばらく待ちましょう。  
