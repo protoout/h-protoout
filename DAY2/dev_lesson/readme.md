@@ -28,9 +28,9 @@
 
 ### 3. 授業の進め方
 
-#### ■[使うツール](./lesson00-overview/00_tools.md)  
+#### ■[使うツール](../../DAY1/dev_lesson/lesson00-overview/00_tools.md)  
   
-#### ■[授業の進め方を紹介します](./lesson00-overview/01_overview.md)  
+#### ■[授業の進め方を紹介します](../../DAY1/dev_lesson/lesson00-overview/01_overview.md)  
 ----  
 
 ## Lesson01 生成AIの活用  
@@ -58,8 +58,8 @@
 ### ハンズオンの準備
 
 obniz Board と Node-RED の2つを使える状態にします。  
-- [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
-- [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
+- [obniz Board を Wi-Fi 接続する](../../DAY1/dev_lesson/lesson00-overview/02_env_obniz.md)
+- [GitHub CodeSpaces から Node-RED を立ち上げる](../../DAY1/dev_lesson/lesson00-overview/03_env_nodered.md)  
 
 ### 実装
 
