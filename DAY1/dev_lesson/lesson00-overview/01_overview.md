@@ -38,7 +38,7 @@
 <a href="https://gyazo.com/1f91a73b903896741c8c1f11ac5734a3"><img src="https://i.gyazo.com/1f91a73b903896741c8c1f11ac5734a3.png" alt="Image from Gyazo" width="100"/></a>  
 画像が小さかったら、別タブで表示して各自で拡大表示してくださいね。
   
-クリックすると大きく開きます。
+画像をクリックすると大きく開きます。
    
 ---- 
   
