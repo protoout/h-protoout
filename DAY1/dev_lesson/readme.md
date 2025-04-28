@@ -154,15 +154,16 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
   
 #### 3-3. 応用課題： 熱中症予防[^6]  
 
-- 気温が高さに応じて、警戒レベルをLEDの光で表そう
+- [気温が高さに応じて、警戒レベルをLEDの光で表そう](https://github.com/protoout/h-protoout/blob/main/tools/tutorials/01_temp_led.md)
 > <img width="400" alt="image" src="https://github.com/user-attachments/assets/934a87cb-f7bb-4bbe-9ad1-f0f08536a3cc" />
 >   
 > デジタル温湿度計にはこのような温湿度センサーが搭載されています。  
 > なお、本格的な熱中症計は、太陽の陽ざしや地面からの照り返しなどの輻射熱を測るために、黒球と呼ばれる黒い球で温度を測っています[^6]
 - ヒント
     - [温湿度計のノードの設定](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20)
+
 > [!CAUTION]
-> zenn記事リンク切れあり
+> ↑zenn記事リンク切れあり
  
   
 #### 3-4. 応用課題：「3-3. 熱中症計」にインフルエンザのリスクをブザーで知らせる機能を追加しよう  
