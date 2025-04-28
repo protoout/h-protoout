@@ -1,10 +1,10 @@
 # 授業の受け方
 
 ## 1. この教材の使い方 
-- 1つ前のページから本日必要なリンクを用意しています。
-> <img width="600" alt="image" src="https://github.com/user-attachments/assets/c66fe18c-05e6-4e48-94b9-09740fe6c233" />
+- 1つ前のページを中心に進めていきます。そこから演習などの必要なリンクに進んでいただきます。
+> <img width="600" alt="image" src="https://github.com/user-attachments/assets/aa754920-35eb-4c7b-81f8-9daa7c937718" />
 
-- ブラウザバックやページの下部の「戻る」から上記のリンクに戻れます。
+- ブラウザバックや各ページの下部の「戻る」から上記の中心となるページに戻れます。
 > <img width="600" alt="image" src="https://github.com/user-attachments/assets/31bd17c6-bfd4-40c6-b929-d7ef22100710" />
 
 > [!NOTE]
