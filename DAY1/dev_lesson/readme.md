@@ -149,6 +149,8 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
 >    
 > ソーラーパネルは効率的に太陽光エネルギーを回収するために照度に合わせてパネルの角度を変える仕組みになっていると言われています。
 > その他にも、スマートブラインド[^5]などにも同様の仕組みが使われています。
+　　
+早く終わった人はこちらの課題にも挑戦！ 
   
 #### 3-3. 応用課題: 熱中症予防[^6]  
 
@@ -161,8 +163,7 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
     - [温湿度計のノードの設定](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20)
 > [!CAUTION]
 > zenn記事リンク切れあり
-
-早く終わった人はこちらの課題にも挑戦！  
+ 
   
 #### 3-4. 応用課題：「3-3. 熱中症計」にインフルエンザのリスクをブザーで知らせる機能を追加しよう  
   
