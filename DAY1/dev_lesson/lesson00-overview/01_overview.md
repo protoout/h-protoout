@@ -2,10 +2,16 @@
 
 ## 1. この教材の使い方 
 - ここに移動する前のページから本日必要なリンクを用意しています。
-> <img width="400" alt="image" src="https://github.com/user-attachments/assets/c66fe18c-05e6-4e48-94b9-09740fe6c233" />
+> <img width="600" alt="image" src="https://github.com/user-attachments/assets/c66fe18c-05e6-4e48-94b9-09740fe6c233" />
 
 - ブラウザバックやページの下部の「戻る」から上記のリンクに戻れます。
-> <img width="400" alt="image" src="https://github.com/user-attachments/assets/31bd17c6-bfd4-40c6-b929-d7ef22100710" />
+> <img width="600" alt="image" src="https://github.com/user-attachments/assets/31bd17c6-bfd4-40c6-b929-d7ef22100710" />
+
+> [!NOTE]
+> こちらの階層から異動しようとすると迷子になってしまうので注意しましょう   
+> <img width="800" alt="image" src="https://github.com/user-attachments/assets/07876088-b0dd-4c48-9bc3-e8faa8dc5431" />
+
+
 
 ## 2. 授業の流れ
 ### 基本的な進め方  
