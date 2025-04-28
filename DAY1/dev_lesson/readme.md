@@ -29,6 +29,8 @@
   
   
 ### 3. 授業の進め方
+
+#### ■[使うツール](./lesson00-overview/00_tools.md)  
   
 #### ■[授業の進め方を紹介します](./lesson00-overview/01_overview.md)  
   
@@ -44,12 +46,10 @@
 >
 
 ### ハンズオンの準備
-1. 使うツールを紹介します。揃っているか確認しましょう。  
-    - [電子部品とアプリケーション](./lesson00-overview/00_tools.md)
-  
-2. obniz Board と Node-RED の2つを使える状態にします。  
-    - [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
-    - [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
+
+obniz Board と Node-RED の2つを使える状態にします。  
+- [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
+- [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
    
 ### 実装  
   
@@ -59,7 +59,7 @@
 早く終わった人はこちらの課題にも挑戦！  
   
 #### 1-3. 応用課題：LED を点けて5秒後に消えるようにしてみよう
-    - [ヒント](https://github.com/protoout/h-protoout/blob/main/DAY1/dev_lesson/lesson01-obniz-basic/02_obniz-LED.md#:~:text=%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81-,4%2D3.%20%E5%8D%98%E7%B4%94%E3%81%AA%E7%82%B9%E6%BB%85,-obniz%2Dfunction%E3%83%8E%E3%83%BC%E3%83%89)  
+- [ヒント](https://github.com/protoout/h-protoout/blob/main/DAY1/dev_lesson/lesson01-obniz-basic/02_obniz-LED.md#:~:text=%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81-,4%2D3.%20%E5%8D%98%E7%B4%94%E3%81%AA%E7%82%B9%E6%BB%85,-obniz%2Dfunction%E3%83%8E%E3%83%BC%E3%83%89)  
 
 ----  
 
@@ -90,19 +90,21 @@
 > ```
 > output voltage is too low when driving high. io state has changed output to input
 > ```
-> <details>
-> <summary>もしこのようなメッセージが表示されるときは、こちらの対策を試してみてください</summary>
->   **1. `obniz close`で停止させる**
->  
->   **2. ブレッドボードにつなぐ**  
->   繋ぎ方の画像を入れる  
->     
->   **3. 電圧を指定する**  
->   初期化のコードに `voltage:"3v"` のオプションを入れます。コードにすると、次の通りです。
-> ```
-> obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"});
-> ```    
-> </details>
+
+<details>
+<summary>もしこのようなメッセージが表示されるときは、こちらの対策を試してください</summary>
+
+1. 現在の実行状態を `obniz close` で停止させる  
+
+2. ブレッドボードにつなぐ  
+繋ぎ方の画像を入れる  
+ 
+3. 電圧を指定する  
+初期化のコードに `voltage:"3v"` のオプションを入れます。コードにすると、次の通りです。
+```
+obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"});
+```    
+</details>
 
 早く終わった人はこちらの課題にも挑戦！  
 
