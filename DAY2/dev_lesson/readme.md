@@ -45,13 +45,15 @@
 > [!WARNING]
 > ここからは ChatGPT の話題にも触れますが、授業中の制作に関しては Day1 同様、 Effibot 使って進めていきます。  
 
+> [!CAUTION]
+> コラムの編集終えてないです↓
+ 
 ### コラム
 
 #### 生成AI概論と生成AIに触れてみる
 - [1-1. 生成AIコラム](./lesson01-generative-ai/01_1_overview.md)
 - [1-2. GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)
 - [1-3. 生成AI（LLM）を使ってみる](./lesson01-generative-ai/01_3_start-llm.md)
-
 
 ### ハンズオンの準備
 
