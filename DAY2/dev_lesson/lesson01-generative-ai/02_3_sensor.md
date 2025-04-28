@@ -39,7 +39,7 @@ return msg; //msg.payloadを出力
 
 - 3. obniz ID の設定を忘れずに
 
-また、デプロイする前に`obniz ID`が自身のobnizのものにセットされているかも確認しましょう。セットされていなければセットしてください。
+デプロイする前に`obniz ID`が自身の obniz Boardのものにセットされているかも確認しましょう。  
 
 > <img src="https://i.gyazo.com/fac1a5126566311c0e9788b33a0816f8.png" width="400px" />
 
