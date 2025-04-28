@@ -60,8 +60,8 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 >   
 > <img width="300" alt="image" src="https://github.com/user-attachments/assets/fc966a02-1f8f-47ee-a3de-9817f1967c11" />  
   
-<img src="https://i.gyazo.com/f9aa30868da8d731b2392df69b65849a.gif " width="90%" />  
-
+> <img src="https://i.gyazo.com/f9aa30868da8d731b2392df69b65849a.gif " width="90%" />  
+> `injectノード`や`changeノード`は配置すると`タイムスタンプ`や`set msg.payload`など名前が変わります。
 
 ## 3. 各ノードの設定方法
 
@@ -71,8 +71,8 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 >  
 > <img width="50%" alt="image" src="https://github.com/user-attachments/assets/db06cb0d-1813-4417-831b-46e504383547" />
 
-> `obniz ID` に obniz Board に表示されている番号を入れます(ハイフンは有/無どちらでも大丈夫)  
-> `device type` を obniz または obniz 1Y にします  
+> `obniz ID` に obniz Board に表示されている番号を入れます(ハイフンの有無はどちらでも大丈夫)  
+> `device type` を obniz または obniz 1Y にします。  
 >   
 > <img width="50%" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />  
   
@@ -91,6 +91,7 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 > <img src="https://i.gyazo.com/f23286bfca01518a135be99eb623abfe.gif" width="90%" />  
 
 ## 4. 結果
+右上の`デプロイ`を押したらください準備完了です。
 
 > `injectノード`をクリック(左の四角いアイコン)してディスプレイにテキストが出れば OK です！
 >   
@@ -100,17 +101,25 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 
 ## 5. ちょっと待った！接続を切りましょう  
 
-このままではプログラムが実行されたままです。Node-RED から obniz Board との接続を切るための指示をします。
+このままでは Node-RED でつくったプログラムが実行されたままです。Node-RED から obniz Board との接続を切るための指示を出しましょう。
 
   
-> `obniz-closeノード`を使います。`injectノード`と繋いで実行します。  
->   画像差し替え  
-> <img src="https://github.com/user-attachments/assets/2bf4e492-0b16-4f9e-bb93-69c5b2995ec0" width="90%" />   
+> `obniz-closeノード`を使います。新たに`injectノード`も用意し繋ぎます。 
+> <img width="500" alt="image" src="https://github.com/user-attachments/assets/571671eb-291d-4df3-b79c-85e7498bf6c9" />  
   
-上手くいくと、obniz Board　のディスプレイが元の QR コードと ID の画面に戻ります
+> `obniz-closeノード`も obniz ID を指定する必要がありますが既に先ほど`obniz-functionノード`で登録したものがあるはずです。  
+> <img width="500" alt="image" src="https://github.com/user-attachments/assets/45f4648c-8b6d-4891-a32f-2a8935e9c398" />
+
+> またデプロイして`injectノード`をクリックすると`obniz-functionノード`と`obniz-closeノード`に赤い四角いアイコンが表示されます。
+> <img width="500" alt="image" src="https://github.com/user-attachments/assets/3b303c67-aff7-4124-bdbb-8d9292bc1317" />
+> これが obniz Board と接続を切った状態です。
+
+  
+> 上手くいくと、obniz Board　のディスプレイも元の QR コードと ID の画面に戻ります  
+> <img width="500" alt="image" src="https://github.com/user-attachments/assets/eb49d4ee-5c8d-4b73-bb0e-39b870429bcc" />
 
 > [!CAUTION]
-> **以降も新しいノードを実行する場合は、毎回必ずこのプロセスを実行しましょう！**  
+> **以降も新しいノードを実行する場合は、毎回必ずこの「接続を切る」プロセスを実行しましょう！**  
 > 
 ---- 
 [◀ Lesson1に戻る](../)
