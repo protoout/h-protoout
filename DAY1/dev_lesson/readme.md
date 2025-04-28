@@ -159,12 +159,6 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
 >   
 > デジタル温湿度計にはこのような温湿度センサーが搭載されています。  
 > なお、本格的な熱中症計は、太陽の陽ざしや地面からの照り返しなどの輻射熱を測るために、黒球と呼ばれる黒い球で温度を測っています[^6]
-- ヒント
-    - [温湿度計のノードの設定](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20)
-
-> [!CAUTION]
-> ↑zenn記事リンク切れあり
- 
   
 #### 3-4. 応用課題：「3-3. 熱中症計」にインフルエンザのリスクをブザーで知らせる機能を追加しよう  
   
