@@ -10,7 +10,7 @@ GitHub から Node-RED の環境をつくっていきます。以下の手順で
 
 ## GitHub CodeSpaces のタイムアウトの時間設定[^1]  
 
-### ■[こちらから GitHub CodeSpaces タイムアウトを設定ましょう](https://github.com/settings/codespaces#:~:text=browser%20with%20JupyterLab.-,Default%20idle%20timeout,-A%20codespace%20will)
+### ■[こちらを別タブで開いて GitHub CodeSpaces タイムアウトを設定ましょう](https://github.com/settings/codespaces#:~:text=browser%20with%20JupyterLab.-,Default%20idle%20timeout,-A%20codespace%20will)
   
 最大値である **240 minutes** に設定して保存(Save)しましょう。 
 > ![image](https://github.com/user-attachments/assets/28c1fa44-6bf3-4656-8f88-b8877150340e)
@@ -20,7 +20,7 @@ GitHub から Node-RED の環境をつくっていきます。以下の手順で
 > この環境を連続で使い続けられる時間が最大で240分ということです。
 > 一度タイムアウトしても、またすぐに接続することができます。
 
-このリンク先での作業は終了です。
+このリンク先での作業は終了です。別タブで開いた設定ページを閉じてください。
 
 [^1]: [タイムアウトの設定方法])(https://docs.github.com/ja/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces#setting-your-default-timeout-period)
 [^2]: [GitHub CodeSpaces について](https://github.co.jp/features/codespaces)
