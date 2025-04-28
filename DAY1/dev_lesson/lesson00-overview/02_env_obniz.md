@@ -1,3 +1,7 @@
+> [!WARNING]
+> **使う場所に注意！**  
+> obniz Board はノートパソコンの上に置かず、机の上など電気を通さない場所に置きましょう。
+
 # obniz Board の初期設定（ Wi-Fi 接続）
 
 obniz Board の初期設定、Wi-Fi 接続を行います。
