@@ -3,7 +3,7 @@
 > obniz Board はノートパソコンの上に置かず、机の上など電気を通さない場所に置きましょう。
   
   
-### 私たちが使う obniz Board / obniz Board 1Y
+# 私たちが使う obniz Board / obniz Board 1Y
   
 obniz Board は obniz の公式デバイスで、いわゆる**マイコンボード**です。小型のコンピューターにハードウェアをつくるのに必要なパーツがちょこちょこ付いたものです。
 
@@ -25,7 +25,7 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
   
 ----  
   
-## Node-RED で obniz Board を動かしてみる
+# Node-RED で obniz Board を動かしてみる
 
 
 では早速 obniz Board を動かしてみましょう。まだセンサーは使いません！  
