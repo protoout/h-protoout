@@ -28,7 +28,7 @@
 > <img width="413" alt="image" src="https://github.com/user-attachments/assets/42010731-7800-47a3-9b1f-647d165f7a0b" />
 
 ### 画像が小さくて見えない！
-<a href="https://gyazo.com/1f91a73b903896741c8c1f11ac5734a3"><img src="https://i.gyazo.com/1f91a73b903896741c8c1f11ac5734a3.png" alt="Image from Gyazo" width="100"/></a>
+<a href="https://gyazo.com/1f91a73b903896741c8c1f11ac5734a3"><img src="https://i.gyazo.com/1f91a73b903896741c8c1f11ac5734a3.png" alt="Image from Gyazo" width="100"/></a>  
 画像が小さかったら、別タブで表示して各自で拡大表示してくださいね。
   
 クリックすると大きく開きます。
@@ -49,11 +49,8 @@
 ### 練習: 生成 AI に聞いてみよう！ 
 
 [Effibot]()を立ち上げ、  
-`obniz Board と obniz Board 1Yの違いを教えてください`  
-と聞いてみましょう。
-
-> 私はこのような回答が得られました(ChatGPT-4o)  
-> <img width="610" alt="image" src="https://github.com/user-attachments/assets/33c7f87b-49ad-479f-898b-e2300f92c25e" />  
+`obniz Board って何ですか？`  
+と聞いてみましょう。(今日使うデバイスです)
   
 ## 2. それでもわからない、うまくいかない事があるときは？   
 遠慮なく聞いてください！  
