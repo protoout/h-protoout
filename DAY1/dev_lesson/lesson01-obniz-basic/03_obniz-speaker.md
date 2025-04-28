@@ -1,13 +1,8 @@
 # スピーカーで音を鳴らしてみよう
 
-
-### **新しいことをはじめる前に**  
-
-[新しいことをはじめる前に](../before-start.md)この手順を行いましょう。
-
 ---
 
-## 1.やってみよう
+## スピーカーをつけてみよう
 
 <a href="https://gyazo.com/c39a8d243cc56f5e5e788bcc05a68d57"><img src="https://i.gyazo.com/c39a8d243cc56f5e5e788bcc05a68d57.jpg" alt="Image from Gyazo" width="700"/></a>
 
@@ -16,41 +11,66 @@
 
 保護紙をつまんでまっすぐスピーカーを引っ張ると抜き取ることができます。  
 
-### 1-1. obnizとの接続
+### 1. obniz Board での配線
 
 <a href="https://i.gyazo.com/76644dcdab7a2bc2b5b7a0149a2667cf"><img src="https://i.gyazo.com/76644dcdab7a2bc2b5b7a0149a2667cf.jpg" alt="Image from Gyazo" width="700"/></a>
 
-obnizの0番と1番の端子に差し込みます。  
+| 電子パーツの脚         | 接続先         |
+|--------------|---------------|
+| スピーカーの脚 |   0   |
+| スピーカーの脚  |   1   |
+
+obnizの0番と1番の端子に差し込みます。(LED は obniz Board のディスプレイが QRコードの画面になっていたら抜いてしまって大丈夫です )  
 極性（方向）はなく、どちらの向きで差し込んでも大丈夫です。
 
 
 
-### 1-3. Node-REDで実行
+### 2. 使うノードとつなぎ方
 
 以下のフローを読み込み、Node-REDで動かしてみましょう。
 
+- `injectノード`
+- `changeノード`
+- `obniz-functionノード`
+- `debugノード`
 
-```json
-[{"id":"9684e82d.a3b478","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nif (msg.payload === 'push') {\n    // 押されたとき\n    obniz.display.clear(); // 画面を消去\n    obniz.display.print('beep!');  // beep! と画面に表示\n    obnizParts.Speaker.play(1000); // 1000Hz で音を鳴らす\n} else {\n    // 何も押していない\n    obniz.display.clear(); // 画面を消去\n    obniz.display.print('silent');  // silent と画面に表示\n    obnizParts.Speaker.stop(); // 音をとめる\n}\n\nreturn msg;","x":270,"y":280,"wires":[["f8e3da0b.78b968"]]},{"id":"f8e3da0b.78b968","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":470,"y":280,"wires":[]}]
-```
-■読み込み結果  
-<a href="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289"><img src="https://gyazo.com/c5e4d78c48e149bd3c50c56423a76289.png" alt="Image from Gyazo" width="374"/></a>  
+![image](https://github.com/user-attachments/assets/13e0292e-ed13-4964-ae09-29432815ad0e)
 
 
-Lチカ同様、読み込んだ`obniz repeat`をダブルクリックで選択し、プロパティの鉛筆マークから、初期化処理コードを**上書き更新**してください。
+### 3. 初期化処理コードの編集
+
+LED 同様、 `obniz-repeatノード`をダブルクリックで選択し、プロパティのペンマークから、初期化処理コードを**書き替えて更新**してください。
 （Lチカの時に張り付けたコードは消してください）
 
-■ 初期化処理コード
 ```javascript
 obnizParts.Speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
 ```
 
-スイッチを押したり離したりして、スピーカーのコントロールができます。
+### 4. 各ノードの設定方法
+
+- `changeノード`
+
+msg.payloadを「数値」「500」（数字は任意で変更してください。単位はヘルツ。）
+
+![image](https://github.com/user-attachments/assets/2b9aa3c7-215f-4785-b8b8-b77737c900b3)
 
 
-## 2.演習
+- `obniz-functionノード`
 
-### 2-1. 好きな音を出そう
+```js
+obnizParts.speaker.play(msg.payload); // msg.payloadで受け取った値（ヘルツ）の音を鳴らす
+await obniz.wait(1000); //1秒待つ
+obnizParts.speaker.stop(); //止める
+```
+
+## 5. 結果
+
+1000Hzの音が鳴り、1秒すると止まる。
+
+> [!CAUTION]
+> **`obniz-close` で停止するのをお忘れなく！**  
+
+## 参考：
 
 ブザーから任意の音程を出してみましょう
 
@@ -64,24 +84,6 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
 | ラ   | 880        |
 | シ   | 988        |
 | ド   | 1046       |
-
-
-### 2-2.【応用】 楽器をつくってみよう
-
-ブザーから色々な音を出せる楽器を考えて作ってみましょう。
-
-
-サンプルコード: 
-
-スイッチをpushすると音が出ます。
-obnizのスイッチを右に倒すと半音ずつ音が上がり、左に倒すと半音ずつさがります。
-
-※音が出るのはpushしているときのみ
-
-```json
-[{"id":"d8389f17.33ec7","type":"obniz-repeat","z":"d9dba4a1.01f228","obniz":"","name":"","interval":"100","code":"msg.payload = await obniz.switch.getWait();\n\nlet freq = context.get('freq')||523; // 周波数用のコンテキストを参照（無ければ初期化）\nlet note_number = context.get('note')||72; // MIDIノート番号// ノート番号用のコンテキストを参照（無ければ初期化）\n\nobniz.display.clear(); // 画面を消去\n\nif (msg.payload === 'push') {\n // スイッチが押されている状態\n obnizParts.Speaker.play(freq); // 音を鳴らす\n} else if (msg.payload === 'right') {\n // 右にスイッチを倒したとき\n if (note_number < 127) note_number++; // ノート番号+1\n freq = Math.round(440 * (2 ** ((note_number - 69) / 12))); // 周波数を再計算\n} else if (msg.payload === 'left') {\n // 左にスイッチを倒したとき\n if (note_number > 0) note_number--; // ノート番号-1\n freq = Math.round(440 * (2 ** ((note_number - 69) / 12))); // 周波数を再計算\n} else {\n // スイッチが押されていない状態\n obnizParts.Speaker.stop(); // 音を停止する\n}\ncontext.set('freq',freq);//現在の周波数をコンテキストへ保存\ncontext.set('note',note_number);//現在のノート番号をコンテキストへ保存\nobniz.display.print(freq); // 現在の周波数を表示\n\nreturn msg;","x":270,"y":280,"wires":[["4855899b.7e8ee8"]]},{"id":"4855899b.7e8ee8","type":"debug","z":"d9dba4a1.01f228","name":"","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":450,"y":280,"wires":[]}]
-```
-
 
 ---
 
