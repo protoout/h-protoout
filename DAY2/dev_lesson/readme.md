@@ -92,7 +92,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 ### 実装
 
-#### 2-1. [Teams API を連携して obniz Board を操作した結果を通知してみよう](./lesson02-api/01_teams.md)
+#### 2-1. [Teams API を連携して obniz Board から通知してみよう](./lesson02-api/01_teams.md)
 #### 2-2. [その他の外部 API を使ってみよう](./lesson02-api/02_nasa.md)
 
 
