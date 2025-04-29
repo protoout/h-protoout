@@ -135,11 +135,8 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
 
 #### 3-1. 感知式信号機[^3]  
 - [距離に応じてライトの色を変えてみよう](./lesson03-obniz-advanced/combine_trafficlight_ultrasound.md)
-  
-> <img width="400" alt="image" src="https://github.com/user-attachments/assets/36f6f62e-ea25-4130-98ed-38a856dce850" />
->   
-> 車があまり通らない場所では、車がいることを超音波センサで感知してから信号機のライトを制御する仕組みになっています。  
-> 停止線より手前で止まりすぎると信号が変わらないということも...  
+
+所要時間：30分
     
 #### 3-2. ソーラーパネルの自動追尾[^4]  
 
@@ -149,7 +146,9 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
 >    
 > ソーラーパネルは効率的に太陽光エネルギーを回収するために照度に合わせてパネルの角度を変える仕組みになっていると言われています。
 > その他にも、スマートブラインド[^5]などにも同様の仕組みが使われています。
-　　
+
+所要時間：20分
+  
 早く終わった人はこちらの課題にも挑戦！ 
   
 #### 3-3. 応用課題： 熱中症予防[^6]  
@@ -159,6 +158,8 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
 >   
 > デジタル温湿度計にはこのような温湿度センサーが搭載されています。  
 > なお、本格的な熱中症計は、太陽の陽ざしや地面からの照り返しなどの輻射熱を測るために、黒球と呼ばれる黒い球で温度を測っています[^6]
+
+所要時間：20分
   
 #### 3-4. 応用課題：「3-3. 熱中症計」にインフルエンザのリスクをブザーで知らせる機能を追加しよう  
   
@@ -166,7 +167,7 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
     - インフルエンザのリスクの計算式について、生成 AI で調べてみましょう
     - 「3-3.」のノードを JSON で書きだして生成 AI で編集してもらおう
 
-
+所要時間：15分
 ----  
 ### 休憩
 
