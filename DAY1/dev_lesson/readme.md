@@ -84,7 +84,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
-> [!TIP]
+> [!WARNING]
 > 注意！サーボモータが動かないことがあります。[^1]  
 > obniz Board (1Y ではなく)ではサーボモーターの電源の電流がリークし、obniz Board が過電流[^2]を検知し電源を供給できない場合があります。
 > 過電流を検知すると obniz Board に次のようなメッセージが表示されます。
