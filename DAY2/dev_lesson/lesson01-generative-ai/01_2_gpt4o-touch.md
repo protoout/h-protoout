@@ -34,6 +34,8 @@
 
 > [!CAUTION]
 > ここ以下使う
+> 横井さんから共有されたGithub models のノード
+> https://github.com/protoout/iu24/blob/main/DAY2/dev_lesson/github_models_flows.json
 
 ### 2-1. ノードのインストール
 
