@@ -1,10 +1,8 @@
-# 2. 外部サービス連携や情報取得をしてみよう② APIを使って情報取得
+# その他の外部 API を使ってみよう
 
 
 ■ APIとは？
 API（アプリケーション・プログラミング・インターフェース）は色々な外部サービスを連携してデータの取得や連携などを行う仕組みのことです。通常HTTPプロトコルを用いて、データの送受信が行われます。
-
-
 
 具体的には、
 
@@ -29,16 +27,16 @@ APIを活用すれば、まったくのゼロからすべての機能を構築�
 ここでは、簡単に公開されているAPIを使う体験をしてみましょう。
 
 
-## NASAのAPIを使って、NASAのジャーナルを取得してみる
+## NASA の API を使って、NASA　のジャーナルを取得してみる
 
 [NASA APIs](https://api.nasa.gov/): NASAが公開しているAPIです。毎日異なる画像や写真、専門の天文学者によって書かれた文章で、宇宙の魅力を発信するAPIから、画像と文章を取得してみます。
 
 
 ### 1. 使うノード
 
-- injectノード
-- http requestノード: APIにこのデータください、とお願いするために使います。
-- debug
+- `injectノード`
+- `http requestノード`: APIにこのデータください、とお願いするために使います。
+- `debug ノード`
 
 
 [HTTPってなに？という方はこちらの記事を参照してください](/tools/column/iot-overview/03-network.md)
@@ -46,12 +44,12 @@ APIを活用すれば、まったくのゼロからすべての機能を構築�
 
 ### 2. 手順
 
-1. injectノード、http requestノード、debugノードを追加し図のようにつなぐ
+1. `injectノード`、`http requestノード`、`debugノード`を追加し図のようにつなぐ
 
 <img src="https://i.gyazo.com/4cc9b58750f7f4864ab02a7faa1cb21f.png" alt="Image Description" width="500"/>
 
 
-2. http requestノードを図のように設定する。APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit#gid=0)の「NASA API」のキーを入力する。
+2. `http requestノード`を図のように設定する。APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit#gid=0)の「NASA API」のキーを入力する。
 
 <a href="https://gyazo.com/1f90fcbed097ca05cc868615b9b363ff"><img src="https://i.gyazo.com/1f90fcbed097ca05cc868615b9b363ff.png" alt="Image from Gyazo" width="524"/></a>
 
@@ -81,9 +79,9 @@ https://api.nasa.gov/planetary/apod?api_key=【API KEY】
 <img src="https://apod.nasa.gov/apod/image/2405/NGC2169LRGBQHY183HR_c1024.jpg" width="300">
 
 
-### 3. 時間がある人向け: 取得したデータをWebページに表示したい！
+### 3. 時間がある人向け: 取得したデータを Web ページに表示したい！
 
-せっかく取得したデータ、ブラウザでWebページとして表示してみたいですよね。
+せっかく取得したデータ、ブラウザで Web ページとして表示してみたいですよね。
 
 先ほど取得したデータを、ウェブページとして表示する方法を説明します。
 
@@ -93,18 +91,18 @@ https://api.nasa.gov/planetary/apod?api_key=【API KEY】
 
 さきほど作ったものに3つのノードを追加します。
 
-- http in: 外部からアクセスできる場所をつくる。このノードを置くと、ウェブページのURLができあがるようなイメージ。
-- template: ウェブサイトに表示する内容をここに書く
-- http responce: ブラウザにWebページの情報を返す。これにより、ブラウザから表示できるようになる
+- `http inノード`: 外部からアクセスできる場所をつくる。このノードを置くと、ウェブページのURLができあがるようなイメージ。
+- `templateノード`: ウェブサイトに表示する内容をここに書く
+- `http responceノード`: ブラウザにWebページの情報を返す。これにより、ブラウザから表示できるようになる
 
 <a href="https://gyazo.com/ab234703ff567b71815d32360fac84e0"><img src="https://i.gyazo.com/ab234703ff567b71815d32360fac84e0.gif" alt="Image from Gyazo" width="600"/></a>
 
 
 2. ノードの設定
 
-- http in
+- `http inノード`
 
-アクセスするURLをhttp inで設定します。
+アクセスする URL を `http inノード`で設定します。
 
 URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKです。）
 
@@ -128,7 +126,7 @@ URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKで�
 
 <a href="https://gyazo.com/070c36c4dbc7777a99a9d6e5bf74566e"><img src="https://i.gyazo.com/070c36c4dbc7777a99a9d6e5bf74566e.gif" alt="Image from Gyazo" width="600"/></a>
 
-- template
+- `templateノード`
 
 ここではウェブサイト構築でよく使われる、HTMLというマークアップ言語を使います。
 
@@ -162,8 +160,8 @@ URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKで�
 
 ```
 ## システム
-要件に沿ってHTMLをかいてください。
-CSSはHTML内に記述し一つにおさめてください。
+要件に沿って HTML をかいてください。
+CSS は HTML 内に記述し一つにおさめてください。
 
 ## 出力のサンプル
 <head>
@@ -215,33 +213,33 @@ URLにアクセスして、ウェブページが表示されれば成功です�
 
 ## 2. どんなAPIがあるか見て、どの様に使えそうか考えてみよう
 
-今回は簡単にすぐ使えるNASAのAPIを選んで情報を取得しました。
+今回は簡単にすぐ使える NASA の API を選んで情報を取得しました。
 
 
-LINE、Google系サービス、Amazon、楽天...
+LINE、Google 系サービス、Amazon、楽天...
 
 
-普段、仕事やプライベートで使っている有名なサービスの多くは、APIを提供しています。
+普段、仕事やプライベートで使っている有名なサービスの多くは、API を提供しています。
 
 
 
 外部サービスを連携していくことで、業務効率化にも役立てることができます。
 
-- お問い合わせメールが来たらその内容をTeamsに通知する
-- オフィスのトイレの空き状況をTeamsに通知する
+- お問い合わせメールが来たらその内容を Teams に通知する
+- オフィスのトイレの空き状況を Teams に通知する
 
 
 などなど、会社のレギュレーションも確認しながら、チャレンジしてみてくださいね。
 
 
-どのようなAPIがあるのか、眺めてみましょう！
+どのような API があるのか、眺めてみましょう！
 
 
 - [今すぐ使える無料WebAPIまとめ](https://qiita.com/kazuki_tachikawa/items/7b2fead2a9698d1c15e8)
 
 - [【随時更新】一風変わったWeb APIをまとめてみた](https://qiita.com/danishi/items/42d8adf6291515e62284)
 
-- [API Hub](https://apidog.com/apihub/): いろいろなサードパーティのAPIがまとまっている
+- [API Hub](https://apidog.com/apihub/): いろいろなサードパーティの API がまとまっている
 
 <a href="https://gyazo.com/4e9f8111e7da3ee740030da9a383774a"><img src="https://i.gyazo.com/4e9f8111e7da3ee740030da9a383774a.png" alt="Image from Gyazo" width="1372"/></a>
 
