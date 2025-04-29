@@ -75,11 +75,16 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 > <img width="50%" alt="image" src="https://github.com/user-attachments/assets/db06cb0d-1813-4417-831b-46e504383547" />
 
 `obniz ID` に obniz Board に表示されている番号を入れます(ハイフンの有無はどちらでも大丈夫)  
+  
 `device type` を obniz または obniz 1Y にします。  
 >   
 > <img width="50%" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />  
-
-コードに以下を記述  
+  
+更新を押すと再び同じ画面に戻ってきます。今度は `obniz` のところはご自身で設定した内容が反映されています。  
+<img width="50%" alt="image" src="https://github.com/user-attachments/assets/8143ee58-62bd-46bd-943b-60d8d57545ae" />
+  
+  
+この画面の「コード」の部分に以下を記述  
 
 ```js
 obniz.display.clear();//画面を消去
