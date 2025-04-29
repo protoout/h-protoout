@@ -1,3 +1,6 @@
+> [!CAUTION]
+> Github models 実装テスト中
+> 
 # A-1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳
 
 
