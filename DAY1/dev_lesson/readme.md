@@ -84,29 +84,6 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
-> [!WARNING]
-> 注意！サーボモータが動かないことがあります。[^1]  
-> obniz Board (1Y ではなく)ではサーボモーターの電源の電流がリークし、obniz Board が過電流[^2]を検知し電源を供給できない場合があります。
-> 過電流を検知すると obniz Board に次のようなメッセージが表示されます。
-> ```
-> output voltage is too low when driving high. io state has changed output to input
-> ```
-
-<details>
-<summary>もしこのようなメッセージが表示されるときは、こちらの対策を試してください</summary>
-
-1. 現在の実行状態を `obniz close` で停止させる  
-
-2. ブレッドボードにつなぐ  
-繋ぎ方の画像を入れる  
- 
-3. 電圧を指定する  
-初期化のコードに `voltage:"3v"` のオプションを入れます。コードにすると、次の通りです。
-```
-obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"});
-```    
-</details>
-
 早く終わった人はこちらの課題にも挑戦！  
 
 #### 2-3. 応用課題：ブザーで曲を奏でよう
