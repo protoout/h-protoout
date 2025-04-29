@@ -89,7 +89,7 @@ Teachable Machine は Google が公開している機械学習を楽しく使え
     - teachable-machineで作成したモデルを使用するためのノード このノードは「image Project」のみに対応しているようです。
     - https://flows.nodered.org/node/node-red-contrib-teachable-machine
 
-↓以下の2つは既にインストールされていると思われますが、もしまだでしたらインストールしてください。
+↓以下の2つをインストールしてください。
 
 - `node-red-contrib-browser-utils`
     - カメラを使えるようになります。
@@ -112,7 +112,7 @@ Teachable Machine は Google が公開している機械学習を楽しく使え
 
 まずは、ノードを設置して繋げます。写真のようにノードを配置してみましょう。
 
-> `Cameraノード`, `Teachable Machineノード`, `Image Previewノード`, `Switchノード`, `Debugノード`
+> `cameraノード`, `teachable machineノード`, `image previewノード`, `switchノード`, `debugノード`
 >
 > <img src="https://i.gyazo.com/b9c5eb1c1a52ea2dcc65bbb63fd47b3d.png" width="400px" />
 
@@ -153,15 +153,15 @@ Teachable Machine は Google が公開している機械学習を楽しく使え
 
 など出来そうです。
 
-また、処理を行った先にTeamsに通知をしたり、obnizでサーボを回したりと接続することも可能なので色々な入力や判定の起点に使えそうですね。
+また、処理を行った先に Teams に通知をしたり、obniz Board でサーボを回したりと接続することも可能なので色々な入力や判定の起点に使えそうですね。
 
 > こんな感じの接続もできます。
 > 
 > <img src="https://i.gyazo.com/cd887f784de9df5224e7ae6e84313459.png" width="400px" />
 
-Teachable Machineは音声でもモデルを作れるので、気になる人はそちらも試してみてください。
+Teachable Machine は音声でもモデルを作れるので、気になる人はそちらも試してみてください。
 
-PCやスマホもセンサーとして使うことが出来ますので、obnizで今回さわったセンサーに加えて
+PCやスマホもセンサーとして使うことが出来ますので、obniz Boardで今回さわったセンサーに加えて
 
 - カメラ（視覚）
 - マイク（音）
@@ -170,7 +170,7 @@ PCやスマホもセンサーとして使うことが出来ますので、obniz�
 
 お疲れ様でした！
 
-## 他の技術とTeachable Machineを組み合わせた例
+## 他の技術とTeachable Machine を組み合わせた例
 
 プロトアウトスタジオの受講生の記事抜粋です。
 
