@@ -116,9 +116,6 @@ AIハンズオンのどれかをやってみましょう
 #### 3-2. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
 #### 3-3. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
 
-> [!CAUTION]
-> GitHub Models のフロー。jsonつくって読み込ませるのが良さそう。↑
-
 ----  
 
 ## Lesson04 IoT プロトタイプを作ってみよう
