@@ -31,23 +31,22 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 電源をつなぎ QR コードとID(XXXX-XXXXの数字)が表示されている状態からスタートします  
   
 > [!WARNING]
-> **obniz ID はSNSなどには公開しないようにしましょう！**  
-  
-
-### 1. Node-RED に obniz Board 用のノードを追加する  
+> **obniz ID はSNSなどには公開しないようにしましょう！**
+ 
+## 1. Node-RED に obniz Board 用のノードを追加する  
   
 > メニューバーから「パレットの管理」を選択  
 >   
 > <img width="500" alt="image" src="https://github.com/user-attachments/assets/451ada84-541f-4b37-8bed-4422639099c5" />
 
   
-> 「ノードを追加」タブを選び「obniz」と検索すると、 `node-red-contrib-obniz` が出てくるので、「ノードを追加」を選択  
+> 「ノードを追加」タブを選び「obniz」と検索すると、 `node-red-contrib-obniz` が出てくるので、このノードで「ノードを追加」を選択  
 >    
 > <img width="500" alt="image" src="https://github.com/user-attachments/assets/6f2faea1-13e9-466c-8cce-1c1d339e1803" />
   
 「閉じる」からフロー設計の画面に戻ります。
 
-### 2. 使うノードとつなぎ方
+## 2. 使うノードとつなぎ方
 
 ノードの繋ぎ方
 
@@ -75,7 +74,6 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 > `device type` を obniz または obniz 1Y にします。  
 >   
 > <img width="50%" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />  
-  
 
 コードに以下を記述  
 
@@ -89,6 +87,18 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 > 「文字列」に設定し、テキスト`Hello!`を入力してください。
 > 
 > <img src="https://i.gyazo.com/f23286bfca01518a135be99eb623abfe.gif" width="90%" />  
+
+重要な点があるので、ここでノードの設定手順をおさらいします。
+
+1. `obniz-functionノード`から Obniz 設定ノードを追加する：使用する obniz Board の登録
+2. `obniz-functionノード`に電子部品を動かすコードを書く：「初期化処理」と「コード」の2か所
+3. `changeノード`など他のノードを配置して接続させる
+4. `injectノード`で実行
+
+> [!IMPORTANT]
+> 1.は1度限り設定すればよいです。2.以降は動かす電子部品や処理によって変えることがあります。  
+> しかし、1.については1度設定すれば別の `obniz functionノード`を用意したときに選ぶことができます。  
+> 新たに Obniz 設定ノードを追加する必要はないので注意しましょう！  
 
 ## 4. 結果
 右上の`デプロイ`を押したらください準備完了です。
