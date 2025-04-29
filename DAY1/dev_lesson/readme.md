@@ -186,7 +186,7 @@ obnizParts.servo = obniz.wired("ServoMotor", {gnd:0,vcc:1,signal:2,voltage:"3v"}
 
 ----  
 
-## Lesson05 最終制作に向けて
+## 最終制作に向けて
 
 ### ■[最終発表のテーマと準備について](./lesson05-closing.md)  
   
