@@ -117,7 +117,8 @@ AIハンズオンのどれかをやってみましょう
 #### 3-2. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
           → 生成 AI  のノードを利用：音声を解析してLEDを操作しよう
 #### 3-3. [Teachable Machineの利用](./lesson03-handson/A-3_teachable-machine.md)
-
+> [!CAUTION]
+> ↑ノードのUI変わってる、注意
 ----  
 
 ## Lesson04 IoT プロトタイプを作ってみよう
