@@ -1,4 +1,4 @@
-# A-3. ハンズオン: Teachable Machine で独自モデルの作成と画像判定
+# Teachable Machine を使って画像分析モデルをつくろう
 
 ※このハンズオンは SSL（HTTPS）環境じゃないと後半が進めません。
 
