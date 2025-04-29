@@ -1,16 +1,16 @@
 > [!CAUTION]
 > Github models 実装テスト中
 > 
-# A-1. OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳
+# 生成 AI のノードを利用：テキストを解析し翻訳しよう
 
 
-## 1. Node-REDの中にChatGPTを組み込もう！
+## 1. Node-RED の中に ChatGPT を組み込もう！
 
-Node-REDの中でChatGPTを使い、サービスに簡単に生成AIを組み込むことができます。
+Node-RED の中で ChatGPT を使い、サービスに簡単に生成AIを組み込むことができます。
 
-これにより、ニュースのAPIから取得した情報を要約して送信したり、人間らしい反応を返すチャットボットを作ったり、さまざまなことが可能になります。
+これにより、ニュースの API から取得した情報を要約して送信したり、人間らしい反応を返すチャットボットを作ったり、さまざまなことが可能になります。
 
-OpenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-REDで簡単に扱えるノード）を使い、Node-REDのフローに生成AIを組み込んでAPIで取得した文章を日本語に翻訳してみましょう！
+OpenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-REDで簡単に扱えるノード）を使い、Node-REDのフローに生成AIを組み込んで API で取得した文章を日本語に翻訳してみましょう！
 
 
 ## 2.やってみよう
@@ -30,20 +30,14 @@ OpenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-R
 
 [停止用ノードはこちら](https://qiita.com/n0bisuke/items/28d44edc290a0dddc8b0)
 
-
-
 準備ができたら早速始めていきます！
 
 
-### 1-1 NASAのAPIの情報を取得するところまで作る
+### 1-1 NASA の API の情報を取得するところまで作る
 
 1. NASA APIの情報取得ができるようにする
 
-[2. 外部サービス連携や情報取得をしてみよう② APIを使って情報取得](../lesson02-api/02_nasa.md)の`### 2. 手順`まで行って、データが返ってくるところまで作成してください。
-
-<img src="https://i.gyazo.com/17a02c204783ee4adf59112b942f4be1.png" alt="Image Description" width="500"/>
-
-または、下記をNode-REDで読み込んでください。
+下記を Node-RED で読み込んでください。
 
 ■ 読み込み用JSONはこちら
 
@@ -57,6 +51,7 @@ APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74
 
 ```
 
+### 1-1 NodeRed 
 
 ### 1-1 Node-REDにsimple-chatgptのノードをインストールする
 
