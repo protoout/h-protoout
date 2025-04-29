@@ -27,8 +27,12 @@
 - 発表時間：各5分
 - 発表の条件：制作物のデモを実施する
 
+## イメージ
+昨年の先輩はこんな感じのものをつくりました。
 
+![image](https://github.com/user-attachments/assets/fe4ce622-f1a4-4ed7-87ae-732ec724d05e)[^1]
 
+[^1]: [PR Times記事](https://prtimes.jp/main/html/rd/p/000000032.000020328.html)
 ---
 
 **[◀ 目次ページに戻る](./readme.md)**
