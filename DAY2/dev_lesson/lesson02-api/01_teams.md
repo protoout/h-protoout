@@ -39,6 +39,7 @@ Webhook を使うことで、
 
 obniz Board のスイッチを押して、Teams に投稿するものを作ります。
 
+![image](https://github.com/user-attachments/assets/eddea5a2-c085-45f7-9d55-25bbb38baba7)
 
 <img src="https://i.gyazo.com/9c6ea27b073a3acdbf325a8a35c09dad.png" alt="Image Description" width="500"/>
 
@@ -52,18 +53,21 @@ obniz Board のスイッチを押して、Teams に投稿するものを作り�
 
 <a href="https://gyazo.com/7d06640b02dbe05463a58a88481a182d"><img src="https://i.gyazo.com/7d06640b02dbe05463a58a88481a182d.png" alt="Image from Gyazo" width="500"/></a>
 
-- `http requestノード`: サーバーに対し「これやってよ〜」（今回はメッセージの送信）と、リクエストをするために使います。
-
-[HTTPについてはこちら](/tools/column/iot-overview/03-network.md)
-
-
 2. `http request`ノードを図のように設定する。
 
 URLには[こちら]()の Teams webhook の URL を入力してください。
 
+> [!CAUTION]
+> ランスルーではこちらをつかいます
+> `https://prod-42.japaneast.logic.azure.com/workflows/b9f93af31f86427eab8c7271753d4b77/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=PhJpR2q-tXRG7AntX_hex1p5yIkS9iQ1o85E6zUIBsk`
+
 <img src="https://i.gyazo.com/6e48aee0cabc082df0fe1242df9e878f.png" alt="Image from Gyazo" width="500"/>
 
 ■ メソッドについて
+
+- `http requestノード`はサーバーに対し「これやって」（今回はメッセージの送信）と、リクエストをするために使います。
+
+[HTTPについてはこちら](/tools/column/iot-overview/03-network.md)
 
 HTTPリクエスト（サーバーへの要求方法）にはいくつかの種類があります。
 
@@ -73,7 +77,7 @@ HTTPリクエスト（サーバーへの要求方法）にはいくつかの種�
 ほかにも、PUT/DELETEなどがあり、用途によって使い分けします。
 
 今回は Teams にメッセージを送信するため、POST を使います。
-
+  
 
 3. `templateノード`を使って送信するメッセージを作る
 
@@ -83,6 +87,9 @@ HTTPリクエスト（サーバーへの要求方法）にはいくつかの種�
 `templateノード`を追加し、以下のように設定します。
 
 <a href="https://gyazo.com/57f6790f1191a08acb601ca2e99dfa5d"><img src="https://i.gyazo.com/57f6790f1191a08acb601ca2e99dfa5d.gif" alt="Image from Gyazo" width="500"/></a>
+
+なお、出力形式は`JSON`にします。
+![image](https://github.com/user-attachments/assets/729a5d41-089f-4a94-b9b2-ed647ed1fa43)
 
 
 中には、テンプレートの中身を書き換えて記入してください。
