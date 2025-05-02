@@ -57,7 +57,7 @@ Day3で「実装」「発表の準備」などの作業できる時間は[約4�
 <br>
 
 ## 4.第1部進行説明：アイデアを考える 進め方説明
-[▶MIROに移動](https://miro.com/app/board/uXjVKPW27-k=/)
+[▶MIROに移動](https://miro.com/app/board/uXjVI_zj35g=/)
 
 <br><br>
 ## 5.第2部進行説明：実装の目処をつける
