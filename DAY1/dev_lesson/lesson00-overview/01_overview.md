@@ -72,12 +72,12 @@
 
 遠慮なく聞いてください！TA が助けにいきます！   
 
-Github 上のdiscussions機能を開、該当するQ&Aスペースで質問を投稿ください。  
+Github 上のDiscussions機能を開、該当するQ&Aスペースで質問を投稿ください。  
 
 順番にTAがテーブルにお伺いし、質問の対応をいたします。
 
 ### 練習: 質問を書いてみよう！  
-[Githubのdiscussions機能](https://github.com/protoout/h-protoout/discussions)にアクセスし、
+[GithubのDiscussions機能](https://github.com/protoout/h-protoout/discussions)にアクセスし、
 - 該当するQ&Aスペースを開き
 - 1つ質問を書き込んでみよう
   - Labelをつけるのを忘れないように
