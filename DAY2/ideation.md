@@ -6,7 +6,8 @@
 Day3で1チーム1つつくる制作物のアイデア（何を）と実装方法（どうやってつくるか）を決める。
 アイデアにまとめたものが『ちゃんと実装できる』か、の目処をつける。
 
-Day3で「実装」「発表の準備」などの作業できる時間は[約4時間半しかない](https://github.com/protoout/h-protoout/tree/main?tab=readme-ov-file#%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3)、、、（Day3の作業時間：9:00-12:00、13:00-14:30）
+Day3で「実装」「発表の準備」などの作業できる時間は[約4時間半しかない](https://github.com/protoout/h-protoout/tree/main?tab=readme-ov-file#%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3)のです、、、
+（Day3の作業時間：9:00-12:00、13:00-14:30）
 
 
 <br>
