@@ -112,10 +112,10 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 AIハンズオンのどれかをやってみましょう
   
-#### 3-1. [OpenAIのノードをつかってみよう simple gtpノードでAPIから取得したデータを翻訳](./lesson03-handson/A-1_openai-node-gtp.md)
-          → 生成 AI のノードを利用：テキストを解析し翻訳しよう
-#### 3-2. [OpenAIのノードをつかってみよう wisperを使って、音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
-          → 生成 AI  のノードを利用：音声でLEDを操作しよう
+#### 3-1. [生成 AI のノードを利用してみよう：テキストを解析し翻訳する](./lesson03-handson/A-1_openai-node-gtp.md)
+           
+#### 3-2. [生成 AI  のノードを利用してみよう：音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
+           
 #### 3-3. [Teachable Machine を使って画像分析モデルをつくろう](./lesson03-handson/A-3_teachable-machine.md)
 > [!CAUTION]
 > ↑ノードのUI変わってる、注意
