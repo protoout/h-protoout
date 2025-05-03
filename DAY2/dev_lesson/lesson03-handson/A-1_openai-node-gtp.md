@@ -85,9 +85,12 @@ APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74
  
 2. `templateノード`を入れて図のように設定
 
-<a href="https://gyazo.com/c887e59783abb098f19af7c7a6c3e9b4"><img src="https://i.gyazo.com/c887e59783abb098f19af7c7a6c3e9b4.gif" alt="Image from Gyazo" width="600"/></a>
+![image](https://github.com/user-attachments/assets/862acd9f-7e53-4c2b-ba43-34ba4cab84ae)
 
-※同様のことはchangeノードでもできますが、この後翻訳してもらうプロンプトをいれるのでtemplateノードを使います。
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/1e93b54c-6b44-4ff0-8592-e33801f1f618" />
+
+
+※同様のことはchangeノードでもできますが、この後翻訳してもらうプロンプトをいれるので`templateノード`を使います。
 
 
 - templateの中身
@@ -104,27 +107,23 @@ APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74
 
 
 ```json
-{"copyright":"Sergio Eguivar",
-"date":"2024-05-14",
-"explanation":"For the mostly harmless denizens of planet Earth, the brighter stars of open cluster NGC 2169 seem to form a cosmic 37. Did you expect 42? From our perspective, the improbable numerical asterism appears solely by chance. It lies at an estimated distance of 3,300 light-years toward the constellation Orion. As far as galactic or open star clusters go, NGC 2169 is a small one, spanning about 7 light-years.  Formed at the same time from the same cloud of dust and gas, the stars of NGC 2169 are only about 11 million years old. Such clusters are expected to disperse over time as they encounter other stars, interstellar clouds, and experience gravitational tides while hitchhiking through the galaxy. Over four billion years ago, our own Sun was likely formed in a similar open cluster of stars.   Gallery: Earth Aurora from Solar Active Region 3664",
-"hdurl":"https://apod.nasa.gov/apod/image/2405/NGC2169LRGBQHY183HR.jpg","media_type":"image","service_version":"v1",
-"title":"The 37 Cluster",
-"url":"https://apod.nasa.gov/apod/image/2405/NGC2169LRGBQHY183HR_c1024.jpg"}
+{"date":"2025-05-03","explanation":"Like Earth's moon, Saturn's largest moon Titan is locked in synchronous rotation with its planet. This mosaic of images recorded by the Cassini spacecraft in May of 2012 shows its anti-Saturn side, the side always facing away from the ringed gas giant. The only moon in the solar system with a dense atmosphere, Titan is the only solar system world besides Earth known to have standing bodies of liquid on its surface and an earthlike cycle of liquid rain and evaporation. Its high altitude layer of atmospheric haze is evident in the Cassini view of the 5,000 kilometer diameter moon over Saturn's rings and cloud tops. Near center is the dark dune-filled region known as Shangri-La. The Cassini-delivered Huygens probe rests below and left of center, after the most distant landing for a spacecraft from Earth.","hdurl":"https://apod.nasa.gov/apod/image/2505/PIA19642Titan.jpg","media_type":"image","service_version":"v1","title":"Titan: Moon over Saturn","url":"https://apod.nasa.gov/apod/image/2505/PIA19642Titan1024.jpg"}
 ```
 
 3. 試してみる
-NASA APIノードにつながっているinjectをクリックして、何かしらChatGPTから返答があれば成功です。
+NASA APIノードにつながっている`injectノード`をクリックして、何かしら返答があれば成功です。
 
-<a href="https://gyazo.com/180602272ae846e9b85216847db6d53d"><img src="https://i.gyazo.com/180602272ae846e9b85216847db6d53d.png" alt="Image from Gyazo" width="337"/></a>
+![image](https://github.com/user-attachments/assets/2a31953d-d940-4fda-a464-ff9fbe06af82)
+
 
 送ったテキスト情報に対して、ChatGPTが適当にコメントしています。
 
 
-4. templateノードのプロンプトを書き足す
+4. `templateノード`のプロンプトを書き足す
 
-翻訳してほしいので、templateノードのプロンプトを書き足しましょう。
+翻訳してほしいので、`templateノード`のプロンプトを書き足しましょう。
 
-templateノードの中身
+`templateノード`の中身
 
 ```
 次の文章を日本語に翻訳してください
@@ -136,7 +135,7 @@ templateノードの中身
 
 もう一度NASA APIノードにつながっているinjectをクリックして、日本語に翻訳された文章が返ってくれば成功です！
 
-<a href="https://gyazo.com/98b155f5148d662a79eb1fe7ee7fe075"><img src="https://i.gyazo.com/98b155f5148d662a79eb1fe7ee7fe075.png" alt="Image from Gyazo" width="337"/></a>
+<img width="325" alt="image" src="https://github.com/user-attachments/assets/eddd0c71-ed92-4d0f-a1c2-d8dfb26b68dc" />
 
 
 6. プロンプトを変えてみよう
@@ -149,7 +148,7 @@ templateノードの中身
 ※APIキー等は自分で入れてください
 
 ```JSON
-[{"id":"e5ce054a849ab482","type":"inject","z":"2e35bc2966601a96","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":120,"y":260,"wires":[["96467f0d9dfe631e"]]},{"id":"96467f0d9dfe631e","type":"change","z":"2e35bc2966601a96","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"こんにちは〜〜","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":300,"y":260,"wires":[["fb8c0d4bcc23f5c7"]]},{"id":"af610739720244cb","type":"debug","z":"2e35bc2966601a96","name":"debug 18","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":680,"y":260,"wires":[]},{"id":"fb8c0d4bcc23f5c7","type":"simple-chatgpt","z":"2e35bc2966601a96","name":"","Token":"【OpenAI APIキー】","Model":"","SystemSetting":"","functions":"","functionsType":"str","function_call":"auto","function_callType":"str","x":520,"y":260,"wires":[["af610739720244cb"]]},{"id":"45edf3530a1ccca6","type":"inject","z":"2e35bc2966601a96","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":120,"y":80,"wires":[["c7fc2eaae4424f10"]]},{"id":"c7fc2eaae4424f10","type":"http request","z":"2e35bc2966601a96","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://api.nasa.gov/planetary/apod?api_key=【NASA API キー】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":310,"y":80,"wires":[["9d1ecf939443eef7","4bf97be4f7e96fca"]]},{"id":"9d1ecf939443eef7","type":"debug","z":"2e35bc2966601a96","name":"debug 19","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":500,"y":80,"wires":[]},{"id":"4bf97be4f7e96fca","type":"template","z":"2e35bc2966601a96","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"次の文章を日本語に翻訳してください\n{{payload.explanation}}","output":"str","x":400,"y":160,"wires":[["fb8c0d4bcc23f5c7"]]}]
+[{"id":"f2e4abc3d7d1caf1","type":"debug","z":"80cc5966bb5f04f3","name":"debug 1","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":640,"y":420,"wires":[]},{"id":"c06c6fb594e705d1","type":"template","z":"80cc5966bb5f04f3","name":"text","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"{\n    \"model\": \"gpt-4o\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": [\n                {\n                    \"type\": \"text\",\n                    \"text\": \"{{payload}}\"\n                }\n            ]\n        }\n    ]\n}","output":"json","x":310,"y":340,"wires":[["50359df604c29384"]]},{"id":"e471c3982268182a","type":"http request","z":"80cc5966bb5f04f3","name":"","method":"POST","ret":"obj","paytoqs":"ignore","url":"https://models.inference.ai.azure.com/chat/completions","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":230,"y":420,"wires":[["ad4fa64835e6684e"]]},{"id":"ad4fa64835e6684e","type":"change","z":"80cc5966bb5f04f3","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"payload.choices[0].message.content","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":460,"y":420,"wires":[["f2e4abc3d7d1caf1"]]},{"id":"62ef9823b7358312","type":"inject","z":"80cc5966bb5f04f3","name":"","props":[{"p":"payload"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"日立とは","payloadType":"str","x":120,"y":340,"wires":[["c06c6fb594e705d1"]]},{"id":"50359df604c29384","type":"change","z":"80cc5966bb5f04f3","name":"トークン設定","rules":[{"t":"set","p":"headers.Authorization","pt":"msg","to":"\"Bearer \" & $env(\"GITHUB_TOKEN\")\t","tot":"jsonata"}],"action":"","property":"","from":"","to":"","reg":false,"x":480,"y":340,"wires":[["e471c3982268182a"]]},{"id":"7bec5e59c8e5182f","type":"comment","z":"80cc5966bb5f04f3","name":"GPT-4o","info":"","x":90,"y":280,"wires":[]},{"id":"45edf3530a1ccca6","type":"inject","z":"80cc5966bb5f04f3","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":140,"y":160,"wires":[["c7fc2eaae4424f10"]]},{"id":"c7fc2eaae4424f10","type":"http request","z":"80cc5966bb5f04f3","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://api.nasa.gov/planetary/apod?api_key=fB2kAp3KcarDdMYrqWtDvGeD2rrTBobafYOXz30V","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":370,"y":160,"wires":[["7fa1da8e840d8ef5","9d1ecf939443eef7"]]},{"id":"9d1ecf939443eef7","type":"debug","z":"80cc5966bb5f04f3","name":"debug 19","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":800,"y":160,"wires":[]},{"id":"1c11b2728bfabc7a","type":"comment","z":"80cc5966bb5f04f3","name":"NASA API (API Key は書きかえてください！)","info":"","x":210,"y":100,"wires":[]},{"id":"7fa1da8e840d8ef5","type":"template","z":"80cc5966bb5f04f3","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"次の文章を日本語に翻訳してください\n{{payload.explanation}}","output":"str","x":420,"y":240,"wires":[["c06c6fb594e705d1"]]}]
 
 ```
 [^1]: [GitHub Models でどんなモデルが使えるか？](https://github.com/marketplace?type=models)
