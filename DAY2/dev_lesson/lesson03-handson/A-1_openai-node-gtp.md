@@ -10,32 +10,20 @@ Node-RED の中で ChatGPT を使い、サービスに簡単に生成AIを組み
 
 これにより、ニュースの API から取得した情報を要約して送信したり、人間らしい反応を返すチャットボットを作ったり、さまざまなことが可能になります。
 
-OpenAIのノード（[OpenAI API](https://openai.com/index/openai-api/)をNode-REDで簡単に扱えるノード）を使い、Node-REDのフローに生成AIを組み込んで API で取得した文章を日本語に翻訳してみましょう！
+GitHub Models をNode-REDで簡単に扱えるノード）を使い、Node-RED のフローに生成 AIを組み込んで API で取得した文章を日本語に翻訳してみましょう！
+
+> [!NOTE]
+> GitHub Models[^1] は GPT-4o、Llama 3.1、Phi-3、Mistral Large 2などの最新の大規模言語モデル（LLM）を、GitHub上で無料で試すことができます。また、それらのモデルを、簡単にCodespacesに取り込み、コード生成や推論を行うことができます。
+> GitHub のアカウントがあれば API キーや複雑な設定なしで、複数の LLM を試すことができるため、今回はこちらから GPT-4o を使っていきます。
+> <img width="919" alt="image" src="https://github.com/user-attachments/assets/6ed3779d-2214-471f-ba06-0dddf9319279" />
+
 
 
 ## 2.やってみよう
 
-### 1-0 タブを追加し、停止用ノードを読み込む
-前回のおさらいとなります。
+### 2-1 NASA の API の情報を取得するところまで作る
 
-
-1. +ボタンを押し、新しくできたタブをダブルクリック
-<img src="https://i.gyazo.com/bfad18055e1a4119eed4b11e5d1dfad9.png" alt="Image from Gyazo" width="500"/>
-
-
-2. タブの名前を「obniz-LED」など、わかりやすく編集してください。
-<img src="https://i.gyazo.com/19ccf6eaf3e5083bd0c978bf419c61a0.png" alt="Image from Gyazo" width="500"/>
-
-3. 停止用ノードを読み込む
-
-[停止用ノードはこちら](https://qiita.com/n0bisuke/items/28d44edc290a0dddc8b0)
-
-準備ができたら早速始めていきます！
-
-
-### 1-1 NASA の API の情報を取得するところまで作る
-
-1. NASA APIの情報取得ができるようにする
+NASA API の情報取得ができるようにします。[こちら]()の演習でもやりましたね。
 
 下記を Node-RED で読み込んでください。
 
@@ -47,72 +35,55 @@ APIキーは[こちらの資料](https://docs.google.com/spreadsheets/d/1G1lZX74
 
 ```json
 
-[{"id":"45edf3530a1ccca6","type":"inject","z":"2e35bc2966601a96","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":120,"y":80,"wires":[["c7fc2eaae4424f10"]]},{"id":"c7fc2eaae4424f10","type":"http request","z":"2e35bc2966601a96","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://api.nasa.gov/planetary/apod?api_key=【APIキー】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":310,"y":80,"wires":[["9d1ecf939443eef7"]]},{"id":"9d1ecf939443eef7","type":"debug","z":"2e35bc2966601a96","name":"debug 19","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":500,"y":80,"wires":[]}]
+[{"id":"45edf3530a1ccca6","type":"inject","z":"80cc5966bb5f04f3","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":200,"y":180,"wires":[["c7fc2eaae4424f10"]]},{"id":"c7fc2eaae4424f10","type":"http request","z":"80cc5966bb5f04f3","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://api.nasa.gov/planetary/apod?api_key=【APIキー】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":390,"y":180,"wires":[["9d1ecf939443eef7"]]},{"id":"9d1ecf939443eef7","type":"debug","z":"80cc5966bb5f04f3","name":"debug 19","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":580,"y":180,"wires":[]},{"id":"1c11b2728bfabc7a","type":"comment","z":"80cc5966bb5f04f3","name":"NASA API (API Key は書きかえてください！)","info":"","x":270,"y":120,"wires":[]}]
 
 ```
 
-### 1-1 NodeRed 
+### 2-2 GPT-4o のノードをインストールする
 
-### 1-1 Node-REDにsimple-chatgptのノードをインストールする
+下記を Node-RED で読み込んでください。
 
-1. Node-REDの右上のメニュー（三本線）からパレットの管理を選びます。
-   
-   <a href="https://gyazo.com/87c62740eab97d764bacb3d3deb08c2d"><img src="https://i.gyazo.com/87c62740eab97d764bacb3d3deb08c2d.png" alt="Image from Gyazo" width="372"/></a>
+■ 読み込み用JSONはこちら
 
-2. 「ノードを追加」をクリックし、ノードの名前で検索してください。
+```JSON
+[{"id":"62cd806820605559","type":"debug","z":"4ff87a6ea45ce30a","name":"debug 1","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":620,"y":200,"wires":[]},{"id":"3078eb36016e146b","type":"template","z":"4ff87a6ea45ce30a","name":"text","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"{\n    \"model\": \"gpt-4o\",\n    \"messages\": [\n        {\n            \"role\": \"user\",\n            \"content\": [\n                {\n                    \"type\": \"text\",\n                    \"text\": \"{{{payload}}}\"\n                }\n            ]\n        }\n    ]\n}","output":"json","x":290,"y":120,"wires":[["2e7ddb8620f61517"]]},{"id":"aff805d8e7597301","type":"http request","z":"4ff87a6ea45ce30a","name":"","method":"POST","ret":"obj","paytoqs":"ignore","url":"https://models.inference.ai.azure.com/chat/completions","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":250,"y":200,"wires":[["e98164dd6193cb47"]]},{"id":"e98164dd6193cb47","type":"change","z":"4ff87a6ea45ce30a","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"payload.choices[0].message.content","tot":"msg"}],"action":"","property":"","from":"","to":"","reg":false,"x":440,"y":200,"wires":[["62cd806820605559"]]},{"id":"abb7f959c1258ad9","type":"inject","z":"4ff87a6ea45ce30a","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"日立とは","payloadType":"str","x":140,"y":120,"wires":[["3078eb36016e146b"]]},{"id":"2e7ddb8620f61517","type":"change","z":"4ff87a6ea45ce30a","name":"トークン設定","rules":[{"t":"set","p":"headers.Authorization","pt":"msg","to":"\"Bearer \" & $env(\"GITHUB_TOKEN\")\t","tot":"jsonata"}],"action":"","property":"","from":"","to":"","reg":false,"x":460,"y":120,"wires":[["aff805d8e7597301"]]},{"id":"87bd5b2f2f6924db","type":"comment","z":"4ff87a6ea45ce30a","name":"GPT-4o","info":"","x":110,"y":60,"wires":[]}]
+```
 
-**インポートするノードはこれ**
-   - [node-red-contrib-simple-chatgpt](https://flows.nodered.org/node/node-red-contrib-simple-chatgpt)
+まずは、デプロイして`injectノード`からこちらのフローを実行してみましょう。  
+右側のサイドバーを虫のマーク(debug)にすると、「日立とは」という問いに対する GPT-4o の回答を確認できます。生成には5秒ほどかかるかもしれません。  
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/129ecb30-eb3d-479a-87dd-259cfdf661c4" />
 
-
-3. 同じ名前のノードを見つけたら「ノードを追加」をクリックしてください。
-
-### 1-2 simple-chatgptノードを使ってみよう
-
-4つのノードを置き、図のようにつなぎます。
-
-- inject
-- change
-- simple-chatgpt
-- debug
-
-<a href="https://gyazo.com/99680f7ab8c4b42eb871dea41c7d01c6"><img src="https://i.gyazo.com/99680f7ab8c4b42eb871dea41c7d01c6.gif" alt="Image from Gyazo" width="600"/></a>
+`inject ノード`のテキストを変えることで、色々な質問ができます。  
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/e158433a-9f33-4f01-90b3-90055162d1ce" />
 
 
-changeとsimple-chatgptをこのように設定してください。
-simple-chatgptはAPIキーを入力します。
-[授業で使う情報リスト](https://docs.google.com/spreadsheets/d/1G1lZX74bEyMyo9YwId6vUD_SVOj3IZyTHnGBUc8hsVs/edit#gid=0)の「OpenAI」行の「keyなど」にある`sk-`で始まる文字列をコピーして貼り付けてください。
+全体では現在このようなフローになっていればOKです！
 
-<a href="https://gyazo.com/2770b4714ff7000ac78114bc2d2df896"><img src="https://i.gyazo.com/2770b4714ff7000ac78114bc2d2df896.gif" alt="Image from Gyazo" width="600"/></a>
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/a96edfb3-0cf1-4050-9844-e3ca11bc6a79" />
 
 
-デプロイして、injectのボタンをクリックし、ChatGPTから返答があれば成功です！
-<a href="https://gyazo.com/2340a26edf8451c86594e43281c620dc"><img src="https://i.gyazo.com/2340a26edf8451c86594e43281c620dc.png" alt="Image from Gyazo" width="1287"/></a>
 
-
-### 1-3 simple-chatgptノードでNASA APIの文章を翻訳する
+### 2-3 2つのフローをつなげて NASA のデータを翻訳してみよう
 
 では、今まで作ったフローをつなげて、NASA APIの情報を日本語にしてみましょう！
 
-1. 試しにNASA APIのレスポンスとsimple-chatgptをつなげてみる
+1. 試しに NASA API のレスポンスと GPT-4o をつなげてみる
 
-<a href="https://gyazo.com/285e7d3b8c9c6264d9183132fa6acd58"><img src="https://i.gyazo.com/285e7d3b8c9c6264d9183132fa6acd58.png" alt="Image from Gyazo" width="500"/></a>
+このように NASA API のレスポンスをそのまま渡してみます。
+![image](https://github.com/user-attachments/assets/d8fbc56c-6323-4c69-803e-c61e12786412)
+
 
 エラーが出ました。
 
 ```
-"400, "Invalid type for 'messages[0].content': expected one of a string or array of objects, but got an object instead.""
+"RequestError: read ECONNRESET : https://models.inference.ai.azure.com/chat/completions"
 
 ```
-
-「データの型が無効です。文字列または配列は受け付けてるけど、そうじゃないものが来ました。」
-
-と、言っています。
-
-APIから送られてきたJSONデータそのままは受け付けないようです。
-
-
-2. templateノードを入れて図のように設定
+これは接続に失敗したということです。データの渡し方が良くなかったです。
+はじめは「日立とは」というテキストを渡したのに対し、今回は NASA API のレスポンスで得た JSON をそのまま渡してしまいました。
+テキスト形式にして GPT-4o に渡しましょう。
+ 
+2. `templateノード`を入れて図のように設定
 
 <a href="https://gyazo.com/c887e59783abb098f19af7c7a6c3e9b4"><img src="https://i.gyazo.com/c887e59783abb098f19af7c7a6c3e9b4.gif" alt="Image from Gyazo" width="600"/></a>
 
@@ -181,7 +152,7 @@ templateノードの中身
 [{"id":"e5ce054a849ab482","type":"inject","z":"2e35bc2966601a96","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":120,"y":260,"wires":[["96467f0d9dfe631e"]]},{"id":"96467f0d9dfe631e","type":"change","z":"2e35bc2966601a96","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"こんにちは〜〜","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":300,"y":260,"wires":[["fb8c0d4bcc23f5c7"]]},{"id":"af610739720244cb","type":"debug","z":"2e35bc2966601a96","name":"debug 18","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"false","statusVal":"","statusType":"auto","x":680,"y":260,"wires":[]},{"id":"fb8c0d4bcc23f5c7","type":"simple-chatgpt","z":"2e35bc2966601a96","name":"","Token":"【OpenAI APIキー】","Model":"","SystemSetting":"","functions":"","functionsType":"str","function_call":"auto","function_callType":"str","x":520,"y":260,"wires":[["af610739720244cb"]]},{"id":"45edf3530a1ccca6","type":"inject","z":"2e35bc2966601a96","name":"","props":[{"p":"payload"},{"p":"topic","vt":"str"}],"repeat":"","crontab":"","once":false,"onceDelay":0.1,"topic":"","payload":"","payloadType":"date","x":120,"y":80,"wires":[["c7fc2eaae4424f10"]]},{"id":"c7fc2eaae4424f10","type":"http request","z":"2e35bc2966601a96","name":"","method":"GET","ret":"obj","paytoqs":"ignore","url":"https://api.nasa.gov/planetary/apod?api_key=【NASA API キー】","tls":"","persist":false,"proxy":"","insecureHTTPParser":false,"authType":"","senderr":false,"headers":[],"x":310,"y":80,"wires":[["9d1ecf939443eef7","4bf97be4f7e96fca"]]},{"id":"9d1ecf939443eef7","type":"debug","z":"2e35bc2966601a96","name":"debug 19","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":500,"y":80,"wires":[]},{"id":"4bf97be4f7e96fca","type":"template","z":"2e35bc2966601a96","name":"","field":"payload","fieldType":"msg","format":"handlebars","syntax":"mustache","template":"次の文章を日本語に翻訳してください\n{{payload.explanation}}","output":"str","x":400,"y":160,"wires":[["fb8c0d4bcc23f5c7"]]}]
 
 ```
-
+[^1]: [GitHub Models でどんなモデルが使えるか？](https://github.com/marketplace?type=models)
 ---
 
 **[◀ 目次ページに戻る](../readme.md)**
