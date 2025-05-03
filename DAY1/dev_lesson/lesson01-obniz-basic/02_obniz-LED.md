@@ -60,7 +60,7 @@ obniz本体やパーツが熱くなっている場合があります。取り外
 > <img width="60%" alt="image" src="https://github.com/user-attachments/assets/4e3e9f5c-b66b-4d95-88e5-41461d23e2c4" />
 
 > [!TIP]
-> 上記のようにノードを整理するために `commentノード`も使いましょう
+> 上記のようにノードを整理するために `commentノード`も使いましょう  
 > <img width="387" alt="image" src="https://github.com/user-attachments/assets/043ec15d-4ca4-442a-8416-34d436f0d283" />
 
 
