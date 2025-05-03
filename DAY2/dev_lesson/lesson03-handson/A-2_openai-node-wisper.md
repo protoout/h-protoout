@@ -29,17 +29,7 @@
 <a href="https://gyazo.com/a8a6a8620c51ab73074bbf27457d96dc"><img src="https://i.gyazo.com/a8a6a8620c51ab73074bbf27457d96dc.png" alt="Image from Gyazo" width="316"/></a>
 
 
-1. ノードをインストール
-
-- node-red-contrib-browser-utils
-
-をインストールしてください。
-
-<img src="https://i.gyazo.com/3239a2d14644f8ceabb85272b301fd0a.png" width="500">
-
-<a href="https://gyazo.com/72092e7988133a600204852c2a333556"><img src="https://i.gyazo.com/72092e7988133a600204852c2a333556.png" alt="Image from Gyazo" width="500"/></a>
-
-2. microphoneノードとdebugノードをと配置し、つなげる
+1. microphoneノードとdebugノードをと配置し、つなげる
 
 <a href="https://gyazo.com/84a2312a7357e62802b00a803036f722"><img src="https://i.gyazo.com/84a2312a7357e62802b00a803036f722.gif" alt="Image from Gyazo" width="500"/></a>
 
@@ -54,50 +44,10 @@ microphoneノードのボタンを押すと録音開始、もう一度押すと�
 
 ## 3.やってみよう
 
-### 1-0 タブを追加し、停止用ノードを読み込む
-前回のおさらいとなります。
 
+### 1-1 話した言葉を文字列に変換するパートをつくる
 
-1. +ボタンを押し、新しくできたタブをダブルクリック
-<img src="https://i.gyazo.com/bfad18055e1a4119eed4b11e5d1dfad9.png" alt="Image from Gyazo" width="500"/>
-
-
-2. タブの名前を「obniz-LED」など、わかりやすく編集してください。
-<img src="https://i.gyazo.com/19ccf6eaf3e5083bd0c978bf419c61a0.png" alt="Image from Gyazo" width="500"/>
-
-3. 停止用ノードを読み込む
-
-[停止用ノードはこちら](https://qiita.com/n0bisuke/items/28d44edc290a0dddc8b0)
-
-
-
-準備ができたら早速始めていきます！
-
-
-
-### 1-1 Node-REDに2つのノードをインストールする
-
-- node-red-contrib-simple-chatgpt
-- node-red-contrib-simple-whisper
-
-1. Node-REDの右上のメニュー（三本線）からパレットの管理を選びます。
-   
-   <a href="https://gyazo.com/87c62740eab97d764bacb3d3deb08c2d"><img src="https://i.gyazo.com/87c62740eab97d764bacb3d3deb08c2d.png" alt="Image from Gyazo" width="372"/></a>
-
-2. 「ノードを追加」をクリックし、ノードの名前で検索してください。
-
-**インポートするノードはこの2つ**
-   - node-red-contrib-simple-chatgpt
-   - node-red-contrib-simple-whisper
-
-
-3. 同じ名前のノードを見つけたら「ノードを追加」をクリックしてください。
-
-
-
-### 1-2 話した言葉を文字列に変換するパートをつくる
-
-1. simple-wisperノードを追加し設定してください
+1. GPT-4oノードを追加し設定してください
 
 <a href="https://gyazo.com/0713b48f4f36b4eb29c9e367370a870d"><img src="https://i.gyazo.com/0713b48f4f36b4eb29c9e367370a870d.gif" alt="Image from Gyazo" width="500"/></a>
 
