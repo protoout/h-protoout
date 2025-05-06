@@ -114,7 +114,7 @@ AIハンズオンのどれかをやってみましょう
   
 #### 3-1. [生成 AI のノードを利用してみよう：テキストを解析し翻訳する](./lesson03-handson/A-1_openai-node-gtp.md)
            
-#### 3-2. [生成 AI  のノードを利用してみよう：音声でLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
+#### 3-2. [生成 AI  のノードを利用してみよう：画像を解析しLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
            
 #### 3-3. [Teachable Machine を使って画像分析モデルをつくろう](./lesson03-handson/A-3_teachable-machine.md)
 > [!CAUTION]
