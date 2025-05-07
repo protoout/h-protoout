@@ -122,10 +122,6 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 - [明るさによってサーボーモーターの動きを変えよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-servo-cds)
   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/ac7b4f5c-0997-47ca-af70-f8e419bcc3ff" />
->    
-> ソーラーパネルは効率的に太陽光エネルギーを回収するために照度に合わせてパネルの角度を変える仕組みになっていると言われています。
-> その他にも、スマートブラインド[^5]などにも同様の仕組みが使われています。
 
 目安時間：20分
   
@@ -133,11 +129,7 @@ obniz Board と Node-RED の2つを使える状態にします。
   
 #### 3-3. 応用課題： 熱中症予防[^6]  
 
-- [気温の高さに応じて、警戒レベルをLEDの光で表そう](https://github.com/protoout/h-protoout/blob/main/tools/tutorials/01_temp_led.md)
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/934a87cb-f7bb-4bbe-9ad1-f0f08536a3cc" />
->   
-> デジタル温湿度計にはこのような温湿度センサーが搭載されています。  
-> なお、本格的な熱中症計は、太陽の陽ざしや地面からの照り返しなどの輻射熱を測るために、黒球と呼ばれる黒い球で温度を測っています[^6]
+- [気温の高さに応じて、警戒レベルをLEDの光で表そう](https://github.com/protoout/h-protoout/blob/main/tools/tutorials/01_temp_led.md)  
 
 目安時間：20分
   
