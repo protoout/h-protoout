@@ -143,31 +143,4 @@ AIハンズオンのどれかをやってみましょう
 **[◀ 目次ページに戻る](./readme.md)**
 
 ----  
-----  
 
-
-
-
-> [!CAUTION]
-> 避難中↓
-
-1. [今日の授業の進め方](./day2-overview.md)
-2. [Node-RED環境について](./env.md)
-3. [新しいobnizのWi-Fi設定について](./obniz-wifi.md)
-4. よく使う資料をまとめました
-    - [制作に役立つ道具集ページ](../../tools/)
-        - [パーツマニュアル](../../tools/parts-manual)
-5. [DAY2の演習中に待ち時間があったら進めてほしいこと](../day2-sukima.md)
-6. DAY1の振り返りなど
-
-- A-4. [GPT-4oを使ってアプリケーション開発](./lesson03-handson/A-4_gpt4o.md)
-
-
-### 3-3. おまけ。さらに時間がある人でAIをさらに使ってみたい人
-
-ただしC群のハンズオンは環境的にやれない人がいるかもしれないのであくまでもおまけコンテンツです。
-- C-1. [SunoAIを使って初めての作詞作曲](https://note.com/n0bisuke/n/n0f1d5a2a6c8f)
-    - ChatGPTとSunoAIで作詞作曲をしてみましょう。
-- C-2. [GPTsでオリジナルChatGPTを作成](https://zenn.dev/n0bisuke/books/gpts-handson-book/viewer/1-2_what-is-gpt)
-    - GPTsというオリジナルChatGPTを作れる機能のハンズオンです。
-    - 今までは有償機能でしたが、5/13のリリースで無料ユーザーにも解放されたらしいです。（無料の人は使うだけらしいけど、ユーザーによってまだ解放されてないかもしれません。）
