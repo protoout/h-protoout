@@ -129,7 +129,7 @@ obniz Board と Node-RED の2つを使える状態にします。
   
 #### 3-3. 応用課題： 熱中症予防[^6]  
 
-- [気温の高さに応じて、警戒レベルをLEDの光で表そう](https://github.com/protoout/h-protoout/blob/main/tools/tutorials/01_temp_led.md)  
+- [気温の高さに応じて、警戒レベルをLEDの光で表そう]((./lesson03-obniz-advanced/combine_trafficlight_temp.mdd))  
 
 目安時間：20分
   
