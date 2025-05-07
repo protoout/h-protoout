@@ -16,7 +16,7 @@
 <a href="https://gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc"><img src="https://i.gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc.gif" alt="Image from Gyazo" width="450"/></a>
 
   
-### 1. 温湿度センサーの値を取得できるようにする
+## 1. 温湿度センサーの値を取得できるようにする
 
 こちらを参考に温湿度の値を取れるところまで進めてください。  
 #### ■[温湿度センサーのマニュアル](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/sensor-temp-hum-dht20)
@@ -24,7 +24,7 @@
 <a href="https://gyazo.com/19e6853559ea5c1354c612a188e7dc18"><img src="https://i.gyazo.com/19e6853559ea5c1354c612a188e7dc18.png" alt="Image from Gyazo" width="450"/></a>
 
 
-### 2. 暑さ指数WBGTの計算式  
+## 2. 暑さ指数WBGTの計算式  
 
 **暑さ指数（WBGT（湿球黒球温度）：Wet Bulb Globe Temperature）**を温度と湿度から簡易的に計算する方法をつかいます。**  
 [こちら](https://bokunimo.net/blog/ichigo-jam/29/)の記事には**WBGTを簡易的に求める類似式**が掲載されています。
@@ -40,7 +40,7 @@ Ta=室温（℃）、RH=相対湿度（%）
 `obniz-functionノード`の中でこの式に温湿度センサーの値を入れて計算し、結果を出力するようにします。
 
 
-### 3. 暑さ指数WBGTの計算をfunctionノードでできるようにする
+## 3. 暑さ指数WBGTの計算をfunctionノードでできるようにする
 
 まずは`obniz-functionノード`を追加。
 
@@ -92,11 +92,11 @@ return msg; // メッセージを返す
 <a href="https://gyazo.com/edfcd36252a75692b525347577b7005b"><img src="https://i.gyazo.com/edfcd36252a75692b525347577b7005b.png" alt="Image from Gyazo" width="450"/></a>  
 
 
-### 4. LED信号を光らせる  
+## 4. LED信号を光らせる  
   
 資料を参考に、`injectノード`をクリックするとLEDを赤く光るところまで進めてください。
 
-■#### [インジケーター: パトランプ](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/indicator-traffic-light)  
+#### ■ [インジケーター: パトランプ](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/indicator-traffic-light)  
 ただし、0〜3番ピンは温湿度センサーで使っているため、信号LEDは8〜11番ピンに刺し、の初期化処理コードも書き換えてください。
 
 ■ 初期化処理コードの書き換え
@@ -110,7 +110,7 @@ obnizParts.light = obniz.wired("Keyestudio_TrafficLight", {gnd:8, green:9, yello
 <a href="https://gyazo.com/fcdf401150b535daed415581192921fb"><img src="https://i.gyazo.com/fcdf401150b535daed415581192921fb.png" alt="Image from Gyazo" width="450"/></a>
 
   
-### 5. 取得したデータ判定し、下記のようにLED信号を使って表示させましょう。
+## 5. 取得したデータ判定し、下記のようにLED信号を使って表示させましょう。
 
 暑さ指数(WBGT)[^2]  
 - 危険: 31以上 **→red**
@@ -141,7 +141,7 @@ obnizParts.light = obniz.wired("Keyestudio_TrafficLight", {gnd:8, green:9, yello
 
 　　
 
-### 6. 動作を確かめる
+## 6. 動作を確かめる
 
 さあ、動かしてみましょう。　　
 <br>
@@ -168,7 +168,7 @@ WBGTの数字のみをswitchに入力しなければなりませんが、今は*
 <a href="https://gyazo.com/3c062387b7b8814f3686ab16a8f481f0"><img src="https://i.gyazo.com/3c062387b7b8814f3686ab16a8f481f0.gif" alt="Image from Gyazo" width="450"/></a>
 
   
-### 7. 動作を確かめる！
+## 7. 動作を確かめる！
 
 もう一度デプロイして確かめましょう。  
 
