@@ -39,9 +39,11 @@ Webhook を使うことで、
 
 obniz Board のスイッチを押して、Teams に投稿するものを作ります。
 
-![image](https://github.com/user-attachments/assets/eddea5a2-c085-45f7-9d55-25bbb38baba7)
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/eddea5a2-c085-45f7-9d55-25bbb38baba7" />  
 
-<img src="https://i.gyazo.com/9c6ea27b073a3acdbf325a8a35c09dad.png" alt="Image Description" width="500"/>
+右のスイッチを押すと"right"と通知されます。    
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/b235a549-e01b-4b8c-a972-2fd5c1bb26c3" />
+
 
 
 
@@ -51,7 +53,7 @@ obniz Board のスイッチを押して、Teams に投稿するものを作り�
 
 1. `injectノード`、`http requestノード`、`debugノード`を追加し図のようにつなぐ
 
-<a href="https://gyazo.com/7d06640b02dbe05463a58a88481a182d"><img src="https://i.gyazo.com/7d06640b02dbe05463a58a88481a182d.png" alt="Image from Gyazo" width="500"/></a>
+<a href="https://gyazo.com/7d06640b02dbe05463a58a88481a182d"><img src="https://i.gyazo.com/7d06640b02dbe05463a58a88481a182d.png" alt="Image from Gyazo" width="450"/></a>
 
 2. `http request`ノードを図のように設定する。
 
@@ -61,7 +63,7 @@ URLには[こちら]()の Teams webhook の URL を入力してください。
 > ランスルーではこちらをつかいます
 > `https://prod-42.japaneast.logic.azure.com/workflows/b9f93af31f86427eab8c7271753d4b77/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=PhJpR2q-tXRG7AntX_hex1p5yIkS9iQ1o85E6zUIBsk`
 
-<img src="https://i.gyazo.com/6e48aee0cabc082df0fe1242df9e878f.png" alt="Image from Gyazo" width="500"/>
+<img src="https://i.gyazo.com/6e48aee0cabc082df0fe1242df9e878f.png" alt="Image from Gyazo" width="450"/>
 
 ■ メソッドについて
 
@@ -76,7 +78,7 @@ HTTPリクエスト（サーバーへの要求方法）にはいくつかの種�
 
 ほかにも、PUT/DELETEなどがあり、用途によって使い分けします。
 
-今回は Teams にメッセージを送信するため、POST を使います。
+今回は Teams にメッセージを送信するため、**POST** を使います。
   
 
 3. `templateノード`を使って送信するメッセージを作る
@@ -88,7 +90,7 @@ HTTPリクエスト（サーバーへの要求方法）にはいくつかの種�
 
 <a href="https://gyazo.com/57f6790f1191a08acb601ca2e99dfa5d"><img src="https://i.gyazo.com/57f6790f1191a08acb601ca2e99dfa5d.gif" alt="Image from Gyazo" width="500"/></a>
 
-なお、出力形式は`JSON`にします。
+なお、出力形式は`JSON`にします。  
 ![image](https://github.com/user-attachments/assets/729a5d41-089f-4a94-b9b2-ed647ed1fa43)
 
 
@@ -191,11 +193,11 @@ obniz Board のスイッチの状態によって、left, right, pushの3種類�
 
 ※ API キーが違うのでこのままでは使えません。あくまで例としてご理解ください。
 
-### 3. 他のセンサーと組み合わせて使ってみよう
+## 応用： 他のセンサーと組み合わせて使ってみよう
 
 
 - [熱中症アラートをつくろう](/tools/tutorials/01_temp_led.md)と組み合わせて、暑さ指数のレベルを Teams に通知して、みんなの熱中症を予防する
-- [CdS](/tools/parts-manual/sensor/cds.md)を自分のおやつの下に置いておき、誰かが取ったら Teams に通知するおやつ監視システム
+- [照度センサー(CdS)](/tools/parts-manual/sensor/cds.md)を自分のおやつの下に置いておき、誰かが取ったら Teams に通知するおやつ監視システム
 
 などなど...
 Teams への通知だけでも、プライベート・業務で色々なことができます。
