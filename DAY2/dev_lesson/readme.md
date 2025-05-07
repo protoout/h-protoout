@@ -114,8 +114,7 @@ AIハンズオンのどれかをやってみましょう
 #### 3-2. [生成 AI  のノードを利用してみよう：画像を解析しLEDを操作する](./lesson03-handson/A-2_openai-node-wisper.md)
            
 #### 3-3. [Teachable Machine を使って画像分析モデルをつくろう](./lesson03-handson/A-3_teachable-machine.md)
-> [!CAUTION]
-> ↑ノードのUI変わってる、注意
+
 ----  
 
 ## Lesson04 IoT プロトタイプを作ってみよう
