@@ -43,9 +43,9 @@
 
 プロンプトサンプルの[1.Node-REDのFunctionノードで使えるコードを生成](../../../tools/prompt-sample.md)のプロンプトをコピーして Effibot に投げてみましょう。
 
-今回は「距離センサーの値が300以下かどうかで処理を変えてみる」処理を試してみます。
-
-> <img src="https://i.gyazo.com/43947e8bdf8966239e6c518202bb1836.png" width="400px">
+今回は「距離センサーの値が300以下かどうかで処理を変えてみる」処理を試してみます。  
+  
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/af424be9-f06e-46b0-a058-6e01ba74ed78" />
 
 プログラムが生成されます。あっと言う間ですね。
 
