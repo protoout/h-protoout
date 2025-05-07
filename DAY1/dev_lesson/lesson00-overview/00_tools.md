@@ -13,12 +13,12 @@
 |給電用USBアダプタ| <img src="https://akizukidenshi.com/img/goods/L/117092.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)   |  obniz Board の給電をします | https://akizukidenshi.com/catalog/g/g117092/ |
 |LED赤、青(OSR6LU5B64A-5V,OSB5SA5B64A-5V)| <img src="https://akizukidenshi.com/img/goods/L/112519.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g112517/ <br> https://akizukidenshi.com/catalog/g/g112519/ |
 |パトランプ（KS0310）| <img src="https://ueeshop.ly200-cdn.com/u_file/UPAH/UPAH808/2108/products/14/69524b4790.jpg?x-oss-process=image/format,webp" width="150"><br>出典：[Keyestudio](https://www.keyestudio.com/products/keyestudio-traffic-light-module-black-and-eco-friendly-for-arduino) |             | https://www.keyestudio.com/products/keyestudio-traffic-light-module-black-and-eco-friendly-for-arduino |
-|温湿度センサ（DHT20）| <img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g116732/ |
-|カーボン抵抗（CFS50J330RB）| <img src="https://akizukidenshi.com/img/goods/L/107812.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g107812/ |
-|超音波距離センサー（HC-SR04）| <img src="https://akizukidenshi.com/img/goods/L/111009.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g111009/ |
-|照度センサー(CdSセル, MI527/MI5527)| <img src="https://akizukidenshi.com/img/goods/L/100110.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g100110/ |
 |サーボモーター（SG-90）| <img src="https://akizukidenshi.com/img/goods/L/108761.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g108761/ |
 |ブザー（PKM13EPYH4000-A0）| <img src="https://akizukidenshi.com/img/goods/L/104118.jpg" width="150"> <br>出典：[秋月電子通商](https://akizukidenshi.com/) |             | https://akizukidenshi.com/catalog/g/g104118/ |
+|超音波距離センサー（HC-SR04）| <img src="https://akizukidenshi.com/img/goods/L/111009.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g111009/ |
+|照度センサー(CdSセル, MI527/MI5527)| <img src="https://akizukidenshi.com/img/goods/L/100110.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g100110/ |
+|カーボン抵抗（CFS50J330RB）| <img src="https://akizukidenshi.com/img/goods/L/107812.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g107812/ |
+|温湿度センサ（DHT20）| <img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  |             | https://akizukidenshi.com/catalog/g/g116732/ |
 
 ---- 
 
