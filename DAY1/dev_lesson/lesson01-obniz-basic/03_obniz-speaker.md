@@ -4,7 +4,7 @@
 
 ## スピーカーをつけてみよう
 
-<a href="https://gyazo.com/c39a8d243cc56f5e5e788bcc05a68d57"><img src="https://i.gyazo.com/c39a8d243cc56f5e5e788bcc05a68d57.jpg" alt="Image from Gyazo" width="700"/></a>
+<a href="https://gyazo.com/c39a8d243cc56f5e5e788bcc05a68d57"><img src="https://i.gyazo.com/c39a8d243cc56f5e5e788bcc05a68d57.jpg" alt="Image from Gyazo" width="450"/></a>
 
 任意の高さの音を出すことができるスピーカーです。  
 「インジケーター」の1つで、これ1つでブザーやアラームといった通知系デバイスを作ることができます。
@@ -13,7 +13,7 @@
 
 ### 1. obniz Board での配線
 
-<a href="https://i.gyazo.com/76644dcdab7a2bc2b5b7a0149a2667cf"><img src="https://i.gyazo.com/76644dcdab7a2bc2b5b7a0149a2667cf.jpg" alt="Image from Gyazo" width="700"/></a>
+<a href="https://i.gyazo.com/76644dcdab7a2bc2b5b7a0149a2667cf"><img src="https://i.gyazo.com/76644dcdab7a2bc2b5b7a0149a2667cf.jpg" alt="Image from Gyazo" width="450"/></a>
 
 | 電子パーツの脚         | 接続先         |
 |--------------|---------------|
@@ -33,9 +33,8 @@ obnizの0番と1番の端子に差し込みます。(LED は obniz Board のデ�
 - `changeノード`
 - `obniz-functionノード`
 - `debugノード`
-
-![image](https://github.com/user-attachments/assets/13e0292e-ed13-4964-ae09-29432815ad0e)
-
+  
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/13e0292e-ed13-4964-ae09-29432815ad0e" />
 
 ### 3. 初期化処理コードの編集
 
@@ -52,8 +51,8 @@ obnizParts.Speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
 
 msg.payloadを「数値」「500」（数字は任意で変更してください。単位はヘルツ。）
 
-![image](https://github.com/user-attachments/assets/2b9aa3c7-215f-4785-b8b8-b77737c900b3)
-
+  
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/2b9aa3c7-215f-4785-b8b8-b77737c900b3" />
 
 - `obniz-functionノード`
 
