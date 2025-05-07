@@ -1,7 +1,7 @@
 # その他の外部 API を使ってみよう
 
 
-■ APIとは？
+## APIとは？
 API（アプリケーション・プログラミング・インターフェース）は色々な外部サービスを連携してデータの取得や連携などを行う仕組みのことです。通常HTTPプロトコルを用いて、データの送受信が行われます。
 
 具体的には、
@@ -29,7 +29,8 @@ APIを活用すれば、まったくのゼロからすべての機能を構築�
 
 ## NASA の API を使って、NASA　のジャーナルを取得してみる
 
-[NASA APIs](https://api.nasa.gov/): NASAが公開しているAPIです。毎日異なる画像や写真、専門の天文学者によって書かれた文章で、宇宙の魅力を発信するAPIから、画像と文章を取得してみます。
+[NASA APIs](https://api.nasa.gov/): NASAが公開しているAPIです。  
+毎日異なる画像や写真、専門の天文学者によって書かれた文章で、宇宙の魅力を発信するAPIから、画像と文章を取得してみます。
 
 > [!CAUTION]
 > サインインする必要はありません。
@@ -114,17 +115,6 @@ URLに`/nasa`と入れます。（「nasa」部分は任意の英数字でOKで�
 
 
 `http://【みなさんのNode-RED URL（URLバーに表示されている部分）】:1880/nasa`
-
-
-※ enebularの場合は右上「i」にカーソルをあてると出てくるのがWebページのURLです。
-
-
-<a href="https://gyazo.com/71ad81be655748046be291d43bc2d881"><img src="https://i.gyazo.com/71ad81be655748046be291d43bc2d881.png" alt="Image from Gyazo" width="352"/></a>
-
-
-`https://xxxxxxxxx.herokuapp.com/nasa`
-
-となります。
 
 
 <a href="https://gyazo.com/070c36c4dbc7777a99a9d6e5bf74566e"><img src="https://i.gyazo.com/070c36c4dbc7777a99a9d6e5bf74566e.gif" alt="Image from Gyazo" width="600"/></a>
@@ -245,9 +235,6 @@ LINE、Google 系サービス、Amazon、楽天...
 - [API Hub](https://apidog.com/apihub/): いろいろなサードパーティの API がまとまっている
 
 <a href="https://gyazo.com/4e9f8111e7da3ee740030da9a383774a"><img src="https://i.gyazo.com/4e9f8111e7da3ee740030da9a383774a.png" alt="Image from Gyazo" width="1372"/></a>
-
-
-
 
 
 ---
