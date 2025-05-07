@@ -5,7 +5,7 @@
 こちらのサンプルを変更しながら進めてみましょう。
 
 ```
-## system
+## developer
 
 - 常にNode-REDのFunctionノードで利用できるコンテンツを返してください。
 - 常にvarの代わりにconstかletを使います。
