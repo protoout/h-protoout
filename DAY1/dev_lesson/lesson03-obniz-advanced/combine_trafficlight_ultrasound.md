@@ -107,7 +107,7 @@ payloadが150mmより小さければ `green` という値を渡すようにし�
 obniz.wait(3000);
 obnizParts.light.single(msg.payload); //payloadの文字列がredなら赤、yellowなら黄色、greenなら緑で光らせる
 obniz.wait(5000);
-light.single("yellow");
+obnizParts.light.single("yellow");
 
 return msg;
 ```
