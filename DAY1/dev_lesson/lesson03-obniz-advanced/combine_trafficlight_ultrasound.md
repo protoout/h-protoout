@@ -58,6 +58,7 @@ graph TD;
     
 - `obniz repeatノード`
 - `switchノード`
+- `changeノード`
 - `obniz-functionノード`
 - `debugノード`
 
