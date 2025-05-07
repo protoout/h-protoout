@@ -6,7 +6,7 @@
 
 | 名称 | 画像 | 説明 | URL |
 | --- | --- | ----------- | --- |
-|obniz Board（obniz001） <br> または <br> obniz Board 1Y（obniz009）| <img src="https://akizukidenshi.com/img/goods/L/114930.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) | 制御の中心となるマイコンボードです。[^1]| https://store.obniz.com/ja/products/obniz-board-1y?variant=31461635981390 |
+|obniz Board（obniz001） <br> または <br> obniz Board 1Y（obniz009）| <img src="https://akizukidenshi.com/img/goods/L/114930.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) | 制御の中心となるマイコンボードです。[^1]| https://akizukidenshi.com/catalog/g/g113685/ <br> https://akizukidenshi.com/catalog/g/g114930/ |
 |ブレッドボード（BB-601）| <img src="https://akizukidenshi.com/img/goods/L/105155.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  | 電子部品をはんだ付けせずに配線するために使います | https://akizukidenshi.com/catalog/g/g105155/ |
 |ジャンパワイヤー（BBJ-20）| <img src="https://akizukidenshi.com/img/goods/L/105371.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  | ブレッドボードとセットで配線のために使います | https://akizukidenshi.com/catalog/g/g105371/ |
 |給電用USBケーブル A->C| <img src="https://akizukidenshi.com/img/goods/L/117017.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) | obniz Board の給電をします | https://akizukidenshi.com/catalog/g/g117017/ |
