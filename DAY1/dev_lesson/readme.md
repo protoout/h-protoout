@@ -80,7 +80,11 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 #### 2-1. [ブザーでドレミの音を出してみよう](./lesson01-obniz-basic/03_obniz-speaker.md)
   
+目安時間：15分
+  
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
+
+目安時間：20分
   
 **ここからは参考資料を見ながら自分で進めてみましょう！**  
   
@@ -95,8 +99,12 @@ obniz Board と Node-RED の2つを使える状態にします。
 #### 2-3. 応用課題：ブザーで曲を奏でよう
 - [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
   
+目安時間：10分  
+  
 #### 2-4. 応用課題：サーボモーターを繰り返し行き来させよう  
 - [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)  
+  
+目安時間：15分   
   
 ----  
 ### 休憩
