@@ -6,7 +6,7 @@
 
 | 名称 | 画像 | 説明 | URL |
 | --- | --- | ----------- | --- |
-|obniz Board（obniz001） <br> または <br> obniz Board 1Y（obniz009）| <img src="https://akizukidenshi.com/img/goods/L/114930.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) | 制御の中心となるマイコンボードです。[^1]| https://akizukidenshi.com/catalog/g/g113685/ <br> https://akizukidenshi.com/catalog/g/g114930/ |
+|obniz Board <br> または <br> obniz Board 1Y　| <img src="https://akizukidenshi.com/img/goods/L/114930.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) | 制御の中心となるマイコンボードです。[^1]| https://akizukidenshi.com/catalog/g/g113685/ <br> https://akizukidenshi.com/catalog/g/g114930/ |
 |ブレッドボード（BB-601）| <img src="https://akizukidenshi.com/img/goods/L/105155.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  | 電子部品をはんだ付けせずに配線するために使います | https://akizukidenshi.com/catalog/g/g105155/ |
 |ジャンパワイヤー| <img src="https://akizukidenshi.com/img/goods/L/105371.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  | ブレッドボードとセットで配線のために使います | https://akizukidenshi.com/catalog/g/g115869/ <br> https://akizukidenshi.com/catalog/g/g105159/ |
 |給電用USBケーブル <br> A->microB <br> または <br> A->C| <img src="https://akizukidenshi.com/img/goods/L/117017.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/) | obniz Board の給電用ケーブルです。 | https://akizukidenshi.com/catalog/g/g117016/ <br> https://akizukidenshi.com/catalog/g/g117017/ <br>（実物と異なる場合があります。）|
