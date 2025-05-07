@@ -48,6 +48,9 @@
 ### ハンズオンの準備
 
 obniz Board と Node-RED の2つを使える状態にします。  
+> この2つです！  
+> ![image](https://github.com/user-attachments/assets/9ec82fc4-7a4c-437f-b5ee-2c4d74a4106d)
+
 - [obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
 - [GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
    
