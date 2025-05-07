@@ -15,7 +15,7 @@ USBケーブル（標準A - タイプC）を用意して、公式サイトのリ
 >   
 > <img src="https://github.com/user-attachments/assets/4843015a-6aab-4739-bfde-3408cd4e8566" width="450">  
 
-## ■[こちらの公式サイトのマニュアルを見ながら設定してみましょう](https://docs.obniz.com/ja/reference/board-1y/quick-start/)
+### ■[こちらの公式サイトのマニュアルを見ながら設定してみましょう](https://docs.obniz.com/ja/reference/board-1y/quick-start/)
   
 > [!NOTE]  
 > アップデートが始まってしまった場合は、しばらく待ちましょう。  
