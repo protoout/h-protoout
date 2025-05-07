@@ -120,6 +120,10 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
   
 `obniz-closeノード`も obniz ID を指定する必要がありますが既に先ほど`obniz-functionノード`で登録したものがあるはずです。  
   
+> [!IMPORTANT]
+> **重要です！obniz ID は一度設定すれば以降は新規でつくる必要はありません！**  
+> 他の obniz 関連のノード(`obniz functionノード`や後で出てくる `obniz repeatノード`など)を用意したときには、既に作成した obniz ID を選びましょう。  
+   
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/45f4648c-8b6d-4891-a32f-2a8935e9c398" />
 
 再度デプロイして`injectノード`をクリックすると`obniz-functionノード`と`obniz-closeノード`に赤い四角いアイコンが表示されます。  
