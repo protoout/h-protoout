@@ -62,7 +62,7 @@ await obniz.wait(1000); //1秒待つ
 obnizParts.speaker.stop(); //止める
 ```
 
-## 5. 結果
+### 5. 結果
 
 1000Hzの音が鳴り、1秒すると止まる。
 
