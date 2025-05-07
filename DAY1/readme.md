@@ -1,7 +1,10 @@
 ## DAY1
 
 ### オープニング 8:50~9:50
-差し替え
+
+差し替える↓
+- 私市さん→和智
+
 - [オープニング](https://www.canva.com/design/DAGEtkz_owM/S1HwowuuQx4AK8oVmpi0HQ/edit)
     - 担当: のびすけ
 
