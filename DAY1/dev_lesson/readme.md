@@ -77,7 +77,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 ### 実装
 
-#### 2-1. [ブザーでドレミの音を出してみよう](./lesson01-obniz-basic/03_obniz-speaker.md)
+#### 2-1. [スピーカーでドレミの音を出してみよう](./lesson01-obniz-basic/03_obniz-speaker.md)
   
 ⏰目安時間：15分
   
@@ -95,7 +95,7 @@ obniz Board と Node-RED の2つを使える状態にします。
   
 🔥早く終わった人はこちらの課題にも挑戦！🔥  
 
-#### 2-3. 応用課題：ブザーで曲を奏でよう
+#### 2-3. 応用課題：スピーカーで曲を奏でよう
 - [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
   
 ⏰目安時間：10分  
