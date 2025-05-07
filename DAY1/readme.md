@@ -2,10 +2,7 @@
 
 ### オープニング 8:50~9:50
 
-差し替える↓
-- 私市さん→和智
-
-- [オープニング](https://www.canva.com/design/DAGEtkz_owM/S1HwowuuQx4AK8oVmpi0HQ/edit)
+- [オープニング](https://www.canva.com/design/DAGmxFq5M0s/KZRybsKpJj1cxA2NMnNbHw/edit)
     - 担当: のびすけ
 
 ### 実装授業 10:00~17:00
@@ -16,4 +13,4 @@
 ### クロージング 17:00~17:20
 
 - [クロージング](https://www.canva.com/design/DAGEwjqI__8/N9VlTDkLUwIRN05xbID3lg/edit)
-    - 担当: 
+    - 担当: 和智
