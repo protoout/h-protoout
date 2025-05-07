@@ -20,19 +20,24 @@
 |カーボン抵抗（CFS50J330RB）| <img src="https://akizukidenshi.com/img/goods/L/107812.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  | 電流の流れを制限する部品です。LEDなどと組み合わせて使用します。 | https://akizukidenshi.com/catalog/g/g107812/ |
 |温湿度センサ（DHT20）| <img src="https://akizukidenshi.com/img/goods/L/116732.jpg" width="150"><br>出典：[秋月電子通商](https://akizukidenshi.com/)  | 周囲の温度と湿度を計測できるセンサーです。気象観測などに使用します。 | https://akizukidenshi.com/catalog/g/g116732/ |
 
+
+> [!WARNING]
+> **使う場所に注意！**  
+> obniz Board はノートパソコンの上に置かず、机の上など電気を通さない場所に置きましょう。
+   
 ---- 
-
+  
 ## 2.使用するアプリケーション
-
+  
 1. GitHub: この授業資料です。基本的にこの資料を手元で見ながら進めていただきます。また、授業中TAに質問したい事項を投稿いただきます。
 2. Effibot: AI アシスタントです。実装の際に活用します。後ほど練習します。
 3. Miro: ホワイトボードツール。アイデア出しや整理で使用します。
 4. SharePoint: 最終アイデアを記事としてまとめ、投稿する場所です。
-
-1日目は、1 ~ 3 を使います。  
-
+  
+1日目は、1 ~ 3 を使います。   
+  
 > [!IMPORTANT]
-> **何か足りないものがあれば、手を挙げて講師陣にお知らせください。**
+> **何か足りないものがあれば、手を挙げて講師陣にお知らせください。**   
 
 ---
 
