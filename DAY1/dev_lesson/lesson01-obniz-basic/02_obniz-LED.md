@@ -124,7 +124,10 @@ return msg;
 点灯、消灯、点滅ができたら OK です！
 
 > [!CAUTION]
-> **`obniz-close` で停止するのをお忘れなく！**  
+> **`obniz-close` で停止するのをお忘れなく！**
+> 停止をしたら obniz Board がこの画面になるので、そうしたらパーツを外しましょう。  
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/eb82f29c-f406-46c7-bf11-409781b275f0" />
+
 
 
 ----  
