@@ -57,17 +57,17 @@ obniz本体やパーツが熱くなっている場合があります。取り外
 <img src="https://i.gyazo.com/590a12c00834a74480a8e79cdf270b7e.png" width="40%" />
 
 先ほどまでやっていた処理の下に追加していきましょう。  
-> <img width="60%" alt="image" src="https://github.com/user-attachments/assets/4e3e9f5c-b66b-4d95-88e5-41461d23e2c4" />
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/4e3e9f5c-b66b-4d95-88e5-41461d23e2c4" />
 
 > [!TIP]
 > 上記のようにノードを整理するために `commentノード`も使いましょう  
-> <img width="387" alt="image" src="https://github.com/user-attachments/assets/043ec15d-4ca4-442a-8416-34d436f0d283" />
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/043ec15d-4ca4-442a-8416-34d436f0d283" />
 
 
 
 ### 3. 初期化処理コードの編集
-`injectノード`のペンマークのところを押すと初期化処理を書くことができます。  
-> <img width="60%" alt="image" src="https://github.com/user-attachments/assets/192abc0e-41bb-44e3-9a2b-3dd1f351236c" />
+`obniz functionノード`のペンマークのところを押すと初期化処理を書くことができます。  
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/192abc0e-41bb-44e3-9a2b-3dd1f351236c" />
 
 > [!WARNING]
 > ここで「＋」マークから新たに Obniz 設定ノードを追加する必要はないので注意しましょう！
