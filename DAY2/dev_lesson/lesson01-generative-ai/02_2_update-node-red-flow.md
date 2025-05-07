@@ -19,10 +19,10 @@
 
 プロンプトサンプルの[1.Node-REDのFunctionノードで使えるコードを生成](../../../tools/prompt-sample.md)を参考に、以下のようなプロンプトをChatGPTに聞いてみましょう。
 
-`# system`の箇所は先ほどと同様で`# prompt`の部分を変更しています。
+`## developer`の箇所は先ほどと同様で`## prompt`の部分を変更しています。
 
 ```
-## system
+## developer
 - 常にNode-REDのFunctionノードで利用できるコンテンツを返してください。
 - 常にvarの代わりにconstかletを使います。
 - 外部のノードモジュールを使用するように要求されない限り、require() を使用しないでください。
@@ -58,7 +58,6 @@ if (sensorValue <= 300) {
 
 生成されたコードを`functionノード`に上書きします。
 
-> <img src="https://i.gyazo.com/dae27d7e4fd699cc4d277efac533f5ed.gif" width="400px" />
 
 次に、 **設定タブから出力数を2に変更**しましょう。これで出力先を増やすことができます。 ついでに **名前も分かりやすく変更**しておきましょう。
 
@@ -148,7 +147,8 @@ if (sensorValue <= 300) {
 
   
 
-> <img src="https://i.gyazo.com/0832662eafa3388a3b1699b251f1da48.png" width="400px" />
+> <img width="700" alt="image" src="https://github.com/user-attachments/assets/544a4ba7-4c43-4901-b2dd-df54e7c0b0e3" />
+
 
 Effibot の指示のもと、コードを直して（コピペして）、上手く修正することができたと思います。
 
