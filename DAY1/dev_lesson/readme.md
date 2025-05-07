@@ -117,13 +117,17 @@ obniz Board と Node-RED の2つを使える状態にします。
 - [距離に応じてライトの色を変えてみよう](./lesson03-obniz-advanced/combine_trafficlight_ultrasound.md)
 
 目安時間：30分
-    
+  
+<br>    
+  
 #### 3-2. ソーラーパネルの自動追尾[^4]  
 
-- [明るさによってサーボーモーターの動きを変えよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-servo-cds)
+- [明るさによってサーボーモーターの動きを変えよう](./lesson03-obniz-advanced/combine_cds_servo.md)
   
-
-目安時間：20分
+  
+目安時間：20分  
+  
+<br>
   
 早く終わった人はこちらの課題にも挑戦！ 
   
@@ -132,7 +136,9 @@ obniz Board と Node-RED の2つを使える状態にします。
 - [気温の高さに応じて、警戒レベルをLEDの光で表そう](./lesson03-obniz-advanced/combine_trafficlight_temp.md)  
 
 目安時間：20分
-  
+
+<br>    
+
 #### 3-4. 応用課題：「3-3. 熱中症計」にインフルエンザのリスクをブザーで知らせる機能を追加しよう  
   
 - ヒント
@@ -140,6 +146,8 @@ obniz Board と Node-RED の2つを使える状態にします。
     - 「3-3.」のノードを JSON で書きだして生成 AI で編集してもらおう
 
 目安時間：15分
+
+<br>    
 
 ----  
 ### 休憩
