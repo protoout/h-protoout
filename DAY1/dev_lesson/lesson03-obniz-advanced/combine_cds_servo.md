@@ -13,7 +13,7 @@
 
 ## つくってみよう
 こちらのマニュアルを参考に実装してみましょう  
-#### ■[チュートリアル: サーボとCdS連動システム] (https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-servo-cds)  
+#### ■[チュートリアル: サーボとCdS連動システム](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-servo-cds)  
 
   
 ## 動作を試す
