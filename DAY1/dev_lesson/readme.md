@@ -59,7 +59,8 @@ obniz Board と Node-RED の2つを使える状態にします。
 #### 1-1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
 #### 1-2. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)
   
-早く終わった人はこちらの課題にも挑戦！  
+<br>  
+🔥早く終わった人はこちらの課題にも挑戦！🔥  
   
 #### 1-3. 応用課題：LED を点けて5秒後に消えるようにしてみよう
 - [ヒント](https://github.com/protoout/h-protoout/blob/main/DAY1/dev_lesson/lesson01-obniz-basic/02_obniz-LED.md#:~:text=%E3%81%BF%E3%81%BE%E3%81%97%E3%82%87%E3%81%86%EF%BC%81-,4%2D3.%20%E5%8D%98%E7%B4%94%E3%81%AA%E7%82%B9%E6%BB%85,-obniz%2Dfunction%E3%83%8E%E3%83%BC%E3%83%89)  
