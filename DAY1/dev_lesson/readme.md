@@ -175,7 +175,7 @@ obniz Board と Node-RED の2つを使える状態にします。
   
 ----  
 
-**[◀ 目次ページに戻る](./readme.md)**
+**[◀ 目次ページに戻る](../readme.md)**
 
 [^1]: [obniz Boardの過電流検知により電源を供給できない場合](https://docs.obniz.com/ja/sdk/parts/ServoMotor/README.md#:~:text=%E9%9B%BB%E6%BA%90%E3%82%82obniz%20Board%E3%81%AB%E7%B9%8B%E3%81%92%E3%82%89%E3%82%8C%E3%82%8B%E3%83%A2%E3%83%BC%E3%82%BF%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6)
 
