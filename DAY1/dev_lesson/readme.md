@@ -133,7 +133,7 @@ obniz Board と Node-RED の2つを使える状態にします。
   
 #### 3-3. 応用課題： 熱中症予防[^6]  
 
-- [気温が高さに応じて、警戒レベルをLEDの光で表そう](https://github.com/protoout/h-protoout/blob/main/tools/tutorials/01_temp_led.md)
+- [気温の高さに応じて、警戒レベルをLEDの光で表そう](https://github.com/protoout/h-protoout/blob/main/tools/tutorials/01_temp_led.md)
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/934a87cb-f7bb-4bbe-9ad1-f0f08536a3cc" />
 >   
 > デジタル温湿度計にはこのような温湿度センサーが搭載されています。  
