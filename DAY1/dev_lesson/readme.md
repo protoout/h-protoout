@@ -79,20 +79,23 @@ obniz Board と Node-RED の2つを使える状態にします。
 ### 実装
 
 #### 2-1. [ブザーでドレミの音を出してみよう](./lesson01-obniz-basic/03_obniz-speaker.md)
-
+  
+#### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
+  
 **ここからは参考資料を見ながら自分で進めてみましょう！**  
   
 参考資料：[**obniz x Node-REDマニュアル**](https://zenn.dev/protoout/books/07_node-red-obniz)  
-> ※以降の実装テーマには、この資料の中から必要なページをリンクさせています  
+> ※以降の実装テーマには、この資料の中から必要なページをリンクさせています。サーボモーターのリンクはこちらの資料からも見つけられます。  
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46" />
 
-#### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
-
-早く終わった人はこちらの課題にも挑戦！  
+<br>
+  
+🔥早く終わった人はこちらの課題にも挑戦！🔥  
 
 #### 2-3. 応用課題：ブザーで曲を奏でよう
-- [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)   
-#### 2-4. 応用課題：サーボモーターを30度と90度を繰り返し行き来させよう  
+- [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
+  
+#### 2-4. 応用課題：サーボモーターを繰り返し行き来させよう  
 - [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)  
   
 ----  
