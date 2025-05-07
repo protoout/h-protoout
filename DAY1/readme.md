@@ -12,5 +12,5 @@
 
 ### クロージング 17:00~17:20
 
-- [クロージング](https://www.canva.com/design/DAGEwjqI__8/N9VlTDkLUwIRN05xbID3lg/edit)
+- [クロージング](https://www.canva.com/design/DAGmxJ3zWjw/YdnYuGxXxHj8PPR1Y7TOKQ/edit)
     - 担当: 和智
