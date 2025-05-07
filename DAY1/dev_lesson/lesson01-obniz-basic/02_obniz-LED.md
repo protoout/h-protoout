@@ -69,9 +69,9 @@ obniz本体やパーツが熱くなっている場合があります。取り外
 `obniz functionノード`のペンマークのところを押すと初期化処理を書くことができます。  
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/192abc0e-41bb-44e3-9a2b-3dd1f351236c" />
 
-> [!WARNING]
+> [!IMPORTANT]
 > ここで「＋」マークから新たに Obniz 設定ノードを追加する必要はないので注意しましょう！
-> ひとつ前の演習でつくった Obniz Board を選びましょう。
+> ひとつ前の演習でつくった Obniz Board の ID を選びましょう。
 
 ```js
 obnizParts.led = obniz.wired('LED', { anode:0, cathode:1 }); //脚の長い方（アノード, +）を0, 脚の短い方（カソード,-）を1に割り当てる
