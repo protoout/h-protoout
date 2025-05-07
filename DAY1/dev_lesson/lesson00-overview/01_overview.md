@@ -56,11 +56,11 @@
 準備ができた方は次のように聞いてみてください。  
   
 -  `生成 AIとプロンプトという言葉について教えてください。私は中学生です`  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/6da00c73-9cd1-4e56-a278-99a745fba6cd" />
+> <img width="600" alt="image" src="https://github.com/user-attachments/assets/6da00c73-9cd1-4e56-a278-99a745fba6cd" />
 
 分からない時は、より分かりやすい言葉にしてもらえるように、 人間とチャットする様な感覚でお願いしてみましょう。
 -  `すみません、やはり小学生向けにお願いします。`
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/2b6bce2e-c08d-4b8b-af9a-449fba9f9998" />
+> <img width="600" alt="image" src="https://github.com/user-attachments/assets/2b6bce2e-c08d-4b8b-af9a-449fba9f9998" />
 
 どうでしたでしょうか？
 
