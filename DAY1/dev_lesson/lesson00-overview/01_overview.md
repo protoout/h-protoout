@@ -1,14 +1,13 @@
 # 授業の受け方
 
 ## 1. この教材の使い方 
-- 1つ前のページを中心に進めていきます。そこから演習などの必要なリンクに進んでいただきます。
-> <img width="600" alt="image" src="https://github.com/user-attachments/assets/aa754920-35eb-4c7b-81f8-9daa7c937718" />
+- このページに来る前のページを中心に進めていきます。そこから演習や詳しい説明のあるページに移動していきます。
 
-- ブラウザバックや各ページの下部の「戻る」から上記の中心となるページに戻れます。
+- 一通りそのページを読み終えたら、ブラウザバックや各ページの下部の「戻る」から上記の中心となるページに戻ります。
 > <img width="600" alt="image" src="https://github.com/user-attachments/assets/31bd17c6-bfd4-40c6-b929-d7ef22100710" />
 
 > [!NOTE]
-> こちらの階層から移動しようとすると迷子になってしまうので注意しましょう   
+> こちらの GitHub の上部に載っている階層から移動しようとすると迷子になってしまうので注意しましょう   
 > <img width="800" alt="image" src="https://github.com/user-attachments/assets/07876088-b0dd-4c48-9bc3-e8faa8dc5431" />
 
 
@@ -52,7 +51,10 @@
 
 ### 練習: 生成 AI に聞いてみよう！ 
 
-[Effibot]() を立ち上げ、次のように聞いてみてください。  
+皆さんは **Effibot** という ChatGPT のような環境が使えると思います。
+各自そちらにアクセスしてみましょう。
+準備ができた方は次のように聞いてみてください。  
+  
 -  `生成 AIとプロンプトという言葉について教えてください。私は中学生です`  
 > <img width="1034" alt="image" src="https://github.com/user-attachments/assets/6da00c73-9cd1-4e56-a278-99a745fba6cd" />
 
