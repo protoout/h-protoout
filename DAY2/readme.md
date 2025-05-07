@@ -6,7 +6,7 @@
 ### オープニング 8:50~9:00
 
 - [OP: おさらいと最終制作についてリマインドなど](https://www.canva.com/design/DAGE2FVe71k/x-lAIVGHJQAkVlqjj8DKbg/edit)
-    - 担当: のびすけ
+    - 担当: 和智
 
 ### 実装授業 9:00~14:30
 
