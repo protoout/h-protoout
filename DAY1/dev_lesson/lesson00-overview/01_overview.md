@@ -30,7 +30,7 @@
 この GitHub の教材の画面や他の画面を行ったり来たりするので、タブを分けると良いです。
 > [!TIP]
 > 特に GitHub の教材は「新しいタブで開く」「新しいウィンドウで開く」などを使って見やすく配置しましょう。  
-> <img width="413" alt="image" src="https://github.com/user-attachments/assets/42010731-7800-47a3-9b1f-647d165f7a0b" />
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/42010731-7800-47a3-9b1f-647d165f7a0b" />
 
 ### 画像が小さくて見えない！
 <a href="https://gyazo.com/1f91a73b903896741c8c1f11ac5734a3"><img src="https://i.gyazo.com/1f91a73b903896741c8c1f11ac5734a3.png" alt="Image from Gyazo" width="100"/></a>  
@@ -56,11 +56,11 @@
 準備ができた方は次のように聞いてみてください。  
   
 -  `生成 AIとプロンプトという言葉について教えてください。私は中学生です`  
-> <img width="1034" alt="image" src="https://github.com/user-attachments/assets/6da00c73-9cd1-4e56-a278-99a745fba6cd" />
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/6da00c73-9cd1-4e56-a278-99a745fba6cd" />
 
 分からない時は、より分かりやすい言葉にしてもらえるように、 人間とチャットする様な感覚でお願いしてみましょう。
 -  `すみません、やはり小学生向けにお願いします。`
-> ![image](https://github.com/user-attachments/assets/2b6bce2e-c08d-4b8b-af9a-449fba9f9998)
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/2b6bce2e-c08d-4b8b-af9a-449fba9f9998" />
 
 どうでしたでしょうか？
 
