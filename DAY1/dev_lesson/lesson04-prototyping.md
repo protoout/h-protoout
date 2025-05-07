@@ -8,7 +8,7 @@
 
 例: ケーキの箱を開けたらLEDが光る！
 
-<a href="https://gyazo.com/102d5166c9d966b332301e8620542b53"><img src="https://i.gyazo.com/102d5166c9d966b332301e8620542b53.jpg" alt="Image from Gyazo" width="888"/></a>
+<a href="https://gyazo.com/102d5166c9d966b332301e8620542b53"><img src="https://i.gyazo.com/102d5166c9d966b332301e8620542b53.jpg" alt="Image from Gyazo" width="700"/></a>
 
 
 ## 実装のルール
