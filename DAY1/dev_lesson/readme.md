@@ -80,11 +80,11 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 #### 2-1. [ブザーでドレミの音を出してみよう](./lesson01-obniz-basic/03_obniz-speaker.md)
   
-目安時間：15分
+⏰目安時間：15分
   
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
-目安時間：20分
+⏰目安時間：20分
   
 **ここからは参考資料を見ながら自分で進めてみましょう！**  
   
@@ -99,12 +99,12 @@ obniz Board と Node-RED の2つを使える状態にします。
 #### 2-3. 応用課題：ブザーで曲を奏でよう
 - [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
   
-目安時間：10分  
+⏰目安時間：10分  
   
 #### 2-4. 応用課題：サーボモーターを繰り返し行き来させよう  
 - [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)  
   
-目安時間：15分   
+⏰目安時間：15分   
   
 ----  
 ### 休憩
@@ -128,7 +128,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 #### 3-1. 感知式信号機[^3]  
 - [距離に応じてライトの色を変えてみよう](./lesson03-obniz-advanced/combine_trafficlight_ultrasound.md)
 
-目安時間：30分
+⏰目安時間：30分
   
 <br>    
   
@@ -137,7 +137,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 - [明るさによってサーボーモーターの動きを変えよう](./lesson03-obniz-advanced/combine_cds_servo.md)
   
   
-目安時間：20分  
+⏰目安時間：20分  
   
 <br>
   
@@ -147,7 +147,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 
 - [気温の高さに応じて、警戒レベルをLEDの光で表そう](./lesson03-obniz-advanced/combine_trafficlight_temp.md)  
 
-目安時間：20分
+⏰目安時間：20分
 
 <br>    
 
@@ -157,7 +157,7 @@ obniz Board と Node-RED の2つを使える状態にします。
     - インフルエンザのリスクの計算式について、生成 AI で調べてみましょう
     - 「3-3.」のノードを JSON で書きだして生成 AI で編集してもらおう
 
-目安時間：15分
+⏰目安時間：15分
 
 <br>    
 
