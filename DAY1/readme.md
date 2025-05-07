@@ -11,6 +11,6 @@
     - 担当: 和智
 
 ### クロージング 17:00~17:20
-- [最終制作のご案内]()　  
+- [最終制作のご案内](closing.md)　  
 - [クロージング](https://www.canva.com/design/DAGmxJ3zWjw/YdnYuGxXxHj8PPR1Y7TOKQ/edit)
     - 担当: 和智
