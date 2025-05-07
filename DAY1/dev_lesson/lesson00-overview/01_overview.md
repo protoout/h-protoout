@@ -4,11 +4,11 @@
 - このページに来る前のページを中心に進めていきます。そこから演習や詳しい説明のあるページに移動していきます。
 
 - 一通りそのページを読み終えたら、ブラウザバックや各ページの下部の「戻る」から上記の中心となるページに戻ります。
-> <img width="600" alt="image" src="https://github.com/user-attachments/assets/31bd17c6-bfd4-40c6-b929-d7ef22100710" />
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/31bd17c6-bfd4-40c6-b929-d7ef22100710" />
 
 > [!NOTE]
 > こちらの GitHub の上部に載っている階層から移動しようとすると迷子になってしまうので注意しましょう   
-> <img width="800" alt="image" src="https://github.com/user-attachments/assets/07876088-b0dd-4c48-9bc3-e8faa8dc5431" />
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/07876088-b0dd-4c48-9bc3-e8faa8dc5431" />
 
 
 ## 2. 授業の流れ
