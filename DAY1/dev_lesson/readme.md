@@ -54,7 +54,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 #### ■[GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
   
 > この2つです！  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/9ec82fc4-7a4c-437f-b5ee-2c4d74a4106d" />
+<a href="https://gyazo.com/2cde9a36991a0ffa37525ba4a96463d4"><img src="https://i.gyazo.com/2cde9a36991a0ffa37525ba4a96463d4.png" alt="Image from Gyazo" width="600px"/></a>
 
 <br>  
   
