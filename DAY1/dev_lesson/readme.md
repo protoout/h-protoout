@@ -131,7 +131,7 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 **2-1、2-2でつくったフローを使うとスムーズです。**   
 
 #### 2-3. 応用課題：スピーカーで曲を奏でよう
-- [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
+- [ヒント](./lesson02-obniz-basic/practice_speaker_song.md)
   
 ⏰目安時間：10分  
 
