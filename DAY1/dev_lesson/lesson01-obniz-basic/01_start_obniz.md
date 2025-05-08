@@ -80,7 +80,7 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 >   
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />  
   
-更新を押すと再び同じ画面に戻ってきます。今度は `obniz` のところはご自身で設定した内容が反映されています。  
+追加（または更新）を押すと再び同じ画面に戻ってきます。今度は `obniz` のところはご自身で設定した内容が反映されています。  
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/8143ee58-62bd-46bd-943b-60d8d57545ae" />
   
   
