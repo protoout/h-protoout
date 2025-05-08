@@ -47,8 +47,10 @@
 ### ハンズオンの準備
 
 obniz Board と Node-RED の2つを使える状態にします。  
-#### ■[obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)
-#### ■[GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)
+  
+#### ■[obniz Board を Wi-Fi 接続する](./lesson00-overview/02_env_obniz.md)  
+  
+#### ■[GitHub CodeSpaces から Node-RED を立ち上げる](./lesson00-overview/03_env_nodered.md)  
   
 > この2つです！  
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/9ec82fc4-7a4c-437f-b5ee-2c4d74a4106d" />
@@ -56,7 +58,7 @@ obniz Board と Node-RED の2つを使える状態にします。
 ### 実装  
   
 **では実装のスタートです。  
-Lesson01は一緒に確認しながら進めていきます。1-1→1-2と進んでいきます。
+Lesson01は一緒に確認しながら進めていきます。1-1→1-2と順に進んでいきます。
 各Lessonに応用課題を用意していますので、もし早く終えた方は、講師の説明を待たずに進めてみてください。**  
 
 #### 1-1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
@@ -115,8 +117,10 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 ⏰目安時間：15分   
   
 ----  
+
 ### 休憩
 🍱🌸
+<br>
 
 ----  
 
@@ -171,8 +175,10 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 <br>    
 
 ----  
+  
 ### 休憩
 🍵🍡
+<br>
 
 ----  
 
