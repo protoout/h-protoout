@@ -24,7 +24,13 @@
 > [!WARNING]
 > **使う場所に注意！**  
 > obniz Board はノートパソコンの上に置かず、机の上など電気を通さない場所に置きましょう。
-   
+
+こっちが obniz Board  
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/bb84c135-4535-423e-9733-1458f53b6b74" />
+    
+こっちが obniz Board 1Y  
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/146d06f6-e13f-4270-892f-5fa0934c595" />
+  
 ---- 
   
 ## 2.使用するアプリケーション
