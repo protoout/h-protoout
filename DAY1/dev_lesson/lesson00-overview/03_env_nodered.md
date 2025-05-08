@@ -32,7 +32,7 @@ GitHub から Node-RED の環境をつくっていきます。以下の手順で
 GitHub 上に Node-Red を立ち上げるためのプログラムを事前に用意しました。
 以下のリンクから GitHub CodeSpaces を立ち上げましょう。
 
-### ■[こちらの別タブで開きましょう](https://github.com/protoout/github-codespces-node-red)  
+### ■[こちらを別タブで開いて GitHub リポジトリにアクセスしましょう](https://github.com/protoout/github-codespces-node-red)  
   
 こちらのプロジェクト上で `Code` > `Codespaces` > `Create codespaces on main` と進んでいくと、別のタブが立ち上がります。
   
