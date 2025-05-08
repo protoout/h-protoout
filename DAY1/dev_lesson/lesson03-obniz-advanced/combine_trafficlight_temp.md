@@ -13,7 +13,7 @@
   
 動画では温度を上げるためにドライヤーを吹きかけています。警戒レベルが一気に上がり、LEDが黄色、赤へと変化することがわかります。  
   
-<a href="https://gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc"><img src="https://i.gyazo.com/5f6bd75cbbe145d6319a105bd3806fdc.gif" alt="Image from Gyazo" width="450"/></a>
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/a937caee-f577-4321-96d7-e546de533e13" />
 
   
 ## 1. 温湿度センサーの値を取得できるようにする
