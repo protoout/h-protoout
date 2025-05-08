@@ -26,10 +26,10 @@
 > obniz Board はノートパソコンの上に置かず、机の上など電気を通さない場所に置きましょう。
 
 こっちが obniz Board  
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/bb84c135-4535-423e-9733-1458f53b6b74" />
+<a href="https://gyazo.com/a3dddde9183dbf255d477f53848ac6ba"><img src="https://i.gyazo.com/a3dddde9183dbf255d477f53848ac6ba.png" alt="Image from Gyazo" width="450"/></a>
     
 こっちが obniz Board 1Y  
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/3d300abb-c723-495a-86b2-b51e95ed84a7" />
+<a href="https://gyazo.com/930f11fc4840fb168338e370d0df6e37"><img src="https://i.gyazo.com/930f11fc4840fb168338e370d0df6e37.png" alt="Image from Gyazo" width="450"/></a>
 
 ---- 
   
