@@ -7,9 +7,9 @@
 
 ## 完成イメージ
 
-明るいとサーボモーターが90度、暗いと0度になります。
+明るいとサーボモーターが90度、暗いと0度になります。　
 
-<a href="https://gyazo.com/87b135740439b41bb1962a2c524a2872"><img src="https://i.gyazo.com/87b135740439b41bb1962a2c524a2872.gif" alt="Image from Gyazo" width="450"/></a>
+<a href="https://gyazo.com/644d6b8e52829099c1bd30a7a21e1db1"><img src="https://i.gyazo.com/644d6b8e52829099c1bd30a7a21e1db1.gif" alt="Image from Gyazo" width="450"/></a>
 
 ## つくってみよう
 こちらのマニュアルを参考に実装してみましょう。ブレッドボードを使うので、資料を見ながら配線の仕方を真似してください。  
