@@ -105,15 +105,22 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 <br>
   
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
-
-> [!WARNING]
-> obniz Board と obniz Board 1Y で配線とコードが少し違うので自身のデバイスに合わせて進めてください
   
 **ここからはプロトアウトで用意したマニュアルを見ながら自分で進めてみましょう！**  
   
 [**obniz x Node-REDマニュアル**](https://zenn.dev/protoout/books/07_node-red-obniz)  
 > ※GitHub 外の資料にリンクします。以降の実装テーマには、この資料の中から必要なページにリンクさせています。サーボモーターの実装資料のリンクはこちらの資料からも見つけられます。  
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46" />
+
+
+> [!WARNING]
+> obniz Board と obniz Board 1Y で配線とコードが少し違うので自身のデバイスに合わせて進めてください
+
+> [!WARNING]
+> 以下のようなエラーが出た場合は TA を呼んでください。過電流検知によるエラーでサーボモーターが動かないことがあります。  
+> ```
+> output voltage is too low when driving high. io state has changed output to input
+> ```
   
 ⏰目安時間：20分  
   
