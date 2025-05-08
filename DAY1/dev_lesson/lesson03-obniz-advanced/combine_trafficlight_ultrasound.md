@@ -4,10 +4,15 @@
 車があまり通らない場所では、車がいることを超音波センサで感知してから信号機のライトを制御する仕組みになっています。    
 停止線より手前で止まりすぎると信号が変わらないということも...  
 
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/36f6f62e-ea25-4130-98ed-38a856dce850" />  
+<a href="https://gyazo.com/7b28a36cc8e2d80057c13f8609a4d158"><img src="https://i.gyazo.com/7b28a36cc8e2d80057c13f8609a4d158.png" alt="Image from Gyazo" width="450"/></a>
+
 
 ### このような仕組みを Node-RED 作ってみましょう  
 超音波センサの検知する物体が一定の距離以上近づくと、ライトの色が変わる、という仕組みです。  
+
+<details>
+
+<summary>フローで書くとこんな感じです</summary>
 
 ```mermaid
 
@@ -20,13 +25,16 @@ graph TD;
 
 ```
 
+</details>
+
 ### 1. obniz Board での配線
 
 #### インジケーター: パトランプ  
+  
 > [!WARNING]
 > **極性(+ -)があるため、接続に間違いがないか注意**
-
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/16f15ee7-74ef-48d8-944a-31f4370f16c2" />  
+  
+<a href="https://gyazo.com/9a715ad65c4dc1cfae640c877bc7c0da"><img src="https://i.gyazo.com/9a715ad65c4dc1cfae640c877bc7c0da.png" alt="Image from Gyazo" width="450"/></a>
 
 
 | 電子パーツの脚         | obnizピン         |
@@ -38,7 +46,7 @@ graph TD;
 
 #### センサー: 超音波距離センサー
 
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/706b3ed4-6e23-4e44-9739-20b27c0c2282" />  
+<a href="https://gyazo.com/640b3e50d2f9b454699893f110a7dcf0"><img src="https://i.gyazo.com/640b3e50d2f9b454699893f110a7dcf0.png" alt="Image from Gyazo" width="450"/></a>
 
 
 | 電子パーツの脚         | obnizピン         |
@@ -51,7 +59,7 @@ graph TD;
 > [!NOTE]
 > obniz Board がごちゃごちゃしてきてますが問題ありません
 >
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/1ce811ae-f06e-4d68-8682-8b1ff48c6740" />  
+> <a href="https://gyazo.com/5672d9890a9177d0e5b8513be580f9d3"><img src="https://i.gyazo.com/5672d9890a9177d0e5b8513be580f9d3.jpg" alt="Image from Gyazo" width="450"/></a>
 
   
 ### 2. 使うノードとつなぎ方
@@ -62,7 +70,7 @@ graph TD;
 - `obniz-functionノード`
 - `debugノード`
 
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/6c80c2bc-79bc-4b0b-a322-cbce5a2dc3f4" /> 
+<a href="https://gyazo.com/c6940412d192bb105795423023426451"><img src="https://i.gyazo.com/c6940412d192bb105795423023426451.png" alt="Image from Gyazo" width="600"/></a>
 
   
 
@@ -87,16 +95,18 @@ return msg; //msg.payloadを出力
   
 payload が150mm より小さいか150mm以上か、という条件をつくります。  
   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/58a9ab04-8e11-449c-9350-079a80fdb399" /> 
+> <a href="https://gyazo.com/02c7f39d3fc3cb42140fa2f6f7ad548a"><img src="https://i.gyazo.com/02c7f39d3fc3cb42140fa2f6f7ad548a.png" alt="Image from Gyazo" width="450"/></a>
     
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/70a537b1-dfff-4569-8b9e-1f23595b20f4" />
+> <a href="https://gyazo.com/c10f54cad5d86054c0dca296bad97b8d"><img src="https://i.gyazo.com/c10f54cad5d86054c0dca296bad97b8d.png" alt="Image from Gyazo" width="450"/></a>
+
 >   
 > データの型を数値にするのをお忘れなく！
 
   
 - `changeノード`   
-payloadが150mmより小さければ `green` という値を渡すようにします。  
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/67d610ca-e5d6-47ad-bc3f-e08cc7c3a35d" /> 
+payloadが150mmより小さければ `green` という値を渡すようにします。
+
+<a href="https://gyazo.com/9a2ed1386565942c7b7907d73bf3ac39"><img src="https://i.gyazo.com/9a2ed1386565942c7b7907d73bf3ac39.png" alt="Image from Gyazo" width="450"/></a>
 
 同様に、150mm以上なら `red` にします。   
 この色の文字列をパトランプが受け取ることで色を変えることができます。  
@@ -135,30 +145,32 @@ return msg;
 実は、このノードを簡単に出し入れすることができます！
   
 ノードの塊を左クリックで囲んで指定します。指定するとオレンジ色の枠が出ます。  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/d5bd307c-1204-483f-9fbc-0e75e20203ba" />
+<a href="https://gyazo.com/248b39613afc0bed77583f2095976596"><img src="https://i.gyazo.com/248b39613afc0bed77583f2095976596.png" alt="Image from Gyazo" width="450"/></a>
   
 この状態で右側のハンバーガーメニューから`書き出し`を選びます。  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/29aae6ed-69aa-4712-9a9d-5970753da2bb" />
+<a href="https://gyazo.com/af2d28f69284105f70d514d9502bed87"><img src="https://i.gyazo.com/af2d28f69284105f70d514d9502bed87.png" alt="Image from Gyazo" width="450"/></a>
   
-`選択したフロー`、`インデントなし`、`JSON`を選んで`書き出し`を押すと先ほどのフローがコピーされた状態になります。  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/8d501c79-ba34-44dc-908c-0d66e17cf753" />
+`選択したフロー`、`インデントなし`、`JSON`を選んで``ダウンロード`を選ぶと、JSON ファイルを PC 上(ローカル) に保存できます。 なお、`書き出し`を押すと先ほどのフローがコピーされた状態になります。  
+<a href="https://gyazo.com/357ad4459527efe0e629bcd692de00ec"><img src="https://i.gyazo.com/357ad4459527efe0e629bcd692de00ec.png" alt="Image from Gyazo" width="450"/></a>
   
 中身はこのようなものです。JSON という形式で先ほどのノードが示されています。  
 ```JSON
 [{"id":"d82216061e268340","type":"comment","z":"fcf566e83f304c66","name":"感知式信号機","info":"","x":110,"y":740,"wires":[]},{"id":"33c441a240ac24bf","type":"obniz-repeat","z":"fcf566e83f304c66","obniz":"3a214050aa255b4f","name":"","interval":100,"code":"msg.payload = await obnizParts.hcsr04.measureWait(); // センサーから取得した値をmsg.payloadに格納\r\n\r\nreturn msg; //msg.payloadを出力","x":110,"y":800,"wires":[["0475abc22f78c73a"]]},{"id":"0475abc22f78c73a","type":"switch","z":"fcf566e83f304c66","name":"","property":"payload","propertyType":"msg","rules":[{"t":"lt","v":"150","vt":"num"},{"t":"gte","v":"150","vt":"num"}],"checkall":"true","repair":false,"outputs":2,"x":210,"y":860,"wires":[["d868b775d6aebf01"],["d8f182c07e576548"]]},{"id":"076fd1f5459975fe","type":"obniz-function","z":"fcf566e83f304c66","obniz":"3a214050aa255b4f","name":"","code":"\r\nobniz.wait(3000);\r\nobnizParts.light.single(msg.payload); //payloadの文字列がredなら赤、yellowなら黄色、greenなら緑で光らせる\r\nobniz.wait(5000);\r\nlight.single(\"yellow\");\r\n\r\nreturn msg;\r\n","x":560,"y":820,"wires":[["903c0a52d558bfbc"]]},{"id":"903c0a52d558bfbc","type":"debug","z":"fcf566e83f304c66","name":"debug 2","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":740,"y":860,"wires":[]},{"id":"d868b775d6aebf01","type":"change","z":"fcf566e83f304c66","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"green","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":380,"y":820,"wires":[["076fd1f5459975fe"]]},{"id":"d8f182c07e576548","type":"change","z":"fcf566e83f304c66","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"red","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":380,"y":900,"wires":[["d2b1634250baba16"]]},{"id":"d2b1634250baba16","type":"obniz-function","z":"fcf566e83f304c66","obniz":"3a214050aa255b4f","name":"","code":"obnizParts.light.single(msg.payload); //payloadの文字列がredなら赤、yellowなら黄色、greenなら緑で光らせる\r\n\r\nreturn msg;","x":560,"y":900,"wires":[["903c0a52d558bfbc"]]},{"id":"3a214050aa255b4f","type":"obniz","obnizId":"82630676","deviceType":"obnizboard1y","name":"","accessToken":"","autoConnectOnDeploy":true,"code":"obnizParts.light = obniz.wired(\"Keyestudio_TrafficLight\", {gnd:3, green:4, yellow:5, red:6});\r\nobnizParts.hcsr04 = obniz.wired(\"HC-SR04\",{ gnd:8, echo:9, trigger:10, vcc:11 }); //8,9,10,11番にピンを割り当てる"}]
 ```
 
-では今度は、同じハンバーガーメニューから`読み込み`を選択し、先ほどコピーされた JSON データを貼り付けます。  
+では今度は、同じハンバーガーメニューから`読み込み`を選択し、先ほど JSON ファイルをアップロードしてみましょう。  
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/83736168-21ec-48df-8896-a09ef8fafd50" />
 
->  `読み込み`を押すと先ほどと同じノードが出現します。(ポップアップが出るので`コピーを読み込み`を選びます)
+>  先ほどと同じノードが出現します。
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/57fe3c9e-26c0-423a-a389-cc6f0d664be2" />
 
 
 ##### さて、この JSON 形式のデータを使えると何が嬉しいでしょうか？
+
+一つは今やったように、つくったフローを好きな保存できることでフローを管理することができますね。
   
 > [!IMPORTANT]
-> そう、生成 AI のプロンプトに入れることができるんですね！！
+> もう一つは...そう、生成 AI のプロンプトに入れることができるんですね！！
 > この部分は Day2 で触れていくのでお楽しみに！  
   
 ----  
