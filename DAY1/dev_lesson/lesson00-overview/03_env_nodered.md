@@ -13,7 +13,7 @@ GitHub から Node-RED の環境をつくっていきます。以下の手順で
 ### ■[こちらを別タブで開いて GitHub CodeSpaces タイムアウトを設定ましょう](https://github.com/settings/codespaces#:~:text=browser%20with%20JupyterLab.-,Default%20idle%20timeout,-A%20codespace%20will)
   
 最大値である **240 minutes** に設定して保存(Save)しましょう。 
-> ![image](https://github.com/user-attachments/assets/28c1fa44-6bf3-4656-8f88-b8877150340e)
+> <a href="https://gyazo.com/18451c2331a371bb7b3d941ef15fb6e7"><img src="https://i.gyazo.com/18451c2331a371bb7b3d941ef15fb6e7.png" alt="Image from Gyazo" width="600"/></a>
 
 > [!NOTE]
 > GitHub CodeSpaces は GitHub が提供するクラウド上の開発環境です。[^2]
@@ -36,17 +36,18 @@ GitHub 上に Node-Red を立ち上げるためのプログラムを事前に用
   
 こちらのプロジェクト上で `Code` > `Codespaces` > `Create codespaces on main` と進んでいくと、別のタブが立ち上がります。
   
-> <img width="608" alt="image" src="https://github.com/user-attachments/assets/21990c36-1dbc-41a2-9405-0f1d268eda09" />  
+> <a href="https://gyazo.com/1e7e8baa8a64bcef71715e4b759cf319"><img src="https://i.gyazo.com/1e7e8baa8a64bcef71715e4b759cf319.png" alt="Image from Gyazo" width="600"/></a>
   
 画像のように、画面の右下の部分(ターミナル)でプログラムが自動で実行されますので2，3分ほど待ちましょう。  
   
-> ![image](https://github.com/user-attachments/assets/d15040aa-89b7-48e6-bf43-069d1523da5a)
+> <a href="https://gyazo.com/ec96d281003445960ee2d1c35d87abe6"><img src="https://i.gyazo.com/ec96d281003445960ee2d1c35d87abe6.png" alt="Image from Gyazo" width="600"/></a>
 >   
 > 実は、プロジェクトファイルにはこのような処理を実行するための指示が書かれています  
   
-> しばらくするとターミナルの最後に `Started flow` と表示されます。これで Node-RED の準備ができました。
->   
-> ![image](https://github.com/user-attachments/assets/dbf3bc02-733b-487d-9ed6-1feccb551525)
+ しばらくするとターミナルの最後に `Started flow` と表示されます。これで Node-RED の準備ができました。
+>
+> <a href="https://gyazo.com/de1962b15da3db3aaba1b001eb575a46"><img src="https://i.gyazo.com/de1962b15da3db3aaba1b001eb575a46.png" alt="Image from Gyazo" width="600"/></a>
+
 
 ----  
   
@@ -56,19 +57,19 @@ GitHub 上に Node-Red を立ち上げるためのプログラムを事前に用
 表示範囲を`Private` > `Public` に変更し、提供されているリンクをブラウザで開いてみましょう。 
 
 > 表示範囲は、プロセスのある位置(例えば `🔓Private` と書いてあるところ)で右クリックすると設定できます。
->   
-> <img width="528" alt="image" src="https://github.com/user-attachments/assets/be44a7e4-4ad4-4112-bdb8-9978e0ed56e3" />
+> <a href="https://gyazo.com/1b6b3b191a268e9413e51e4dabf617e6"><img src="https://i.gyazo.com/1b6b3b191a268e9413e51e4dabf617e6.png" alt="Image from Gyazo" width="600"/></a>   
 
-> 丸いインターネットのマークをクリックするか、リンクをコピーして別のタブで開けばOKです
+
+ 丸いインターネットのマークをクリックするか、リンクをコピーして別のタブで開けばOKです
 >   
-> <img width="521" alt="image" src="https://github.com/user-attachments/assets/f5e558c8-5cef-402a-b807-0a402311e80c" />
+> <a href="https://gyazo.com/8312bd0793c1501800cfadad74ee75f9"><img src="https://i.gyazo.com/8312bd0793c1501800cfadad74ee75f9.png" alt="Image from Gyazo" width="600"/></a>
 >   
 > `https://XXXX-XXXX-XXXXXX-1880.app.github.dev/` のようなURLです。
 
   
 このような Node-RED の画面が立ち上がれば準備完了です！プロジェクト機能に関する案内は `後にする` を選んで閉じてしまいましょう。
 
-<img width="815" alt="image" src="https://github.com/user-attachments/assets/2fe24634-9477-4727-af48-88f156d44436" />
+<a href="https://gyazo.com/bf8177b07618ad1cd7a79556bc5630ca"><img src="https://i.gyazo.com/bf8177b07618ad1cd7a79556bc5630ca.png" alt="Image from Gyazo" width="600"/></a>
 
 ここまで、お疲れさまでした！
   
