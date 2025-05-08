@@ -104,4 +104,4 @@ playTwinkle();
 
 ----
 
-**[◀ Lesson1に戻る](./readme.md)**
+**[◀ Lesson1に戻る](../readme.md)**
