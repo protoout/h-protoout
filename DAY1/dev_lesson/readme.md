@@ -168,8 +168,8 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 
 > [!CAUTION]
 > 一つだけ注意点を伝えさせてください！
-> **`obniz repeatノード`は1つだけ使うようにしてください！**
-> 詳しくは[こちら](./lesson03-obniz-advanced/obniz-tips.md)で説明します。
+> **`obniz repeatノード`は1つだけ使うようにしてください！**  
+> 詳しくは[こちら](./lesson03-obniz-advanced/obniz-tips.md)で説明します。  
 > このあと`obniz repeatノード`を使う場面がありますが、Lesson2 のスピーカーで使った`obniz repeatノード`を１度削除するか、そのノードを使うかしてください。複数の`obniz repeatノード`を配置しないように注意してください。
   
 #### 3-1. 感知式信号機[^3]  
