@@ -27,7 +27,8 @@
 ## 2. 暑さ指数WBGTの計算式  
 
 **暑さ指数（WBGT（湿球黒球温度）：Wet Bulb Globe Temperature）**を温度と湿度から簡易的に計算する方法をつかいます。**  
-[こちら](https://bokunimo.net/blog/ichigo-jam/29/)の記事には**WBGTを簡易的に求める類似式**が掲載されています。
+
+[こちら](https://bokunimo.net/blog/ichigo-jam/29/)の記事には **WBGTを簡易的に求める類似式** が掲載されています。
 
 ```
 WBGT = 0.725*Ta + 0.0368*RH + 0.00364*Ta*RH – 3.246
