@@ -1,7 +1,7 @@
  # 生成 AI のノードを利用してみよう：画像を解析しLEDを操作する
 
 
-## 1.画像解析の結果を使ってLEDを操作しよう！
+## 1.画像解析の結果を使ってLEDを操作しよう！  
 引き続き、GitHub Models を使っていきましょう。完成イメージは以下。
 
 電気をつけるアクションを行うとLEDが光ります。
@@ -9,11 +9,9 @@
 電気をつけるアクションは自分で好きなように決めることができます。
 
 
-[![完成イメージ](https://i.gyazo.com/36c027b8c9afe9318cfb8cb0ec064941.jpg)](https://www.canva.com/design/DAGDMT1WZ7Y/XYLYKHGyz5rJhG01yP1LEQ/watch?utm_content=DAGDMT1WZ7Y&utm_campaign=designshare&utm_medium=embeds&utm_source=link)
+## 2.やってみよう
 
-## 3.やってみよう
-
-### 3-2 LED を　On/Off するノード
+### 2-1 LED を　On/Off するノード
 
 LED をOn/Offするノードです。なお、[こちらのマニュアル](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-led-onoff)を見ながら作成することができます。
 
@@ -43,7 +41,7 @@ LED をOn/Offするノードです。なお、[こちらのマニュアル](http
 
 試し終わったら、`obniz-closeノード`で停止しておきましょう。
 
-### 3-2 画像認識を行ってみる
+### 2-2 画像認識を行ってみる
 
 続いて、下記を Node-RED で読み込んでください。
 
@@ -112,7 +110,7 @@ PCのカメラを使って撮影が始まります。ポップアップで許可
 
 このように画像データを一度文字列の形式に変換することで画像データでも扱うことができます。
 
-### 3-3. 2つのフローをつなげて 画像データから LED の ON/OFF を制御しよう
+### 2-3. 2つのフローをつなげて 画像データから LED の ON/OFF を制御しよう
 
 では、今まで作ったフローをつなげてましょう
 
