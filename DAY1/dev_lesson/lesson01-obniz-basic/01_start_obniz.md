@@ -10,7 +10,8 @@ obniz Board は obniz の公式デバイスで、いわゆる**マイコンボ�
 obniz Board は専用のクラウドを使ってインターネット経由で簡単に電子部品を操作することができます。
 この授業では Node-RED に書いたプログラムを使って obniz Board を制御します。
 
-<img src="https://github.com/user-attachments/assets/80eb5ff1-ca20-4f2b-ae99-e60f9396aca0 " width="50%" />
+<a href="https://gyazo.com/930f11fc4840fb168338e370d0df6e37"><img src="https://i.gyazo.com/930f11fc4840fb168338e370d0df6e37.png" alt="Image from Gyazo" width="450"/></a>
+
 
 > [!TIP]
 > 実はこの「インターネットにつなぐ」というのは結構めんどくさい...！obniz Board は他のマイコンボードに比べクラウド連携が非常に簡単とされています。  
@@ -37,12 +38,13 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
   
 メニューバーから「パレットの管理」を選択  
 >   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/451ada84-541f-4b37-8bed-4422639099c5" />
+> <a href="https://gyazo.com/d58d86af3b089eda430275e592749e0e"><img src="https://i.gyazo.com/d58d86af3b089eda430275e592749e0e.png" alt="Image from Gyazo" width="450"/></a>
 
   
 「ノードを追加」タブを選び「obniz」と検索すると、 `node-red-contrib-obniz` が出てくるので、このノードで「ノードを追加」を選択  
 >    
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/6f2faea1-13e9-466c-8cce-1c1d339e1803" />
+> <a href="https://gyazo.com/cdf591f25db082a498dd96ee76bc25e6"><img src="https://i.gyazo.com/cdf591f25db082a498dd96ee76bc25e6.png" alt="Image from Gyazo" width="450"/></a>
+
   
 「閉じる」からフロー設計の画面に戻ります。
 
@@ -61,7 +63,7 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 >   
 > `injectノード`や`changeノード`は配置すると`タイムスタンプ`や`set msg.payload`など名前が変わります。
   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/fc966a02-1f8f-47ee-a3de-9817f1967c11" />
+> <a href="https://gyazo.com/4e7fdc790c8088c3bc0d0d2f0233a4bc"><img src="https://i.gyazo.com/4e7fdc790c8088c3bc0d0d2f0233a4bc.png" alt="Image from Gyazo" width="450"/></a>
 >   
 > なお、`obniz-functionノード`はノードの一覧の下の方の「その他」に入っています。    
 
@@ -72,16 +74,16 @@ obniz Board は専用のクラウドを使ってインターネット経由で�
 
 ノードをダブルクリックして「＋」ボタンから新規に obniz 設定ノードを追加します  
 >  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/db06cb0d-1813-4417-831b-46e504383547" />
+> <a href="https://gyazo.com/9132a1b70275ea6951c1461f3f283af2"><img src="https://i.gyazo.com/9132a1b70275ea6951c1461f3f283af2.png" alt="Image from Gyazo" width="450"/></a>
 
 `obniz ID` に obniz Board に表示されている番号を入れます(ハイフンの有無はどちらでも大丈夫)  
   
 `device type` を obniz または obniz 1Y にします。  
 >   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/f89dd30f-53df-407c-9224-a01015660c45" />  
+> <a href="https://gyazo.com/a5eeacd7e0f24eb40b6f79e826951f61"><img src="https://i.gyazo.com/a5eeacd7e0f24eb40b6f79e826951f61.png" alt="Image from Gyazo" width="450"/></a> 
   
 追加（または更新）を押すと再び同じ画面に戻ってきます。今度は `obniz` のところはご自身で設定した内容が反映されています。  
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/8143ee58-62bd-46bd-943b-60d8d57545ae" />
+<a href="https://gyazo.com/29d2c198b52828d12502f88d709ce103"><img src="https://i.gyazo.com/29d2c198b52828d12502f88d709ce103.png" alt="Image from Gyazo" width="450"/></a>
   
   
 この画面の「コード」の部分に以下を記述  
@@ -103,7 +105,7 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 
 > `injectノード`をクリック(左の四角いアイコン)してディスプレイにテキストが出れば OK です！
 >   
-> <img src="https://github.com/user-attachments/assets/b735f182-7a9a-4663-977b-1a7534b852c2 " width="90%" />
+> <a href="https://gyazo.com/71aca56a3b8033307dfbffdcd31cabb7"><img src="https://i.gyazo.com/71aca56a3b8033307dfbffdcd31cabb7.gif" alt="Image from Gyazo" width="450"/></a>
   
 > <img src="https://i.gyazo.com/03c351fabc467739a062d523f9a2622d.jpg" width="450" />
 
@@ -116,7 +118,8 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
   
 `obniz-closeノード`を使います。新たに`injectノード`も用意し繋ぎます。  
   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/571671eb-291d-4df3-b79c-85e7498bf6c9" />  
+
+<a href="https://gyazo.com/2c04e76a6bae0fb96cdd0dca7bf5d49b"><img src="https://i.gyazo.com/2c04e76a6bae0fb96cdd0dca7bf5d49b.png" alt="Image from Gyazo" width="450"/></a>
   
 `obniz-closeノード`も obniz ID を指定する必要がありますが既に先ほど`obniz-functionノード`で登録したものがあるはずです。  
   
@@ -124,17 +127,18 @@ obniz.display.print(msg.payload);//msg.payloadの内容をディスプレイに�
 > **重要です！obniz ID は一度設定すれば以降は新規でつくる必要はありません！**  
 > 他の obniz 関連のノード(`obniz functionノード`や後で出てくる `obniz repeatノード`など)を用意したときには、既に作成した obniz ID を選びましょう。  
    
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/45f4648c-8b6d-4891-a32f-2a8935e9c398" />
+<a href="https://gyazo.com/b1b26fa6151ec679905a7fca9a0096d0"><img src="https://i.gyazo.com/b1b26fa6151ec679905a7fca9a0096d0.png" alt="Image from Gyazo" width="450"/></a>
+
 
 再度デプロイして`injectノード`をクリックすると`obniz-functionノード`と`obniz-closeノード`に赤い四角いアイコンが表示されます。  
   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/3b303c67-aff7-4124-bdbb-8d9292bc1317" />
+> <a href="https://gyazo.com/641b56ba2d2cdbeab7a4109cd4f55419"><img src="https://i.gyazo.com/641b56ba2d2cdbeab7a4109cd4f55419.png" alt="Image from Gyazo" width="450"/></a>
 > これが obniz Board と接続を切った状態です。
 
   
 上手くいくと、obniz Board　のディスプレイも元の QR コードと ID の画面に戻ります  
   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/eb49d4ee-5c8d-4b73-bb0e-39b870429bcc" />
+<a href="https://gyazo.com/ae81bec5f4c3e1ffda2b33be422469de"><img src="https://i.gyazo.com/ae81bec5f4c3e1ffda2b33be422469de.jpg" alt="Image from Gyazo" width="450"/></a>
 
 > [!CAUTION]
 > **以降も新しいノードを実行する場合は、毎回必ずこの「接続を切る」プロセスを実行しましょう！**  
