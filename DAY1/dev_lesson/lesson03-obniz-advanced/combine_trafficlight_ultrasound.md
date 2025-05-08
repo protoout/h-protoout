@@ -161,8 +161,8 @@ return msg;
 では今度は、同じハンバーガーメニューから`読み込み`を選択し、先ほど JSON ファイルをアップロードしてみましょう。  
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/83736168-21ec-48df-8896-a09ef8fafd50" />
 
->  先ほどと同じノードが出現します。
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/57fe3c9e-26c0-423a-a389-cc6f0d664be2" />
+先ほどと同じノードが出現します。
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/57fe3c9e-26c0-423a-a389-cc6f0d664be2" />
 
 
 ##### さて、この JSON 形式のデータを使えると何が嬉しいでしょうか？
