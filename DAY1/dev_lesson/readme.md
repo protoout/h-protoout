@@ -55,7 +55,9 @@ obniz Board と Node-RED の2つを使える状態にします。
   
 > この2つです！  
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/9ec82fc4-7a4c-437f-b5ee-2c4d74a4106d" />
-   
+
+<br>  
+  
 ### 実装  
   
 **では実装のスタートです。  
