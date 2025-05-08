@@ -102,15 +102,16 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 <br>
   
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
-
-⏰目安時間：20分
+  
   
 **ここからは参考資料を見ながら自分で進めてみましょう！**  
   
 参考資料：[**obniz x Node-REDマニュアル**](https://zenn.dev/protoout/books/07_node-red-obniz)  
 > ※以降の実装テーマには、この資料の中から必要なページをリンクさせています。サーボモーターのリンクはこちらの資料からも見つけられます。  
 > <img width="450" alt="image" src="https://github.com/user-attachments/assets/59e201e2-5e46-40d9-b636-a346c9818f46" />
-
+  
+⏰目安時間：20分  
+  
 <br>
   
 🔥早く終わった人はこちらの課題にも挑戦！🔥  
