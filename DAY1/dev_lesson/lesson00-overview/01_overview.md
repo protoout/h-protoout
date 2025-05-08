@@ -4,11 +4,11 @@
 - このページに来る前のページを中心に進めていきます。そこからこのページのように詳しい説明や演習のあるページに移動していきます。
 
 - 一通りそのページを読み終えたら、ブラウザバックや各ページの下部の「目次ページに戻る」のリンクから上記の中心となるページに戻ります。  
- <img width="350" alt="image" src="https://github.com/user-attachments/assets/63b6f9e6-3222-47d0-b95b-0deb48ac3552" />
+> <img width="350" alt="image" src="https://github.com/user-attachments/assets/63b6f9e6-3222-47d0-b95b-0deb48ac3552" />
   
 こちらの GitHub の上部に載っているリンクから移動しようとすると迷子になりやすいので注意しましょう   
   
-  <img width="450" alt="image" src="https://github.com/user-attachments/assets/07876088-b0dd-4c48-9bc3-e8faa8dc5431" />
+> <img width="450" alt="image" src="https://github.com/user-attachments/assets/07876088-b0dd-4c48-9bc3-e8faa8dc5431" />
 
 - 安全面や実装を上手く進めるために、特に見てほしい部分には以下のような色付けを行っています。
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/56cafb75-dc2f-4a81-9fac-963193bb64f7" />
