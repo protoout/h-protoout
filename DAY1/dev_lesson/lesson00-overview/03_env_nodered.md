@@ -2,11 +2,11 @@
 GitHub から Node-RED の環境をつくっていきます。以下の手順で進めましょう。
 
 1. GitHub CodeSpaces のタイムアウトの時間設定
-2. GitHub リポジトリをフォークする
-3. GitHub CodeSpaces を起動し、Node-RED を立ち上げる]
+2. GitHub CodeSpaces を起動し、Node-RED を立ち上げる
 
 > [!Note]
-> Day2は上記 3. から始めます
+> Day2は上記 2. から始めます
+> [こちらの URL](https://github.com/codespaces) からスタートできます。必要な時にまたご案内します。
 
 ## GitHub CodeSpaces のタイムアウトの時間設定[^1]  
 
@@ -27,43 +27,30 @@ GitHub から Node-RED の環境をつくっていきます。以下の手順で
 
 ----
 
-## GitHub リポジトリをフォークする
+## GitHub リポジトリから GitHub CodeSpaces を立ち上げましょう
 
 GitHub 上に Node-Red を立ち上げるためのプログラムを事前に用意しました。
-以下のリンクからプロジェクトをフォーク (≒プロジェクトのコピー) をして、GitHub CodeSpaces を立ち上げましょう。
+以下のリンクから GitHub CodeSpaces を立ち上げましょう。
 
-### ■[こちらの別タブで開いて GitHub リポジトリをフォークしましょう](https://github.com/protoout/github-codespces-node-red)  
+### ■[こちらの別タブで開きましょう](https://github.com/protoout/github-codespces-node-red)  
   
-`Fork` というボタンを押して `Create Fork` を行ってください。  
-  
-> <img width="610" alt="image" src="https://github.com/user-attachments/assets/39ed2671-fa69-42d3-bb14-e2426e123d50" />
-  
-> <img width="600" alt="image" src="https://github.com/user-attachments/assets/aa40f776-4a3d-439c-8f60-2e7ac49805b9" />
-
-これであなたの GitHub 上に同じプロジェクトが複製されました。  
-
-----
-
-## 続いて GitHub CodeSpaces を立ち上げます
-
-> [!IMPORTANT]
-> 現在の URL が、`https://github.com/{あなたの GitHub ユーザー名}/github-codespces-node-red` になっている状態からスタートします。
-  
-先ほど、複製したプロジェクト上で `Code` > `Codespaces` > `Create codespaces on main` と進んでいくと、別のタブが立ち上がります。
+こちらのプロジェクト上で `Code` > `Codespaces` > `Create codespaces on main` と進んでいくと、別のタブが立ち上がります。
   
 > <img width="608" alt="image" src="https://github.com/user-attachments/assets/21990c36-1dbc-41a2-9405-0f1d268eda09" />  
   
-画像のように、画面の右下の部分(ターミナル)でプログラムが自動で実行されますので2，3分待ちましょう。  
+画像のように、画面の右下の部分(ターミナル)でプログラムが自動で実行されますので2，3分ほど待ちましょう。  
   
 > ![image](https://github.com/user-attachments/assets/d15040aa-89b7-48e6-bf43-069d1523da5a)
 >   
-> 実は、フォークしたプロジェクトファイルにはこのような処理を実行するための指示が書かれています  
+> 実は、プロジェクトファイルにはこのような処理を実行するための指示が書かれています  
   
 > しばらくするとターミナルの最後に `Started flow` と表示されます。これで Node-RED の準備ができました。
 >   
 > ![image](https://github.com/user-attachments/assets/dbf3bc02-733b-487d-9ed6-1feccb551525)
+
+----  
   
-最後のステップです。
+## 最後のステップです。Node-RED にアクセスしましょう
 
 `ポート`タブを開くとポート1880という行に1つのプロセスが実行されています。  
 表示範囲を`Private` > `Public` に変更し、提供されているリンクをブラウザで開いてみましょう。 
