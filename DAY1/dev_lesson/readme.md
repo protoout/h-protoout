@@ -105,7 +105,9 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 <br>
   
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
-  
+
+> [!WARNING]
+> obniz Board と obniz Board 1Y で配線とコードが少し違うので自身のデバイスに合わせて進めてください
   
 **ここからは参考資料を見ながら自分で進めてみましょう！**  
   
