@@ -13,4 +13,5 @@
 ### クロージング 16:30~17:20
 - [最終制作のご案内](closing.md)　  
 - [クロージング](https://www.canva.com/design/DAGmxJ3zWjw/YdnYuGxXxHj8PPR1Y7TOKQ/edit)
+- アンケートの回答お願いします！
     - 担当: 和智
