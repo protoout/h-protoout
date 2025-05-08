@@ -1,6 +1,6 @@
 # 温湿度センサーを使用し、熱中症アラートを作ろう
 
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/934a87cb-f7bb-4bbe-9ad1-f0f08536a3cc" />
+> <a href="https://gyazo.com/dffc890b75936316068f0f99f3dbeeb8"><img src="https://i.gyazo.com/dffc890b75936316068f0f99f3dbeeb8.png" alt="Image from Gyazo" width="450"/></a>
 >   
 > デジタル温湿度計にはこのような温湿度センサーが搭載されています。  
 > なお、本格的な熱中症計は、太陽の陽ざしや地面からの照り返しなどの輻射熱を測るために、黒球と呼ばれる黒い球で温度を測っています[^1]
@@ -13,7 +13,7 @@
   
 動画では温度を上げるためにドライヤーを吹きかけています。警戒レベルが一気に上がり、LEDが黄色、赤へと変化することがわかります。  
   
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/a937caee-f577-4321-96d7-e546de533e13" />
+<a href="https://gyazo.com/778dbd20d9c1275669c3315f847dcbfa"><img src="https://i.gyazo.com/778dbd20d9c1275669c3315f847dcbfa.gif" alt="Image from Gyazo" width="600"/></a>
 
   
 ## 1. 温湿度センサーの値を取得できるようにする
