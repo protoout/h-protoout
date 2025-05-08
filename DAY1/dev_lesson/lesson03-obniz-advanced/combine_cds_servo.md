@@ -16,6 +16,8 @@
   
 #### ■[チュートリアル: サーボとCdS連動システム](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-servo-cds)  
 
+ブレッドボードの使いかたは[こちら](https://dotstud.io/docs/breadboard/)を参考にしてください。  
+
 ### 余裕があれば試してみよう  
 上記のマニュアルで使用するフローの JSON をこちらに用意しました。これでノードを一つ一つ設定する手間を省くことができます。
 以下の JSON を読み込んで資料と照らし合わせながら実装を進めてみてください。    
