@@ -1,6 +1,6 @@
 # 明るさによってサーボーモーターの動きを変えよう
 
-> <a href="https://gyazo.com/fc47d3de9f7c1f81247fefdf3d041de5"><img src="https://i.gyazo.com/fc47d3de9f7c1f81247fefdf3d041de5.png" alt="Image from Gyazo" width="450/></a>
+> <a href="https://gyazo.com/fc47d3de9f7c1f81247fefdf3d041de5"><img src="https://i.gyazo.com/fc47d3de9f7c1f81247fefdf3d041de5.png" alt="Image from Gyazo" width="450"/></a>
 >    
 > ソーラーパネルは効率的に太陽光エネルギーを回収するために照度に合わせてパネルの角度を変える仕組みになっていると言われています。
 > その他にも、スマートブラインド[^5]などにも同様の仕組みが使われています。
