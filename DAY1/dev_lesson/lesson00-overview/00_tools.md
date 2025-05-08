@@ -29,8 +29,8 @@
 <img width="450" alt="image" src="https://github.com/user-attachments/assets/bb84c135-4535-423e-9733-1458f53b6b74" />
     
 こっちが obniz Board 1Y  
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/146d06f6-e13f-4270-892f-5fa0934c595" />
-  
+<img width="450" alt="image" src="https://github.com/user-attachments/assets/3d300abb-c723-495a-86b2-b51e95ed84a7" />
+
 ---- 
   
 ## 2.使用するアプリケーション
