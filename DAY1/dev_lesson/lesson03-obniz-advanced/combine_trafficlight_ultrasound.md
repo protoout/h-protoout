@@ -44,7 +44,7 @@ graph TD;
 | 電子パーツの脚         | obnizピン         |
 |--------------|---------------|
 | GND  | obnizの8番    |
-| Edho  | obnizの9番    |
+| Echo  | obnizの9番    |
 | Trig  | obnizの10番    |
 | Vcc  | obnizの11番    |
 
