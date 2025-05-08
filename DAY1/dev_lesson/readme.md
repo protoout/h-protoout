@@ -61,8 +61,17 @@ obniz Board と Node-RED の2つを使える状態にします。
 Lesson01は一緒に確認しながら進めていきます。1-1→1-2と順に進んでいきます。
 各Lessonに応用課題を用意していますので、もし早く終えた方は、講師の説明を待たずに進めてみてください。**  
 
-#### 1-1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)
-#### 1-2. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)
+#### 1-1. [obnizをはじめよう](./lesson01-obniz-basic/01_start_obniz.md)  
+  
+⏰目安時間：20分
+
+<br>
+
+#### 1-2. [Lチカしてみよう](./lesson01-obniz-basic/02_obniz-LED.md)  
+  
+⏰目安時間：20分
+
+<br>
   
 <br>  
 🔥早く終わった人はこちらの課題にも挑戦！🔥  
@@ -90,6 +99,8 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
   
 ⏰目安時間：15分
   
+<br>
+  
 #### 2-2. [サーボモーターを回してみよう](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/actuator-servo)
 
 ⏰目安時間：20分
@@ -110,11 +121,15 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 - [ヒント](./lesson02-node-red-basic/practice_speaker_song.md)
   
 ⏰目安時間：10分  
+
+<br>
   
 #### 2-4. 応用課題：サーボモーターを繰り返し行き来させよう  
 - [ヒント](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/turorial-servo-keep-moving)  
   
 ⏰目安時間：15分   
+  
+<br>
   
 ----  
 
@@ -194,10 +209,12 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 
 制作の説明をするので、こちらのリンクに進んでください。  
 ### ■[テーマと進め方について](./lesson04-prototyping.md)
+
+<br>
   
 ----  
 
-実装は以上です！お疲れさまでした。
+本日の実装は以上です！お疲れさまでした👏
 
 **[◀ 目次ページに戻る](../readme.md)**
 
