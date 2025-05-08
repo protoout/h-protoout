@@ -29,7 +29,7 @@ await obniz.wait(500); // 0.5秒待つ
 
 <summary>コーディングの依頼例</summary>
 
-```
+```js
 ブザー(PKM13EPYH4000-A0)を使って曲を奏でたいです。
 次のJavaScriptのコードをもとにして【曲名】のメロディーを書いてください。
 
