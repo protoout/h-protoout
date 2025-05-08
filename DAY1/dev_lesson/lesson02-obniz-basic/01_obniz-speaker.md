@@ -34,7 +34,7 @@ obnizの0番と1番の端子に差し込みます。(LED は obniz Board のデ�
 - `obniz-functionノード`
 - `debugノード`
   
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/13e0292e-ed13-4964-ae09-29432815ad0e" />
+<a href="https://gyazo.com/4b3d41b345ac1d3910b32a8b1266db6c"><img src="https://i.gyazo.com/4b3d41b345ac1d3910b32a8b1266db6c.gif" alt="Image from Gyazo" width="600"/></a>
 
 ### 3. 初期化処理コードの編集
 
@@ -52,7 +52,7 @@ obnizParts.speaker = obniz.wired("Speaker",{ signal:0, gnd:1 });
 msg.payloadを「数値」「500」（数字は任意で変更してください。単位はヘルツ。）
 
   
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/2b9aa3c7-215f-4785-b8b8-b77737c900b3" />
+<a href="https://gyazo.com/b1bb1be980e0ca728df060caa35b9c3f"><img src="https://i.gyazo.com/b1bb1be980e0ca728df060caa35b9c3f.png" alt="Image from Gyazo" width="450"/></a>
 
 - `obniz-functionノード`
 
