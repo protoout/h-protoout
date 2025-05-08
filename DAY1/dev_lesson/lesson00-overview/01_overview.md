@@ -4,20 +4,21 @@
 - このページに来る前のページを中心に進めていきます。そこから、このページのように詳しい説明や演習のあるページに移動していきます。
 
 - 一通りそのページを読み終えたら、ブラウザバックや各ページの下部の「**[◀ 目次ページに戻る](../readme.md)**」のリンクから上記の中心となるページに戻ってください。  
-> <img width="350" alt="image" src="https://github.com/user-attachments/assets/63b6f9e6-3222-47d0-b95b-0deb48ac3552" />
+> <a href="https://gyazo.com/910ebf1e8b7a62f3ff1cf7a6db96d0db"><img src="https://i.gyazo.com/910ebf1e8b7a62f3ff1cf7a6db96d0db.png" alt="Image from Gyazo" width="450"/></a>
   
 こちらの GitHub の上部に載っているリンクから移動しようとすると迷子になりやすいので注意しましょう   
   
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/07876088-b0dd-4c48-9bc3-e8faa8dc5431" />
+> <a href="https://gyazo.com/d46018f1e06876235cae8a56bda33465"><img src="https://i.gyazo.com/d46018f1e06876235cae8a56bda33465.png" alt="Image from Gyazo" width="600"/></a>
   
   
 - 安全面や実装を上手く進めるために、特に見てほしい部分には以下のような色付けを行っています。
-<img width="450" alt="image" src="https://github.com/user-attachments/assets/56cafb75-dc2f-4a81-9fac-963193bb64f7" />
+
+<a href="https://gyazo.com/e37cf95cbacca6606220020926bcbe33"><img src="https://i.gyazo.com/e37cf95cbacca6606220020926bcbe33.png" alt="Image from Gyazo" width="450"/></a>
 
 例です。  
 > [!NOTE]
 > 右側のサイドバーを使ってこのページの目次を見ることができます。  
-> <img width="600" alt="image" src="https://github.com/user-attachments/assets/d2e11045-094f-4168-868d-b9ddeada486f" />
+> <a href="https://gyazo.com/7029e360e51b0b725700783e4ccbe748"><img src="https://i.gyazo.com/7029e360e51b0b725700783e4ccbe748.gif" alt="Image from Gyazo" width="600"/></a>
 
 
 ## 2. 授業の流れ
@@ -40,7 +41,7 @@
 
 > [!TIP]
 > 特に GitHub の教材は「新しいタブで開く」「新しいウィンドウで開く」などを使って見やすく配置しましょう。  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/42010731-7800-47a3-9b1f-647d165f7a0b" />
+> <a href="https://gyazo.com/34c5bcd018fa257eba14e725de507383"><img src="https://i.gyazo.com/34c5bcd018fa257eba14e725de507383.png" alt="Image from Gyazo" width="450"/></a>
 
 ### 3-2. 画像が小さくて見えない！
 <a href="https://gyazo.com/1f91a73b903896741c8c1f11ac5734a3"><img src="https://i.gyazo.com/1f91a73b903896741c8c1f11ac5734a3.png" alt="Image from Gyazo" width="100"/></a>  
@@ -67,11 +68,11 @@
 準備ができた方は次のように聞いてみてください。  
   
 -  `生成 AIとプロンプトという言葉について教えてください。私は中学生です`  
-> <img width="600" alt="image" src="https://github.com/user-attachments/assets/6da00c73-9cd1-4e56-a278-99a745fba6cd" />
+> <a href="https://gyazo.com/80bb44c5fd97386202edbd89484e3962"><img src="https://i.gyazo.com/80bb44c5fd97386202edbd89484e3962.png" alt="Image from Gyazo" width="450"/></a>
 
 分からない時は、より分かりやすい言葉にしてもらえるように、 人間とチャットする様な感覚でお願いしてみましょう。
 -  `すみません、やはり小学生向けにお願いします。`
-> <img width="600" alt="image" src="https://github.com/user-attachments/assets/2b6bce2e-c08d-4b8b-af9a-449fba9f9998" />
+> <a href="https://gyazo.com/ac14d5272a9b088c5dd2cb17f7be986a"><img src="https://i.gyazo.com/ac14d5272a9b088c5dd2cb17f7be986a.png" alt="Image from Gyazo" width="450"/></a>
 
 どうでしたでしょうか？
 
