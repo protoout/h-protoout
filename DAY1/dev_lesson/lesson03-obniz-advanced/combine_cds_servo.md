@@ -12,7 +12,8 @@
 <a href="https://gyazo.com/371d98adc6a3a8e67e192c4132de5cd2"><img src="https://i.gyazo.com/371d98adc6a3a8e67e192c4132de5cd2.gif" alt="Image from Gyazo" width="472"/></a>
 
 ## つくってみよう
-こちらのマニュアルを参考に実装してみましょう  
+こちらのマニュアルを参考に実装してみましょう。ブレッドボードを使うので、資料を見ながら配線の仕方を真似してください。  
+  
 #### ■[チュートリアル: サーボとCdS連動システム](https://zenn.dev/protoout/books/07_node-red-obniz/viewer/tutorial-servo-cds)  
 
   
