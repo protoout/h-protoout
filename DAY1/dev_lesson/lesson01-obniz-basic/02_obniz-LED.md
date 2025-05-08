@@ -57,18 +57,17 @@ obniz本体やパーツが熱くなっている場合があります。取り外
 <img src="https://i.gyazo.com/590a12c00834a74480a8e79cdf270b7e.png" width="40%" />
 
 先ほどまでやっていた処理の下に追加していきましょう。  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/4e3e9f5c-b66b-4d95-88e5-41461d23e2c4" />
-<br>
+<a href="https://gyazo.com/3b013b1f8d811462555883f1d483f469"><img src="https://i.gyazo.com/3b013b1f8d811462555883f1d483f469.png" alt="Image from Gyazo" width="450"/></a>
 
 > [!TIP]
 > 上記のようにノードを整理するために `commentノード`も使いましょう  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/043ec15d-4ca4-442a-8416-34d436f0d283" />
+> <a href="https://gyazo.com/548a1a7c150e5c5764e2b13e9c8efcfb"><img src="https://i.gyazo.com/548a1a7c150e5c5764e2b13e9c8efcfb.png" alt="Image from Gyazo" width="450"/></a>
 
 
 
 ### 3. 初期化処理コードの編集
 `obniz functionノード`のペンマークのところを押すと初期化処理を書くことができます。  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/192abc0e-41bb-44e3-9a2b-3dd1f351236c" />
+> <a href="https://gyazo.com/60bf95ddfcaf54e7d79c9c7cd260314a"><img src="https://i.gyazo.com/60bf95ddfcaf54e7d79c9c7cd260314a.png" alt="Image from Gyazo" width="450"/></a>
 <br>
 
 > [!IMPORTANT]
@@ -128,7 +127,7 @@ return msg;
 > [!CAUTION]
 > **`obniz-close` で停止するのをお忘れなく！**
 > 停止をしたら obniz Board がこの画面になるので、そうしたらパーツを外しましょう。  
-> <img width="450" alt="image" src="https://github.com/user-attachments/assets/eb82f29c-f406-46c7-bf11-409781b275f0" />
+> <a href="https://gyazo.com/ae81bec5f4c3e1ffda2b33be422469de"><img src="https://i.gyazo.com/ae81bec5f4c3e1ffda2b33be422469de.jpg" alt="Image from Gyazo" width="450"/></a>
 
 
 
