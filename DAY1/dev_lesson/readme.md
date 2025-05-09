@@ -117,7 +117,7 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 > obniz Board と obniz Board 1Y で配線とコードが少し違うので自身のデバイスに合わせて進めてください
 
 > [!WARNING]
-> 以下のようなエラーが出た場合は TA を呼んでください。過電流検知によるエラーでサーボモーターが動かないことがあります。  
+> Node-RED のログに以下のようなエラーが出た場合は TA を呼んでください。過電流検知によるエラーでサーボモーターが動かないことがあります。  
 > ```
 > output voltage is too low when driving high. io state has changed output to input
 > ```
