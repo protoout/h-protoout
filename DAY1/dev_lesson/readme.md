@@ -147,10 +147,15 @@ Node-REDの使い方など勘所を見つけながらやってみましょう！
 ----  
 
 ### 休憩
-🍱🌸
+🍱🌸  
 <br>
 
 ----  
+
+> [!NOTE]
+> 作業中にGitHub CodeSpaces の利用時間が一度切れると思います。  
+> 同じプロジェクトを開くことで作業途中のところから始めることができます。  
+> GitHub CodeSpaces の再開の仕方は[こちら](https://zenn.dev/protoout/articles/77-github-codespaces-restart)から確認してください。
 
 ## Lesson03 実用的なセンサーをつくってみよう  
 
