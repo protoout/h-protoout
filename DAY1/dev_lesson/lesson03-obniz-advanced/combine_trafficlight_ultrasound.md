@@ -167,12 +167,6 @@ return msg;
 [{"id":"d82216061e268340","type":"comment","z":"80cc5966bb5f04f3","name":"感知式信号機","info":"","x":90,"y":560,"wires":[]},{"id":"33c441a240ac24bf","type":"obniz-repeat","z":"80cc5966bb5f04f3","obniz":"","name":"","interval":100,"code":"msg.payload = await obnizParts.hcsr04.measureWait(); // センサーから取得した値をmsg.payloadに格納\r\n\r\nreturn msg; //msg.payloadを出力","x":90,"y":620,"wires":[["0475abc22f78c73a"]]},{"id":"0475abc22f78c73a","type":"switch","z":"80cc5966bb5f04f3","name":"","property":"payload","propertyType":"msg","rules":[{"t":"lt","v":"150","vt":"num"},{"t":"gte","v":"150","vt":"num"}],"checkall":"true","repair":false,"outputs":2,"x":190,"y":680,"wires":[["d868b775d6aebf01"],["d8f182c07e576548"]]},{"id":"076fd1f5459975fe","type":"obniz-function","z":"80cc5966bb5f04f3","obniz":"","name":"","code":"\r\nobniz.wait(3000);\r\nobnizParts.light.single(msg.payload); //payloadの文字列がredなら赤、yellowなら黄色、greenなら緑で光らせる\r\nobniz.wait(5000);\r\nlight.single(\"yellow\");\r\n\r\nreturn msg;\r\n","x":540,"y":640,"wires":[["903c0a52d558bfbc"]]},{"id":"903c0a52d558bfbc","type":"debug","z":"80cc5966bb5f04f3","name":"debug 2","active":true,"tosidebar":true,"console":false,"tostatus":false,"complete":"payload","targetType":"msg","statusVal":"","statusType":"auto","x":720,"y":680,"wires":[]},{"id":"d868b775d6aebf01","type":"change","z":"80cc5966bb5f04f3","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"green","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":360,"y":640,"wires":[["076fd1f5459975fe"]]},{"id":"d8f182c07e576548","type":"change","z":"80cc5966bb5f04f3","name":"","rules":[{"t":"set","p":"payload","pt":"msg","to":"red","tot":"str"}],"action":"","property":"","from":"","to":"","reg":false,"x":360,"y":720,"wires":[["d2b1634250baba16"]]},{"id":"d2b1634250baba16","type":"obniz-function","z":"80cc5966bb5f04f3","obniz":"","name":"","code":"obnizParts.light.single(msg.payload); //payloadの文字列がredなら赤、yellowなら黄色、greenなら緑で光らせる\r\n\r\nreturn msg;","x":540,"y":720,"wires":[["903c0a52d558bfbc"]]}]
 ```
 
-では今度は、同じハンバーガーメニューから`読み込み`を選択し、先ほど JSON ファイルをアップロードしてみましょう。`読み込むファイルを選択`から先ほどのJSONファイルをアップロードすることができます。    
-  
-<a href="https://gyazo.com/f4b8e24d03b84a53af0b3fc095caedf9"><img src="https://i.gyazo.com/f4b8e24d03b84a53af0b3fc095caedf9.png" alt="Image from Gyazo" width="600"/></a>
-
-先ほどと同じノードが出現します。  
-<a href="https://gyazo.com/357ad4459527efe0e629bcd692de00ec"><img src="https://i.gyazo.com/357ad4459527efe0e629bcd692de00ec.png" alt="Image from Gyazo" width="600"/></a>
 
 
 ##### さて、この JSON 形式のデータを使えると何が嬉しいでしょうか？
