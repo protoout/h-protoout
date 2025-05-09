@@ -1,5 +1,14 @@
 # 距離に応じてライトの色を変えてみよう
 
+##  debugノードの説明をします。
+debug ノードでは出力去れた値を表示することができます。
+      
+![image](https://github.com/user-attachments/assets/06938ffe-3c0d-4818-984e-c36018a18e5a)  
+  
+画面では超音波距離センサで取得した値を見ることができます。     
+<img width="431" alt="image" src="https://github.com/user-attachments/assets/d42e1719-8dc8-4fb3-873d-c9e3bee674df" />
+  
+
 ### 感知式信号機  
 車があまり通らない場所では、車がいることを超音波センサで感知してから信号機のライトを制御する仕組みになっています。    
 停止線より手前で止まりすぎると信号が変わらないということも...  
