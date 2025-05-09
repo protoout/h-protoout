@@ -22,6 +22,7 @@
 ### アイデア出し
   [GitHub Discussions](https://github.com/protoout/h-protoout/discussions/categories/day1-%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97%E5%88%B6%E4%BD%9C) に以下の内容を書いてからスタートしてください
   - サービス名←考えてみよう！
+  - 名前
   - チーム名
   - 何をつくりたいのか
   - あつかうセンサーやアクチュエーター
