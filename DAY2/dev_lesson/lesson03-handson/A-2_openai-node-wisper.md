@@ -122,10 +122,7 @@ PCのカメラを使って撮影が始まります。ポップアップで許可
 
 早速、デプロイして試してみましょう。
 
-音声によりLEDをON/OFFできれば成功です！
-
-
-[![完成イメージ](https://i.gyazo.com/36c027b8c9afe9318cfb8cb0ec064941.jpg)](https://www.canva.com/design/DAGDMT1WZ7Y/XYLYKHGyz5rJhG01yP1LEQ/watch?utm_content=DAGDMT1WZ7Y&utm_campaign=designshare&utm_medium=embeds&utm_source=link)
+画像によりLEDをON/OFFできれば成功です！
 
 
 
