@@ -28,6 +28,7 @@
 
 ### 3. 授業の進め方
 
+前回のDay1と同じですが、一応揃っているか確認しましょう。  
 #### ■[使うツール](../../DAY1/dev_lesson/lesson00-overview/00_tools.md)  
   
 #### ■[授業の進め方を紹介します](../../DAY1/dev_lesson/lesson00-overview/01_overview.md)  
