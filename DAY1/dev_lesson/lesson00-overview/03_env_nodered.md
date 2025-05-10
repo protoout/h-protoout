@@ -22,7 +22,7 @@ GitHub から Node-RED の環境をつくっていきます。以下の手順で
 
 このリンク先での作業は終了です。別タブで開いた設定ページを閉じてください。
 
-[^1]: [タイムアウトの設定方法])(https://docs.github.com/ja/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces#setting-your-default-timeout-period)
+[^1]: [タイムアウトの設定方法](https://docs.github.com/ja/codespaces/setting-your-user-preferences/setting-your-timeout-period-for-github-codespaces#setting-your-default-timeout-period)
 [^2]: [GitHub CodeSpaces について](https://github.co.jp/features/codespaces)
 
 ----
