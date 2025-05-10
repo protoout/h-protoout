@@ -28,14 +28,14 @@
 
 ### 3. 授業の進め方
 
-#### ■[使うツール](../../DAY1/dev_lesson/lesson00-overview/00_tools.md)  
+#### 3-1. [使うツール](../../DAY1/dev_lesson/lesson00-overview/00_tools.md)  
 前回のDay1と同じですが、一応揃っているか確認しましょう。  
 アイデアワークで **Miro** と **SharePoint** というツールを使います。
 
 生成 AI が Node-RED 用のコードを上手くつくるためのプロンプト例を用意しました。(適宜使用する箇所にリンクを用意しています)  
 - [プロンプトサンプル](../../tools/prompt-sample.md)
   
-#### ■[授業の進め方を紹介します](../../DAY1/dev_lesson/lesson00-overview/01_overview.md)  
+#### 3-2. [授業の進め方を紹介します](../../DAY1/dev_lesson/lesson00-overview/01_overview.md)  
 こちらも前回と同じです。  
   
 質問がある時は、[GitHub Discussions](https://github.com/protoout/h-protoout/discussions) を活用しましょう。
