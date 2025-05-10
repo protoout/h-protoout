@@ -56,7 +56,6 @@
 #### 生成AI概論と生成AIに触れてみる
 - [1-1. 生成AIコラム](https://www.canva.com/design/DAGmxHLZuOQ/aUtN16EzZWLMJqkfsn7HCA/edit)
 - [1-2. GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)
-- [1-3. 生成AI（LLM）を使ってみる](./lesson01-generative-ai/01_3_start-llm.md)
 
 ### ハンズオンの準備
 
