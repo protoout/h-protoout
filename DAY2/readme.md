@@ -7,6 +7,7 @@
 
 - [OP: おさらいと最終制作についてリマインドなど](https://www.canva.com/design/DAGE2FVe71k/x-lAIVGHJQAkVlqjj8DKbg/edit)
     - 担当: 和智
+  前回のアンケート結果の発表(よかったこと改善案に応える内容)
 
 ### 実装授業 9:00~14:30
 
