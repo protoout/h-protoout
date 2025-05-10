@@ -7,9 +7,11 @@
 
 - [OP: おさらいと最終制作についてリマインドなど](https://www.canva.com/design/DAGE2FVe71k/x-lAIVGHJQAkVlqjj8DKbg/edit)
     - 担当: 和智　  
-  > [!CAUTION]
+  > [!CAUTION]  
   > 前回のアンケート結果の発表(よかったこと改善案に応える内容)
   > 全体に対する今回の位置づけ
+  > debugノードについて解説
+  > (GitHub CodeSpacesについて解説)
 
 ### 実装授業 9:00~14:30
 
