@@ -33,7 +33,8 @@
 アイデアワークで **Miro** と **SharePoint** というツールを使います。
   
 #### ■[授業の進め方を紹介します](../../DAY1/dev_lesson/lesson00-overview/01_overview.md)  
-こちらも前回と同じです。　　
+こちらも前回と同じです。  
+  
 質問がある時は、[GitHub Discussions](https://github.com/protoout/h-protoout/discussions) を活用しましょう。
 
 ----  
