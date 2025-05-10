@@ -37,6 +37,12 @@
   
 質問がある時は、[GitHub Discussions](https://github.com/protoout/h-protoout/discussions) を活用しましょう。
 
+### 4. トラブルが起きた時の対応策    
+- Node-RED の接続が切れた(GitHub CodeSpacesがタイムアウトした)場合
+ 復帰手順を書く
+
+- Day1 で質問が多かった内容について
+
 ----  
 
 ## Lesson01 生成AIの活用  
@@ -50,6 +56,13 @@
 
 > [!WARNING]
 > ここからは ChatGPT の話題にも触れますが、授業中の制作に関しては Day1 同様、 Effibot 使って進めていきます。  
+
+
+### ハンズオンの準備
+
+obniz Board と Node-RED の2つを使える状態にします。  
+- [obniz Board を Wi-Fi 接続する](../../DAY1/dev_lesson/lesson00-overview/02_env_obniz.md)
+- [GitHub CodeSpaces から Node-RED を立ち上げる](../../DAY1/dev_lesson/lesson00-overview/03_env_nodered.md)  
  
 ### コラム
 
@@ -57,11 +70,7 @@
 - [1-1. 生成AIコラム](https://www.canva.com/design/DAGmxHLZuOQ/aUtN16EzZWLMJqkfsn7HCA/edit)
 - [1-2. GPT-4oを体験してみよう](./lesson01-generative-ai/01_2_gpt4o-touch.md)
 
-### ハンズオンの準備
 
-obniz Board と Node-RED の2つを使える状態にします。  
-- [obniz Board を Wi-Fi 接続する](../../DAY1/dev_lesson/lesson00-overview/02_env_obniz.md)
-- [GitHub CodeSpaces から Node-RED を立ち上げる](../../DAY1/dev_lesson/lesson00-overview/03_env_nodered.md)  
 
 生成 AI が Node-RED 用のコードを上手くつくるためのプロンプト例を用意しました。(適宜使用する箇所にリンクを用意しています)
 - [プロンプトサンプル](../../tools/prompt-sample.md)
